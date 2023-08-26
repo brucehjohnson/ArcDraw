@@ -33,9 +33,8 @@ struct PictureDefinition: Codable, Identifiable, Equatable {
   var imageWidth: Int =  1100
   var imageHeight: Int = 1000
 
+  init() {
 
-  init(){
-    
   }
 
   init(
@@ -48,8 +47,6 @@ struct PictureDefinition: Codable, Identifiable, Equatable {
     self.imageWidth = imageWidth
     self.imageHeight = imageHeight
   }
-
-
 
   static func ==(lhs: PictureDefinition, rhs: PictureDefinition) -> Bool {
     // Compare all properties here

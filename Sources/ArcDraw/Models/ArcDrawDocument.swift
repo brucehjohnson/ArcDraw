@@ -20,7 +20,6 @@ import UniformTypeIdentifiers
 
 var contextImageGlobal: CGImage?
 
-
  /**
   A utility class to work with files for saving and sharing your art.
 
@@ -136,8 +135,6 @@ final class ArcDrawDocument: ReferenceFileDocument, ObservableObject {
     let b = String(picdef.imageHeight)
     let c = String(picdef.imageWidth)
 
-
-
     let comment =
                   "imageHeight is \(b) \n" +
                   "imageWidth is \(c) \n" +
@@ -248,8 +245,6 @@ final class ArcDrawDocument: ReferenceFileDocument, ObservableObject {
   }
 
 }
-
-
 
 // Helper utility
 // Extending String functionality so we can use indexes to get substrings

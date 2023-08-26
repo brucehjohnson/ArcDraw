@@ -7,17 +7,13 @@
 
 import SwiftUI
 
-
 @available(macOS 12.0, *)
 struct ContentView: View {
-
 
   @EnvironmentObject var appState: AppState
   @ObservedObject var doc: ArcDrawDocument
 
-
   let widthOfInputPanel: Double = 400
-
 
     var body: some View {
         VStack {
@@ -29,4 +25,3 @@ struct ContentView: View {
         .padding()
     }
 }
-

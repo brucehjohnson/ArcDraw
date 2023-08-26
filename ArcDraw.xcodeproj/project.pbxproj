@@ -56,9 +56,7 @@
 		885A8A482A9A8D790028E8BF /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				885A8A522A9A8E9B0028E8BF /* Controllers */,
-				885A8A512A9A8E950028E8BF /* Views */,
-				885A8A502A9A8E8C0028E8BF /* Models */,
+				885A8A682A9A9A450028E8BF /* ArcDraw */,
 				885A8A492A9A8D790028E8BF /* ArcDrawApp.swift */,
 				885A8A5F2A9A8FE80028E8BF /* ArcDrawApp+Menu.swift */,
 			);
@@ -93,6 +91,16 @@
 				885A8A612A9A91CB0028E8BF /* WelcomeWindowController.swift */,
 			);
 			path = Controllers;
+			sourceTree = "<group>";
+		};
+		885A8A682A9A9A450028E8BF /* ArcDraw */ = {
+			isa = PBXGroup;
+			children = (
+				885A8A522A9A8E9B0028E8BF /* Controllers */,
+				885A8A502A9A8E8C0028E8BF /* Models */,
+				885A8A512A9A8E950028E8BF /* Views */,
+			);
+			path = ArcDraw;
 			sourceTree = "<group>";
 		};
 		C568E3D72A68755C00B63F6F = {
