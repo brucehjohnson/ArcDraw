@@ -7,44 +7,39 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		C568E3E42A68755C00B63F6F /* ArcDrawApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C568E3E32A68755C00B63F6F /* ArcDrawApp.swift */; };
-		C568E3E62A68755C00B63F6F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C568E3E52A68755C00B63F6F /* ContentView.swift */; };
-		C568E3E82A68755C00B63F6F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C568E3E72A68755C00B63F6F /* Assets.xcassets */; };
-		C568E3EC2A68755C00B63F6F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C568E3EB2A68755C00B63F6F /* Preview Assets.xcassets */; };
-		C568E3F62A68755D00B63F6F /* ArcDrawTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C568E3F52A68755D00B63F6F /* ArcDrawTests.swift */; };
-		C568E4002A68755D00B63F6F /* ArcDrawUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C568E3FF2A68755D00B63F6F /* ArcDrawUITests.swift */; };
-		C568E4022A68755D00B63F6F /* ArcDrawUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C568E4012A68755D00B63F6F /* ArcDrawUITestsLaunchTests.swift */; };
+		885A8A4B2A9A8D790028E8BF /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 885A8A452A9A8D790028E8BF /* README.md */; };
+		885A8A4C2A9A8D790028E8BF /* DEV_NOTES.md in Resources */ = {isa = PBXBuildFile; fileRef = 885A8A462A9A8D790028E8BF /* DEV_NOTES.md */; };
+		885A8A4D2A9A8D790028E8BF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 885A8A472A9A8D790028E8BF /* Assets.xcassets */; };
+		885A8A4E2A9A8D790028E8BF /* ArcDrawApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 885A8A492A9A8D790028E8BF /* ArcDrawApp.swift */; };
+		885A8A4F2A9A8D790028E8BF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 885A8A4A2A9A8D790028E8BF /* ContentView.swift */; };
+		885A8A592A9A8F9C0028E8BF /* WelcomeHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 885A8A532A9A8F9B0028E8BF /* WelcomeHeaderView.swift */; };
+		885A8A5A2A9A8F9C0028E8BF /* WelcomeMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 885A8A542A9A8F9B0028E8BF /* WelcomeMainView.swift */; };
+		885A8A5B2A9A8F9C0028E8BF /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 885A8A552A9A8F9B0028E8BF /* WelcomeView.swift */; };
+		885A8A5C2A9A8F9C0028E8BF /* WelcomeMainImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 885A8A562A9A8F9B0028E8BF /* WelcomeMainImageView.swift */; };
+		885A8A5E2A9A8F9C0028E8BF /* WelcomeMainInformationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 885A8A582A9A8F9C0028E8BF /* WelcomeMainInformationView.swift */; };
+		885A8A602A9A8FE80028E8BF /* ArcDrawApp+Menu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 885A8A5F2A9A8FE80028E8BF /* ArcDrawApp+Menu.swift */; };
+		885A8A622A9A91CB0028E8BF /* WelcomeWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 885A8A612A9A91CB0028E8BF /* WelcomeWindowController.swift */; };
+		885A8A652A9A927C0028E8BF /* PictureDefinition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 885A8A632A9A927C0028E8BF /* PictureDefinition.swift */; };
+		885A8A662A9A927C0028E8BF /* ArcDrawDocument.swift in Sources */ = {isa = PBXBuildFile; fileRef = 885A8A642A9A927C0028E8BF /* ArcDrawDocument.swift */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		C568E3F22A68755D00B63F6F /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = C568E3D82A68755C00B63F6F /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = C568E3DF2A68755C00B63F6F;
-			remoteInfo = ArcDraw;
-		};
-		C568E3FC2A68755D00B63F6F /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = C568E3D82A68755C00B63F6F /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = C568E3DF2A68755C00B63F6F;
-			remoteInfo = ArcDraw;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
+		885A8A452A9A8D790028E8BF /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		885A8A462A9A8D790028E8BF /* DEV_NOTES.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = DEV_NOTES.md; sourceTree = "<group>"; };
+		885A8A472A9A8D790028E8BF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		885A8A492A9A8D790028E8BF /* ArcDrawApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArcDrawApp.swift; sourceTree = "<group>"; };
+		885A8A4A2A9A8D790028E8BF /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		885A8A532A9A8F9B0028E8BF /* WelcomeHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeHeaderView.swift; sourceTree = "<group>"; };
+		885A8A542A9A8F9B0028E8BF /* WelcomeMainView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeMainView.swift; sourceTree = "<group>"; };
+		885A8A552A9A8F9B0028E8BF /* WelcomeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
+		885A8A562A9A8F9B0028E8BF /* WelcomeMainImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeMainImageView.swift; sourceTree = "<group>"; };
+		885A8A582A9A8F9C0028E8BF /* WelcomeMainInformationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeMainInformationView.swift; sourceTree = "<group>"; };
+		885A8A5F2A9A8FE80028E8BF /* ArcDrawApp+Menu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ArcDrawApp+Menu.swift"; sourceTree = "<group>"; };
+		885A8A612A9A91CB0028E8BF /* WelcomeWindowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeWindowController.swift; sourceTree = "<group>"; };
+		885A8A632A9A927C0028E8BF /* PictureDefinition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PictureDefinition.swift; sourceTree = "<group>"; };
+		885A8A642A9A927C0028E8BF /* ArcDrawDocument.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArcDrawDocument.swift; sourceTree = "<group>"; };
 		C568E3E02A68755C00B63F6F /* ArcDraw.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ArcDraw.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		C568E3E32A68755C00B63F6F /* ArcDrawApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArcDrawApp.swift; sourceTree = "<group>"; };
-		C568E3E52A68755C00B63F6F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		C568E3E72A68755C00B63F6F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		C568E3E92A68755C00B63F6F /* ArcDraw.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ArcDraw.entitlements; sourceTree = "<group>"; };
-		C568E3EB2A68755C00B63F6F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		C568E3F12A68755D00B63F6F /* ArcDrawTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ArcDrawTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		C568E3F52A68755D00B63F6F /* ArcDrawTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArcDrawTests.swift; sourceTree = "<group>"; };
-		C568E3FB2A68755D00B63F6F /* ArcDrawUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ArcDrawUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		C568E3FF2A68755D00B63F6F /* ArcDrawUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArcDrawUITests.swift; sourceTree = "<group>"; };
-		C568E4012A68755D00B63F6F /* ArcDrawUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArcDrawUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		C568E3E92A68755C00B63F6F /* ArcDraw.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ArcDraw.entitlements; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,29 +50,59 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C568E3EE2A68755D00B63F6F /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		C568E3F82A68755D00B63F6F /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		885A8A482A9A8D790028E8BF /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				885A8A522A9A8E9B0028E8BF /* Controllers */,
+				885A8A512A9A8E950028E8BF /* Views */,
+				885A8A502A9A8E8C0028E8BF /* Models */,
+				885A8A492A9A8D790028E8BF /* ArcDrawApp.swift */,
+				885A8A5F2A9A8FE80028E8BF /* ArcDrawApp+Menu.swift */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		885A8A502A9A8E8C0028E8BF /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				885A8A642A9A927C0028E8BF /* ArcDrawDocument.swift */,
+				885A8A632A9A927C0028E8BF /* PictureDefinition.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		885A8A512A9A8E950028E8BF /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				885A8A532A9A8F9B0028E8BF /* WelcomeHeaderView.swift */,
+				885A8A562A9A8F9B0028E8BF /* WelcomeMainImageView.swift */,
+				885A8A582A9A8F9C0028E8BF /* WelcomeMainInformationView.swift */,
+				885A8A542A9A8F9B0028E8BF /* WelcomeMainView.swift */,
+				885A8A552A9A8F9B0028E8BF /* WelcomeView.swift */,
+				885A8A4A2A9A8D790028E8BF /* ContentView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		885A8A522A9A8E9B0028E8BF /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				885A8A612A9A91CB0028E8BF /* WelcomeWindowController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
 		C568E3D72A68755C00B63F6F = {
 			isa = PBXGroup;
 			children = (
-				C568E3E22A68755C00B63F6F /* ArcDraw */,
-				C568E3F42A68755D00B63F6F /* ArcDrawTests */,
-				C568E3FE2A68755D00B63F6F /* ArcDrawUITests */,
+				885A8A472A9A8D790028E8BF /* Assets.xcassets */,
+				C568E3E92A68755C00B63F6F /* ArcDraw.entitlements */,
+				885A8A462A9A8D790028E8BF /* DEV_NOTES.md */,
+				885A8A452A9A8D790028E8BF /* README.md */,
+				885A8A482A9A8D790028E8BF /* Sources */,
 				C568E3E12A68755C00B63F6F /* Products */,
 			);
 			sourceTree = "<group>";
@@ -86,47 +111,8 @@
 			isa = PBXGroup;
 			children = (
 				C568E3E02A68755C00B63F6F /* ArcDraw.app */,
-				C568E3F12A68755D00B63F6F /* ArcDrawTests.xctest */,
-				C568E3FB2A68755D00B63F6F /* ArcDrawUITests.xctest */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		C568E3E22A68755C00B63F6F /* ArcDraw */ = {
-			isa = PBXGroup;
-			children = (
-				C568E3E32A68755C00B63F6F /* ArcDrawApp.swift */,
-				C568E3E52A68755C00B63F6F /* ContentView.swift */,
-				C568E3E72A68755C00B63F6F /* Assets.xcassets */,
-				C568E3E92A68755C00B63F6F /* ArcDraw.entitlements */,
-				C568E3EA2A68755C00B63F6F /* Preview Content */,
-			);
-			path = ArcDraw;
-			sourceTree = "<group>";
-		};
-		C568E3EA2A68755C00B63F6F /* Preview Content */ = {
-			isa = PBXGroup;
-			children = (
-				C568E3EB2A68755C00B63F6F /* Preview Assets.xcassets */,
-			);
-			path = "Preview Content";
-			sourceTree = "<group>";
-		};
-		C568E3F42A68755D00B63F6F /* ArcDrawTests */ = {
-			isa = PBXGroup;
-			children = (
-				C568E3F52A68755D00B63F6F /* ArcDrawTests.swift */,
-			);
-			path = ArcDrawTests;
-			sourceTree = "<group>";
-		};
-		C568E3FE2A68755D00B63F6F /* ArcDrawUITests */ = {
-			isa = PBXGroup;
-			children = (
-				C568E3FF2A68755D00B63F6F /* ArcDrawUITests.swift */,
-				C568E4012A68755D00B63F6F /* ArcDrawUITestsLaunchTests.swift */,
-			);
-			path = ArcDrawUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -149,42 +135,6 @@
 			productReference = C568E3E02A68755C00B63F6F /* ArcDraw.app */;
 			productType = "com.apple.product-type.application";
 		};
-		C568E3F02A68755D00B63F6F /* ArcDrawTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = C568E4082A68755D00B63F6F /* Build configuration list for PBXNativeTarget "ArcDrawTests" */;
-			buildPhases = (
-				C568E3ED2A68755D00B63F6F /* Sources */,
-				C568E3EE2A68755D00B63F6F /* Frameworks */,
-				C568E3EF2A68755D00B63F6F /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				C568E3F32A68755D00B63F6F /* PBXTargetDependency */,
-			);
-			name = ArcDrawTests;
-			productName = ArcDrawTests;
-			productReference = C568E3F12A68755D00B63F6F /* ArcDrawTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		C568E3FA2A68755D00B63F6F /* ArcDrawUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = C568E40B2A68755D00B63F6F /* Build configuration list for PBXNativeTarget "ArcDrawUITests" */;
-			buildPhases = (
-				C568E3F72A68755D00B63F6F /* Sources */,
-				C568E3F82A68755D00B63F6F /* Frameworks */,
-				C568E3F92A68755D00B63F6F /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				C568E3FD2A68755D00B63F6F /* PBXTargetDependency */,
-			);
-			name = ArcDrawUITests;
-			productName = ArcDrawUITests;
-			productReference = C568E3FB2A68755D00B63F6F /* ArcDrawUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -197,14 +147,6 @@
 				TargetAttributes = {
 					C568E3DF2A68755C00B63F6F = {
 						CreatedOnToolsVersion = 14.3.1;
-					};
-					C568E3F02A68755D00B63F6F = {
-						CreatedOnToolsVersion = 14.3.1;
-						TestTargetID = C568E3DF2A68755C00B63F6F;
-					};
-					C568E3FA2A68755D00B63F6F = {
-						CreatedOnToolsVersion = 14.3.1;
-						TestTargetID = C568E3DF2A68755C00B63F6F;
 					};
 				};
 			};
@@ -222,8 +164,6 @@
 			projectRoot = "";
 			targets = (
 				C568E3DF2A68755C00B63F6F /* ArcDraw */,
-				C568E3F02A68755D00B63F6F /* ArcDrawTests */,
-				C568E3FA2A68755D00B63F6F /* ArcDrawUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -233,22 +173,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C568E3EC2A68755C00B63F6F /* Preview Assets.xcassets in Resources */,
-				C568E3E82A68755C00B63F6F /* Assets.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		C568E3EF2A68755D00B63F6F /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		C568E3F92A68755D00B63F6F /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				885A8A4C2A9A8D790028E8BF /* DEV_NOTES.md in Resources */,
+				885A8A4B2A9A8D790028E8BF /* README.md in Resources */,
+				885A8A4D2A9A8D790028E8BF /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,42 +186,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C568E3E62A68755C00B63F6F /* ContentView.swift in Sources */,
-				C568E3E42A68755C00B63F6F /* ArcDrawApp.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		C568E3ED2A68755D00B63F6F /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				C568E3F62A68755D00B63F6F /* ArcDrawTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		C568E3F72A68755D00B63F6F /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				C568E4002A68755D00B63F6F /* ArcDrawUITests.swift in Sources */,
-				C568E4022A68755D00B63F6F /* ArcDrawUITestsLaunchTests.swift in Sources */,
+				885A8A5C2A9A8F9C0028E8BF /* WelcomeMainImageView.swift in Sources */,
+				885A8A662A9A927C0028E8BF /* ArcDrawDocument.swift in Sources */,
+				885A8A5E2A9A8F9C0028E8BF /* WelcomeMainInformationView.swift in Sources */,
+				885A8A5B2A9A8F9C0028E8BF /* WelcomeView.swift in Sources */,
+				885A8A602A9A8FE80028E8BF /* ArcDrawApp+Menu.swift in Sources */,
+				885A8A5A2A9A8F9C0028E8BF /* WelcomeMainView.swift in Sources */,
+				885A8A622A9A91CB0028E8BF /* WelcomeWindowController.swift in Sources */,
+				885A8A652A9A927C0028E8BF /* PictureDefinition.swift in Sources */,
+				885A8A4F2A9A8D790028E8BF /* ContentView.swift in Sources */,
+				885A8A4E2A9A8D790028E8BF /* ArcDrawApp.swift in Sources */,
+				885A8A592A9A8F9C0028E8BF /* WelcomeHeaderView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		C568E3F32A68755D00B63F6F /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = C568E3DF2A68755C00B63F6F /* ArcDraw */;
-			targetProxy = C568E3F22A68755D00B63F6F /* PBXContainerItemProxy */;
-		};
-		C568E3FD2A68755D00B63F6F /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = C568E3DF2A68755C00B63F6F /* ArcDraw */;
-			targetProxy = C568E3FC2A68755D00B63F6F /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		C568E4032A68755D00B63F6F /* Debug */ = {
@@ -411,10 +317,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = ArcDraw/ArcDraw.entitlements;
+				CODE_SIGN_ENTITLEMENTS = ArcDraw.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"ArcDraw/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "";
 				DEVELOPMENT_TEAM = L3C8KXQ7DP;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
@@ -449,10 +355,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = ArcDraw/ArcDraw.entitlements;
+				CODE_SIGN_ENTITLEMENTS = ArcDraw.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"ArcDraw/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "";
 				DEVELOPMENT_TEAM = L3C8KXQ7DP;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
@@ -482,96 +388,6 @@
 			};
 			name = Release;
 		};
-		C568E4092A68755D00B63F6F /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = L3C8KXQ7DP;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
-				MACOSX_DEPLOYMENT_TARGET = 13.3;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "Bruce-Johnson.ArcDrawTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ArcDraw.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ArcDraw";
-			};
-			name = Debug;
-		};
-		C568E40A2A68755D00B63F6F /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = L3C8KXQ7DP;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
-				MACOSX_DEPLOYMENT_TARGET = 13.3;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "Bruce-Johnson.ArcDrawTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ArcDraw.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ArcDraw";
-			};
-			name = Release;
-		};
-		C568E40C2A68755D00B63F6F /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = L3C8KXQ7DP;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
-				MACOSX_DEPLOYMENT_TARGET = 13.3;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "Bruce-Johnson.ArcDrawUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = ArcDraw;
-			};
-			name = Debug;
-		};
-		C568E40D2A68755D00B63F6F /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = L3C8KXQ7DP;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
-				MACOSX_DEPLOYMENT_TARGET = 13.3;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "Bruce-Johnson.ArcDrawUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = ArcDraw;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -589,24 +405,6 @@
 			buildConfigurations = (
 				C568E4062A68755D00B63F6F /* Debug */,
 				C568E4072A68755D00B63F6F /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		C568E4082A68755D00B63F6F /* Build configuration list for PBXNativeTarget "ArcDrawTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				C568E4092A68755D00B63F6F /* Debug */,
-				C568E40A2A68755D00B63F6F /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		C568E40B2A68755D00B63F6F /* Build configuration list for PBXNativeTarget "ArcDrawUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				C568E40C2A68755D00B63F6F /* Debug */,
-				C568E40D2A68755D00B63F6F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
