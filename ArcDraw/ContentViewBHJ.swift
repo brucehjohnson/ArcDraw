@@ -11,30 +11,11 @@ import Foundation
 import UniformTypeIdentifiers
 import CoreGraphics
 
-@available(macOS 12.0, *)
 struct ContentView: View {
- 
+    var body: some View {
       
-  @EnvironmentObject var appState: AppState
-  @ObservedObject var doc: ArcDrawDocument
 
-  let widthOfInputPanel: Double = 400
-  
-      var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
-        }
-        .padding()
-   
-   }
-   }
-  
-  /* DMC
-    
-        
+      
       /*   arcDraw curve globals (automatically set to zero at start unless explicitly initialized) 
        We only need to initialize gHighDotNum[21] and gHighCurveNum  */
       
@@ -1095,8 +1076,6 @@ if (CGPathContainsPoint(regionPath, NULL, clickPoint, NO)) {
       
       
       /*  arcDraw Functions  */
-      
-      
       
       
       /***************************************************************
@@ -5093,5 +5072,4 @@ if (CGPathContainsPoint(regionPath, NULL, clickPoint, NO)) {
 
     }
 }
-*/ // DENISE DMC COMMENTED OUT
 
