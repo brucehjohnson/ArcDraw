@@ -19,80 +19,91 @@ struct ContentView: View {
   @ObservedObject var doc: ArcDrawDocument
 
   let widthOfInputPanel: Double = 400
-  
+
+
+
+
       var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
-        }
-        .padding()
-   
-   }
+          GeometryReader { _ in
+            HStack(alignment: .top, spacing: 0) {
+              PanelUI(doc: doc)
+              .frame(width: widthOfInputPanel)
+
+              PanelDisplay(doc: doc)
+                .frame(maxWidth: .infinity, maxHeight: .infinity)
+            } // hstack
+            .frame(maxWidth: .infinity, maxHeight: .infinity)
+            .padding(.leading, 0)
+
+          } // geo
+          .frame(maxWidth: .infinity, maxHeight: .infinity)
+        } // body
    }
   
-  /* DMC
-    
-        
-      /*   arcDraw curve globals (automatically set to zero at start unless explicitly initialized) 
-       We only need to initialize gHighDotNum[21] and gHighCurveNum  */
-      
-      var gMenuItem: Int
-      var gLastMenuItem: Int
-      var gAngleClick: Int
-      var gAddDotClick: Int
-      var gHighCurveNum = -1
-      var gCurveNum: Int
-      var gOldDotLoc: CGPoint        /*  Windows coordinates  */
-      var gOldAppleAngle: Double    /*  Windows coordinates  */
-      var gAppleAngle: Double      /*  Windows coordinates  */
-      var gHighDotNum = [Int](repeating: -1, count: 21)
-      
-      var gSecondAngleFlag: Bool
-      var gSketchFlag: Bool
-      var gUndoFlag: Bool
-      var gHighCurveNumFlag: Bool
-      var gAngleFlag = [Bool](repeating: false, count: 21)
-      
-      var gDragFlag: Bool
-      
-      var gShowDots = 1
-      
-      var gDotSelectIndex: Int
-      var gDeleteDotIndex: Int
-      var gDragDotIndex: Int
-      var gAddDotIndex: Int
-      var gOldAngleIndex: Int
- //     var gAngleIndex = [Int](repeating: 0, count: 21)
-      var gAngleIndex: [Int]
-      var gAngleIndexAfter: Int
-      var gAngleIndexBefore: Int
-      
- //     var gX = [Int](repeating: 0, count: 301)          /*  normal coordinates  */
- //     var gY = [Int](repeating: 0, count: 301)          /*  normal coordinates  */
- //     var gAlphai = [Double](repeating: 0.0, count: 301)      /*  normal coordinates  */
- //     var gAlphaf = [Double](repeating: 0.0, count: 301)      /*  normal coordinates  */
- //     var gStartAngle = [Double](repeating: 0.0, count: 301) /*  Windows coordinates  */
- //     var gArcAngle = [Double](repeating: 0.0, count: 301)    /*  Windows coordinates  */
- //     var gXc = [Double](repeating: 0.0, count: 301)          /*  normal coordinates  */
- //     var gYc = [Double](repeating: 0.0, count: 301)          /*  normal coordinates  */
- //     var gR = [Double](repeating: 0.0, count: 301)
- //     var gDotLoc = [CGPoint](repeating: CGPoint(x:0.0, y:0.0), count: 301)      /*  Windows coordinates  */
-      
-      var gX: [Int]          /*  normal coordinates  */
-      var gY: [Int]        /*  normal coordinates  */
-      var gAlphai: [Double]      /*  normal coordinates  */
-      var gAlphaf: [Double]      /*  normal coordinates  */
-      var gStartAngle: [Double] /*  Windows coordinates  */
-      var gArcAngle: [Double]    /*  Windows coordinates  */
-      var gXc: [Double]          /*  normal coordinates  */
-      var gYc: [Double]          /*  normal coordinates  */
-      var gR: [Double]
-      var gDotLoc: [CGPoint]      /*  Windows coordinates  */
- //     var gDotRegion[301]
-      var gDotRegion: [CGMutablePath]
-      
+/* DMC
+// BHJ Variables
+
+/*   arcDraw curve globals (automatically set to zero at start unless explicitly initialized)
+ We only need to initialize gHighDotNum[21] and gHighCurveNum  */
+
+var gMenuItem: Int
+var gLastMenuItem: Int
+var gAngleClick: Int
+var gAddDotClick: Int
+var gHighCurveNum = -1
+var gCurveNum: Int
+var gOldDotLoc: CGPoint        /*  Windows coordinates  */
+var gOldAppleAngle: Double    /*  Windows coordinates  */
+var gAppleAngle: Double      /*  Windows coordinates  */
+var gHighDotNum = [Int](repeating: -1, count: 21)
+
+var gSecondAngleFlag: Bool
+var gSketchFlag: Bool
+var gUndoFlag: Bool
+var gHighCurveNumFlag: Bool
+var gAngleFlag = [Bool](repeating: false, count: 21)
+
+var gDragFlag: Bool
+
+var gShowDots = 1
+
+var gDotSelectIndex: Int
+var gDeleteDotIndex: Int
+var gDragDotIndex: Int
+var gAddDotIndex: Int
+var gOldAngleIndex: Int
+//     var gAngleIndex = [Int](repeating: 0, count: 21)
+var gAngleIndex: [Int]
+var gAngleIndexAfter: Int
+var gAngleIndexBefore: Int
+
+//     var gX = [Int](repeating: 0, count: 301)          /*  normal coordinates  */
+//     var gY = [Int](repeating: 0, count: 301)          /*  normal coordinates  */
+//     var gAlphai = [Double](repeating: 0.0, count: 301)      /*  normal coordinates  */
+//     var gAlphaf = [Double](repeating: 0.0, count: 301)      /*  normal coordinates  */
+//     var gStartAngle = [Double](repeating: 0.0, count: 301) /*  Windows coordinates  */
+//     var gArcAngle = [Double](repeating: 0.0, count: 301)    /*  Windows coordinates  */
+//     var gXc = [Double](repeating: 0.0, count: 301)          /*  normal coordinates  */
+//     var gYc = [Double](repeating: 0.0, count: 301)          /*  normal coordinates  */
+//     var gR = [Double](repeating: 0.0, count: 301)
+//     var gDotLoc = [CGPoint](repeating: CGPoint(x:0.0, y:0.0), count: 301)      /*  Windows coordinates  */
+
+var gX: [Int]          /*  normal coordinates  */
+var gY: [Int]        /*  normal coordinates  */
+var gAlphai: [Double]      /*  normal coordinates  */
+var gAlphaf: [Double]      /*  normal coordinates  */
+var gStartAngle: [Double] /*  Windows coordinates  */
+var gArcAngle: [Double]    /*  Windows coordinates  */
+var gXc: [Double]          /*  normal coordinates  */
+var gYc: [Double]          /*  normal coordinates  */
+var gR: [Double]
+var gDotLoc: [CGPoint]      /*  Windows coordinates  */
+//     var gDotRegion[301]
+var gDotRegion: [CGMutablePath]
+
+// --------------------------- end BHJ variables
+
+
  /*     // Assuming you have a CGPathRef called 'regionPath' representing your region
 
 CGPoint clickPoint = [event locationInWindow]; // Get the mouse click point

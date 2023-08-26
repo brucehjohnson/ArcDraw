@@ -21,6 +21,14 @@
 		885A8A622A9A91CB0028E8BF /* WelcomeWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 885A8A612A9A91CB0028E8BF /* WelcomeWindowController.swift */; };
 		885A8A652A9A927C0028E8BF /* PictureDefinition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 885A8A632A9A927C0028E8BF /* PictureDefinition.swift */; };
 		885A8A662A9A927C0028E8BF /* ArcDrawDocument.swift in Sources */ = {isa = PBXBuildFile; fileRef = 885A8A642A9A927C0028E8BF /* ArcDrawDocument.swift */; };
+		885A8A6A2A9AAFC90028E8BF /* PanelDisplay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 885A8A692A9AAFC90028E8BF /* PanelDisplay.swift */; };
+		885A8A6C2A9AAFE60028E8BF /* PanelUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 885A8A6B2A9AAFE60028E8BF /* PanelUI.swift */; };
+		885A8A6F2A9AB1950028E8BF /* ImageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 885A8A6E2A9AB1950028E8BF /* ImageViewModel.swift */; };
+		885A8A732A9AB2C70028E8BF /* BitmapGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 885A8A712A9AB2C70028E8BF /* BitmapGrid.swift */; };
+		885A8A742A9AB2C70028E8BF /* BitmapImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 885A8A722A9AB2C70028E8BF /* BitmapImage.swift */; };
+		885A8A762A9AB66C0028E8BF /* DrawingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 885A8A752A9AB66C0028E8BF /* DrawingController.swift */; };
+		885A8A782A9AB6940028E8BF /* DrawingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 885A8A772A9AB6940028E8BF /* DrawingView.swift */; };
+		885A8A7A2A9AB7FD0028E8BF /* Line.swift in Sources */ = {isa = PBXBuildFile; fileRef = 885A8A792A9AB7FD0028E8BF /* Line.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +46,14 @@
 		885A8A612A9A91CB0028E8BF /* WelcomeWindowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeWindowController.swift; sourceTree = "<group>"; };
 		885A8A632A9A927C0028E8BF /* PictureDefinition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PictureDefinition.swift; sourceTree = "<group>"; };
 		885A8A642A9A927C0028E8BF /* ArcDrawDocument.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArcDrawDocument.swift; sourceTree = "<group>"; };
+		885A8A692A9AAFC90028E8BF /* PanelDisplay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PanelDisplay.swift; sourceTree = "<group>"; };
+		885A8A6B2A9AAFE60028E8BF /* PanelUI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PanelUI.swift; sourceTree = "<group>"; };
+		885A8A6E2A9AB1950028E8BF /* ImageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewModel.swift; sourceTree = "<group>"; };
+		885A8A712A9AB2C70028E8BF /* BitmapGrid.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BitmapGrid.swift; sourceTree = "<group>"; };
+		885A8A722A9AB2C70028E8BF /* BitmapImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BitmapImage.swift; sourceTree = "<group>"; };
+		885A8A752A9AB66C0028E8BF /* DrawingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawingController.swift; sourceTree = "<group>"; };
+		885A8A772A9AB6940028E8BF /* DrawingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawingView.swift; sourceTree = "<group>"; };
+		885A8A792A9AB7FD0028E8BF /* Line.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Line.swift; sourceTree = "<group>"; };
 		C568E3E02A68755C00B63F6F /* ArcDraw.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ArcDraw.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C568E3E92A68755C00B63F6F /* ArcDraw.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ArcDraw.entitlements; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
@@ -68,6 +84,7 @@
 			children = (
 				885A8A642A9A927C0028E8BF /* ArcDrawDocument.swift */,
 				885A8A632A9A927C0028E8BF /* PictureDefinition.swift */,
+				885A8A792A9AB7FD0028E8BF /* Line.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -75,12 +92,15 @@
 		885A8A512A9A8E950028E8BF /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				885A8A6B2A9AAFE60028E8BF /* PanelUI.swift */,
+				885A8A692A9AAFC90028E8BF /* PanelDisplay.swift */,
 				885A8A532A9A8F9B0028E8BF /* WelcomeHeaderView.swift */,
 				885A8A562A9A8F9B0028E8BF /* WelcomeMainImageView.swift */,
 				885A8A582A9A8F9C0028E8BF /* WelcomeMainInformationView.swift */,
 				885A8A542A9A8F9B0028E8BF /* WelcomeMainView.swift */,
 				885A8A552A9A8F9B0028E8BF /* WelcomeView.swift */,
 				885A8A4A2A9A8D790028E8BF /* ContentView.swift */,
+				885A8A772A9AB6940028E8BF /* DrawingView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -89,6 +109,7 @@
 			isa = PBXGroup;
 			children = (
 				885A8A612A9A91CB0028E8BF /* WelcomeWindowController.swift */,
+				885A8A752A9AB66C0028E8BF /* DrawingController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -96,11 +117,30 @@
 		885A8A682A9A9A450028E8BF /* ArcDraw */ = {
 			isa = PBXGroup;
 			children = (
+				885A8A702A9AB2A40028E8BF /* Utilities */,
+				885A8A6D2A9AB1800028E8BF /* ViewModels */,
 				885A8A522A9A8E9B0028E8BF /* Controllers */,
 				885A8A502A9A8E8C0028E8BF /* Models */,
 				885A8A512A9A8E950028E8BF /* Views */,
 			);
 			path = ArcDraw;
+			sourceTree = "<group>";
+		};
+		885A8A6D2A9AB1800028E8BF /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				885A8A6E2A9AB1950028E8BF /* ImageViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		885A8A702A9AB2A40028E8BF /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				885A8A712A9AB2C70028E8BF /* BitmapGrid.swift */,
+				885A8A722A9AB2C70028E8BF /* BitmapImage.swift */,
+			);
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 		C568E3D72A68755C00B63F6F = {
@@ -194,17 +234,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				885A8A732A9AB2C70028E8BF /* BitmapGrid.swift in Sources */,
+				885A8A6F2A9AB1950028E8BF /* ImageViewModel.swift in Sources */,
+				885A8A6C2A9AAFE60028E8BF /* PanelUI.swift in Sources */,
 				885A8A5C2A9A8F9C0028E8BF /* WelcomeMainImageView.swift in Sources */,
 				885A8A662A9A927C0028E8BF /* ArcDrawDocument.swift in Sources */,
 				885A8A5E2A9A8F9C0028E8BF /* WelcomeMainInformationView.swift in Sources */,
 				885A8A5B2A9A8F9C0028E8BF /* WelcomeView.swift in Sources */,
 				885A8A602A9A8FE80028E8BF /* ArcDrawApp+Menu.swift in Sources */,
 				885A8A5A2A9A8F9C0028E8BF /* WelcomeMainView.swift in Sources */,
+				885A8A762A9AB66C0028E8BF /* DrawingController.swift in Sources */,
 				885A8A622A9A91CB0028E8BF /* WelcomeWindowController.swift in Sources */,
+				885A8A6A2A9AAFC90028E8BF /* PanelDisplay.swift in Sources */,
 				885A8A652A9A927C0028E8BF /* PictureDefinition.swift in Sources */,
 				885A8A4F2A9A8D790028E8BF /* ContentView.swift in Sources */,
 				885A8A4E2A9A8D790028E8BF /* ArcDrawApp.swift in Sources */,
+				885A8A7A2A9AB7FD0028E8BF /* Line.swift in Sources */,
+				885A8A782A9AB6940028E8BF /* DrawingView.swift in Sources */,
 				885A8A592A9A8F9C0028E8BF /* WelcomeHeaderView.swift in Sources */,
+				885A8A742A9AB2C70028E8BF /* BitmapImage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

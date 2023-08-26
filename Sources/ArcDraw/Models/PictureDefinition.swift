@@ -50,9 +50,9 @@ struct PictureDefinition: Codable, Identifiable, Equatable {
 
   static func ==(lhs: PictureDefinition, rhs: PictureDefinition) -> Bool {
     // Compare all properties here
-    return
-    lhs.imageWidth == rhs.imageWidth &&
-    lhs.imageHeight == rhs.imageHeight
+    let result =  lhs.imageWidth == rhs.imageWidth && lhs.imageHeight == rhs.imageHeight
+    return result
+
   }
 
 }
