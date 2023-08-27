@@ -1,18 +1,34 @@
-//
-//  ArcDrawApp.swift
-//  ArcDraw
-//
-//  Created by Bruce Johnson on 7/19/23.
-//
+
+
+/*****************************************************************************
+ *
+ *
+ *   PURPOSE: Template for Windows applications
+ *
+ *   FUNCTIONS:
+ *
+ *   GetLastErrorBox() - Report GetLastError() values as text
+ *   WinMain() - calls initialization function, processes message loop
+ *   InitApplication() - initializes window data and registers window
+ *   InitInstance() - saves instance handle and creates main window
+ *   WndProc() - processes messages
+ *   About() - processes messages for "About" dialog box
+ *
+ *
+ *****************************************************************************/
+
+
+//      HINSTANCE hInst       // current instance global
+
+//      char szAppName[] = "arcDraw"   // The name of this application
+//      char szTitle[]   = "arcDraw Demo" // The title bar text
+
+
+
 
 import SwiftUI
 import AppKit
 
-
-// Information (state) needed to start the app
-class AppState: ObservableObject {
-  @Published var shouldShowWelcomeWhenStartingUp: Bool = UserDefaults.standard.object(forKey: "shouldShowWelcomeWhenStartingUp") as? Bool ?? true
-}
 
 // Access user dimensions
 struct WindowAccessor: NSViewRepresentable {
@@ -34,7 +50,7 @@ struct WindowAccessor: NSViewRepresentable {
 struct ArcDrawApp: App {
 
   @StateObject private var defaultDocument = ArcDrawDocument()
-  @StateObject internal var appState: AppState
+  @StateObject var appState = AppState()
   @State private var shouldShowWelcomeWhenStartingUp: Bool
 
   init() {

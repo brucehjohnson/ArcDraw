@@ -15,6 +15,16 @@ extension ArcDrawApp {
         }
       }
 
+      CommandMenu("Examples") {
+        Button("Cursive"){}
+        Button("Hearts"){}
+        Button("Moons"){}
+        Button("Petals"){}
+        Button("Shapes"){}
+        Button("Spirals"){}
+        Button("YinYang"){}
+      }
+
       // we don't need the Edit/pasteboard menu item (cut/copy/paste/delete)
       // so we'll replace it with nothing
       CommandGroup(replacing: CommandGroupPlacement.pasteboard) {}
