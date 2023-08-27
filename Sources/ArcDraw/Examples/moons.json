@@ -1,7 +1,9 @@
-{
+{  "id": "00000000-0000-0000-0000-000000000003",
   "pictureName": "Moons",
   "pictureDescription": "Generates a picture of showing phases of the moon.",
   "author": "Bruce Johnson",
+  "imageWidth": 503,
+  "imageHeight": 503,
   "arcDefinitions": [
     {
       "name": "Moons 1",

@@ -9,18 +9,21 @@ struct PanelUI: View {
     self.doc = doc
   }
 
-  var body: some View {
-      VStack {
-        Text("ArcDraw Inputs")
-          .font(.title)
-          .padding(.top)
+  func aspectRatio() -> Double {
+    let h = Double(doc.picdef.imageHeight)
+    let w = Double(doc.picdef.imageWidth)
+    return max(h / w, w / h)
+  }
 
-    Text("User inputs go here on the right in Views/PanelUI")
-        Spacer()
-        Text("Output will appear to the left in  Views/PanelDisplay")
-        Spacer()
-      }
-      .frame(width: .infinity)
+  var body: some View {
+    VStack {
+      Text("MandArt Inputs")
+        .font(.title)
+        .padding(.top)
+
+      TabbedView(doc: doc)
+      Spacer()
+    }
 
   }
 }

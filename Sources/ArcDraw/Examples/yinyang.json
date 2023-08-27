@@ -1,7 +1,10 @@
 {
-  "name": "YinYang",
-  "description": "Generates a picture of a Yin-Yang figure.",
+  "id": "00000000-0000-0000-0000-000000000007",
+  "pictureName": "YinYang",
+  "pictureDescription": "Generates a picture of a Yin-Yang figure.",
   "author": "Bruce Johnson",
+  "imageWidth": 570,
+  "imageHeight": 570,
   "arcDefinitions": [
     {
   "name": "YinYang1",

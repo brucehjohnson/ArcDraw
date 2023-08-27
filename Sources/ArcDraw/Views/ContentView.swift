@@ -23,7 +23,7 @@ struct ContentView: View {
           GeometryReader { _ in
             HStack(alignment: .top, spacing: 0) {
               PanelUI(doc: doc)
-              .frame(width: widthOfInputPanel)
+                .frame(width: widthOfInputPanel > 0 ? widthOfInputPanel : 400)
 
               PanelDisplay(doc: doc)
                 .frame(maxWidth: .infinity, maxHeight: .infinity)
@@ -33,6 +33,7 @@ struct ContentView: View {
 
           } // geo
           .frame(maxWidth: .infinity, maxHeight: .infinity)
+
         } // body
    }
 

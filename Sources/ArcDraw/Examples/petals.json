@@ -1,7 +1,10 @@
 {
-  "name": "Petals",
-  "description": "Generates a picture of various petals.",
+  "id": "00000000-0000-0000-0000-000000000004",
+  "pictureName": "Petals",
+  "pictureDescription": "Generates a picture of various petals.",
   "author": "Bruce Johnson",
+  "imageWidth": 504,
+  "imageHeight": 504,
   "arcDefinitions": [
     {
   "name": "Petals 1",

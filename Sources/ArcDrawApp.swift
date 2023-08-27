@@ -1,29 +1,3 @@
-
-
-/*****************************************************************************
- *
- *
- *   PURPOSE: Template for Windows applications
- *
- *   FUNCTIONS:
- *
- *   GetLastErrorBox() - Report GetLastError() values as text
- *   WinMain() - calls initialization function, processes message loop
- *   InitApplication() - initializes window data and registers window
- *   InitInstance() - saves instance handle and creates main window
- *   WndProc() - processes messages
- *   About() - processes messages for "About" dialog box
- *
- *
- *****************************************************************************/
-
-
-//      HINSTANCE hInst       // current instance global
-
-//      char szAppName[] = "arcDraw"   // The name of this application
-//      char szTitle[]   = "arcDraw Demo" // The title bar text
-
-
 import SwiftUI
 import AppKit
 
@@ -52,7 +26,8 @@ struct ArcDrawApp: App {
   @State private var shouldShowWelcomeWhenStartingUp: Bool
 
   init() {
-    print("initializing app")
+    print("Starting up. Calling ArcDrawApp.init()")
+
     let initialState = UserDefaults.standard.object(forKey: "shouldShowWelcomeWhenStartingUp") as? Bool ?? true
     _appState = StateObject(wrappedValue: AppState())
     _shouldShowWelcomeWhenStartingUp = State(initialValue: initialState)

@@ -1,7 +1,10 @@
 {
-  "name": "Spirals",
-  "description": "Generates a picture of various spirals.",
+  "id": "00000000-0000-0000-0000-000000000006",
+  "pictureName": "Spirals",
+  "pictureDescription": "Generates a picture of various spirals.",
   "author": "Bruce Johnson",
+  "imageWidth": 560,
+  "imageHeight": 560,
   "arcDefinitions": [
     {
       "name": "Spirals 1",

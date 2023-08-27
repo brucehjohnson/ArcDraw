@@ -28,39 +28,27 @@ extension ArcDrawApp {
         }
         Button("Hearts") {
           print("Clicked Hearts Example")
-
           doc.loadExampleJSONAndUpdate("hearts")
-
         }
         Button("Moons") {
           print("Clicked Moons Example")
-
           doc.loadExampleJSONAndUpdate("moons")
-
         }
         Button("Petals") {
           print("Clicked Petals Example")
-
           doc.loadExampleJSONAndUpdate("petals")
-
         }
         Button("Shapes") {
           print("Clicked Shapes Example")
-
           doc.loadExampleJSONAndUpdate("shapes")
-
         }
         Button("Spirals") {
           print("Clicked Spirals Example")
-
           doc.loadExampleJSONAndUpdate("spirals")
-
         }
         Button("YinYang") {
           print("Clicked YinYang Example")
-
           doc.loadExampleJSONAndUpdate("yinyang")
-
         }
       }
 

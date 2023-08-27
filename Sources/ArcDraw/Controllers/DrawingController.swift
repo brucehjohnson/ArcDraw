@@ -1,11 +1,28 @@
 import SwiftUI
-import CoreGraphics
 
 class DrawingController: ObservableObject {
   @Published var lines: [Line] = []
 
   init(picdef: PictureDefinition) {
-    populateLinesFromPicdef(picdef: picdef)
+    populateDotsFromPicdef(picdef: picdef)
+  }
+
+  func populateDotsFromPicdef(picdef: PictureDefinition) {
+    // Clear existing lines
+    lines.removeAll()
+
+    for arc in picdef.arcDefinitions {
+      // Draw the points for each dot in the arcDefinition
+      var points: [CGPoint] = []
+      for pointDict in arc.dotLocations {
+        if let x = pointDict["x"], let y = pointDict["y"] {
+          let point = CGPoint(x: x, y: y)
+          points.append(point)
+        }
+      }
+      // Create a new line for the collected points
+      lines.append(Line(points: points))
+    }
   }
 
   func populateLinesFromPicdef(picdef: PictureDefinition) {
@@ -45,38 +62,21 @@ class DrawingController: ObservableObject {
   }
 
   func generateDummyPointsForArc(_ arc: ArcDefinition) -> [CGPoint] {
-    /*
-     This is a temporary function until ArcDraw is implemented.
-     Each arc has this data:
-     - var name: String
-     - var description: String
-     - var dotLocations: [CGPoint]
-     - var startAngle: Double
-     - var endAngle: Double
-     - var isClockwise: Bool
-     */
 
-    print("Calculating points for arc data \(arc).")
+    print("Calculating dummy points for arc data \(arc).")
 
-    // Placeholder: Generate some dummy points to represent dots or a line
+    // Placeholder: Generate some dummy points to represent dots
     var points: [CGPoint] = []
 
-    // For demonstration purposes, let's draw a line connecting all dotLocations
-    if !arc.dotLocations.isEmpty {
-      let firstPoint = arc.dotLocations[0]
-      points.append(firstPoint)
-
-      for i in 1..<arc.dotLocations.count {
-        let currentPoint = arc.dotLocations[i]
-        points.append(currentPoint)
+    // For demonstration purposes, let's use the dotLocations directly
+    for pointDict in arc.dotLocations {
+      if let x = pointDict["x"], let y = pointDict["y"] {
+        let point = CGPoint(x: x, y: y)
+        points.append(point)
       }
     }
 
-    // Uncomment the following line if you want to return just the dots
-    return arc.dotLocations
-
-    // Return the points representing dots and/or the line connecting them
-    // return points
+    return points
   }
 
   func addPoint(_ point: CGPoint) {

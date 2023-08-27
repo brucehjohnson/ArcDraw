@@ -54,9 +54,9 @@ final class ArcDrawDocument: ReferenceFileDocument, ObservableObject {
         name: "Arc 1",
         description: "This is the first arc.",
         dotLocations: [
-          CGPoint(x: 100, y: 100),
-          CGPoint(x: 200, y: 100),
-          CGPoint(x: 200, y: 200),
+          ["x": 100, "y": 100],
+          ["x": 200, "y": 100],
+          ["x": 200, "y": 200],
         ],
         startAngle: 0,
         endAngle: 90,
@@ -67,9 +67,9 @@ final class ArcDrawDocument: ReferenceFileDocument, ObservableObject {
         name: "Arc 2",
         description: "This is the second arc.",
         dotLocations: [
-          CGPoint(x: 300, y: 100),
-          CGPoint(x: 400, y: 100),
-          CGPoint(x: 400, y: 200),
+          ["x": 300, "y": 100],
+          ["x": 400, "y": 100],
+          ["x": 400, "y": 200],
         ],
         startAngle: 45,
         endAngle: 180,
@@ -80,16 +80,15 @@ final class ArcDrawDocument: ReferenceFileDocument, ObservableObject {
         name: "Arc 3",
         description: "This is the third arc.",
         dotLocations: [
-          CGPoint(x: 150, y: 300),
-          CGPoint(x: 250, y: 300),
-          CGPoint(x: 250, y: 400),
+          ["x": 150, "y": 300],
+          ["x": 250, "y": 300],
+          ["x": 250, "y": 400],
         ],
         startAngle: -30,
         endAngle: 120,
         isClockwise: true,
         num: 3
       ),
-
     ]
     self.picdef = PictureDefinition(arcDefinitions: arcDefinitions)
   }
@@ -111,18 +110,27 @@ final class ArcDrawDocument: ReferenceFileDocument, ObservableObject {
     print("Calling loadExampleJSONAndUpdate for \(exampleName).")
     if let url = Bundle.main.url(forResource: exampleName, withExtension: "json") {
       print("Attempting to load example JSON from URL: \(url)")
-      if let exampleJSONData = try? Data(contentsOf: url) {
+      do {
+        let exampleJSONData = try Data(contentsOf: url)
         if let jsonString = String(data: exampleJSONData, encoding: .utf8) {
-          print("Example JSON from URL: \(jsonString)")
+          print("\(exampleName) Example JSON from URL: \(jsonString)")
         } else {
-          print("Failed to convert JSON data to string.")
+          print("\(exampleName) Failed to convert JSON data to string.")
         }
-        if let pictureDefinition = try? JSONDecoder().decode(PictureDefinition.self, from: exampleJSONData) {
-          self.picdef = pictureDefinition
-        } else {
-          print("Failed to decode example JSON.")
-        }}
 
+        do {
+          let decoder = JSONDecoder()
+          decoder.keyDecodingStrategy = .convertFromSnakeCase // Use this if keys are in snake_case
+          let pictureDefinition = try decoder.decode(PictureDefinition.self, from: exampleJSONData)
+          self.picdef = pictureDefinition
+          self.objectWillChange.send()
+
+        } catch {
+          print("Failed to decode example JSON:", error)
+        }
+      } catch {
+        print("Failed to load example JSON data:", error)
+      }
     } else {
       print("Failed to find example JSON file.")
     }
