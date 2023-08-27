@@ -2,7 +2,7 @@
   "pictureName": "Cursive",
   "pictureDescription": "Generates a picture of cursive handwriting.",
   "author": "Bruce Johnson",
-  "curveData": [
+  "arcDefinitions": [
     {
       "name": "Curve 1",
       "description": "A cursive curve with 4 dots",
@@ -15,7 +15,8 @@
       ],
       "startAngle": 0,
       "endAngle": 200,
-      "isClockwise": true
+      "isClockwise": true,
+      "num": 1
     },
     {
       "name": "Curve 2",
@@ -26,7 +27,8 @@
       ],
       "startAngle": 0,
       "endAngle": 215,
-      "isClockwise": true
+      "isClockwise": true,
+      "num": 2
     },
     {
       "name": "Curve 3",
@@ -40,7 +42,8 @@
       ],
       "startAngle": 0,
       "endAngle": 62,
-      "isClockwise": true
+      "isClockwise": true,
+      "num": 3
     },
     {
       "name": "Curve 4",
@@ -54,7 +57,8 @@
       ],
       "startAngle": 0,
       "endAngle": 30,
-      "isClockwise": true
+      "isClockwise": true,
+      "num": 4
     },
     {
       "name": "Curve 5",
@@ -68,7 +72,8 @@
       ],
       "startAngle": 0,
       "endAngle": 232,
-      "isClockwise": true
+      "isClockwise": true,
+      "num": 5
     },
     {
       "name": "Curve 6",
@@ -81,7 +86,8 @@
       ],
       "startAngle": 0,
       "endAngle": 224,
-      "isClockwise": true
+      "isClockwise": true,
+      "num": 6
     },
     {
       "name": "Curve 7",
@@ -93,7 +99,8 @@
       ],
       "startAngle": 0,
       "endAngle": 220,
-      "isClockwise": true
+      "isClockwise": true,
+      "num": 7
     }
     {
       "name": "Curve 8",
@@ -110,7 +117,8 @@
       ],
       "startAngle": 0,
       "endAngle": 79,
-      "isClockwise": true
+      "isClockwise": true,,
+      "num": 8
     },
     {
       "name": "Curve 9",
@@ -121,7 +129,8 @@
       ],
       "startAngle": 0,
       "endAngle": 0,
-      "isClockwise": true
+      "isClockwise": true,
+      "num": 9
     }
     {
       "name": "Curve 10",
@@ -136,7 +145,8 @@
       ],
       "startAngle": 0,
       "endAngle": 0,
-      "isClockwise": true
+      "isClockwise": true,
+      "num": 10
     },
     {
       "name": "Curve 11",
@@ -151,7 +161,8 @@
       ],
       "startAngle": 0,
       "endAngle": 0,
-      "isClockwise": true
+      "isClockwise": true,
+      "num": 11
     }
     {
       "name": "Curve 12",
@@ -163,7 +174,8 @@
       ],
       "startAngle": 0,
       "endAngle": 0,
-      "isClockwise": true
+      "isClockwise": true,
+      "num": 12
     },
     {
       "name": "Curve 13",
@@ -175,7 +187,8 @@
       ],
       "startAngle": 0,
       "endAngle": 0,
-      "isClockwise": true
+      "isClockwise": true,
+      "num": 13
     }
 
   ]

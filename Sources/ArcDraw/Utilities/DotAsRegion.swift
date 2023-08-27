@@ -1,4 +1,3 @@
-
 /***************************************************************
  dotAsRegion
  **************************************************************
@@ -9,11 +8,9 @@
 
 import CoreGraphics
 
-func dotAsRegion(dotIndex: Int)
-{
+func dotAsRegion(dotIndex: Int) {
   var dotCenter: CGPoint
   var dotRadius: CGFloat = 5.0
-
 
   /*
 

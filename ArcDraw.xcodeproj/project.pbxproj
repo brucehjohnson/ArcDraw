@@ -13,6 +13,7 @@
 		880250C52A9B9D630076E001 /* shapes.json in Resources */ = {isa = PBXBuildFile; fileRef = 885A8ADA2A9B747E0028E8BF /* shapes.json */; };
 		880250C62A9B9D630076E001 /* spirals.json in Resources */ = {isa = PBXBuildFile; fileRef = 885A8ADC2A9B74910028E8BF /* spirals.json */; };
 		880250C72A9B9D630076E001 /* yinyang.json in Resources */ = {isa = PBXBuildFile; fileRef = 885A8ADE2A9B74AC0028E8BF /* yinyang.json */; };
+		880250C92A9BB2120076E001 /* ArcDefinition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 880250C82A9BB2120076E001 /* ArcDefinition.swift */; };
 		885A8A4B2A9A8D790028E8BF /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 885A8A452A9A8D790028E8BF /* README.md */; };
 		885A8A4C2A9A8D790028E8BF /* DEV_NOTES.md in Resources */ = {isa = PBXBuildFile; fileRef = 885A8A462A9A8D790028E8BF /* DEV_NOTES.md */; };
 		885A8A4D2A9A8D790028E8BF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 885A8A472A9A8D790028E8BF /* Assets.xcassets */; };
@@ -84,6 +85,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		880250C82A9BB2120076E001 /* ArcDefinition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArcDefinition.swift; sourceTree = "<group>"; };
 		885A8A452A9A8D790028E8BF /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		885A8A462A9A8D790028E8BF /* DEV_NOTES.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = DEV_NOTES.md; sourceTree = "<group>"; };
 		885A8A472A9A8D790028E8BF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -189,6 +191,7 @@
 			children = (
 				885A8A642A9A927C0028E8BF /* ArcDrawDocument.swift */,
 				885A8A632A9A927C0028E8BF /* PictureDefinition.swift */,
+				880250C82A9BB2120076E001 /* ArcDefinition.swift */,
 				885A8A792A9AB7FD0028E8BF /* Line.swift */,
 			);
 			path = Models;
@@ -477,6 +480,7 @@
 				885A8A782A9AB6940028E8BF /* DrawingView.swift in Sources */,
 				885A8A912A9B59DE0028E8BF /* Moons.swift in Sources */,
 				885A8A592A9A8F9C0028E8BF /* WelcomeHeaderView.swift in Sources */,
+				880250C92A9BB2120076E001 /* ArcDefinition.swift in Sources */,
 				885A8ADB2A9B747E0028E8BF /* shapes.json in Sources */,
 				885A8A742A9AB2C70028E8BF /* BitmapImage.swift in Sources */,
 				885A8ABF2A9B5D8C0028E8BF /* WndProc.swift in Sources */,

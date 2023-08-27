@@ -7,7 +7,6 @@ class ImageViewModel: ObservableObject {
     self.doc = doc
   }
 
-
   /**
    Gets an image to display on the right side of the app
 
@@ -17,15 +16,13 @@ class ImageViewModel: ObservableObject {
 
     // self.doc.picdef.imageWidth,
     // self.doc.picdef.imageHeight
-    
+
     let inputs = BitmapImage.ImageInputs(
       imageWidth: 500,
       imageHeight: 500
     )
     return BitmapImage.createCGImage(using: inputs)
 
-
   }
-
 
 }

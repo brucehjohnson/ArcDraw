@@ -2,44 +2,47 @@
   "name": "YinYang",
   "description": "Generates a picture of a Yin-Yang figure.",
   "author": "Bruce Johnson",
-  "curveData": [
+  "arcDefinitions": [
     {
   "name": "YinYang1",
   "description": "A Yin-Yang figure with 5 dots",
   "dotLocations": [
-    {"x": 36+83, "y": 252},
-    {"x": 324+83, "y": 252},
-    {"x": 38+83, "y": 252},
-    {"x": 180+83, "y": 252},
-    {"x": 322+83, "y": 252}
+    {"x": 119, "y": 252},
+    {"x": 407, "y": 252},
+    {"x": 121, "y": 252},
+    {"x": 263, "y": 252},
+    {"x": 405, "y": 252}
   ],
   "startAngle": 0,
   "endAngle": 0,
-  "isClockwise": true
+  "isClockwise": true,
+  "num": 1
     },
     {
   "name": "YinYang2",
   "description": "A Yin-Yang figure with 3 dots",
   "dotLocations": [
-    {"x": 90+83, "y": 252},
-    {"x": 126+83, "y": 252},
-    {"x": 90+83, "y": 254}
+    {"x": 173, "y": 252},
+    {"x": 209, "y": 252},
+    {"x": 173, "y": 254}
   ],
   "startAngle": 0,
   "endAngle": 0,
-  "isClockwise": true
+  "isClockwise": true,
+  "num": 2
     },
     {
   "name": "YinYang3",
   "description": "A Yin-Yang figure with 3 dots",
   "dotLocations": [
-    {"x": 234+83, "y": 252},
-    {"x": 270+83, "y": 252},
-    {"x": 234+83, "y": 254}
+    {"x": 317, "y": 252},
+    {"x": 353, "y": 252},
+    {"x": 317, "y": 254}
   ],
   "startAngle": 0,
   "endAngle": 0,
-  "isClockwise": true
+  "isClockwise": true,
+  "num": 3
     }
   ]
 }

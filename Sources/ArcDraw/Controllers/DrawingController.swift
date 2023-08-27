@@ -13,10 +13,10 @@ class DrawingController: ObservableObject {
     lines.removeAll()
 
     // Convert each arc in picdef to a series of connected lines
-    for arc in picdef.curveData {
+    for arc in picdef.arcDefinitions {
 
       // TODO BHJ: switch to read function when ready
-      //let arcPoints = generatePointsForArc(arc)
+      // let arcPoints = generatePointsForArc(arc)
       let arcPoints = generateDummyPointsForArc(arc)
 
       // Create lines connecting each pair of adjacent points
@@ -28,7 +28,7 @@ class DrawingController: ObservableObject {
     }
   }
 
-  func generatePointsForArc(_ arc: CurveData) -> [CGPoint] {
+  func generatePointsForArc(_ arc: ArcDefinition) -> [CGPoint] {
     /*
      This is where the arcdraw magic happens
      each arc has this data:
@@ -44,7 +44,7 @@ class DrawingController: ObservableObject {
       return []
   }
 
-  func generateDummyPointsForArc(_ arc: CurveData) -> [CGPoint] {
+  func generateDummyPointsForArc(_ arc: ArcDefinition) -> [CGPoint] {
     /*
      This is a temporary function until ArcDraw is implemented.
      Each arc has this data:
@@ -76,12 +76,8 @@ class DrawingController: ObservableObject {
     return arc.dotLocations
 
     // Return the points representing dots and/or the line connecting them
-    //return points
+    // return points
   }
-
-
-
-
 
   func addPoint(_ point: CGPoint) {
     if var lastLine = lines.popLast() {

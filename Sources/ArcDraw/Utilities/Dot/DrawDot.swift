@@ -1,4 +1,3 @@
-
 /***************************************************************
  drawDot                             *
  **************************************************************
@@ -7,8 +6,7 @@
  */
 import CoreGraphics
 
-func drawDot(dotIndex: Int)
-{
+func drawDot(dotIndex: Int) {
   var dotRadius: CGFloat = 3.0
 
   /*

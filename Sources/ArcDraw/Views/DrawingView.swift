@@ -4,7 +4,7 @@ struct DrawingView: View {
   @ObservedObject var controller: DrawingController
 
   var body: some View {
-    GeometryReader { geometry in
+    GeometryReader { _ in
       Path { path in
         for line in controller.lines {
           guard let startPoint = line.points.first else { continue }
@@ -21,7 +21,7 @@ struct DrawingView: View {
           .onChanged({ (value) in
             controller.addPoint(value.location)
           })
-          .onEnded({ (value) in
+          .onEnded({ (_) in
             controller.startNewLine()
           })
       )

@@ -13,8 +13,7 @@ import CoreGraphics
 
 @available(macOS 12.0, *)
 struct ContentView: View {
- 
-      
+
   @EnvironmentObject var appState: AppState
   @ObservedObject var doc: ArcDrawDocument
 
@@ -36,7 +35,7 @@ struct ContentView: View {
           .frame(maxWidth: .infinity, maxHeight: .infinity)
         } // body
    }
-  
+
 /* DMC
 
 
@@ -85,4 +84,3 @@ if (CGPathContainsPoint(regionPath, NULL, clickPoint, NO)) {
     }
 }
 */ // DENISE DMC COMMENTED OUT
-

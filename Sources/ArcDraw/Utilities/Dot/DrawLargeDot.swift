@@ -1,4 +1,3 @@
-
 /****************************************************************/
 /* drawLargeDot                         */
 /****************************************************************/
@@ -11,11 +10,8 @@
 
 import CoreGraphics
 
-func drawLargeDot(dotIndex: Int)
-{
+func drawLargeDot(dotIndex: Int) {
   var dotRadius: CGFloat = 5.0
-
-
 
   /*
 
@@ -42,4 +38,3 @@ func drawLargeDot(dotIndex: Int)
   */
   return
 }
-

@@ -16,8 +16,8 @@ struct BitmapGrid {
     let bytesPerPixel = parameters.bytesPerPixel
     let rasterBufferPtr = parameters.rasterBufferPtr
 
-    let colorLeft = [0.0, 0.0, 0.0,0.0]
-    let colorRight = [255.0, 255.0, 255.0,0.0]
+    let colorLeft = [0.0, 0.0, 0.0, 0.0]
+    let colorRight = [255.0, 255.0, 255.0, 0.0]
 
     // Iterate over each row (vertical iteration)
     for row in 0 ..< imageHeight {

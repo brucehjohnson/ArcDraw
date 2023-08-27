@@ -2,8 +2,10 @@
   "pictureName": "Shapes",
   "pictureDescription": "Generates a picture of various shapes.",
   "author": "Bruce Johnson",
-  "curveData": [
+  "arcDefinitions": [
     {
+      "name": "Shapes 1",
+      "description": "Shapes 1",
       "dotLocations": [
         {"x": 146, "y": 54},
         {"x": 200, "y": 54},
@@ -13,9 +15,11 @@
       ],
       "startAngle": 0,
       "endAngle": 45,
-      "isClockwise": true
+      "isClockwise": true,
+      "num": 1
     },
-    {
+    {      "name": "Shapes 2",
+      "description": "Shapes 2",
       "dotLocations": [
         {"x": 299, "y": 63},
         {"x": 407, "y": 63},
@@ -25,9 +29,11 @@
       ],
       "startAngle": 0,
       "endAngle": 0,
-      "isClockwise": true
+      "isClockwise": true,
+      "num": 2
     },
-    {
+    {      "name": "Shapes 3",
+      "description": "Shapes 3",
       "dotLocations": [
         {"x": 137, "y": 292},
         {"x": 209, "y": 341},
@@ -37,9 +43,11 @@
       ],
       "startAngle": 0,
       "endAngle": 35,
-      "isClockwise": true
+      "isClockwise": true,
+      "num": 3
     },
-    {
+    {      "name": "Shapes 4",
+      "description": "Shapes 4",
       "dotLocations": [
         {"x": 353, "y": 236},
         {"x": 401, "y": 311},
@@ -48,9 +56,11 @@
       ],
       "startAngle": 0,
       "endAngle": 50,
-      "isClockwise": true
+      "isClockwise": true,
+      "num": 4
     },
-    {
+    {      "name": "Shapes 5",
+      "description": "Shapes 5",
       "dotLocations": [
         {"x": 353, "y": 344},
         {"x": 353, "y": 419},
@@ -59,7 +69,8 @@
       ],
       "startAngle": 0,
       "endAngle": 140,
-      "isClockwise": true
+      "isClockwise": true,
+      "num": 5
     }
   ]
 }

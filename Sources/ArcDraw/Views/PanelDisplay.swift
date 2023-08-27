@@ -19,7 +19,7 @@ struct PanelDisplay: View {
       Spacer()
 
     }
-    
+
   }
 
 }

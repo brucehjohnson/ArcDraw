@@ -18,7 +18,6 @@ import ImageIO
 import SwiftUI
 import UniformTypeIdentifiers
 
-
 var contextImageGlobal: CGImage?
 
  /**
@@ -50,7 +49,49 @@ final class ArcDrawDocument: ReferenceFileDocument, ObservableObject {
    A simple initializer that creates a new demo picture
    */
   init() {
-    self.picdef = PictureDefinition()
+    let arcDefinitions: [ArcDefinition] = [
+      ArcDefinition(
+        name: "Arc 1",
+        description: "This is the first arc.",
+        dotLocations: [
+          CGPoint(x: 100, y: 100),
+          CGPoint(x: 200, y: 100),
+          CGPoint(x: 200, y: 200),
+        ],
+        startAngle: 0,
+        endAngle: 90,
+        isClockwise: true,
+        num: 1
+      ),
+      ArcDefinition(
+        name: "Arc 2",
+        description: "This is the second arc.",
+        dotLocations: [
+          CGPoint(x: 300, y: 100),
+          CGPoint(x: 400, y: 100),
+          CGPoint(x: 400, y: 200),
+        ],
+        startAngle: 45,
+        endAngle: 180,
+        isClockwise: false,
+        num: 2
+      ),
+      ArcDefinition(
+        name: "Arc 3",
+        description: "This is the third arc.",
+        dotLocations: [
+          CGPoint(x: 150, y: 300),
+          CGPoint(x: 250, y: 300),
+          CGPoint(x: 250, y: 400),
+        ],
+        startAngle: -30,
+        endAngle: 120,
+        isClockwise: true,
+        num: 3
+      ),
+
+    ]
+    self.picdef = PictureDefinition(arcDefinitions: arcDefinitions)
   }
 
   /**
@@ -70,7 +111,7 @@ final class ArcDrawDocument: ReferenceFileDocument, ObservableObject {
     print("Calling loadExampleJSONAndUpdate for \(exampleName).")
     if let url = Bundle.main.url(forResource: exampleName, withExtension: "json") {
       print("Attempting to load example JSON from URL: \(url)")
-      if let exampleJSONData = try? Data(contentsOf: url){
+      if let exampleJSONData = try? Data(contentsOf: url) {
         if let jsonString = String(data: exampleJSONData, encoding: .utf8) {
           print("Example JSON from URL: \(jsonString)")
         } else {
@@ -81,12 +122,11 @@ final class ArcDrawDocument: ReferenceFileDocument, ObservableObject {
         } else {
           print("Failed to decode example JSON.")
         }}
-      
+
     } else {
       print("Failed to find example JSON file.")
     }
   }
-
 
   /**
    Get the current window title (shows data file name).
@@ -269,6 +309,157 @@ final class ArcDrawDocument: ReferenceFileDocument, ObservableObject {
 
 }
 
+// Provide operations on the document.
+@available(macOS 12.0, *)
+extension ArcDrawDocument {
+  // Adds a new arc Definition, and registers an undo action.
+  func addArcDefinition(undoManager: UndoManager? = nil) {
+    self.picdef.arcDefinitions.append(ArcDefinition())
+    let newLength = self.picdef.arcDefinitions.count
+    self.picdef.arcDefinitions[newLength - 1].num = newLength
+    let count = self.picdef.arcDefinitions.count
+    undoManager?.registerUndo(withTarget: self) { doc in
+      withAnimation {
+        doc.deleteArcDefinition(index: count - 1, undoManager: undoManager)
+      }
+    }
+  }
+
+  // Deletes at an index, and registers an undo action.
+  func deleteArcDefinition(index: Int, undoManager: UndoManager? = nil) {
+    let oldArcDefinitions = self.picdef.arcDefinitions
+    withAnimation {
+      _ = picdef.arcDefinitions.remove(at: index)
+    }
+
+    undoManager?.registerUndo(withTarget: self) { doc in
+      // Use the replaceItems symmetric undoable-redoable function.
+      doc.replaceArcDefinitions(with: oldArcDefinitions, undoManager: undoManager)
+    }
+  }
+
+  // Replaces the existing items with a new set of items.
+  func replaceArcDefinitions(with newArcDefinitions: [ArcDefinition], undoManager: UndoManager? = nil, animation: Animation? = .default) {
+    let oldArcDefinitions = self.picdef.arcDefinitions
+
+    withAnimation(animation) {
+      picdef.arcDefinitions = newArcDefinitions
+    }
+
+    undoManager?.registerUndo(withTarget: self) { doc in
+      // Because you recurse here, redo support is automatic.
+      doc.replaceArcDefinitions(with: oldArcDefinitions, undoManager: undoManager, animation: animation)
+    }
+  }
+
+  // Relocates the specified items, and registers an undo action.
+  func moveArcDefinitionsAt(offsets: IndexSet, toOffset: Int, undoManager: UndoManager? = nil) {
+    let oldArcDefinitions = self.picdef.arcDefinitions
+    withAnimation {
+      picdef.arcDefinitions.move(fromOffsets: offsets, toOffset: toOffset)
+    }
+
+    undoManager?.registerUndo(withTarget: self) { doc in
+      // Use the replaceItems symmetric undoable-redoable function.
+      doc.replaceArcDefinitions(with: oldArcDefinitions, undoManager: undoManager)
+    }
+  }
+
+  // Registers an undo action and a redo action for a hue change
+  func registerUndoHueChange(for arcDefinition: ArcDefinition, oldArcDefinition: ArcDefinition, undoManager: UndoManager?) {
+    let index = self.picdef.arcDefinitions.firstIndex(of: arcDefinition)!
+
+    // The change has already happened, so save the collection of new items.
+    let newArcDefinitions = self.picdef.arcDefinitions
+
+    // Register the undo action.
+    undoManager?.registerUndo(withTarget: self) { doc in
+      doc.picdef.arcDefinitions[index] = oldArcDefinition
+
+      // Register the redo action.
+      undoManager?.registerUndo(withTarget: self) { doc in
+        // Use the replaceItems symmetric undoable-redoable function.
+        doc.replaceArcDefinitions(with: newArcDefinitions, undoManager: undoManager, animation: nil)
+      }
+    }
+  }
+
+  /*
+  func updateHueWithColorNumberB(index: Int, newValue: Double, undoManager: UndoManager? = nil) {
+    let oldHues = self.picdef.hues
+    let oldHue = self.picdef.hues[index]
+    let newHue = Hue(
+      num: oldHue.num,
+      r: oldHue.r,
+      g: oldHue.g,
+      b: newValue
+    )
+    self.picdef.hues[index] = newHue
+    undoManager?.registerUndo(withTarget: self) { doc in
+      // Use the replaceItems symmetric undoable-redoable function.
+      doc.replaceHues(with: oldHues, undoManager: undoManager)
+    }
+  }
+
+  func updateHueWithColorNumberG(index: Int, newValue: Double, undoManager: UndoManager? = nil) {
+    let oldHues = self.picdef.hues
+    let oldHue = self.picdef.hues[index]
+    let newHue = Hue(
+      num: oldHue.num,
+      r: oldHue.r,
+      g: newValue,
+      b: oldHue.b
+    )
+    self.picdef.hues[index] = newHue
+    undoManager?.registerUndo(withTarget: self) { doc in
+      // Use the replaceItems symmetric undoable-redoable function.
+      doc.replaceHues(with: oldHues, undoManager: undoManager)
+    }
+  }
+
+  func updateHueWithColorNumberR(index: Int, newValue: Double, undoManager: UndoManager? = nil) {
+    let oldHues = self.picdef.hues
+    let oldHue = self.picdef.hues[index]
+    let newHue = Hue(
+      num: oldHue.num,
+      r: newValue,
+      g: oldHue.g,
+      b: oldHue.b
+    )
+    self.picdef.hues[index] = newHue
+    undoManager?.registerUndo(withTarget: self) { doc in
+      // Use the replaceItems symmetric undoable-redoable function.
+      doc.replaceHues(with: oldHues, undoManager: undoManager)
+    }
+  }
+
+  /**
+   Update an ordered color with a new selection from the ColorPicker
+   - Parameters:
+   - index: an Int for the index of this ordered color
+   - newColorPick: the Color of the new selection
+   - undoManager: undoManager
+   */
+  func updateHueWithColorPick(index: Int, newColorPick: Color, undoManager: UndoManager? = nil) {
+    let oldHues = self.picdef.hues
+    let oldHue = self.picdef.hues[index]
+    if let arr = newColorPick.cgColor {
+      let newHue = Hue(
+        num: oldHue.num,
+        r: arr.components![0] * 255.0,
+        g: arr.components![1] * 255.0,
+        b: arr.components![2] * 255.0
+      )
+      self.picdef.hues[index] = newHue
+    }
+    undoManager?.registerUndo(withTarget: self) { doc in
+      // Use the replaceItems symmetric undoable-redoable function.
+      doc.replaceHues(with: oldHues, undoManager: undoManager)
+    }
+  }
+   */
+}
+
 // Helper utility
 // Extending String functionality so we can use indexes to get substrings
 @available(macOS 12.0, *)
@@ -297,7 +488,6 @@ extension UTType {
 }
 
 /** Extend CGImage to add pngData()
- requires Cocoa
  */
 @available(macOS, introduced: 10.13)
 extension CGImage {

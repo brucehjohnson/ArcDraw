@@ -2,8 +2,10 @@
   "pictureName": "Moons",
   "pictureDescription": "Generates a picture of showing phases of the moon.",
   "author": "Bruce Johnson",
-  "curveData": [
+  "arcDefinitions": [
     {
+      "name": "Moons 1",
+      "description": "Moon 1",
       "dotLocations": [
         {"x": 90+83, "y": 90},
         {"x": 90+83, "y": 162},
@@ -11,61 +13,74 @@
       ],
       "startAngle": 0,
       "endAngle": 90,
-      "isClockwise": true
+      "isClockwise": true,
+      "num": 1
     },
-    {
+    { "name": "Moons 2",
+      "description": "Moon 2",
       "dotLocations": [
         {"x": 270+83, "y": 90},
         {"x": 270+83, "y": 162}
       ],
       "startAngle": 0,
       "endAngle": 90,
-      "isClockwise": true
+      "isClockwise": true,
+      "num": 2
     },
-    {
+    { "name": "Moons 3",
+      "description": "Moon 3",
       "dotLocations": [
         {"x": 270+83, "y": 90},
         {"x": 270+83, "y": 162}
       ],
       "startAngle": 225,
       "endAngle": 180,
-      "isClockwise": true
+      "isClockwise": true,,
+      "num": 3
     },
-    {
+    { "name": "Moons 4",
+      "description": "Moon 4",
       "dotLocations": [
         {"x": 90+83, "y": 342},
         {"x": 90+83, "y": 414}
       ],
       "startAngle": 90,
       "endAngle": 90,
-      "isClockwise": true
+      "isClockwise": true,
+      "num": 4
     },
-    {
+    { "name": "Moons 5",
+      "description": "Moon 5",
       "dotLocations": [
         {"x": 90+83, "y": 342},
         {"x": 270+83, "y": 414}
       ],
       "startAngle": 180,
       "endAngle": 180,
-      "isClockwise": true
+      "isClockwise": true,
+      "num": 5
     },
-    {
+    { "name": "Moons 6",
+      "description": "Moon 6",
       "dotLocations": [
         {"x": 270+83, "y": 342},
         {"x": 270+83, "y": 414}
       ],
       "startAngle": 90,
       "endAngle": 90,
-      "isClockwise": true
+      "isClockwise": true,
+      "num": 6
     },
-    {
+    { "name": "Moons 7",
+      "description": "Moon 7",
       "dotLocations": [
         {"x": 270+83, "y": 342},
         {"x": 270+83, "y": 414}
       ],
       "startAngle": 135,
       "endAngle": 135,
-      "isClockwise": true
+      "isClockwise": true,
+      "num": 7
     }
   ]
 }
