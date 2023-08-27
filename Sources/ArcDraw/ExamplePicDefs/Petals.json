@@ -1,0 +1,354 @@
+{
+  "name": "Petals",
+  "description": "Generates a picture of various petals.",
+  "author": "Bruce Johnson",
+  "curves": [
+    {
+  "name": "Petals 1",
+  "description": "A petal shape with 9 dots",
+  "dotLocations": [
+    {"x": 63+83, "y": 60},
+    {"x": 117+83, "y": 60},
+    {"x": 24+83, "y": 153},
+    {"x": 24+83, "y": 99},
+    {"x": 117+83, "y": 192},
+    {"x": 63+83, "y": 192},
+    {"x": 156+83, "y": 99},
+    {"x": 156+83, "y": 153},
+    {"x": 63+83, "y": 60}
+  ],
+  "startAngle": 0,
+  "endAngle": 0,
+  "isClockwise": true
+    },
+    {
+  "name": "Petals 2",
+  "description": "Another petal shape with 6 dots",
+  "dotLocations": [
+    {"x": 270+83, "y": 126},
+    {"x": 284+83, "y": 53},
+    {"x": 315+83, "y": 53},
+    {"x": 343+83, "y": 81},
+    {"x": 343+83, "y": 112},
+    {"x": 270+83, "y": 126}
+  ],
+  "startAngle": 0,
+  "endAngle": 0,
+  "isClockwise": true
+    },
+    {
+  "name": "Petals 3",
+  "description": "A petal shape with 6 dots",
+  "dotLocations": [
+    {"x": 270+83, "y": 378},
+    {"x": 284+83, "y": 319},
+    {"x": 315+83, "y": 319},
+    {"x": 343+83, "y": 378},
+    {"x": 343+83, "y": 378},
+    {"x": 270+83, "y": 327}
+  ],
+  "startAngle": 0,
+  "endAngle": 0,
+  "isClockwise": true
+    },
+    {
+  "name": "Petals 4",
+  "description": "A petal shape with 6 dots",
+  "dotLocations": [
+    {"x": 90+83, "y": 378},
+    {"x": 65+83, "y": 319},
+    {"x": 115+83, "y": 319},
+    {"x": 90+83, "y": 378},
+    {"x": 90+83, "y": 378},
+    {"x": 128+83, "y": 327}
+  ],
+  "startAngle": 0,
+  "endAngle": 0,
+  "isClockwise": true
+    },
+    {
+  "name": "Petals 5",
+  "description": "A petal shape with 4 dots",
+  "dotLocations": [
+    {"x": 90+83, "y": 324},
+    {"x": 65+83, "y": 295},
+    {"x": 115+83, "y": 283},
+    {"x": 90+83, "y": 294}
+  ],
+  "startAngle": 0,
+  "endAngle": 0,
+  "isClockwise": true
+    },
+    {
+  "name": "Petals 6",
+  "description": "A petal shape with 4 dots",
+  "dotLocations": [
+    {"x": 324+83, "y": 356},
+    {"x": 356+83, "y": 389},
+    {"x": 389+83, "y": 402},
+    {"x": 402+83, "y": 407}
+  ],
+  "startAngle": 0,
+  "endAngle": 0,
+  "isClockwise": true
+    },
+    {
+  "name": "Petals 7",
+  "description": "A petal shape with 4 dots",
+  "dotLocations": [
+    {"x": 410+83, "y": 398},
+    {"x": 400+83, "y": 364},
+    {"x": 391+83, "y": 324},
+    {"x": 367+83, "y": 410}
+  ],
+  "startAngle": 0,
+  "endAngle": 0,
+  "isClockwise": true
+    },
+    {
+  "name": "Petals 8",
+  "description": "A petal shape with 4 dots",
+  "dotLocations": [
+    {"x": 333+83, "y": 348},
+    {"x": 353+83, "y": 368},
+    {"x": 381+83, "y": 396},
+    {"x": 391+83, "y": 406}
+  ],
+  "startAngle": 0,
+  "endAngle": 0,
+  "isClockwise": true
+    },
+    {
+  "name": "Petals 9",
+  "description": "A petal shape with 13 dots",
+  "dotLocations": [
+    {"x": 267+83, "y": 288},
+    {"x": 282+83, "y": 267},
+    {"x": 290+83, "y": 244},
+    {"x": 295+83, "y": 260},
+    {"x": 302+83, "y": 278},
+    {"x": 314+83, "y": 299},
+    {"x": 322+83, "y": 309},
+    {"x": 325+83, "y": 267},
+    {"x": 319+83, "y": 245},
+    {"x": 318+83, "y": 250},
+    {"x": 302+83, "y": 250},
+    {"x": 288+83, "y": 263},
+    {"x": 267+83, "y": 263}
+  ],
+  "startAngle": 0,
+  "endAngle": 0,
+  "isClockwise": true
+    },
+    {
+  "name": "Petals 10",
+  "description": "A petal shape with 13 dots",
+  "dotLocations": [
+    {"x": 308+83, "y": 410},
+    {"x": 410+83, "y": 410},
+    {"x": 410+83, "y": 450},
+    {"x": 450+83, "y": 411},
+    {"x": 411+83, "y": 450},
+    {"x": 450+83, "y": 411},
+    {"x": 411+83, "y": 450},
+    {"x": 450+83, "y": 450},
+    {"x": 410+83, "y": 450},
+    {"x": 410+83, "y": 450},
+    {"x": 450+83, "y": 450},
+    {"x": 411+83, "y": 450},
+    {"x": 450+83, "y": 450}
+  ],
+  "startAngle": 0,
+  "endAngle": 0,
+  "isClockwise": true
+    },
+    {
+  "name": "Petals 11",
+  "description": "A petal shape with 13 dots",
+  "dotLocations": [
+    {"x": 410+83, "y": 450},
+    {"x": 411+83, "y": 450},
+    {"x": 450+83, "y": 450},
+    {"x": 411+83, "y": 450},
+    {"x": 450+83, "y": 450},
+    {"x": 411+83, "y": 450},
+    {"x": 450+83, "y": 450},
+    {"x": 450+83, "y": 450},
+    {"x": 450+83, "y": 450},
+    {"x": 450+83, "y": 450},
+    {"x": 450+83, "y": 450},
+    {"x": 450+83, "y": 450},
+    {"x": 450+83, "y": 450}
+  ],
+  "startAngle": 0,
+  "endAngle": 0,
+  "isClockwise": true
+    },
+    {
+  "name": "Petals 12",
+  "description": "A petal shape with 13 dots",
+  "dotLocations": [
+    {"x": 450+83, "y": 450},
+    {"x": 450+83, "y": 450},
+    {"x": 450+83, "y": 450},
+    {"x": 450+83, "y": 450},
+    {"x": 450+83, "y": 450},
+    {"x": 450+83, "y": 450},
+    {"x": 450+83, "y": 450},
+    {"x": 450+83, "y": 450},
+    {"x": 450+83, "y": 450},
+    {"x": 450+83, "y": 450},
+    {"x": 450+83, "y": 450},
+    {"x": 450+83, "y": 450},
+    {"x": 450+83, "y": 450}
+  ],
+  "startAngle": 0,
+  "endAngle": 0,
+  "isClockwise": true
+    },
+    {
+  "name": "Petals 13",
+  "description": "A petal shape with 13 dots",
+  "dotLocations": [
+    {"x": 450+83, "y": 450},
+    {"x": 450+83, "y": 450},
+    {"x": 450+83, "y": 450},
+    {"x": 450+83, "y": 450},
+    {"x": 450+83, "y": 450},
+    {"x": 450+83, "y": 450},
+    {"x": 450+83, "y": 450},
+    {"x": 450+83, "y": 450},
+    {"x": 450+83, "y": 450},
+    {"x": 450+83, "y": 450},
+    {"x": 450+83, "y": 450},
+    {"x": 450+83, "y": 450},
+    {"x": 450+83, "y": 450}
+  ],
+  "startAngle": 0,
+  "endAngle": 0,
+  "isClockwise": true
+    },
+    {
+  "name": "Petals 14",
+  "description": "A petal shape with 13 dots",
+  "dotLocations": [
+    {"x": 450+83, "y": 450},
+    {"x": 450+83, "y": 450},
+    {"x": 450+83, "y": 450},
+    {"x": 450+83, "y": 450},
+    {"x": 450+83, "y": 450},
+    {"x": 450+83, "y": 450},
+    {"x": 450+83, "y": 450},
+    {"x": 450+83, "y": 450},
+    {"x": 450+83, "y": 450},
+    {"x": 450+83, "y": 450},
+    {"x": 450+83, "y": 450},
+    {"x": 450+83, "y": 450},
+    {"x": 450+83, "y": 450}
+  ],
+  "startAngle": 0,
+  "endAngle": 0,
+  "isClockwise": true
+    },
+    {
+  "name": "Petals 15",
+  "description": "A petal shape with 13 dots",
+  "dotLocations": [
+    {"x": 450+83, "y": 450},
+    {"x": 450+83, "y": 450},
+    {"x": 450+83, "y": 450},
+    {"x": 450+83, "y": 450},
+    {"x": 450+83, "y": 450},
+    {"x": 450+83, "y": 450},
+    {"x": 450+83, "y": 450},
+    {"x": 450+83, "y": 450},
+    {"x": 450+83, "y": 450},
+    {"x": 450+83, "y": 450},
+    {"x": 450+83, "y": 450},
+    {"x": 450+83, "y": 450},
+    {"x": 450+83, "y": 450}
+  ],
+  "startAngle": 0,
+  "endAngle": 0,
+  "isClockwise": true
+    },
+    {
+  "name": "Petals 16",
+  "description": "A petal shape with 13 dots",
+  "dotLocations": [
+    {"x": 450+83, "y": 450},
+    {"x": 450+83, "y": 450},
+    {"x": 450+83, "y": 450},
+    {"x": 450+83, "y": 450},
+    {"x": 450+83, "y": 450},
+    {"x": 450+83, "y": 450},
+    {"x": 450+83, "y": 450},
+    {"x": 450+83, "y": 450},
+    {"x": 450+83, "y": 450},
+    {"x": 450+83, "y": 450},
+    {"x": 450+83, "y": 450},
+    {"x": 450+83, "y": 450},
+    {"x": 450+83, "y": 450}
+  ],
+  "startAngle": 0,
+  "endAngle": 0,
+  "isClockwise": true
+    }
+  ,
+    {
+  "name": "Petals 17",
+  "description": "A petal shape with 18 dots",
+  "dotLocations": [
+    {"x": 263+83, "y": 263},
+    {"x": 250+83, "y": 250},
+    {"x": 250+83, "y": 250},
+    {"x": 263+83, "y": 263},
+    {"x": 263+83, "y": 263},
+    {"x": 318+83, "y": 318},
+    {"x": 331+83, "y": 331},
+    {"x": 318+83, "y": 318},
+    {"x": 318+83, "y": 318},
+    {"x": 263+83, "y": 263},
+    {"x": 263+83, "y": 263},
+    {"x": 263+83, "y": 263},
+    {"x": 263+83, "y": 263},
+    {"x": 263+83, "y": 263},
+    {"x": 263+83, "y": 263},
+    {"x": 263+83, "y": 263},
+    {"x": 263+83, "y": 263},
+    {"x": 263+83, "y": 263}
+  ],
+  "startAngle": 0,
+  "endAngle": 0,
+  "isClockwise": true
+    },
+    {
+  "name": "Petals 18",
+  "description": "A petal shape with 18 dots",
+  "dotLocations": [
+    {"x": 250+83, "y": 250},
+    {"x": 250+83, "y": 250},
+    {"x": 250+83, "y": 250},
+    {"x": 250+83, "y": 250},
+    {"x": 250+83, "y": 250},
+    {"x": 250+83, "y": 250},
+    {"x": 250+83, "y": 250},
+    {"x": 250+83, "y": 250},
+    {"x": 250+83, "y": 250},
+    {"x": 250+83, "y": 250},
+    {"x": 250+83, "y": 250},
+    {"x": 250+83, "y": 250},
+    {"x": 250+83, "y": 250},
+    {"x": 250+83, "y": 250},
+    {"x": 250+83, "y": 250},
+    {"x": 250+83, "y": 250},
+    {"x": 250+83, "y": 250},
+    {"x": 250+83, "y": 250}
+  ],
+  "startAngle": 0,
+  "endAngle": 0,
+  "isClockwise": true
+    }
+  ]
+    }
+

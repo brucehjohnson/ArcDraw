@@ -1,58 +1,38 @@
-/**
-
- PictureDefinition
-
- This class is used to manage the user inputs needed to create an ArcDraw project.
-
- Overview
-
- The PictureDefinition class provides a simple structure to manage
- the definition of one instance of a drawing.
- It conforms to the Codable and Identifiable protocols, allowing it to be easily encoded and decoded.
- The information it holds can be stored as a JSON file for reuse and sharing.
-
- Usage
-
- To use the PictureDefinition class, simply create an instance of it, providing values for its
- properties as desired. You can then encode and decode instances of the PictureDefinition class
- using the Encoder and Decoder classes, and you can an instance of the PictureDefinition class
- in each document-driven window.
-
- Note: This class is only available on macOS 12 and higher.
- */
-
 import Foundation
 import SwiftUI
 
- // The user input information defining an ArcDraw picture.
 @available(macOS 12.0, *)
 struct PictureDefinition: Codable, Identifiable, Equatable {
 
   var id = UUID()
 
-  var imageWidth: Int =  1100
+  var imageWidth: Int = 1100
   var imageHeight: Int = 1000
+  var pictureName: String = "Name"
+  var pictureDescription: String = "Description"
+  var author: String = "Your Name"
+  var curves: [CurveData] = []
 
   init() {
 
   }
 
-  init(
-
-    imageWidth: Int,
-    imageHeight: Int
-
-  ) {
-
+  init(imageWidth: Int, imageHeight: Int, pictureName: String, pictureDescription: String, author: String, curves: [CurveData]) {
     self.imageWidth = imageWidth
     self.imageHeight = imageHeight
+    self.pictureName = pictureName
+    self.pictureDescription = pictureDescription
+    self.author = author
+    self.curves = curves
   }
 
   static func ==(lhs: PictureDefinition, rhs: PictureDefinition) -> Bool {
-    // Compare all properties here
-    let result =  lhs.imageWidth == rhs.imageWidth && lhs.imageHeight == rhs.imageHeight
+    let result = lhs.imageWidth == rhs.imageWidth &&
+    lhs.imageHeight == rhs.imageHeight &&
+    lhs.pictureName == rhs.pictureName &&
+    lhs.pictureDescription == rhs.pictureDescription &&
+    lhs.author == rhs.author &&
+    lhs.curves == rhs.curves
     return result
-
   }
-
 }

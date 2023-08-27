@@ -6,6 +6,141 @@
 	<integer>10</integer>
 	<key>logs</key>
 	<dict>
+		<key>0D9CF0DB-D3F8-4AE1-B9E4-F621F9FF7560</key>
+		<dict>
+			<key>auxiliaryLogUniqueIdentifier</key>
+			<string>433A4A39-3748-4118-A653-CF6EFD50E2A7</string>
+			<key>auxiliaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>E</string>
+			</dict>
+			<key>className</key>
+			<string>IDESchemeActionsInvocationRecord</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>com.apple.dt.IDE.LaunchSchemeAction</string>
+			<key>fileName</key>
+			<string>Run-ArcDraw-2023.08.27_07-55-28--0500.xcresult</string>
+			<key>hasAuxiliaryLog</key>
+			<true/>
+			<key>hasConsoleLog</key>
+			<true/>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>E</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>ArcDraw project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>ArcDraw</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Run ArcDraw</string>
+			<key>timeStartedRecording</key>
+			<real>714833728.44767904</real>
+			<key>timeStoppedRecording</key>
+			<real>0.0</real>
+			<key>title</key>
+			<string>Run ArcDraw</string>
+			<key>uniqueIdentifier</key>
+			<string>0D9CF0DB-D3F8-4AE1-B9E4-F621F9FF7560</string>
+		</dict>
+		<key>90D1EB1C-539A-4919-B1F6-F442AC03AF24</key>
+		<dict>
+			<key>auxiliaryLogUniqueIdentifier</key>
+			<string>0F276CFE-B2EF-42E3-A5F0-66F378C76B0F</string>
+			<key>auxiliaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+			</dict>
+			<key>className</key>
+			<string>IDESchemeActionsInvocationRecord</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>com.apple.dt.IDE.LaunchSchemeAction</string>
+			<key>fileName</key>
+			<string>Run-ArcDraw-2023.08.27_07-55-50--0500.xcresult</string>
+			<key>hasAuxiliaryLog</key>
+			<true/>
+			<key>hasConsoleLog</key>
+			<true/>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>ArcDraw project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>ArcDraw</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Run ArcDraw</string>
+			<key>timeStartedRecording</key>
+			<real>714833750.38264</real>
+			<key>timeStoppedRecording</key>
+			<real>0.0</real>
+			<key>title</key>
+			<string>Run ArcDraw</string>
+			<key>uniqueIdentifier</key>
+			<string>90D1EB1C-539A-4919-B1F6-F442AC03AF24</string>
+		</dict>
+		<key>916883EE-A1A9-46C1-AAFD-8A937B5F28EA</key>
+		<dict>
+			<key>auxiliaryLogUniqueIdentifier</key>
+			<string>D6214DC9-3336-4646-BD2D-81AFF41EFBD3</string>
+			<key>auxiliaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+			</dict>
+			<key>className</key>
+			<string>IDESchemeActionsInvocationRecord</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>com.apple.dt.IDE.LaunchSchemeAction</string>
+			<key>fileName</key>
+			<string>Run-ArcDraw-2023.08.27_07-57-40--0500.xcresult</string>
+			<key>hasAuxiliaryLog</key>
+			<true/>
+			<key>hasConsoleLog</key>
+			<true/>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>ArcDraw project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>ArcDraw</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Run ArcDraw</string>
+			<key>timeStartedRecording</key>
+			<real>714833860.07749295</real>
+			<key>timeStoppedRecording</key>
+			<real>0.0</real>
+			<key>title</key>
+			<string>Run ArcDraw</string>
+			<key>uniqueIdentifier</key>
+			<string>916883EE-A1A9-46C1-AAFD-8A937B5F28EA</string>
+		</dict>
 		<key>9B555337-8B23-4A1F-8310-93C44A1B01FF</key>
 		<dict>
 			<key>auxiliaryLogUniqueIdentifier</key>
@@ -140,6 +275,51 @@
 			<string>Run ArcDraw</string>
 			<key>uniqueIdentifier</key>
 			<string>BAD4D16F-3E0B-492D-9960-58E1E4348BA0</string>
+		</dict>
+		<key>DDB5921B-EF2E-4229-8C27-E21E43A2F421</key>
+		<dict>
+			<key>auxiliaryLogUniqueIdentifier</key>
+			<string>6990166D-F166-439D-97D2-FDFC93D6FFFD</string>
+			<key>auxiliaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>E</string>
+			</dict>
+			<key>className</key>
+			<string>IDESchemeActionsInvocationRecord</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>com.apple.dt.IDE.LaunchSchemeAction</string>
+			<key>fileName</key>
+			<string>Run-ArcDraw-2023.08.27_06-34-57--0500.xcresult</string>
+			<key>hasAuxiliaryLog</key>
+			<true/>
+			<key>hasConsoleLog</key>
+			<true/>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>E</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>ArcDraw project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>ArcDraw</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Run ArcDraw</string>
+			<key>timeStartedRecording</key>
+			<real>714828897.80062902</real>
+			<key>timeStoppedRecording</key>
+			<real>0.0</real>
+			<key>title</key>
+			<string>Run ArcDraw</string>
+			<key>uniqueIdentifier</key>
+			<string>DDB5921B-EF2E-4229-8C27-E21E43A2F421</string>
 		</dict>
 		<key>DF9C32A5-96DA-4727-A96E-0869632218AE</key>
 		<dict>

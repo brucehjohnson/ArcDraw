@@ -7,12 +7,15 @@ extension ArcDrawApp {
       // Disable "New Window" option
       // CommandGroup(replacing: .newItem) {}
 
-      CommandMenu("Welcome") {
-        Button("Show Welcome Screen") {
-          let controller = WelcomeWindowController(appState: self.appState)
-          controller.showWindow(self)
-          controller.window?.makeKeyAndOrderFront(nil)
-        }
+      CommandMenu("Draw") {
+        Button("New Curve"){}
+        Button("Define Direction"){}
+        Button("Delete Dot"){}
+        Button("Clear Curve"){}
+        Button("Drag Dot"){}
+        Button("Add Dot Before"){}
+        Button("Add Dot After"){}
+        Button("New Sketch Curve"){}
       }
 
       CommandMenu("Examples") {
@@ -23,6 +26,14 @@ extension ArcDrawApp {
         Button("Shapes"){}
         Button("Spirals"){}
         Button("YinYang"){}
+      }
+
+      CommandMenu("Welcome") {
+        Button("Show Welcome Screen") {
+          let controller = WelcomeWindowController(appState: self.appState)
+          controller.showWindow(self)
+          controller.window?.makeKeyAndOrderFront(nil)
+        }
       }
 
       // we don't need the Edit/pasteboard menu item (cut/copy/paste/delete)

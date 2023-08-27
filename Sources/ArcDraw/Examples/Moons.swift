@@ -8,7 +8,7 @@
 
 import CoreGraphics
 /*
-func  Moons(hWnd:HWND, hDC:HDC )
+func  Moons( hDC:HDC )
  {
 
  var        i: Int;
@@ -136,7 +136,8 @@ func  Moons(hWnd:HWND, hDC:HDC )
  ReleaseDC(hWnd, hDC)
 
  return
- } */
+ }
 
 
 
+*/

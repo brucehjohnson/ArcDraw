@@ -1,0 +1,45 @@
+{
+  "name": "YinYang",
+  "description": "Generates a picture of a Yin-Yang figure.",
+  "author": "Bruce Johnson",
+  "curves": [
+    {
+  "name": "YinYang1",
+  "description": "A Yin-Yang figure with 5 dots",
+  "dotLocations": [
+    {"x": 36+83, "y": 252},
+    {"x": 324+83, "y": 252},
+    {"x": 38+83, "y": 252},
+    {"x": 180+83, "y": 252},
+    {"x": 322+83, "y": 252}
+  ],
+  "startAngle": 0,
+  "endAngle": 0,
+  "isClockwise": true
+    },
+    {
+  "name": "YinYang2",
+  "description": "A Yin-Yang figure with 3 dots",
+  "dotLocations": [
+    {"x": 90+83, "y": 252},
+    {"x": 126+83, "y": 252},
+    {"x": 90+83, "y": 254}
+  ],
+  "startAngle": 0,
+  "endAngle": 0,
+  "isClockwise": true
+    },
+    {
+  "name": "YinYang3",
+  "description": "A Yin-Yang figure with 3 dots",
+  "dotLocations": [
+    {"x": 234+83, "y": 252},
+    {"x": 270+83, "y": 252},
+    {"x": 234+83, "y": 254}
+  ],
+  "startAngle": 0,
+  "endAngle": 0,
+  "isClockwise": true
+    }
+  ]
+}

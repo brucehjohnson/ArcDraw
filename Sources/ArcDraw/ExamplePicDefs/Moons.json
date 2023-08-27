@@ -1,0 +1,71 @@
+{
+  "pictureName": "Moons",
+  "pictureDescription": "Generates a picture of showing phases of the moon.",
+  "author": "Bruce Johnson",
+  "curveData": [
+    {
+      "dotLocations": [
+        {"x": 90+83, "y": 90},
+        {"x": 90+83, "y": 162},
+        {"x": 88+83, "y": 90}
+      ],
+      "startAngle": 0,
+      "endAngle": 90,
+      "isClockwise": true
+    },
+    {
+      "dotLocations": [
+        {"x": 270+83, "y": 90},
+        {"x": 270+83, "y": 162}
+      ],
+      "startAngle": 0,
+      "endAngle": 90,
+      "isClockwise": true
+    },
+    {
+      "dotLocations": [
+        {"x": 270+83, "y": 90},
+        {"x": 270+83, "y": 162}
+      ],
+      "startAngle": 225,
+      "endAngle": 180,
+      "isClockwise": true
+    },
+    {
+      "dotLocations": [
+        {"x": 90+83, "y": 342},
+        {"x": 90+83, "y": 414}
+      ],
+      "startAngle": 90,
+      "endAngle": 90,
+      "isClockwise": true
+    },
+    {
+      "dotLocations": [
+        {"x": 90+83, "y": 342},
+        {"x": 270+83, "y": 414}
+      ],
+      "startAngle": 180,
+      "endAngle": 180,
+      "isClockwise": true
+    },
+    {
+      "dotLocations": [
+        {"x": 270+83, "y": 342},
+        {"x": 270+83, "y": 414}
+      ],
+      "startAngle": 90,
+      "endAngle": 90,
+      "isClockwise": true
+    },
+    {
+      "dotLocations": [
+        {"x": 270+83, "y": 342},
+        {"x": 270+83, "y": 414}
+      ],
+      "startAngle": 135,
+      "endAngle": 135,
+      "isClockwise": true
+    }
+  ]
+}
