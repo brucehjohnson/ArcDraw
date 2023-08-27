@@ -2,7 +2,7 @@
   "name": "YinYang",
   "description": "Generates a picture of a Yin-Yang figure.",
   "author": "Bruce Johnson",
-  "curves": [
+  "curveData": [
     {
   "name": "YinYang1",
   "description": "A Yin-Yang figure with 5 dots",

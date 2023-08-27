@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		880250C22A9B9D630076E001 /* hearts.json in Resources */ = {isa = PBXBuildFile; fileRef = 885A8AD42A9B74590028E8BF /* hearts.json */; };
+		880250C32A9B9D630076E001 /* moons.json in Resources */ = {isa = PBXBuildFile; fileRef = 885A8AD62A9B74640028E8BF /* moons.json */; };
+		880250C42A9B9D630076E001 /* petals.json in Resources */ = {isa = PBXBuildFile; fileRef = 885A8AD82A9B74730028E8BF /* petals.json */; };
+		880250C52A9B9D630076E001 /* shapes.json in Resources */ = {isa = PBXBuildFile; fileRef = 885A8ADA2A9B747E0028E8BF /* shapes.json */; };
+		880250C62A9B9D630076E001 /* spirals.json in Resources */ = {isa = PBXBuildFile; fileRef = 885A8ADC2A9B74910028E8BF /* spirals.json */; };
+		880250C72A9B9D630076E001 /* yinyang.json in Resources */ = {isa = PBXBuildFile; fileRef = 885A8ADE2A9B74AC0028E8BF /* yinyang.json */; };
 		885A8A4B2A9A8D790028E8BF /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 885A8A452A9A8D790028E8BF /* README.md */; };
 		885A8A4C2A9A8D790028E8BF /* DEV_NOTES.md in Resources */ = {isa = PBXBuildFile; fileRef = 885A8A462A9A8D790028E8BF /* DEV_NOTES.md */; };
 		885A8A4D2A9A8D790028E8BF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 885A8A472A9A8D790028E8BF /* Assets.xcassets */; };
@@ -66,16 +72,15 @@
 		885A8AC12A9B5DC20028E8BF /* InitInstance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 885A8AC02A9B5DC20028E8BF /* InitInstance.swift */; };
 		885A8AC32A9B5DE70028E8BF /* InitApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 885A8AC22A9B5DE70028E8BF /* InitApplication.swift */; };
 		885A8AC52A9B5E0C0028E8BF /* WinMain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 885A8AC42A9B5E0C0028E8BF /* WinMain.swift */; };
-		885A8AC72A9B5F5F0028E8BF /* GetLastErrorBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 885A8AC62A9B5F5F0028E8BF /* GetLastErrorBox.swift */; };
 		885A8ACE2A9B67430028E8BF /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 885A8ACD2A9B67430028E8BF /* AppState.swift */; };
-		885A8AD02A9B73BE0028E8BF /* CurveData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 885A8ACF2A9B73BE0028E8BF /* CurveData.swift */; };
-		885A8AD52A9B74590028E8BF /* Hearts.json in Sources */ = {isa = PBXBuildFile; fileRef = 885A8AD42A9B74590028E8BF /* Hearts.json */; };
-		885A8AD72A9B74640028E8BF /* Moons.json in Sources */ = {isa = PBXBuildFile; fileRef = 885A8AD62A9B74640028E8BF /* Moons.json */; };
-		885A8AD92A9B74730028E8BF /* Petals.json in Sources */ = {isa = PBXBuildFile; fileRef = 885A8AD82A9B74730028E8BF /* Petals.json */; };
-		885A8ADB2A9B747E0028E8BF /* Shapes.json in Sources */ = {isa = PBXBuildFile; fileRef = 885A8ADA2A9B747E0028E8BF /* Shapes.json */; };
-		885A8ADD2A9B74910028E8BF /* Spirals.json in Sources */ = {isa = PBXBuildFile; fileRef = 885A8ADC2A9B74910028E8BF /* Spirals.json */; };
-		885A8ADF2A9B74AC0028E8BF /* YinYang.json in Sources */ = {isa = PBXBuildFile; fileRef = 885A8ADE2A9B74AC0028E8BF /* YinYang.json */; };
-		885A8AE12A9B76DA0028E8BF /* Cursive.json in Resources */ = {isa = PBXBuildFile; fileRef = 885A8AE02A9B76DA0028E8BF /* Cursive.json */; };
+		885A8AD52A9B74590028E8BF /* hearts.json in Sources */ = {isa = PBXBuildFile; fileRef = 885A8AD42A9B74590028E8BF /* hearts.json */; };
+		885A8AD72A9B74640028E8BF /* moons.json in Sources */ = {isa = PBXBuildFile; fileRef = 885A8AD62A9B74640028E8BF /* moons.json */; };
+		885A8AD92A9B74730028E8BF /* petals.json in Sources */ = {isa = PBXBuildFile; fileRef = 885A8AD82A9B74730028E8BF /* petals.json */; };
+		885A8ADB2A9B747E0028E8BF /* shapes.json in Sources */ = {isa = PBXBuildFile; fileRef = 885A8ADA2A9B747E0028E8BF /* shapes.json */; };
+		885A8ADD2A9B74910028E8BF /* spirals.json in Sources */ = {isa = PBXBuildFile; fileRef = 885A8ADC2A9B74910028E8BF /* spirals.json */; };
+		885A8ADF2A9B74AC0028E8BF /* yinyang.json in Sources */ = {isa = PBXBuildFile; fileRef = 885A8ADE2A9B74AC0028E8BF /* yinyang.json */; };
+		885A8AE12A9B76DA0028E8BF /* cursive.json in Resources */ = {isa = PBXBuildFile; fileRef = 885A8AE02A9B76DA0028E8BF /* cursive.json */; };
+		885A8AE32A9B86B60028E8BF /* GetLastErrorBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 885A8AE22A9B86B60028E8BF /* GetLastErrorBox.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -138,16 +143,15 @@
 		885A8AC02A9B5DC20028E8BF /* InitInstance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitInstance.swift; sourceTree = "<group>"; };
 		885A8AC22A9B5DE70028E8BF /* InitApplication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitApplication.swift; sourceTree = "<group>"; };
 		885A8AC42A9B5E0C0028E8BF /* WinMain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WinMain.swift; sourceTree = "<group>"; };
-		885A8AC62A9B5F5F0028E8BF /* GetLastErrorBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetLastErrorBox.swift; sourceTree = "<group>"; };
 		885A8ACD2A9B67430028E8BF /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
-		885A8ACF2A9B73BE0028E8BF /* CurveData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurveData.swift; sourceTree = "<group>"; };
-		885A8AD42A9B74590028E8BF /* Hearts.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Hearts.json; sourceTree = "<group>"; };
-		885A8AD62A9B74640028E8BF /* Moons.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Moons.json; sourceTree = "<group>"; };
-		885A8AD82A9B74730028E8BF /* Petals.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Petals.json; sourceTree = "<group>"; };
-		885A8ADA2A9B747E0028E8BF /* Shapes.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Shapes.json; sourceTree = "<group>"; };
-		885A8ADC2A9B74910028E8BF /* Spirals.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Spirals.json; sourceTree = "<group>"; };
-		885A8ADE2A9B74AC0028E8BF /* YinYang.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = YinYang.json; sourceTree = "<group>"; };
-		885A8AE02A9B76DA0028E8BF /* Cursive.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Cursive.json; sourceTree = "<group>"; };
+		885A8AD42A9B74590028E8BF /* hearts.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = hearts.json; sourceTree = "<group>"; };
+		885A8AD62A9B74640028E8BF /* moons.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = moons.json; sourceTree = "<group>"; };
+		885A8AD82A9B74730028E8BF /* petals.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = petals.json; sourceTree = "<group>"; };
+		885A8ADA2A9B747E0028E8BF /* shapes.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = shapes.json; sourceTree = "<group>"; };
+		885A8ADC2A9B74910028E8BF /* spirals.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = spirals.json; sourceTree = "<group>"; };
+		885A8ADE2A9B74AC0028E8BF /* yinyang.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = yinyang.json; sourceTree = "<group>"; };
+		885A8AE02A9B76DA0028E8BF /* cursive.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = cursive.json; sourceTree = "<group>"; };
+		885A8AE22A9B86B60028E8BF /* GetLastErrorBox.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetLastErrorBox.swift; sourceTree = "<group>"; };
 		C568E3E02A68755C00B63F6F /* ArcDraw.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ArcDraw.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C568E3E92A68755C00B63F6F /* ArcDraw.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ArcDraw.entitlements; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
@@ -169,6 +173,7 @@
 				885A8A682A9A9A450028E8BF /* ArcDraw */,
 				885A8A492A9A8D790028E8BF /* ArcDrawApp.swift */,
 				885A8A5F2A9A8FE80028E8BF /* ArcDrawApp+Menu.swift */,
+				885A8AE22A9B86B60028E8BF /* GetLastErrorBox.swift */,
 				885A8ACD2A9B67430028E8BF /* AppState.swift */,
 				885A8ABC2A9B5D350028E8BF /* About.swift */,
 				885A8AC02A9B5DC20028E8BF /* InitInstance.swift */,
@@ -185,7 +190,6 @@
 				885A8A642A9A927C0028E8BF /* ArcDrawDocument.swift */,
 				885A8A632A9A927C0028E8BF /* PictureDefinition.swift */,
 				885A8A792A9AB7FD0028E8BF /* Line.swift */,
-				885A8ACF2A9B73BE0028E8BF /* CurveData.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -218,14 +222,12 @@
 		885A8A682A9A9A450028E8BF /* ArcDraw */ = {
 			isa = PBXGroup;
 			children = (
-				885A8AD12A9B742C0028E8BF /* ExamplePicDefs */,
 				885A8A7B2A9B56AB0028E8BF /* Examples */,
 				885A8A702A9AB2A40028E8BF /* Utilities */,
 				885A8A6D2A9AB1800028E8BF /* ViewModels */,
 				885A8A522A9A8E9B0028E8BF /* Controllers */,
 				885A8A502A9A8E8C0028E8BF /* Models */,
 				885A8A512A9A8E950028E8BF /* Views */,
-				885A8AC62A9B5F5F0028E8BF /* GetLastErrorBox.swift */,
 			);
 			path = ArcDraw;
 			sourceTree = "<group>";
@@ -263,6 +265,13 @@
 		885A8A7B2A9B56AB0028E8BF /* Examples */ = {
 			isa = PBXGroup;
 			children = (
+				885A8AE02A9B76DA0028E8BF /* cursive.json */,
+				885A8AD42A9B74590028E8BF /* hearts.json */,
+				885A8AD62A9B74640028E8BF /* moons.json */,
+				885A8AD82A9B74730028E8BF /* petals.json */,
+				885A8ADA2A9B747E0028E8BF /* shapes.json */,
+				885A8ADC2A9B74910028E8BF /* spirals.json */,
+				885A8ADE2A9B74AC0028E8BF /* yinyang.json */,
 				885A8AAC2A9B5BDC0028E8BF /* Cursive.swift */,
 				885A8A922A9B5A000028E8BF /* Hearts.swift */,
 				885A8A902A9B59DE0028E8BF /* Moons.swift */,
@@ -308,20 +317,6 @@
 				885A8A722A9AB2C70028E8BF /* BitmapImage.swift */,
 			);
 			path = BitMap;
-			sourceTree = "<group>";
-		};
-		885A8AD12A9B742C0028E8BF /* ExamplePicDefs */ = {
-			isa = PBXGroup;
-			children = (
-				885A8AE02A9B76DA0028E8BF /* Cursive.json */,
-				885A8AD42A9B74590028E8BF /* Hearts.json */,
-				885A8AD62A9B74640028E8BF /* Moons.json */,
-				885A8AD82A9B74730028E8BF /* Petals.json */,
-				885A8ADA2A9B747E0028E8BF /* Shapes.json */,
-				885A8ADC2A9B74910028E8BF /* Spirals.json */,
-				885A8ADE2A9B74AC0028E8BF /* YinYang.json */,
-			);
-			path = ExamplePicDefs;
 			sourceTree = "<group>";
 		};
 		C568E3D72A68755C00B63F6F = {
@@ -402,8 +397,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				880250C22A9B9D630076E001 /* hearts.json in Resources */,
+				880250C32A9B9D630076E001 /* moons.json in Resources */,
+				880250C42A9B9D630076E001 /* petals.json in Resources */,
+				880250C52A9B9D630076E001 /* shapes.json in Resources */,
+				880250C62A9B9D630076E001 /* spirals.json in Resources */,
+				880250C72A9B9D630076E001 /* yinyang.json in Resources */,
 				885A8A4C2A9A8D790028E8BF /* DEV_NOTES.md in Resources */,
-				885A8AE12A9B76DA0028E8BF /* Cursive.json in Resources */,
+				885A8AE12A9B76DA0028E8BF /* cursive.json in Resources */,
 				885A8A4B2A9A8D790028E8BF /* README.md in Resources */,
 				885A8A4D2A9A8D790028E8BF /* Assets.xcassets in Resources */,
 			);
@@ -419,7 +420,7 @@
 				885A8A732A9AB2C70028E8BF /* BitmapGrid.swift in Sources */,
 				885A8A6F2A9AB1950028E8BF /* ImageViewModel.swift in Sources */,
 				885A8A6C2A9AAFE60028E8BF /* PanelUI.swift in Sources */,
-				885A8AD72A9B74640028E8BF /* Moons.json in Sources */,
+				885A8AD72A9B74640028E8BF /* moons.json in Sources */,
 				885A8A9F2A9B5AFA0028E8BF /* DrawCurve.swift in Sources */,
 				885A8A5C2A9A8F9C0028E8BF /* WelcomeMainImageView.swift in Sources */,
 				885A8A662A9A927C0028E8BF /* ArcDrawDocument.swift in Sources */,
@@ -432,26 +433,25 @@
 				885A8AB12A9B5C480028E8BF /* CalcArcs.swift in Sources */,
 				885A8AAB2A9B5BBD0028E8BF /* DecodeIndex.swift in Sources */,
 				885A8A5B2A9A8F9C0028E8BF /* WelcomeView.swift in Sources */,
-				885A8AD92A9B74730028E8BF /* Petals.json in Sources */,
+				885A8AD92A9B74730028E8BF /* petals.json in Sources */,
 				885A8AB52A9B5C940028E8BF /* AddDotAfter.swift in Sources */,
 				885A8AA92A9B5BA10028E8BF /* DefineDirection.swift in Sources */,
 				885A8ABD2A9B5D350028E8BF /* About.swift in Sources */,
 				885A8A602A9A8FE80028E8BF /* ArcDrawApp+Menu.swift in Sources */,
 				885A8AC32A9B5DE70028E8BF /* InitApplication.swift in Sources */,
-				885A8ADD2A9B74910028E8BF /* Spirals.json in Sources */,
+				885A8ADD2A9B74910028E8BF /* spirals.json in Sources */,
 				885A8AA52A9B5B510028E8BF /* DefineSketchDot.swift in Sources */,
 				885A8AAF2A9B5C040028E8BF /* ClearCurve.swift in Sources */,
 				885A8A5A2A9A8F9C0028E8BF /* WelcomeMainView.swift in Sources */,
 				885A8A9B2A9B5AB80028E8BF /* DrawSketchDot.swift in Sources */,
 				885A8A762A9AB66C0028E8BF /* DrawingController.swift in Sources */,
-				885A8ADF2A9B74AC0028E8BF /* YinYang.json in Sources */,
+				885A8ADF2A9B74AC0028E8BF /* yinyang.json in Sources */,
 				885A8ACE2A9B67430028E8BF /* AppState.swift in Sources */,
-				885A8AC72A9B5F5F0028E8BF /* GetLastErrorBox.swift in Sources */,
+				885A8AE32A9B86B60028E8BF /* GetLastErrorBox.swift in Sources */,
 				885A8A622A9A91CB0028E8BF /* WelcomeWindowController.swift in Sources */,
 				885A8A972A9B5A450028E8BF /* EraseLargeDot.swift in Sources */,
 				885A8AB72A9B5CB70028E8BF /* DrawDot.swift in Sources */,
 				885A8A6A2A9AAFC90028E8BF /* PanelDisplay.swift in Sources */,
-				885A8AD02A9B73BE0028E8BF /* CurveData.swift in Sources */,
 				885A8A652A9A927C0028E8BF /* PictureDefinition.swift in Sources */,
 				885A8A852A9B58FB0028E8BF /* Spirals.swift in Sources */,
 				885A8ABB2A9B5CF40028E8BF /* DefineDot.swift in Sources */,
@@ -461,7 +461,7 @@
 				885A8AC52A9B5E0C0028E8BF /* WinMain.swift in Sources */,
 				885A8A4F2A9A8D790028E8BF /* ContentView.swift in Sources */,
 				885A8A8B2A9B59790028E8BF /* Petals.swift in Sources */,
-				885A8AD52A9B74590028E8BF /* Hearts.json in Sources */,
+				885A8AD52A9B74590028E8BF /* hearts.json in Sources */,
 				885A8A872A9B59270028E8BF /* Shapes.swift in Sources */,
 				885A8AA12A9B5B160028E8BF /* DragDot.swift in Sources */,
 				885A8A4E2A9A8D790028E8BF /* ArcDrawApp.swift in Sources */,
@@ -477,7 +477,7 @@
 				885A8A782A9AB6940028E8BF /* DrawingView.swift in Sources */,
 				885A8A912A9B59DE0028E8BF /* Moons.swift in Sources */,
 				885A8A592A9A8F9C0028E8BF /* WelcomeHeaderView.swift in Sources */,
-				885A8ADB2A9B747E0028E8BF /* Shapes.json in Sources */,
+				885A8ADB2A9B747E0028E8BF /* shapes.json in Sources */,
 				885A8A742A9AB2C70028E8BF /* BitmapImage.swift in Sources */,
 				885A8ABF2A9B5D8C0028E8BF /* WndProc.swift in Sources */,
 				885A8A8F2A9B59BA0028E8BF /* NewCurve.swift in Sources */,

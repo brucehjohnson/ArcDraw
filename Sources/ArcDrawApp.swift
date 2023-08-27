@@ -24,8 +24,6 @@
 //      char szTitle[]   = "arcDraw Demo" // The title bar text
 
 
-
-
 import SwiftUI
 import AppKit
 
@@ -49,11 +47,12 @@ struct WindowAccessor: NSViewRepresentable {
 @main
 struct ArcDrawApp: App {
 
-  @StateObject private var defaultDocument = ArcDrawDocument()
+  @StateObject var doc = ArcDrawDocument()
   @StateObject var appState = AppState()
   @State private var shouldShowWelcomeWhenStartingUp: Bool
 
   init() {
+    print("initializing app")
     let initialState = UserDefaults.standard.object(forKey: "shouldShowWelcomeWhenStartingUp") as? Bool ?? true
     _appState = StateObject(wrappedValue: AppState())
     _shouldShowWelcomeWhenStartingUp = State(initialValue: initialState)
@@ -120,13 +119,14 @@ struct ArcDrawApp: App {
         WelcomeView()
           .environmentObject(appState)
           .onAppear {
+            print("Showing Welcome Screen on Startup")
             NSWindow.allowsAutomaticWindowTabbing = false
           }
       } else {
-        ContentView(doc: defaultDocument)
+        ContentView(doc: doc)
           .background(WindowAccessor { window in
             if let window = window {
-              let uniqueIdentifier = defaultDocument.picdef.id
+              let uniqueIdentifier = doc.picdef.id
               window.setFrameAutosaveName("Document Window \(uniqueIdentifier.uuidString)")
             }
           })

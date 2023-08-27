@@ -2,6 +2,8 @@ import SwiftUI
 
 @available(macOS 12.0, *)
 extension ArcDrawApp {
+
+
   func appMenuCommands() -> some Commands {
     Group {
       // Disable "New Window" option
@@ -19,13 +21,47 @@ extension ArcDrawApp {
       }
 
       CommandMenu("Examples") {
-        Button("Cursive"){}
-        Button("Hearts"){}
-        Button("Moons"){}
-        Button("Petals"){}
-        Button("Shapes"){}
-        Button("Spirals"){}
-        Button("YinYang"){}
+        Button("Cursive") {
+          print("Clicked Cursive Example")
+          doc.loadExampleJSONAndUpdate("cursive")
+
+        }
+        Button("Hearts") {
+          print("Clicked Hearts Example")
+
+          doc.loadExampleJSONAndUpdate("hearts")
+
+        }
+        Button("Moons") {
+          print("Clicked Moons Example")
+
+          doc.loadExampleJSONAndUpdate("moons")
+
+        }
+        Button("Petals") {
+          print("Clicked Petals Example")
+
+          doc.loadExampleJSONAndUpdate("petals")
+
+        }
+        Button("Shapes") {
+          print("Clicked Shapes Example")
+
+          doc.loadExampleJSONAndUpdate("shapes")
+
+        }
+        Button("Spirals") {
+          print("Clicked Spirals Example")
+
+          doc.loadExampleJSONAndUpdate("spirals")
+
+        }
+        Button("YinYang") {
+          print("Clicked YinYang Example")
+
+          doc.loadExampleJSONAndUpdate("yinyang")
+
+        }
       }
 
       CommandMenu("Welcome") {
@@ -48,6 +84,11 @@ extension ArcDrawApp {
       CommandGroup(replacing: CommandGroupPlacement.help) {
         Link(displayText, destination: url)
       }
+
+      
     }
   }
+
+  
+
 }

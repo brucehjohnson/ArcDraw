@@ -2,7 +2,7 @@
   "name": "Spirals",
   "description": "Generates a picture of various spirals.",
   "author": "Bruce Johnson",
-  "curves": [
+  "curveData": [
     {
       "name": "Spirals 1",
       "description": "A spiral shape with 12 dots",

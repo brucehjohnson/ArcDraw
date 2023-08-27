@@ -1,0 +1,65 @@
+{
+  "pictureName": "Shapes",
+  "pictureDescription": "Generates a picture of various shapes.",
+  "author": "Bruce Johnson",
+  "curveData": [
+    {
+      "dotLocations": [
+        {"x": 146, "y": 54},
+        {"x": 200, "y": 54},
+        {"x": 236, "y": 198},
+        {"x": 110, "y": 198},
+        {"x": 146, "y": 54}
+      ],
+      "startAngle": 0,
+      "endAngle": 45,
+      "isClockwise": true
+    },
+    {
+      "dotLocations": [
+        {"x": 299, "y": 63},
+        {"x": 407, "y": 63},
+        {"x": 407, "y": 162},
+        {"x": 299, "y": 162},
+        {"x": 299, "y": 63}
+      ],
+      "startAngle": 0,
+      "endAngle": 0,
+      "isClockwise": true
+    },
+    {
+      "dotLocations": [
+        {"x": 137, "y": 292},
+        {"x": 209, "y": 341},
+        {"x": 209, "y": 415},
+        {"x": 137, "y": 464},
+        {"x": 137, "y": 292}
+      ],
+      "startAngle": 0,
+      "endAngle": 35,
+      "isClockwise": true
+    },
+    {
+      "dotLocations": [
+        {"x": 353, "y": 236},
+        {"x": 401, "y": 311},
+        {"x": 305, "y": 311},
+        {"x": 353, "y": 236}
+      ],
+      "startAngle": 0,
+      "endAngle": 50,
+      "isClockwise": true
+    },
+    {
+      "dotLocations": [
+        {"x": 353, "y": 344},
+        {"x": 353, "y": 419},
+        {"x": 401, "y": 419},
+        {"x": 305, "y": 344}
+      ],
+      "startAngle": 0,
+      "endAngle": 140,
+      "isClockwise": true
+    }
+  ]
+}

@@ -18,6 +18,7 @@ import ImageIO
 import SwiftUI
 import UniformTypeIdentifiers
 
+
 var contextImageGlobal: CGImage?
 
  /**
@@ -64,6 +65,28 @@ final class ArcDrawDocument: ReferenceFileDocument, ObservableObject {
     self.docName = configuration.file.filename!
     print("Opening data file = ", self.docName)
   }
+
+  func loadExampleJSONAndUpdate(_ exampleName: String) {
+    print("Calling loadExampleJSONAndUpdate for \(exampleName).")
+    if let url = Bundle.main.url(forResource: exampleName, withExtension: "json") {
+      print("Attempting to load example JSON from URL: \(url)")
+      if let exampleJSONData = try? Data(contentsOf: url){
+        if let jsonString = String(data: exampleJSONData, encoding: .utf8) {
+          print("Example JSON from URL: \(jsonString)")
+        } else {
+          print("Failed to convert JSON data to string.")
+        }
+        if let pictureDefinition = try? JSONDecoder().decode(PictureDefinition.self, from: exampleJSONData) {
+          self.picdef = pictureDefinition
+        } else {
+          print("Failed to decode example JSON.")
+        }}
+      
+    } else {
+      print("Failed to find example JSON file.")
+    }
+  }
+
 
   /**
    Get the current window title (shows data file name).
