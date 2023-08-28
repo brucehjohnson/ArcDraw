@@ -3,8 +3,11 @@ import UniformTypeIdentifiers
 
 struct TabBasics: View {
   @ObservedObject var doc: ArcDrawDocument
-  @FocusState private var widthFieldFocused: Bool
-  @FocusState private var heightFieldFocused: Bool
+  @State private var selectedExample: String = "Shapes"
+
+
+
+  let exampleOptions = ["Cursive", "Hearts", "Moons", "Petals", "Shapes", "Spirals", "YinYang"]
 
   init(doc: ArcDrawDocument) {
     self.doc = doc
@@ -21,17 +24,20 @@ struct TabBasics: View {
     ScrollView {
       VStack {
 
-        Divider()
 
+
+
+        if doc.picdef.pictureName != "Name" && !doc.picdef.pictureName.isEmpty {
+          Text("\(doc.picdef.pictureName)")
+        }
+        Divider()
         Section(header:
                   Text("Set Image Size")
           .font(.headline)
           .fontWeight(.medium)
           .padding(.bottom)
         ) {
-
           HStack {
-
             VStack {
               Text("Width, px:")
               TextField(
@@ -43,11 +49,6 @@ struct TabBasics: View {
               .multilineTextAlignment(.trailing)
               .frame(maxWidth: 80)
               .help("Enter the width, in pixels, of the image.")
-              .focused($widthFieldFocused)
-
-            }
-            .onChange(of: doc.picdef.imageWidth) { _ in
-              doc.objectWillChange.send()
             }
 
             VStack {
@@ -61,46 +62,7 @@ struct TabBasics: View {
               .multilineTextAlignment(.trailing)
               .frame(maxWidth: 80)
               .help("Enter the height, in pixels, of the image.")
-              .focused($heightFieldFocused)
-
             }
-            .onChange(of: doc.picdef.imageWidth) { _ in
-              doc.objectWillChange.send()
-            }
-
-//            VStack {
-//
-//              Text("Width, px:")
-//              DelayedTextFieldInt(
-//                placeholder: "1100",
-//                value: $doc.picdef.imageWidth,
-//                formatter: ADFormatters.fmtImageWidthHeight
-//              )
-//              .textFieldStyle(.roundedBorder)
-//              .multilineTextAlignment(.trailing)
-//              .frame(maxWidth: 80)
-//              .help("Enter the width, in pixels, of the image.")
-//            } // end vstack
-//            .onChange(of: doc.picdef.imageWidth) { newValue in
-//              // Manually trigger a view refresh
-//              doc.objectWillChange.send()
-//            }
-
-//            VStack {
-//              Text("Height, px")
-//              DelayedTextFieldInt(
-//                placeholder: "1000",
-//                value: $doc.picdef.imageHeight,
-//                formatter: ADFormatters.fmtImageWidthHeight
-//              )
-//              .frame(maxWidth: 80)
-//              .help("Enter the height, in pixels, of the image.")
-//            } // end vstack
-//            .onChange(of: doc.picdef.imageHeight) { newValue in
-//              // Manually trigger a view refresh
-//              doc.objectWillChange.send()
-//            }
-
             VStack {
               Text("Aspect Ratio")
 
@@ -114,19 +76,30 @@ struct TabBasics: View {
 
         Divider()
 
+        // Dropdown for example selection
+        VStack(spacing: 10) {
+          Text("Want to see an example?")
+          Picker("Example", selection: $selectedExample) {
+            ForEach(exampleOptions, id: \.self) { example in
+              Text(example).tag(example)
+            }
+          }
+          .pickerStyle(.radioGroup)
+          .focusable(true)
+
+
+          Button("Show Example") {
+
+              doc.loadExampleJSONAndUpdate(selectedExample.lowercased())
+            }
+          .buttonStyle(DefaultButtonStyle())
+          .padding()
+          .focusable(true)
+
+        }
         Spacer()
 
       } //  vstack
     } // scrollview
-    .onAppear {
-      // Reset the focus states when the view appears
-      widthFieldFocused = false
-      heightFieldFocused = false
-    }
-    .onChange(of: doc.picdef) { _ in
-      // Switch focus to a non-text field element to release focus
-      widthFieldFocused = false
-      heightFieldFocused = false
-    }
   } //  body
 }

@@ -13,7 +13,7 @@ struct TabArcs: View {
       VStack(alignment: .leading) {
 
         Section(header:
-                  Text("Arc List")
+                  Text("Drawing Curves (Arcs)")
           .font(.headline)
           .fontWeight(.medium)
           .frame(maxWidth: .infinity, alignment: .center)
@@ -22,7 +22,7 @@ struct TabArcs: View {
 
           HStack {
 
-            Button("Add New Arc") { doc.addArcDefinition() }
+            Button("Add New Curve") { doc.addArcDefinition() }
               .help("Add a new arc definition.")
               .padding([.bottom], 2)
           }
