@@ -5,8 +5,6 @@ struct TabBasics: View {
   @ObservedObject var doc: ArcDrawDocument
   @State private var selectedExample: String = "Shapes"
 
-
-
   let exampleOptions = ["Cursive", "Hearts", "Moons", "Petals", "Shapes", "Spirals", "YinYang"]
 
   init(doc: ArcDrawDocument) {
@@ -23,9 +21,6 @@ struct TabBasics: View {
   var body: some View {
     ScrollView {
       VStack {
-
-
-
 
         if doc.picdef.pictureName != "Name" && !doc.picdef.pictureName.isEmpty {
           Text("\(doc.picdef.pictureName)")
@@ -86,7 +81,6 @@ struct TabBasics: View {
           }
           .pickerStyle(.radioGroup)
           .focusable(true)
-
 
           Button("Show Example") {
 

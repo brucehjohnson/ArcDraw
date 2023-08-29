@@ -11,14 +11,11 @@ struct ArcListView: View {
     }
   }
 
-
-
     var body: some View {
       // Wrap the list in a geometry reader so it will
       // shrink when items are deleted
       GeometryReader { geometry in
         List {
-
 
           ForEach($doc.picdef.arcDefinitions, id: \.num) { $arcDefinition in
 
@@ -33,13 +30,12 @@ struct ArcListView: View {
                 VStack(alignment: .leading, spacing: 2) {
 
                   // FIrst row num and name
-                  HStack{
+                  HStack {
                     Text("#\(arcDefinition.num)")
                     TextField("name", text: $arcDefinition.name)
                       .textFieldStyle(RoundedBorderTextFieldStyle())
                       .frame(maxWidth: 120)
                   }
-
 
                   // second row description
                   // second row description
@@ -51,13 +47,10 @@ struct ArcListView: View {
                     )
                     .padding(.all)
 
-
-
                   // third row start / end angles
 
-
                     HStack {
-                      VStack(alignment: .center){
+                      VStack(alignment: .center) {
                         Text("Start angle (º)")
 
                         TextField("0", value: $arcDefinition.startAngle, formatter: ADFormatters.fmtRotationTheta)
@@ -66,7 +59,7 @@ struct ArcListView: View {
                           .frame(maxWidth: 60)
                           .help("Enter the start angle in degrees.")
                       }
-                      VStack(alignment: .center){
+                      VStack(alignment: .center) {
                         Text("End angle (º)")
 
                         TextField("0", value: $arcDefinition.endAngle, formatter: ADFormatters.fmtRotationTheta)
@@ -84,12 +77,10 @@ struct ArcListView: View {
                       }
                       .padding()
 
-
-                    } //hstack row 3
+                    } // hstack row 3
                     .padding(1)
 
-
-                  } //vstack (card)
+                  } // vstack (card)
                   .padding(2)  // don't touch edges of Rectangle.
 
               ) // overlay

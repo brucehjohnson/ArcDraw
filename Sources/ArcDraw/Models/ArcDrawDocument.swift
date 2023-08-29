@@ -32,7 +32,6 @@ var contextImageGlobal: CGImage?
 @available(macOS 12.0, *)
 final class ArcDrawDocument: ReferenceFileDocument, ObservableObject {
 
-
   var docName: String = "unknown"
   static var readableContentTypes: [UTType] { [.arcdrawDocType] }
 
@@ -46,7 +45,6 @@ final class ArcDrawDocument: ReferenceFileDocument, ObservableObject {
   // to reflect the picdef changes
   @Published var picdef: PictureDefinition
   @Published var shouldUnfocus: Bool = false
-
 
   /**
    A simple initializer that creates a new demo picture
