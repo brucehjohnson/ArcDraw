@@ -3,6 +3,8 @@
   "pictureName": "Shapes",
   "pictureDescription": "Generates a picture of various shapes.",
     "author": "Bruce Johnson",
+    "imageWidth": 555,
+    "imageHeight": 555,
     "arcDefinitions": [
       {
         "num": 1,

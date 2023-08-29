@@ -4,13 +4,13 @@ import Foundation
 struct ArcDefinition: Codable, Equatable {
   var name: String = "Name"
   var description: String = "Description"
-  var dotLocations: [[String: Int]] // Array of dictionaries
+  var dotLocations: [[String: String]] // Array of dictionaries (strings)
   var startAngle: Double = 0.0
   var endAngle: Double = 0.0
   var isClockwise: Bool = true
   var num: Int = 1
 
-  init(name: String = "Name", description: String = "Description", dotLocations: [[String: Int]] = [], startAngle: Double = 0.0, endAngle: Double = 0.0, isClockwise: Bool = true, num: Int = 1) {
+  init(name: String = "Name", description: String = "Description", dotLocations: [[String: String]] = [], startAngle: Double = 0.0, endAngle: Double = 0.0, isClockwise: Bool = true, num: Int = 1) {
     self.name = name
     self.description = description
     self.dotLocations = dotLocations

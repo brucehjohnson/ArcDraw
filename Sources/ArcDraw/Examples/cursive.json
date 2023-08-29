@@ -3,6 +3,8 @@
   "pictureName": "Cursive",
   "pictureDescription": "Generates a picture of cursive handwriting.",
   "author": "Bruce Johnson",
+  "imageWidth": 501,
+  "imageHeight": 501,
   "arcDefinitions": [
     {
       "num": 1,

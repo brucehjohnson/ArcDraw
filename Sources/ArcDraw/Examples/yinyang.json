@@ -3,6 +3,8 @@
   "pictureName": "YinYang",
   "pictureDescription": "Generates a picture of a Yin-Yang figure.",
   "author": "Bruce Johnson",
+  "imageWidth": 577,
+  "imageHeight": 577,
   "arcDefinitions": [
     {
 

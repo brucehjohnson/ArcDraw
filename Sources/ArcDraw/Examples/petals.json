@@ -3,6 +3,8 @@
   "pictureName": "Petals",
   "pictureDescription": "Generates a picture of various petals.",
   "author": "Bruce Johnson",
+  "imageWidth": 540,
+  "imageHeight": 540,
   "arcDefinitions": [
     {
       "num": 1,

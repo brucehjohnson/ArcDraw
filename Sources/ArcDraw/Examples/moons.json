@@ -3,6 +3,8 @@
   "pictureName": "Moons",
   "pictureDescription": "Generates a picture of showing phases of the moon.",
   "author": "Bruce Johnson",
+  "imageWidth": 533,
+  "imageHeight": 533,
   "arcDefinitions": [
     {
       "num": 1,

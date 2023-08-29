@@ -3,6 +3,8 @@
   "pictureName": "Spirals",
   "pictureDescription": "Generates a picture of various spirals.",
   "author": "Bruce Johnson",
+  "imageWidth": 560,
+  "imageHeight": 560,
   "arcDefinitions": [
     {
       "num": 1,

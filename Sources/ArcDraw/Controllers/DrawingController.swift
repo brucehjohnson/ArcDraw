@@ -7,23 +7,36 @@ class DrawingController: ObservableObject {
     populateDotsFromPicdef(picdef: picdef)
   }
 
+  func getCGPointsForArcDefinition(arcDefinition: ArcDefinition) -> [CGPoint] {
+    var points: [CGPoint] = []
+
+    for dotLocation in arcDefinition.dotLocations {
+      if let xString = dotLocation["x"],
+         let yString = dotLocation["y"],
+         let xInteger = getIntFromPossibleSumString(dataString: xString),
+         let yInteger = getIntFromPossibleSumString(dataString: yString) {
+        let point = CGPoint(x: xInteger, y: yInteger)
+        print("point: \(xInteger), \(yInteger)")
+        points.append(point)
+      }
+    }
+    return points
+  }
+
   func populateDotsFromPicdef(picdef: PictureDefinition) {
     // Clear existing lines
     lines.removeAll()
 
     for arc in picdef.arcDefinitions {
-      // Draw the points for each dot in the arcDefinition
-      var points: [CGPoint] = []
-      for pointDict in arc.dotLocations {
-        if let x = pointDict["x"], let y = pointDict["y"] {
-          let point = CGPoint(x: x, y: y)
-          points.append(point)
+      var points: [CGPoint] = getCGPointsForArcDefinition(arcDefinition: arc)
+      for point in points {
+            points.append(point)
         }
-      }
-      // Create a new line for the collected points
       lines.append(Line(points: points))
+
+      }
+
     }
-  }
 
   func populateLinesFromPicdef(picdef: PictureDefinition) {
     // Clear existing lines
@@ -61,20 +74,40 @@ class DrawingController: ObservableObject {
       return []
   }
 
-  func generateDummyPointsForArc(_ arc: ArcDefinition) -> [CGPoint] {
+  func getIntFromPossibleSumString(dataString: String) -> Int? {
+    // Split x or y string by '+' character
+    let components = dataString.split(separator: "+")
 
-    print("Calculating dummy points for arc data \(arc).")
-
-    // Placeholder: Generate some dummy points to represent dots
-    var points: [CGPoint] = []
-
-    // For demonstration purposes, let's use the dotLocations directly
-    for pointDict in arc.dotLocations {
-      if let x = pointDict["x"], let y = pointDict["y"] {
-        let point = CGPoint(x: x, y: y)
-        points.append(point)
+    if components.count == 1 {
+      // If there's no '+', just convert string to integer
+      return Int(components[0])
+    } else if components.count == 2 {
+      // If there's a '+', convert components to integers and sum
+      if let firstInt = Int(components[0]), let secondInt = Int(components[1]) {
+        return firstInt + secondInt
       }
     }
+    // Return nil if can't convert or sum the components
+    return nil
+  }
+
+  func generateDummyPointsForArc(_ arc: ArcDefinition) -> [CGPoint] {
+    print("Calculating dummy points for arc data \(arc).")
+    var points: [CGPoint] = []
+
+//    for dotLocation in arc.dotLocations {
+//      let xString = docLocation["x"]
+//      let yString = docLocation["y"]
+//
+//      let xInteger = getIntFromPossibleSumString(dataString: xString)
+//      let yInteger = getIntFromPossibleSumString(dataString: yString)
+//
+//      if xInteger && yInteger {
+//        let point = CGPoint(x: xInteger, y: yInteger)
+//        print ("point: \(x), \(y)")
+//        points.append(point)
+//      }
+//    }
 
     return points
   }

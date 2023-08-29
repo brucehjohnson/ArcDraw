@@ -37,10 +37,9 @@ struct ArcListView: View {
                       .frame(maxWidth: 120)
                   }
 
-                  // second row description
-                  // second row description
+                  // second row description of this curve
                   TextEditor(text: $arcDefinition.description)
-                    .frame(height: 50)
+                    .frame(height: 24)
                     .overlay(
                       RoundedRectangle(cornerRadius: 8)
                         .stroke(Color.gray, lineWidth: 1)

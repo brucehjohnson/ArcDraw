@@ -18,6 +18,16 @@ struct TabBasics: View {
     return max(h / w, w / h)
   }
 
+  func simulateTabKeyPress() {
+    let source = CGEventSource(stateID: .hidSystemState)
+
+    let tabDown = CGEvent(keyboardEventSource: source, virtualKey: 0x30, keyDown: true) // 0x30 is the virtual key code for TAB
+    let tabUp = CGEvent(keyboardEventSource: source, virtualKey: 0x30, keyDown: false)
+
+    tabDown?.post(tap: .cghidEventTap)
+    tabUp?.post(tap: .cghidEventTap)
+  }
+
   var body: some View {
     ScrollView {
       VStack {
@@ -82,8 +92,11 @@ struct TabBasics: View {
           .pickerStyle(.radioGroup)
           .focusable(true)
 
+          // TODO: THis solution to the focus problem
+          // required me to give my machine permission
+          // to ArcDraw to use accessibility features
           Button("Show Example") {
-
+            simulateTabKeyPress()
               doc.loadExampleJSONAndUpdate(selectedExample.lowercased())
             }
           .buttonStyle(DefaultButtonStyle())
