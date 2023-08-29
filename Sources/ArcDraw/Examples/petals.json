@@ -5,6 +5,7 @@
   "author": "Bruce Johnson",
   "arcDefinitions": [
     {
+      "num": 1,
       "name": "Petals 1",
       "description": "A petal shape with 9 dots",
       "dotLocations": [
@@ -20,10 +21,10 @@
       ],
       "startAngle": 0,
       "endAngle": 0,
-      "isClockwise": true,
-      "num": 1
+      "isClockwise": true
     },
     {
+      "num": 2,
       "name": "Petals 2",
       "description": "Another petal shape with 6 dots",
       "dotLocations": [
@@ -36,10 +37,10 @@
       ],
       "startAngle": 0,
       "endAngle": 0,
-      "isClockwise": true,
-      "num": 2
+      "isClockwise": true
     },
     {
+      "num": 3,
       "name": "Petals 3",
       "description": "A petal shape with 6 dots",
       "dotLocations": [
@@ -52,10 +53,10 @@
       ],
       "startAngle": 0,
       "endAngle": 0,
-      "isClockwise": true,
-      "num": 3
+      "isClockwise": true
     },
     {
+      "num": 4,
       "name": "Petals 4",
       "description": "A petal shape with 6 dots",
       "dotLocations": [
@@ -68,10 +69,10 @@
       ],
       "startAngle": 0,
       "endAngle": 0,
-      "isClockwise": true,
-      "num": 4
+      "isClockwise": true
     },
     {
+      "num": 5,
       "name": "Petals 5",
       "description": "A petal shape with 4 dots",
       "dotLocations": [
@@ -82,10 +83,10 @@
       ],
       "startAngle": 0,
       "endAngle": 0,
-      "isClockwise": true,
-      "num": 5
+      "isClockwise": true
     },
     {
+      "num": 5,
       "name": "Petals 6",
       "description": "A petal shape with 4 dots",
       "dotLocations": [
@@ -96,10 +97,10 @@
       ],
       "startAngle": 0,
       "endAngle": 0,
-      "isClockwise": true,
-      "num": 6
+      "isClockwise": true
     },
     {
+      "num": 7,
       "name": "Petals 7",
       "description": "A petal shape with 4 dots",
       "dotLocations": [
@@ -110,10 +111,10 @@
       ],
       "startAngle": 0,
       "endAngle": 0,
-      "isClockwise": true,
-      "num": 7
+      "isClockwise": true
     },
     {
+      "num": 8,
       "name": "Petals 8",
       "description": "A petal shape with 4 dots",
       "dotLocations": [
@@ -124,10 +125,10 @@
       ],
       "startAngle": 0,
       "endAngle": 0,
-      "isClockwise": true,
-      "num": 8
+      "isClockwise": true
     },
     {
+      "num": 9,
       "name": "Petals 9",
       "description": "A petal shape with 13 dots",
       "dotLocations": [
@@ -147,10 +148,10 @@
       ],
       "startAngle": 0,
       "endAngle": 0,
-      "isClockwise": true,
-      "num": 9
+      "isClockwise": true
     },
     {
+      "num": 10,
       "name": "Petals 10",
       "description": "A petal shape with 13 dots",
       "dotLocations": [
@@ -170,10 +171,10 @@
       ],
       "startAngle": 0,
       "endAngle": 0,
-      "isClockwise": true,
-      "num": 10
+      "isClockwise": true
     },
     {
+      "num": 11,
       "name": "Petals 11",
       "description": "A petal shape with 13 dots",
       "dotLocations": [
@@ -193,10 +194,10 @@
       ],
       "startAngle": 0,
       "endAngle": 0,
-      "isClockwise": true,
-      "num": 11
+      "isClockwise": true
     },
     {
+      "num": 12,
       "name": "Petals 12",
       "description": "A petal shape with 13 dots",
       "dotLocations": [
@@ -216,10 +217,10 @@
       ],
       "startAngle": 0,
       "endAngle": 0,
-      "isClockwise": true,
-      "num": 12
+      "isClockwise": true
     },
     {
+      "num": 13,
       "name": "Petals 13",
       "description": "A petal shape with 13 dots",
       "dotLocations": [
@@ -239,10 +240,10 @@
       ],
       "startAngle": 0,
       "endAngle": 0,
-      "isClockwise": true,
-      "num": 13
+      "isClockwise": true
     },
     {
+      "num": 14,
       "name": "Petals 14",
       "description": "A petal shape with 13 dots",
       "dotLocations": [
@@ -262,10 +263,10 @@
       ],
       "startAngle": 0,
       "endAngle": 0,
-      "isClockwise": true,
-      "num": 14
+      "isClockwise": true
     },
     {
+      "num": 15,
       "name": "Petals 15",
       "description": "A petal shape with 13 dots",
       "dotLocations": [
@@ -285,10 +286,10 @@
       ],
       "startAngle": 0,
       "endAngle": 0,
-      "isClockwise": true,
-      "num": 15
+      "isClockwise": true
     },
     {
+      "num": 16,
       "name": "Petals 16",
       "description": "A petal shape with 13 dots",
       "dotLocations": [
@@ -308,10 +309,11 @@
       ],
       "startAngle": 0,
       "endAngle": 0,
-      "isClockwise": true,
-      "num": 16
-    },
+      "isClockwise": true
+    }
+    ,
     {
+      "num": 17,
       "name": "Petals 17",
       "description": "A petal shape with 18 dots",
       "dotLocations": [
@@ -336,10 +338,10 @@
       ],
       "startAngle": 0,
       "endAngle": 0,
-      "isClockwise": true,
-      "num": 17
+      "isClockwise": true
     },
     {
+      "num": 18,
       "name": "Petals 18",
       "description": "A petal shape with 18 dots",
       "dotLocations": [
@@ -364,8 +366,7 @@
       ],
       "startAngle": 0,
       "endAngle": 0,
-      "isClockwise": true,
-      "num": 18
+      "isClockwise": true
     }
   ]
 }

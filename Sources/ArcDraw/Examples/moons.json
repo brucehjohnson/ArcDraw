@@ -5,6 +5,7 @@
   "author": "Bruce Johnson",
   "arcDefinitions": [
     {
+      "num": 1,
       "name": "Moons 1",
       "description": "Moon 1",
       "dotLocations": [
@@ -14,10 +15,11 @@
       ],
       "startAngle": 0,
       "endAngle": 90,
-      "isClockwise": true,
-      "num": 1
+      "isClockwise": true
     },
-    { "name": "Moons 2",
+    {
+      "num": 2,
+      "name": "Moons 2",
       "description": "Moon 2",
       "dotLocations": [
         {"x": 270+83, "y": 90},
@@ -25,10 +27,11 @@
       ],
       "startAngle": 0,
       "endAngle": 90,
-      "isClockwise": true,
-      "num": 2
+      "isClockwise": true
     },
-    { "name": "Moons 3",
+    {
+      "num": 3,
+      "name": "Moons 3",
       "description": "Moon 3",
       "dotLocations": [
         {"x": 270+83, "y": 90},
@@ -36,10 +39,11 @@
       ],
       "startAngle": 225,
       "endAngle": 180,
-      "isClockwise": true,
-      "num": 3
+      "isClockwise": true
     },
-    { "name": "Moons 4",
+    {
+      "num": 4,
+      "name": "Moons 4",
       "description": "Moon 4",
       "dotLocations": [
         {"x": 90+83, "y": 342},
@@ -47,10 +51,11 @@
       ],
       "startAngle": 90,
       "endAngle": 90,
-      "isClockwise": true,
-      "num": 4
+      "isClockwise": true
     },
-    { "name": "Moons 5",
+    {
+      "num": 5,
+      "name": "Moons 5",
       "description": "Moon 5",
       "dotLocations": [
         {"x": 90+83, "y": 342},
@@ -58,10 +63,11 @@
       ],
       "startAngle": 180,
       "endAngle": 180,
-      "isClockwise": true,
-      "num": 5
+      "isClockwise": true
     },
-    { "name": "Moons 6",
+    {
+      "num": 6,
+      "name": "Moons 6",
       "description": "Moon 6",
       "dotLocations": [
         {"x": 270+83, "y": 342},
@@ -69,10 +75,11 @@
       ],
       "startAngle": 90,
       "endAngle": 90,
-      "isClockwise": true,
-      "num": 6
+      "isClockwise": true
     },
-    { "name": "Moons 7",
+    {
+      "num": 7,
+      "name": "Moons 7",
       "description": "Moon 7",
       "dotLocations": [
         {"x": 270+83, "y": 342},
@@ -80,8 +87,7 @@
       ],
       "startAngle": 135,
       "endAngle": 135,
-      "isClockwise": true,
-      "num": 7
+      "isClockwise": true
     }
   ]
 }

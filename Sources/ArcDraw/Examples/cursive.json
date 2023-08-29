@@ -5,6 +5,7 @@
   "author": "Bruce Johnson",
   "arcDefinitions": [
     {
+      "num": 1,
       "name": "Curve 1",
       "description": "A cursive curve with 4 dots",
       "dotLocations": [
@@ -16,10 +17,10 @@
       ],
       "startAngle": 0,
       "endAngle": 200,
-      "isClockwise": true,
-      "num": 1
+      "isClockwise": true
     },
     {
+      "num": 2,
       "name": "Curve 2",
       "description": "Another cursive curve with 2 dots",
       "dotLocations": [
@@ -28,10 +29,11 @@
       ],
       "startAngle": 0,
       "endAngle": 215,
-      "isClockwise": true,
-      "num": 2
+      "isClockwise": true
     },
     {
+      "num": 3,
+
       "name": "Curve 3",
       "description": "A curve with 4 dots",
       "dotLocations": [
@@ -43,10 +45,11 @@
       ],
       "startAngle": 0,
       "endAngle": 62,
-      "isClockwise": true,
-      "num": 3
+      "isClockwise": true
     },
     {
+      "num": 4,
+
       "name": "Curve 4",
       "description": "A curve with 5 dots",
       "dotLocations": [
@@ -58,10 +61,11 @@
       ],
       "startAngle": 0,
       "endAngle": 30,
-      "isClockwise": true,
-      "num": 4
+      "isClockwise": true
     },
     {
+      "num": 5,
+
       "name": "Curve 5",
       "description": "A curve with 5 dots",
       "dotLocations": [
@@ -73,10 +77,11 @@
       ],
       "startAngle": 0,
       "endAngle": 232,
-      "isClockwise": true,
-      "num": 5
+      "isClockwise": true
     },
-    {
+    {      "num": 6,
+
+
       "name": "Curve 6",
       "description": "A curve with 4 dots",
       "dotLocations": [
@@ -87,10 +92,10 @@
       ],
       "startAngle": 0,
       "endAngle": 224,
-      "isClockwise": true,
-      "num": 6
+      "isClockwise": true
     },
-    {
+    {      "num": 7,
+
       "name": "Curve 7",
       "description": "A curve with 3 dots",
       "dotLocations": [
@@ -100,10 +105,10 @@
       ],
       "startAngle": 0,
       "endAngle": 220,
-      "isClockwise": true,
-      "num": 7
+      "isClockwise": true
     }
-    {
+    {      "num": 8,
+
       "name": "Curve 8",
       "description": "A curve with 8 dots",
       "dotLocations": [
@@ -118,10 +123,10 @@
       ],
       "startAngle": 0,
       "endAngle": 79,
-      "isClockwise": true,
-      "num": 8
+      "isClockwise": true
     },
-    {
+    {      "num": 9,
+
       "name": "Curve 9",
       "description": "A curve with 2 dots",
       "dotLocations": [
@@ -130,10 +135,10 @@
       ],
       "startAngle": 0,
       "endAngle": 0,
-      "isClockwise": true,
-      "num": 9
-    },
-    {
+      "isClockwise": true
+    }
+    {      "num": 10,
+
       "name": "Curve 10",
       "description": "A curve with 6 dots",
       "dotLocations": [
@@ -146,10 +151,10 @@
       ],
       "startAngle": 0,
       "endAngle": 0,
-      "isClockwise": true,
-      "num": 10
+      "isClockwise": true
     },
-    {
+    {      "num": 11,
+
       "name": "Curve 11",
       "description": "A curve with 6 dots",
       "dotLocations": [
@@ -162,10 +167,10 @@
       ],
       "startAngle": 0,
       "endAngle": 0,
-      "isClockwise": true,
-      "num": 11
-    },
-    {
+      "isClockwise": true
+    }
+    {      "num": 12,
+
       "name": "Curve 12",
       "description": "A curve with 3 dots",
       "dotLocations": [
@@ -175,10 +180,10 @@
       ],
       "startAngle": 0,
       "endAngle": 0,
-      "isClockwise": true,
-      "num": 12
+      "isClockwise": true
     },
-    {
+    {      "num": 13,
+
       "name": "Curve 13",
       "description": "A curve with 3 dots",
       "dotLocations": [
@@ -188,8 +193,7 @@
       ],
       "startAngle": 0,
       "endAngle": 0,
-      "isClockwise": true,
-      "num": 13
+      "isClockwise": true
     }
 
   ]

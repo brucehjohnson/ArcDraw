@@ -5,6 +5,7 @@
   "author": "Bruce Johnson",
   "arcDefinitions": [
     {
+      "num": 1,
       "name": "Heart 1",
       "description": "A heart shape with 3 dots",
       "dotLocations": [
@@ -14,10 +15,10 @@
       ],
       "startAngle": 0,
       "endAngle": 0,
-      "isClockwise": true,
-      "num": 1
+      "isClockwise": true
     },
     {
+      "num": 2,
       "name": "Heart 2",
       "description": "Another heart shape with 3 dots",
       "dotLocations": [
@@ -27,10 +28,10 @@
       ],
       "startAngle": 0,
       "endAngle": 0,
-      "isClockwise": true,
-      "num": 2
+      "isClockwise": true
     },
     {
+      "num": 3,
       "name": "Heart 3",
       "description": "A heart shape with 3 dots",
       "dotLocations": [
@@ -40,10 +41,10 @@
       ],
       "startAngle": 0,
       "endAngle": 0,
-      "isClockwise": true,
-      "num": 3
+      "isClockwise": true
     },
     {
+      "num": 4,
       "name": "Heart 4",
       "description": "Another heart shape with 3 dots",
       "dotLocations": [
@@ -53,10 +54,10 @@
       ],
       "startAngle": 0,
       "endAngle": 0,
-      "isClockwise": true,
-      "num": 4
+      "isClockwise": true
     },
     {
+      "num": 5,
       "name": "Heart 5",
       "description": "A heart shape with 4 dots",
       "dotLocations": [
@@ -67,10 +68,10 @@
       ],
       "startAngle": 0,
       "endAngle": 0,
-      "isClockwise": true,
-      "num": 5
+      "isClockwise": true
     },
     {
+      "num": 6,
       "name": "Heart 6",
       "description": "Another heart shape with 4 dots",
       "dotLocations": [
@@ -81,10 +82,10 @@
       ],
       "startAngle": 0,
       "endAngle": 0,
-      "isClockwise": true,
-      "num": 6
+      "isClockwise": true
     },
     {
+      "num": 7,
       "name": "Heart 7",
       "description": "A heart shape with 4 dots",
       "dotLocations": [
@@ -95,10 +96,10 @@
       ],
       "startAngle": 0,
       "endAngle": 0,
-      "isClockwise": true,
-      "num": 7
+      "isClockwise": true
     },
     {
+      "num": 8,
       "name": "Heart 8",
       "description": "Another heart shape with 4 dots",
       "dotLocations": [
@@ -109,8 +110,7 @@
       ],
       "startAngle": 0,
       "endAngle": 0,
-      "isClockwise": true,
-      "num": 8
+      "isClockwise": true
     }
   ]
 }

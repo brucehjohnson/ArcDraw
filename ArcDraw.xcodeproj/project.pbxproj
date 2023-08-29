@@ -23,7 +23,6 @@
 		880250D72A9BD0B40076E001 /* TabBasics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 880250D62A9BD0B40076E001 /* TabBasics.swift */; };
 		880250D92A9BD0BE0076E001 /* TabArcs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 880250D82A9BD0BE0076E001 /* TabArcs.swift */; };
 		880250DB2A9BD0CB0076E001 /* TabSave.swift in Sources */ = {isa = PBXBuildFile; fileRef = 880250DA2A9BD0CB0076E001 /* TabSave.swift */; };
-		880250DD2A9C4EC30076E001 /* json_add.py in Resources */ = {isa = PBXBuildFile; fileRef = 880250DC2A9C4EC30076E001 /* json_add.py */; };
 		885A8A4B2A9A8D790028E8BF /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 885A8A452A9A8D790028E8BF /* README.md */; };
 		885A8A4C2A9A8D790028E8BF /* DEV_NOTES.md in Resources */ = {isa = PBXBuildFile; fileRef = 885A8A462A9A8D790028E8BF /* DEV_NOTES.md */; };
 		885A8A4D2A9A8D790028E8BF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 885A8A472A9A8D790028E8BF /* Assets.xcassets */; };
@@ -105,7 +104,6 @@
 		880250D62A9BD0B40076E001 /* TabBasics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBasics.swift; sourceTree = "<group>"; };
 		880250D82A9BD0BE0076E001 /* TabArcs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabArcs.swift; sourceTree = "<group>"; };
 		880250DA2A9BD0CB0076E001 /* TabSave.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabSave.swift; sourceTree = "<group>"; };
-		880250DC2A9C4EC30076E001 /* json_add.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = json_add.py; sourceTree = "<group>"; };
 		885A8A452A9A8D790028E8BF /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		885A8A462A9A8D790028E8BF /* DEV_NOTES.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = DEV_NOTES.md; sourceTree = "<group>"; };
 		885A8A472A9A8D790028E8BF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -311,7 +309,6 @@
 				885A8A862A9B59270028E8BF /* Shapes.swift */,
 				885A8A842A9B58FB0028E8BF /* Spirals.swift */,
 				885A8A7C2A9B56EB0028E8BF /* YinYang.swift */,
-				880250DC2A9C4EC30076E001 /* json_add.py */,
 			);
 			path = Examples;
 			sourceTree = "<group>";
@@ -431,7 +428,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				880250C22A9B9D630076E001 /* hearts.json in Resources */,
-				880250DD2A9C4EC30076E001 /* json_add.py in Resources */,
 				880250C32A9B9D630076E001 /* moons.json in Resources */,
 				880250C42A9B9D630076E001 /* petals.json in Resources */,
 				880250C52A9B9D630076E001 /* shapes.json in Resources */,

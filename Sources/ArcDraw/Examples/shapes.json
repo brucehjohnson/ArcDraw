@@ -5,73 +5,77 @@
     "author": "Bruce Johnson",
     "arcDefinitions": [
       {
+        "num": 1,
         "name": "Shapes 1",
         "description": "Shapes 1",
         "dotLocations": [
-          {"x": 146, "y": 54},
-          {"x": 200, "y": 54},
-          {"x": 236, "y": 198},
-          {"x": 110, "y": 198},
-          {"x": 146, "y": 54}
+          {"x": "63+83", "y": "54"},
+          {"x": "117+83", "y": "54"},
+          {"x": "153+83", "y": "198"},
+          {"x": "27+83", "y": "198"},
+          {"x": "63+83", "y": "54"}
         ],
         "startAngle": 0,
         "endAngle": 45,
-        "isClockwise": true,
-        "num": 1
+        "isClockwise": true
       },
-      {      "name": "Shapes 2",
+      {
+        "num": 2,
+        "name": "Shapes 2",
         "description": "Shapes 2",
         "dotLocations": [
-          {"x": 299, "y": 63},
-          {"x": 407, "y": 63},
-          {"x": 407, "y": 162},
-          {"x": 299, "y": 162},
-          {"x": 299, "y": 63}
+          {"x": "216+83", "y": "63"},
+          {"x": "324+83", "y": "63"},
+          {"x": "324+83", "y": "162"},
+          {"x": "216+83", "y": "162"},
+          {"x": "216+83", "y": "63"}
         ],
         "startAngle": 0,
         "endAngle": 0,
-        "isClockwise": true,
-        "num": 2
+        "isClockwise": true
       },
-      {      "name": "Shapes 3",
+      {
+        "num": 3,
+        "name": "Shapes 3",
         "description": "Shapes 3",
         "dotLocations": [
-          {"x": 137, "y": 292},
-          {"x": 209, "y": 341},
-          {"x": 209, "y": 415},
-          {"x": 137, "y": 464},
-          {"x": 137, "y": 292}
+          {"x": "54+83", "y": "292"},
+          {"x": "126+83", "y": "341"},
+          {"x": "126+83", "y": "415"},
+          {"x": "54+83", "y": "464"},
+          {"x": "54+83", "y": "292"}
         ],
         "startAngle": 0,
         "endAngle": 35,
-        "isClockwise": true,
-        "num": 3
+        "isClockwise": true
       },
-      {      "name": "Shapes 4",
+      {
+        "num": 4,
+        "name": "Shapes 4",
         "description": "Shapes 4",
         "dotLocations": [
-          {"x": 353, "y": 236},
-          {"x": 401, "y": 311},
-          {"x": 305, "y": 311},
-          {"x": 353, "y": 236}
+          {"x": "270+83", "y": "236"},
+          {"x": "318+83", "y": "311"},
+          {"x": "222+83", "y": "311"},
+          {"x": "270+83", "y": "236"}
         ],
         "startAngle": 0,
         "endAngle": 50,
-        "isClockwise": true,
-        "num": 4
+        "isClockwise": true
       },
-      {      "name": "Shapes 5",
+      {
+        "num": 5,
+        "name": "Shapes 5",
         "description": "Shapes 5",
         "dotLocations": [
-          {"x": 353, "y": 344},
-          {"x": 353, "y": 419},
-          {"x": 401, "y": 419},
-          {"x": 305, "y": 344}
+          {"x": "270+83", "y": "344"},
+          {"x": "270+83", "y": "419"},
+          {"x": "318+83", "y": "419"},
+          {"x": "222+83", "y": "344"}
         ],
         "startAngle": 0,
         "endAngle": 140,
-        "isClockwise": true,
-        "num": 5
+        "isClockwise": true
       }
     ]
-  }
+}

@@ -40,6 +40,40 @@
 			<key>uniqueIdentifier</key>
 			<string>08832676-3BE6-4FE7-B69D-AACD9495FD7A</string>
 		</dict>
+		<key>89833DFA-9EE2-4132-8586-630D8C437769</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>89833DFA-9EE2-4132-8586-630D8C437769.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>ArcDraw project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>ArcDraw</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build ArcDraw</string>
+			<key>timeStartedRecording</key>
+			<real>714973203.34808099</real>
+			<key>timeStoppedRecording</key>
+			<real>714973212.49864995</real>
+			<key>title</key>
+			<string>Build ArcDraw</string>
+			<key>uniqueIdentifier</key>
+			<string>89833DFA-9EE2-4132-8586-630D8C437769</string>
+		</dict>
 	</dict>
 </dict>
 </plist>

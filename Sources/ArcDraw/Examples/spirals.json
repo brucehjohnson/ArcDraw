@@ -5,6 +5,7 @@
   "author": "Bruce Johnson",
   "arcDefinitions": [
     {
+      "num": 1,
       "name": "Spirals 1",
       "description": "A spiral shape with 12 dots",
       "dotLocations": [
@@ -23,10 +24,10 @@
       ],
       "startAngle": 0,
       "endAngle": 0,
-      "isClockwise": true,
-      "num": 1
+      "isClockwise": true
     },
     {
+      "num": 2,
       "name": "Spirals 2",
       "description": "A spiral shape with 11 dots",
       "dotLocations": [
@@ -44,8 +45,7 @@
       ],
       "startAngle": 0,
       "endAngle": 0,
-      "isClockwise": true,
-      "num": 2
+      "isClockwise": true
     }
   ]
 }
