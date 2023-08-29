@@ -5,7 +5,7 @@
   "author": "Bruce Johnson",
   "imageWidth": 577,
   "imageHeight": 577,
-  "arcDefinitions": [
+  "curves": [
     {
 
       "num": 1,

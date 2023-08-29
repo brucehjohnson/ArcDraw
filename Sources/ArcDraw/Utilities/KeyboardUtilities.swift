@@ -1,8 +1,11 @@
-//
-//  KeyboardUtilities.swift
-//  ArcDraw
-//
-//  Created by Denise Case on 8/29/23.
-//
+import SwiftUI
 
-import Foundation
+func simulateTabKeyPress() {
+  let source = CGEventSource(stateID: .hidSystemState)
+
+  let tabDown = CGEvent(keyboardEventSource: source, virtualKey: 0x30, keyDown: true) // 0x30 is the virtual key code for TAB
+  let tabUp = CGEvent(keyboardEventSource: source, virtualKey: 0x30, keyDown: false)
+
+  tabDown?.post(tap: .cghidEventTap)
+  tabUp?.post(tap: .cghidEventTap)
+}

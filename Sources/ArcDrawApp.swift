@@ -21,12 +21,13 @@ struct WindowAccessor: NSViewRepresentable {
 @main
 struct ArcDrawApp: App {
 
-  @StateObject var doc = ArcDrawDocument()
+  @ObservedObject var doc: ArcDrawDocument = ArcDrawDocument()
+  @State private var selectedExample: String = "Shapes"
+
   @StateObject var appState = AppState()
   @State private var shouldShowWelcomeWhenStartingUp: Bool
 
   init() {
-    print("Starting up. Calling ArcDrawApp.init()")
 
     let initialState = UserDefaults.standard.object(forKey: "shouldShowWelcomeWhenStartingUp") as? Bool ?? true
     _appState = StateObject(wrappedValue: AppState())

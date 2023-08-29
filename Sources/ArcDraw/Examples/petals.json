@@ -5,7 +5,7 @@
   "author": "Bruce Johnson",
   "imageWidth": 540,
   "imageHeight": 540,
-  "arcDefinitions": [
+  "curves": [
     {
       "num": 1,
       "name": "Petals 1",

@@ -1,20 +1,40 @@
-//
-//  DotsView.swift
-//  ArcDraw
-//
-//  Created by Denise Case on 8/29/23.
-//
-
 import SwiftUI
 
 struct DotsView: View {
-    var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
-    }
-}
+  @ObservedObject var doc: ArcDrawDocument // Add this line
+  @Binding var dots: [DotDefinition]
 
-struct DotsView_Previews: PreviewProvider {
-    static var previews: some View {
-        DotsView()
-    }
+  var body: some View {
+    VStack {
+      List {
+        ForEach(dots.indices, id: \.self) { index in
+          HStack {
+            Text("X: \(dots[index].x), Y: \(dots[index].y)")
+            Spacer()
+            Button(action: {
+              dots.remove(at: index)
+            }) {
+              Image(systemName: "trash")
+                .foregroundColor(.red)
+            }
+          }
+        }
+      }
+      .frame(maxHeight: 200) // Limit the height of the list
+      .overlay(
+        RoundedRectangle(cornerRadius: 8)
+          .stroke(Color.gray, lineWidth: 1)
+      )
+      .frame(maxHeight: 200)
+      .border(Color.blue)
+      .padding(.vertical)
+
+      Button("Add New Dot") {
+        if let selectedCurveIndex = doc.selectedCurveIndex,
+           let selectedDotIndex = doc.selectedDotIndex {
+          doc.addDotAfter(atCurveIndex: selectedCurveIndex, dotIndex: selectedDotIndex)
+        }      }
+    } // vstack
+    .border(Color.green)
+  } // body
 }

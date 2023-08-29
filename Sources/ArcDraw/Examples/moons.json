@@ -5,7 +5,7 @@
   "author": "Bruce Johnson",
   "imageWidth": 533,
   "imageHeight": 533,
-  "arcDefinitions": [
+  "curves": [
     {
       "num": 1,
       "name": "Moons 1",

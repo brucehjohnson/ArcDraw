@@ -7,19 +7,18 @@ class DrawingController: ObservableObject {
     populateDotsFromPicdef(picdef: picdef)
   }
 
-  func getCGPointsForArcDefinition(arcDefinition: ArcDefinition) -> [CGPoint] {
+  func getCGPointsForCurve(curves: CurveDefinition) -> [CGPoint] {
     var points: [CGPoint] = []
 
-    for dotLocation in arcDefinition.dotLocations {
-      if let xString = dotLocation["x"],
-         let yString = dotLocation["y"],
-         let xInteger = getIntFromPossibleSumString(dataString: xString),
-         let yInteger = getIntFromPossibleSumString(dataString: yString) {
-        let point = CGPoint(x: xInteger, y: yInteger)
-        print("point: \(xInteger), \(yInteger)")
+    for dot in curves.dots {
+         let xString = dot.x
+         let yString = dot.y
+         let xInteger = getIntFromPossibleSumString(dataString: xString)
+         let yInteger = getIntFromPossibleSumString(dataString: yString)
+        let point = CGPoint(x: xInteger!, y: yInteger!)
         points.append(point)
       }
-    }
+
     return points
   }
 
@@ -27,8 +26,8 @@ class DrawingController: ObservableObject {
     // Clear existing lines
     lines.removeAll()
 
-    for arc in picdef.arcDefinitions {
-      var points: [CGPoint] = getCGPointsForArcDefinition(arcDefinition: arc)
+    for curve in picdef.curves {
+      var points: [CGPoint] = getCGPointsForCurve(curves: curve)
       for point in points {
             points.append(point)
         }
@@ -42,12 +41,12 @@ class DrawingController: ObservableObject {
     // Clear existing lines
     lines.removeAll()
 
-    // Convert each arc in picdef to a series of connected lines
-    for arc in picdef.arcDefinitions {
+    // Convert each curve in picdef to a series of connected lines
+    for curve in picdef.curves {
 
       // TODO BHJ: switch to read function when ready
-      // let arcPoints = generatePointsForArc(arc)
-      let arcPoints = generateDummyPointsForArc(arc)
+      // let arcPoints = generatePointsForArc(curve)
+      let arcPoints = generateDummyPointsForArc(curve)
 
       // Create lines connecting each pair of adjacent points
       for i in 0..<(arcPoints.count - 1) {
@@ -58,19 +57,11 @@ class DrawingController: ObservableObject {
     }
   }
 
-  func generatePointsForArc(_ arc: ArcDefinition) -> [CGPoint] {
+  func generatePointsForCurve(_ curve: CurveDefinition) -> [CGPoint] {
     /*
      This is where the arcdraw magic happens
-     each arc has this data:
-
-     var name: String
-     var description: String
-     var dotLocations: [CGPoint]
-     var startAngle: Double
-     var endAngle: Double
-     var isClockwise: Bool
-     */
-    print("Calculating points for arc data \(arc).")
+   */
+    print("Calculating points for curve \(curve).")
       return []
   }
 
@@ -91,23 +82,9 @@ class DrawingController: ObservableObject {
     return nil
   }
 
-  func generateDummyPointsForArc(_ arc: ArcDefinition) -> [CGPoint] {
-    print("Calculating dummy points for arc data \(arc).")
+  func generateDummyPointsForArc(_ curve: CurveDefinition) -> [CGPoint] {
+    print("Calculating dummy points for curve data \(curve).")
     var points: [CGPoint] = []
-
-//    for dotLocation in arc.dotLocations {
-//      let xString = docLocation["x"]
-//      let yString = docLocation["y"]
-//
-//      let xInteger = getIntFromPossibleSumString(dataString: xString)
-//      let yInteger = getIntFromPossibleSumString(dataString: yString)
-//
-//      if xInteger && yInteger {
-//        let point = CGPoint(x: xInteger, y: yInteger)
-//        print ("point: \(x), \(y)")
-//        points.append(point)
-//      }
-//    }
 
     return points
   }

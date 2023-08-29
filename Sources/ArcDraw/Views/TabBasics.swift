@@ -9,7 +9,6 @@ struct TabBasics: View {
 
   init(doc: ArcDrawDocument) {
     self.doc = doc
-    print("TabBasics after init(): \(doc.picdef.imageWidth)")
   }
 
   func aspectRatio() -> Double {

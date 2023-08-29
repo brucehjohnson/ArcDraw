@@ -22,14 +22,24 @@ struct TabArcs: View {
 
           HStack {
 
-            Button("Add New Curve") { doc.addArcDefinition() }
+            Button("Add New Curve") {
+              // doc.addArcDefinition()
+              print("Clicked New Curve")
+              print("Selected curve index: \(doc.selectedCurveIndex)")
+              if let selectedArcIndex = doc.selectedCurveIndex {
+                doc.addCurveAfter(atArcIndex: selectedArcIndex)
+              } else {
+              doc.addArcDefinition()
+              }
+
+            }
               .help("Add a new arc definition.")
               .padding([.bottom], 2)
           }
 
           ArcListView(doc: doc)
-            .background(Color.red.opacity(0.5))
-            .frame(height: 300)
+           // .background(Color.red.opacity(0.5))
+            .frame(height: 500)
 
         }// end section
 

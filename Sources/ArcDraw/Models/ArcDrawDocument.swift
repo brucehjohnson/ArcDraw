@@ -1,17 +1,3 @@
-/**
- A document for creating and editing ArcDraw pictures.
-
- ArcDrawDocument is a reference file document that supports only reading and writing ArcDraw data files.
- Its snapshot is a PictureDefinition and it has a @Published picdef property that, when changed,
- triggers a reload of all views using the document. This document class also has a docName
- property for the name of the data document and a simple initializer that creates a new demo ArcDraw.
-
- For more information, see:
- https://www.hackingwithswift.com/quick-start/swiftui/
- how-to-create-a-document-based-app-using-filedocument-and-documentgroup
-
- Note: This class is only available on macOS 12.0 and later.
- */
 import AppKit
 import CoreGraphics
 import ImageIO
@@ -20,17 +6,13 @@ import UniformTypeIdentifiers
 
 var contextImageGlobal: CGImage?
 
- /**
-  A utility class to work with files for saving and sharing your art.
-
- Note: Since ArcDrawDocument is a class, we derive from
- [ReferenceFileDocument](
- https://developer.apple.com/documentation/swiftui/referencefiledocument
- )
- rather than FileDocument for a struct.
-*/
 @available(macOS 12.0, *)
 final class ArcDrawDocument: ReferenceFileDocument, ObservableObject {
+
+  @Published var picdef: PictureDefinition
+  @Published var selectedCurveIndex: Int?
+  @Published var selectedDotIndex: Int?
+  @Published var shouldUnfocus: Bool = false
 
   var docName: String = "unknown"
   static var readableContentTypes: [UTType] { [.arcdrawDocType] }
@@ -39,59 +21,12 @@ final class ArcDrawDocument: ReferenceFileDocument, ObservableObject {
   // while active self remains editable by the user
   typealias Snapshot = PictureDefinition
 
-  // our document has a @Published picdef property,
-  // so when picdef is changed,
-  // all views using that document will be reloaded
-  // to reflect the picdef changes
-  @Published var picdef: PictureDefinition
-  @Published var shouldUnfocus: Bool = false
-
   /**
    A simple initializer that creates a new demo picture
    */
   init() {
-    let arcDefinitions: [ArcDefinition] = [
-      ArcDefinition(
-        name: "Arc 1",
-        description: "This is the first arc.",
-        dotLocations: [
-          ["x": "100", "y": "100"],
-          ["x": "200", "y": "100"],
-          ["x": "200", "y": "200"],
-        ],
-        startAngle: 0,
-        endAngle: 90,
-        isClockwise: true,
-        num: 1
-      ),
-      ArcDefinition(
-        name: "Arc 2",
-        description: "This is the second arc.",
-        dotLocations: [
-          ["x": "300", "y": "100"],
-          ["x": "400", "y": "100"],
-          ["x": "400", "y": "200"],
-        ],
-        startAngle: 45,
-        endAngle: 180,
-        isClockwise: false,
-        num: 2
-      ),
-      ArcDefinition(
-        name: "Arc 3",
-        description: "This is the third arc.",
-        dotLocations: [
-          ["x": "150", "y": "300"],
-          ["x": "250", "y": "300"],
-          ["x": "250", "y": "400"],
-        ],
-        startAngle: -30,
-        endAngle: 120,
-        isClockwise: true,
-        num: 3
-      ),
-    ]
-    self.picdef = PictureDefinition(arcDefinitions: arcDefinitions)
+    let curves = CurveDefinition()
+    self.picdef = PictureDefinition(curves: [CurveDefinition()])
   }
 
   /**
@@ -104,13 +39,95 @@ final class ArcDrawDocument: ReferenceFileDocument, ObservableObject {
     }
     self.picdef = try JSONDecoder().decode(PictureDefinition.self, from: data)
     self.docName = configuration.file.filename!
-    print("Opening data file = ", self.docName)
   }
 
+  // ===================================== CURVES
+
+  func addCurveAfter(atCurveIndex curveIndex: Int) {
+    let newCurve = CurveDefinition()
+    if picdef.curves.isEmpty {
+      picdef.curves.append(newCurve)
+      selectedCurveIndex = 0
+    } else {
+      picdef.curves.insert(newCurve, at: curveIndex + 1)
+      selectedCurveIndex = curveIndex + 1
+    }
+    selectedDotIndex = nil // Reset selectedDotIndex
+  }
+
+  func addCurveAfter(atArcIndex arcIndex: Int) {
+    let newArc = CurveDefinition()
+    let insertionIndex = arcIndex + 1
+    picdef.curves.insert(newArc, at: insertionIndex)
+    selectedCurveIndex = insertionIndex
+    selectedDotIndex = nil // Reset selectedDotIndex
+  }
+
+  func deleteCurve(atArcIndex arcIndex: Int) {
+    // Placeholder implementation for deleting the selected curve
+    // You can replace this with your actual logic for deleting a curve
+    if picdef.curves.indices.contains(arcIndex) {
+      picdef.curves.remove(at: arcIndex)
+      selectedCurveIndex = nil // Reset selectedArcIndex
+      selectedDotIndex = nil // Reset selectedDotIndex
+    }
+  }
+
+  // ================================= DOTS
+
+  func addDotBefore(atCurveIndex curveIndex: Int, dotIndex: Int) {
+    guard picdef.curves.indices.contains(curveIndex),
+          picdef.curves[curveIndex].dots.indices.contains(dotIndex) else {
+      return // Invalid indices, do nothing
+    }
+
+    // Increase the num of all dots after the insertion point
+    for index in dotIndex..<picdef.curves[curveIndex].dots.count {
+      picdef.curves[curveIndex].dots[index].num += 1
+    }
+
+    // Create a new dot with the next num and insert it at the specified index
+    let newDot = DotDefinition(num: picdef.curves[curveIndex].dots[dotIndex].num,
+                               x: "25",
+                               y: "25")
+    picdef.curves[curveIndex].dots.insert(newDot, at: dotIndex)
+    selectedDotIndex = dotIndex // Set  to the newly added dot
+  }
+
+  func addDotAfter(atCurveIndex curveIndex: Int, dotIndex: Int) {
+    guard picdef.curves.indices.contains(curveIndex),
+          picdef.curves[curveIndex].dots.indices.contains(dotIndex) else {
+      return // Invalid indices, do nothing
+    }
+
+    // Increase the num of all dots after the insertion point
+    for index in (dotIndex + 1)..<picdef.curves[curveIndex].dots.count {
+      picdef.curves[curveIndex].dots[index].num += 1
+    }
+
+    // Create a new dot with the next num and insert it after the specified index
+    let newDot = DotDefinition(num: picdef.curves[curveIndex].dots[dotIndex].num + 1,
+                               x: "25",
+                               y: "25")
+    let insertionIndex = dotIndex + 1
+    picdef.curves[curveIndex].dots.insert(newDot, at: insertionIndex)
+    selectedDotIndex = insertionIndex // Set  to the newly added dot
+  }
+
+    func deleteDot(atCurveIndex curveIndex: Int, dotIndex: Int) {
+      guard picdef.curves.indices.contains(curveIndex),
+            picdef.curves[curveIndex].dots.indices.contains(dotIndex) else {
+        return // Invalid indices, do nothing
+      }
+
+      picdef.curves[curveIndex].dots.remove(at: dotIndex)
+      selectedDotIndex = nil // Reset -  dot is deleted
+    }
+
+  // ========================================= LOAD
+
   func loadExampleJSONAndUpdate(_ exampleName: String) {
-    print("Calling loadExampleJSONAndUpdate for \(exampleName).")
     if let url = Bundle.main.url(forResource: exampleName, withExtension: "json") {
-      print("Attempting to load example JSON from URL: \(url)")
       do {
         let exampleJSONData = try Data(contentsOf: url)
         if let jsonString = String(data: exampleJSONData, encoding: .utf8) {
@@ -323,10 +340,11 @@ final class ArcDrawDocument: ReferenceFileDocument, ObservableObject {
 extension ArcDrawDocument {
   // Adds a new arc Definition, and registers an undo action.
   func addArcDefinition(undoManager: UndoManager? = nil) {
-    self.picdef.arcDefinitions.append(ArcDefinition())
-    let newLength = self.picdef.arcDefinitions.count
-    self.picdef.arcDefinitions[newLength - 1].num = newLength
-    let count = self.picdef.arcDefinitions.count
+    print("adding new arc definition (curve)")
+    self.picdef.curves.append(CurveDefinition())
+    let newLength = self.picdef.curves.count
+    self.picdef.curves[newLength - 1].num = newLength
+    let count = self.picdef.curves.count
     undoManager?.registerUndo(withTarget: self) { doc in
       withAnimation {
         doc.deleteArcDefinition(index: count - 1, undoManager: undoManager)
@@ -336,9 +354,9 @@ extension ArcDrawDocument {
 
   // Deletes at an index, and registers an undo action.
   func deleteArcDefinition(index: Int, undoManager: UndoManager? = nil) {
-    let oldArcDefinitions = self.picdef.arcDefinitions
+    let oldArcDefinitions = self.picdef.curves
     withAnimation {
-      _ = picdef.arcDefinitions.remove(at: index)
+      _ = picdef.curves.remove(at: index)
     }
 
     undoManager?.registerUndo(withTarget: self) { doc in
@@ -348,11 +366,11 @@ extension ArcDrawDocument {
   }
 
   // Replaces the existing items with a new set of items.
-  func replaceArcDefinitions(with newArcDefinitions: [ArcDefinition], undoManager: UndoManager? = nil, animation: Animation? = .default) {
-    let oldArcDefinitions = self.picdef.arcDefinitions
+  func replaceArcDefinitions(with newArcDefinitions: [CurveDefinition], undoManager: UndoManager? = nil, animation: Animation? = .default) {
+    let oldArcDefinitions = self.picdef.curves
 
     withAnimation(animation) {
-      picdef.arcDefinitions = newArcDefinitions
+      picdef.curves = newArcDefinitions
     }
 
     undoManager?.registerUndo(withTarget: self) { doc in
@@ -363,9 +381,9 @@ extension ArcDrawDocument {
 
   // Relocates the specified items, and registers an undo action.
   func moveArcDefinitionsAt(offsets: IndexSet, toOffset: Int, undoManager: UndoManager? = nil) {
-    let oldArcDefinitions = self.picdef.arcDefinitions
+    let oldArcDefinitions = self.picdef.curves
     withAnimation {
-      picdef.arcDefinitions.move(fromOffsets: offsets, toOffset: toOffset)
+      picdef.curves.move(fromOffsets: offsets, toOffset: toOffset)
     }
 
     undoManager?.registerUndo(withTarget: self) { doc in
@@ -375,15 +393,15 @@ extension ArcDrawDocument {
   }
 
   // Registers an undo action and a redo action for a hue change
-  func registerUndoHueChange(for arcDefinition: ArcDefinition, oldArcDefinition: ArcDefinition, undoManager: UndoManager?) {
-    let index = self.picdef.arcDefinitions.firstIndex(of: arcDefinition)!
+  func registerUndoHueChange(for arcDefinition: CurveDefinition, oldArcDefinition: CurveDefinition, undoManager: UndoManager?) {
+    let index = self.picdef.curves.firstIndex(of: arcDefinition)!
 
     // The change has already happened, so save the collection of new items.
-    let newArcDefinitions = self.picdef.arcDefinitions
+    let newArcDefinitions = self.picdef.curves
 
     // Register the undo action.
     undoManager?.registerUndo(withTarget: self) { doc in
-      doc.picdef.arcDefinitions[index] = oldArcDefinition
+      doc.picdef.curves[index] = oldArcDefinition
 
       // Register the redo action.
       undoManager?.registerUndo(withTarget: self) { doc in

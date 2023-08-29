@@ -4,33 +4,28 @@ import Foundation
 struct PictureDefinition: Codable, Identifiable, Equatable {
 
   var id = UUID()
-
   var imageWidth: Int = 1100
   var imageHeight: Int = 1000
   var pictureName: String = "Name"
   var pictureDescription: String = "Description"
   var author: String = "Your Name"
-  var arcDefinitions: [ArcDefinition]
+  var curves: [CurveDefinition]
 
   init() {
-    self.arcDefinitions = []
+    self.curves = [CurveDefinition()]
   }
 
-  /**
-   Initialize with an array of ArcDefinitions
-   - Parameter arcDefinitions: an array of ArcDefinitions
-   */
-  init(arcDefinitions: [ArcDefinition]) {
-    self.arcDefinitions = arcDefinitions
+  init(curves: [CurveDefinition]) {
+    self.curves = curves
   }
 
-  init(imageWidth: Int, imageHeight: Int, pictureName: String, pictureDescription: String, author: String, arcDefinitions: [ArcDefinition]) {
+  init(imageWidth: Int, imageHeight: Int, pictureName: String, pictureDescription: String, author: String, curves: [CurveDefinition]) {
     self.imageWidth = imageWidth
     self.imageHeight = imageHeight
     self.pictureName = pictureName
     self.pictureDescription = pictureDescription
     self.author = author
-    self.arcDefinitions = arcDefinitions
+    self.curves = curves
   }
 
   static func ==(lhs: PictureDefinition, rhs: PictureDefinition) -> Bool {
@@ -39,6 +34,6 @@ struct PictureDefinition: Codable, Identifiable, Equatable {
     lhs.pictureName == rhs.pictureName &&
     lhs.pictureDescription == rhs.pictureDescription &&
     lhs.author == rhs.author &&
-    lhs.arcDefinitions == rhs.arcDefinitions
+    lhs.curves == rhs.curves
   }
 }

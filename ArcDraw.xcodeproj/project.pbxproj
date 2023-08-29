@@ -13,7 +13,7 @@
 		880250C52A9B9D630076E001 /* shapes.json in Resources */ = {isa = PBXBuildFile; fileRef = 885A8ADA2A9B747E0028E8BF /* shapes.json */; };
 		880250C62A9B9D630076E001 /* spirals.json in Resources */ = {isa = PBXBuildFile; fileRef = 885A8ADC2A9B74910028E8BF /* spirals.json */; };
 		880250C72A9B9D630076E001 /* yinyang.json in Resources */ = {isa = PBXBuildFile; fileRef = 885A8ADE2A9B74AC0028E8BF /* yinyang.json */; };
-		880250C92A9BB2120076E001 /* ArcDefinition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 880250C82A9BB2120076E001 /* ArcDefinition.swift */; };
+		880250C92A9BB2120076E001 /* CurveDefinition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 880250C82A9BB2120076E001 /* CurveDefinition.swift */; };
 		880250CB2A9BC5AC0076E001 /* ADFormatters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 880250CA2A9BC5AC0076E001 /* ADFormatters.swift */; };
 		880250CD2A9BC62F0076E001 /* CommaNumberFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 880250CC2A9BC62F0076E001 /* CommaNumberFormatter.swift */; };
 		880250D02A9BC6D10076E001 /* DelayedTextFieldInt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 880250CE2A9BC6D10076E001 /* DelayedTextFieldInt.swift */; };
@@ -23,6 +23,10 @@
 		880250D72A9BD0B40076E001 /* TabBasics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 880250D62A9BD0B40076E001 /* TabBasics.swift */; };
 		880250D92A9BD0BE0076E001 /* TabArcs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 880250D82A9BD0BE0076E001 /* TabArcs.swift */; };
 		880250DB2A9BD0CB0076E001 /* TabSave.swift in Sources */ = {isa = PBXBuildFile; fileRef = 880250DA2A9BD0CB0076E001 /* TabSave.swift */; };
+		880250E32A9E5BC80076E001 /* ArcView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 880250E22A9E5BC80076E001 /* ArcView.swift */; };
+		880250E52A9E617A0076E001 /* DotDefinition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 880250E42A9E617A0076E001 /* DotDefinition.swift */; };
+		880250E72A9E69380076E001 /* DotsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 880250E62A9E69380076E001 /* DotsView.swift */; };
+		880250E92A9E8ED10076E001 /* KeyboardUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 880250E82A9E8ED10076E001 /* KeyboardUtilities.swift */; };
 		885A8A4B2A9A8D790028E8BF /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 885A8A452A9A8D790028E8BF /* README.md */; };
 		885A8A4C2A9A8D790028E8BF /* DEV_NOTES.md in Resources */ = {isa = PBXBuildFile; fileRef = 885A8A462A9A8D790028E8BF /* DEV_NOTES.md */; };
 		885A8A4D2A9A8D790028E8BF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 885A8A472A9A8D790028E8BF /* Assets.xcassets */; };
@@ -94,7 +98,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		880250C82A9BB2120076E001 /* ArcDefinition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArcDefinition.swift; sourceTree = "<group>"; };
+		880250C82A9BB2120076E001 /* CurveDefinition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurveDefinition.swift; sourceTree = "<group>"; };
 		880250CA2A9BC5AC0076E001 /* ADFormatters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ADFormatters.swift; sourceTree = "<group>"; };
 		880250CC2A9BC62F0076E001 /* CommaNumberFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommaNumberFormatter.swift; sourceTree = "<group>"; };
 		880250CE2A9BC6D10076E001 /* DelayedTextFieldInt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DelayedTextFieldInt.swift; sourceTree = "<group>"; };
@@ -104,6 +108,10 @@
 		880250D62A9BD0B40076E001 /* TabBasics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBasics.swift; sourceTree = "<group>"; };
 		880250D82A9BD0BE0076E001 /* TabArcs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabArcs.swift; sourceTree = "<group>"; };
 		880250DA2A9BD0CB0076E001 /* TabSave.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabSave.swift; sourceTree = "<group>"; };
+		880250E22A9E5BC80076E001 /* ArcView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArcView.swift; sourceTree = "<group>"; };
+		880250E42A9E617A0076E001 /* DotDefinition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DotDefinition.swift; sourceTree = "<group>"; };
+		880250E62A9E69380076E001 /* DotsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DotsView.swift; sourceTree = "<group>"; };
+		880250E82A9E8ED10076E001 /* KeyboardUtilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardUtilities.swift; sourceTree = "<group>"; };
 		885A8A452A9A8D790028E8BF /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		885A8A462A9A8D790028E8BF /* DEV_NOTES.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = DEV_NOTES.md; sourceTree = "<group>"; };
 		885A8A472A9A8D790028E8BF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -209,8 +217,9 @@
 			children = (
 				885A8A642A9A927C0028E8BF /* ArcDrawDocument.swift */,
 				885A8A632A9A927C0028E8BF /* PictureDefinition.swift */,
-				880250C82A9BB2120076E001 /* ArcDefinition.swift */,
+				880250C82A9BB2120076E001 /* CurveDefinition.swift */,
 				885A8A792A9AB7FD0028E8BF /* Line.swift */,
+				880250E42A9E617A0076E001 /* DotDefinition.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -233,6 +242,8 @@
 				880250D62A9BD0B40076E001 /* TabBasics.swift */,
 				880250D82A9BD0BE0076E001 /* TabArcs.swift */,
 				880250D22A9BC7B20076E001 /* ArcListView.swift */,
+				880250E22A9E5BC80076E001 /* ArcView.swift */,
+				880250E62A9E69380076E001 /* DotsView.swift */,
 				880250DA2A9BD0CB0076E001 /* TabSave.swift */,
 			);
 			path = Views;
@@ -288,6 +299,7 @@
 				885A8AB42A9B5C940028E8BF /* AddDotAfter.swift */,
 				885A8AB82A9B5CD70028E8BF /* DotAsRegion.swift */,
 				880250CA2A9BC5AC0076E001 /* ADFormatters.swift */,
+				880250E82A9E8ED10076E001 /* KeyboardUtilities.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -447,6 +459,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				880250E52A9E617A0076E001 /* DotDefinition.swift in Sources */,
 				885A8A732A9AB2C70028E8BF /* BitmapGrid.swift in Sources */,
 				885A8A6F2A9AB1950028E8BF /* ImageViewModel.swift in Sources */,
 				885A8A6C2A9AAFE60028E8BF /* PanelUI.swift in Sources */,
@@ -462,6 +475,7 @@
 				885A8A932A9B5A000028E8BF /* Hearts.swift in Sources */,
 				885A8AB12A9B5C480028E8BF /* CalcArcs.swift in Sources */,
 				885A8AAB2A9B5BBD0028E8BF /* DecodeIndex.swift in Sources */,
+				880250E72A9E69380076E001 /* DotsView.swift in Sources */,
 				885A8A5B2A9A8F9C0028E8BF /* WelcomeView.swift in Sources */,
 				885A8AD92A9B74730028E8BF /* petals.json in Sources */,
 				885A8AB52A9B5C940028E8BF /* AddDotAfter.swift in Sources */,
@@ -483,6 +497,7 @@
 				885A8ADF2A9B74AC0028E8BF /* yinyang.json in Sources */,
 				885A8ACE2A9B67430028E8BF /* AppState.swift in Sources */,
 				885A8AE32A9B86B60028E8BF /* GetLastErrorBox.swift in Sources */,
+				880250E32A9E5BC80076E001 /* ArcView.swift in Sources */,
 				885A8A622A9A91CB0028E8BF /* WelcomeWindowController.swift in Sources */,
 				885A8A972A9B5A450028E8BF /* EraseLargeDot.swift in Sources */,
 				885A8AB72A9B5CB70028E8BF /* DrawDot.swift in Sources */,
@@ -516,9 +531,10 @@
 				885A8A782A9AB6940028E8BF /* DrawingView.swift in Sources */,
 				885A8A912A9B59DE0028E8BF /* Moons.swift in Sources */,
 				885A8A592A9A8F9C0028E8BF /* WelcomeHeaderView.swift in Sources */,
-				880250C92A9BB2120076E001 /* ArcDefinition.swift in Sources */,
+				880250C92A9BB2120076E001 /* CurveDefinition.swift in Sources */,
 				885A8ADB2A9B747E0028E8BF /* shapes.json in Sources */,
 				885A8A742A9AB2C70028E8BF /* BitmapImage.swift in Sources */,
+				880250E92A9E8ED10076E001 /* KeyboardUtilities.swift in Sources */,
 				885A8ABF2A9B5D8C0028E8BF /* WndProc.swift in Sources */,
 				885A8A8F2A9B59BA0028E8BF /* NewCurve.swift in Sources */,
 			);

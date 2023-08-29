@@ -5,7 +5,7 @@
   "author": "Bruce Johnson",
   "imageWidth": 560,
   "imageHeight": 560,
-  "arcDefinitions": [
+  "curves": [
     {
       "num": 1,
       "name": "Spirals 1",
