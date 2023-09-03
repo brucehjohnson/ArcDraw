@@ -12,7 +12,6 @@ struct TabCurves: View {
   }
 
   var body: some View {
-   // ScrollView {
       VStack {
         if doc.picdef.pictureName != "Name" && !doc.picdef.pictureName.isEmpty {
           Text("\(doc.picdef.pictureName)")
@@ -26,10 +25,8 @@ struct TabCurves: View {
           .frame(maxWidth: .infinity, alignment: .center)
 
         ) {
-
             Text("Click and drag the curve number to reorder.")
             Text("Click on the curve to modify.")
-
             Button("Add New Curve") {
               print("Clicked New Curve")
               print("Selected curve index: \(doc.selectedCurveIndex)")
@@ -43,14 +40,11 @@ struct TabCurves: View {
               .padding([.bottom], 2)
 
           Divider()
-
           CurveListView(doc: doc)
 
-        }// end section
-
+        }//  section
         Spacer()
       } //  vstack
-   // } //  scrollview
-  } //  body
+  }
 
 }

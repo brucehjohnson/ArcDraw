@@ -20,19 +20,33 @@ extension ArcDrawApp {
 
         Button("New Curve") {
           print("Called New Curve")
+
           if let selectedArcIndex = doc.selectedCurveIndex {
-            print("Selected curve index: \(doc.selectedCurveIndex!)")
-            doc.addCurveAfter(atArcIndex: selectedArcIndex)
+            print("Selected curve index: \(selectedArcIndex)")
+            doc.addCurveAfter(atCurveIndex: selectedArcIndex)
+          } else {
+            let lastCurveIndex = doc.picdef.curves.count - 1
+            if lastCurveIndex >= 0 {
+              print("No curve selected. Adding a new curve after the last one.")
+              doc.addCurveAfter(atCurveIndex: lastCurveIndex)
+            } else {
+              print("No curves available. Adding a new curve at the beginning.")
+              doc.picdef.curves.insert(CurveDefinition(), at: 0)
+              doc.selectedCurveIndex = 0
+            }
           }
         }
 
-        Button("Clear Curve"){
+
+        Button("Clear Curve") {
           print("Called Clear Curve")
+
           if let selectedArcIndex = doc.selectedCurveIndex {
             print("Selected curve index: \(doc.selectedCurveIndex!)")
             doc.deleteCurve(atArcIndex: selectedArcIndex)
           }
         }
+
 
         Button("Add Dot Before") {
           print("Called Add Dot Before")

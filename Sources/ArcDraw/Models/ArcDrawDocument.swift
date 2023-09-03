@@ -10,7 +10,11 @@ var contextImageGlobal: CGImage?
 final class ArcDrawDocument: ReferenceFileDocument, ObservableObject {
 
   @Published var picdef: PictureDefinition
-  @Published var selectedCurveIndex: Int?
+  @Published var selectedCurveIndex: Int? {
+    didSet {
+      selectedDotIndex = nil // Reset
+    }
+  }
   @Published var selectedDotIndex: Int?
   @Published var shouldUnfocus: Bool = false
 
@@ -21,12 +25,12 @@ final class ArcDrawDocument: ReferenceFileDocument, ObservableObject {
   // while active self remains editable by the user
   typealias Snapshot = PictureDefinition
 
-  /**
-   A simple initializer that creates a new demo picture
-   */
   init() {
-    let curves = CurveDefinition()
     self.picdef = PictureDefinition(curves: [CurveDefinition()])
+  }
+
+  init(example: PictureDefinition) {
+    self.picdef = example
   }
 
   /**
@@ -64,8 +68,6 @@ final class ArcDrawDocument: ReferenceFileDocument, ObservableObject {
   }
 
   func deleteCurve(atArcIndex arcIndex: Int) {
-    // Placeholder implementation for deleting the selected curve
-    // You can replace this with your actual logic for deleting a curve
     if picdef.curves.indices.contains(arcIndex) {
       picdef.curves.remove(at: arcIndex)
       selectedCurveIndex = nil // Reset selectedArcIndex
@@ -127,6 +129,8 @@ final class ArcDrawDocument: ReferenceFileDocument, ObservableObject {
   // ========================================= LOAD
 
   func loadExampleJSONAndUpdate(_ exampleName: String) {
+    selectedDotIndex = nil
+    selectedCurveIndex = nil
     if let url = Bundle.main.url(forResource: exampleName, withExtension: "json") {
       do {
         let exampleJSONData = try Data(contentsOf: url)
@@ -411,80 +415,6 @@ extension ArcDrawDocument {
     }
   }
 
-  /*
-  func updateHueWithColorNumberB(index: Int, newValue: Double, undoManager: UndoManager? = nil) {
-    let oldHues = self.picdef.hues
-    let oldHue = self.picdef.hues[index]
-    let newHue = Hue(
-      num: oldHue.num,
-      r: oldHue.r,
-      g: oldHue.g,
-      b: newValue
-    )
-    self.picdef.hues[index] = newHue
-    undoManager?.registerUndo(withTarget: self) { doc in
-      // Use the replaceItems symmetric undoable-redoable function.
-      doc.replaceHues(with: oldHues, undoManager: undoManager)
-    }
-  }
-
-  func updateHueWithColorNumberG(index: Int, newValue: Double, undoManager: UndoManager? = nil) {
-    let oldHues = self.picdef.hues
-    let oldHue = self.picdef.hues[index]
-    let newHue = Hue(
-      num: oldHue.num,
-      r: oldHue.r,
-      g: newValue,
-      b: oldHue.b
-    )
-    self.picdef.hues[index] = newHue
-    undoManager?.registerUndo(withTarget: self) { doc in
-      // Use the replaceItems symmetric undoable-redoable function.
-      doc.replaceHues(with: oldHues, undoManager: undoManager)
-    }
-  }
-
-  func updateHueWithColorNumberR(index: Int, newValue: Double, undoManager: UndoManager? = nil) {
-    let oldHues = self.picdef.hues
-    let oldHue = self.picdef.hues[index]
-    let newHue = Hue(
-      num: oldHue.num,
-      r: newValue,
-      g: oldHue.g,
-      b: oldHue.b
-    )
-    self.picdef.hues[index] = newHue
-    undoManager?.registerUndo(withTarget: self) { doc in
-      // Use the replaceItems symmetric undoable-redoable function.
-      doc.replaceHues(with: oldHues, undoManager: undoManager)
-    }
-  }
-
-  /**
-   Update an ordered color with a new selection from the ColorPicker
-   - Parameters:
-   - index: an Int for the index of this ordered color
-   - newColorPick: the Color of the new selection
-   - undoManager: undoManager
-   */
-  func updateHueWithColorPick(index: Int, newColorPick: Color, undoManager: UndoManager? = nil) {
-    let oldHues = self.picdef.hues
-    let oldHue = self.picdef.hues[index]
-    if let arr = newColorPick.cgColor {
-      let newHue = Hue(
-        num: oldHue.num,
-        r: arr.components![0] * 255.0,
-        g: arr.components![1] * 255.0,
-        b: arr.components![2] * 255.0
-      )
-      self.picdef.hues[index] = newHue
-    }
-    undoManager?.registerUndo(withTarget: self) { doc in
-      // Use the replaceItems symmetric undoable-redoable function.
-      doc.replaceHues(with: oldHues, undoManager: undoManager)
-    }
-  }
-   */
 }
 
 // Helper utility
