@@ -35,17 +35,25 @@ extension ArcDrawApp {
         }
 
         Button("Add Dot Before") {
-          print("Called Add Dot Before ")
-if let selectedArcIndex = doc.selectedCurveIndex,
-             let selectedDotIndex = doc.selectedDotIndex {
-  print("Selected curve index: \(doc.selectedCurveIndex!)")
-  print("Selected dot index: \(doc.selectedDotIndex!)")
+          print("Called Add Dot Before")
 
-            doc.addDotBefore(atCurveIndex: selectedArcIndex, dotIndex: selectedDotIndex)
+          if let selectedArcIndex = doc.selectedCurveIndex {
+            print("Curve index is available.")
+
+            if let selectedDotIndex = doc.selectedDotIndex {
+              print("Dot index is available.")
+              print("Selected curve index: \(selectedArcIndex)")
+              print("Selected dot index: \(selectedDotIndex)")
+
+              // Perform action here (doc.addDotBefore)
+            } else {
+              print("Dot index is missing.")
+            }
+          } else {
+            print("Curve index is missing.")
           }
         }
         .disabled(doc.selectedCurveIndex == nil)
-
 
         Button("Add Dot After") {
           print("Called Add Dot After")
@@ -58,34 +66,37 @@ if let selectedArcIndex = doc.selectedCurveIndex,
               print("Selected curve index: \(selectedArcIndex)")
               print("Selected dot index: \(selectedDotIndex)")
 
-              doc.addDotAfter(atCurveIndex: selectedArcIndex, dotIndex: selectedDotIndex)
+              // Perform action here (doc.addDotAfter)
             } else {
-              print("No selected dot index")
+              print("Dot index is missing.")
             }
           } else {
-            print("No selected curve index")
+            print("Curve index is missing.")
           }
         }
         .disabled(doc.selectedCurveIndex == nil)
-
 
         Button("Delete Dot") {
           print("Called Delete Dot")
 
           if let selectedCurveIndex = doc.selectedCurveIndex {
+            print("Curve index is available.")
+
             if let selectedDotIndex = doc.selectedDotIndex {
+              print("Dot index is available.")
               print("Selected curve index: \(selectedCurveIndex)")
               print("Selected dot index: \(selectedDotIndex)")
 
-              doc.deleteDot(atCurveIndex: selectedCurveIndex, dotIndex: selectedDotIndex)
+              // Perform action here (doc.deleteDot)
             } else {
-              print("No selected dot index")
+              print("Dot index is missing.")
             }
           } else {
-            print("No selected curve index")
+            print("Curve index is missing.")
           }
         }
         .disabled(doc.selectedCurveIndex == nil)
+
 
 
         Button("Drag Dot") {
@@ -103,6 +114,7 @@ if let selectedArcIndex = doc.selectedCurveIndex,
             print("Missing selected curve index")
           }
         }
+
         .disabled(doc.selectedCurveIndex == nil)
 
 
@@ -121,7 +133,9 @@ if let selectedArcIndex = doc.selectedCurveIndex,
             print("Missing selected curve index")
           }
         }
+
         .disabled(doc.selectedCurveIndex == nil)
+
 
 
         Button("New Sketch Curve"){

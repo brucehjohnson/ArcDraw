@@ -414,6 +414,40 @@
 			<key>uniqueIdentifier</key>
 			<string>2E817752-9DF6-4CC1-A03A-D34FD1DA81B3</string>
 		</dict>
+		<key>31B52B79-1038-413A-86FB-AD8E5F6B4027</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>31B52B79-1038-413A-86FB-AD8E5F6B4027.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>ArcDraw project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>ArcDraw</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build ArcDraw</string>
+			<key>timeStartedRecording</key>
+			<real>715460414.14968204</real>
+			<key>timeStoppedRecording</key>
+			<real>715460415.762995</real>
+			<key>title</key>
+			<string>Build ArcDraw</string>
+			<key>uniqueIdentifier</key>
+			<string>31B52B79-1038-413A-86FB-AD8E5F6B4027</string>
+		</dict>
 		<key>32F5F8FF-E6F8-4361-A70C-6138D943FC3E</key>
 		<dict>
 			<key>className</key>
@@ -2249,6 +2283,40 @@
 			<string>Build ArcDraw</string>
 			<key>uniqueIdentifier</key>
 			<string>F83E6676-8194-4608-89FF-C4959D8C608F</string>
+		</dict>
+		<key>FD8F593F-5658-4AC3-93A7-F49A1948CA40</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>FD8F593F-5658-4AC3-93A7-F49A1948CA40.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>ArcDraw project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>ArcDraw</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build ArcDraw</string>
+			<key>timeStartedRecording</key>
+			<real>715460860.86394894</real>
+			<key>timeStoppedRecording</key>
+			<real>715460862.90687203</real>
+			<key>title</key>
+			<string>Build ArcDraw</string>
+			<key>uniqueIdentifier</key>
+			<string>FD8F593F-5658-4AC3-93A7-F49A1948CA40</string>
 		</dict>
 		<key>FE030F7E-A527-4935-8CB8-84DF3AF41B1A</key>
 		<dict>
