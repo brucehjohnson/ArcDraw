@@ -3,6 +3,9 @@ import UniformTypeIdentifiers
 
 struct TabSave: View {
   @ObservedObject var doc: ArcDrawDocument
+  @State private var selectedExample: String = "Shapes"
+
+  let exampleOptions = ["Cursive", "Hearts", "Moons", "Petals", "Shapes", "Spirals", "YinYang"]
 
   init(doc: ArcDrawDocument) {
     self.doc = doc
@@ -11,6 +14,10 @@ struct TabSave: View {
   var body: some View {
     ScrollView {
       VStack {
+
+          if doc.picdef.pictureName != "Name" && !doc.picdef.pictureName.isEmpty {
+            Text("\(doc.picdef.pictureName)")
+          }
 
         Divider()
 

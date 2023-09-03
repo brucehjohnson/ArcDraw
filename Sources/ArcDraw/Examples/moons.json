@@ -8,12 +8,12 @@
   "curves": [
     {
       "num": 1,
-      "name": "Moons 1",
+      "name": "Moon Curve 1",
       "description": "Moon 1",
-      "dotLocations": [
-        {"x": 90+83, "y": 90},
-        {"x": 90+83, "y": 162},
-        {"x": 88+83, "y": 90}
+      "dots": [
+        {"num": 1, "x": "90+83", "y": "90"},
+        {"num": 2, "x": "90+83", "y": "162"},
+        {"num": 3, "x": "88+83", "y": "90"}
       ],
       "startAngle": 0,
       "endAngle": 90,
@@ -21,11 +21,11 @@
     },
     {
       "num": 2,
-      "name": "Moons 2",
+      "name": "Moon Curve 2",
       "description": "Moon 2",
-      "dotLocations": [
-        {"x": 270+83, "y": 90},
-        {"x": 270+83, "y": 162}
+      "dots": [
+        {"num": 1, "x": "270+83", "y": "90"},
+        {"num": 2, "x": "270+83", "y": "162"}
       ],
       "startAngle": 0,
       "endAngle": 90,
@@ -33,11 +33,11 @@
     },
     {
       "num": 3,
-      "name": "Moons 3",
+      "name": "Moon Curve 3",
       "description": "Moon 3",
-      "dotLocations": [
-        {"x": 270+83, "y": 90},
-        {"x": 270+83, "y": 162}
+      "dots": [
+        {"num": 1, "x": "270+83", "y": "90"},
+        {"num": 2, "x": "270+83", "y": "162"}
       ],
       "startAngle": 225,
       "endAngle": 180,
@@ -45,11 +45,11 @@
     },
     {
       "num": 4,
-      "name": "Moons 4",
+      "name": "Moon Curve 4",
       "description": "Moon 4",
-      "dotLocations": [
-        {"x": 90+83, "y": 342},
-        {"x": 90+83, "y": 414}
+      "dots": [
+        {"num": 1, "x": "90+83", "y": "342"},
+        {"num": 2, "x": "90+83", "y": "414"}
       ],
       "startAngle": 90,
       "endAngle": 90,
@@ -57,11 +57,11 @@
     },
     {
       "num": 5,
-      "name": "Moons 5",
+      "name": "Moon Curve 5",
       "description": "Moon 5",
-      "dotLocations": [
-        {"x": 90+83, "y": 342},
-        {"x": 270+83, "y": 414}
+      "dots": [
+        {"num": 1, "x": "90+83", "y": "342"},
+        {"num": 2, "x": "270+83", "y": "414"}
       ],
       "startAngle": 180,
       "endAngle": 180,
@@ -69,11 +69,11 @@
     },
     {
       "num": 6,
-      "name": "Moons 6",
+      "name": "Moon Curve 6",
       "description": "Moon 6",
-      "dotLocations": [
-        {"x": 270+83, "y": 342},
-        {"x": 270+83, "y": 414}
+      "dots": [
+        {"num": 1, "x": "270+83", "y": "342"},
+        {"num": 2, "x": "270+83", "y": "414"}
       ],
       "startAngle": 90,
       "endAngle": 90,
@@ -81,11 +81,11 @@
     },
     {
       "num": 7,
-      "name": "Moons 7",
+      "name": "Moon Curve 7",
       "description": "Moon 7",
-      "dotLocations": [
-        {"x": 270+83, "y": 342},
-        {"x": 270+83, "y": 414}
+      "dots": [
+        {"num": 1, "x": "270+83", "y": "342"},
+        {"num": 2, "x": "270+83", "y": "414"}
       ],
       "startAngle": 135,
       "endAngle": 135,

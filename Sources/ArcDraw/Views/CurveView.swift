@@ -1,7 +1,7 @@
 import SwiftUI
 import UniformTypeIdentifiers
 
-struct ArcView: View {
+struct CurveView: View {
 
   @ObservedObject var doc: ArcDrawDocument
   @StateObject private var drawingController: DrawingController
@@ -26,9 +26,10 @@ struct ArcView: View {
       // FIrst row num and name
       HStack {
         Text("#\(curve.num)")
+
         TextField("name", text: $curve.name)
           .textFieldStyle(RoundedBorderTextFieldStyle())
-          .frame(maxWidth: 120)
+          .frame(maxWidth: 200)
       }
 
       // second row description of this curve
@@ -73,7 +74,7 @@ struct ArcView: View {
       } // hstack row 3
       .padding(1)
 
-      DotsView(doc: doc, dots: $curve.dots)
+      DotListView(doc: doc, dots: $curve.dots)
 
     } // vstack (card)
     .padding()  // Don't touch rectangle

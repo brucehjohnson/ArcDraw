@@ -1,7 +1,7 @@
 import SwiftUI
 import UniformTypeIdentifiers
 
-struct ArcListView: View {
+struct CurveListView: View {
   @ObservedObject var doc: ArcDrawDocument
 
   // Update nums after moving or deleting
@@ -37,7 +37,7 @@ struct ArcListView: View {
                 .foregroundColor(Color.secondary.opacity(0.2))
                 .cornerRadius(10)
                 .overlay(
-                  ArcView(doc: doc, curve: arcDefinition)
+                  CurveView(doc: doc, curve: arcDefinition)
                 ) // overlay
                 .padding(EdgeInsets(top: 2, leading: 2, bottom: 2, trailing: 2))
                 .onTapGesture {
@@ -66,6 +66,7 @@ struct ArcListView: View {
         }  // geo
         .frame(maxHeight: .infinity)
       }
+      .border(Color.black)
 
       Spacer()
 

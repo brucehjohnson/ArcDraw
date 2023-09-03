@@ -1,7 +1,7 @@
 import SwiftUI
 import UniformTypeIdentifiers
 
-struct TabBasics: View {
+struct TabMore: View {
   @ObservedObject var doc: ArcDrawDocument
   @State private var selectedExample: String = "Shapes"
 

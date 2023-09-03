@@ -6,7 +6,7 @@
 	<integer>10</integer>
 	<key>logs</key>
 	<dict>
-		<key>024A242E-0094-49FF-B904-E7A4F537EE5F</key>
+		<key>08B28FF2-863D-4BC2-94BB-38F5FC57FADB</key>
 		<dict>
 			<key>className</key>
 			<string>IDEActivityLogSection</string>
@@ -15,41 +15,7 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
 			<key>fileName</key>
-			<string>024A242E-0094-49FF-B904-E7A4F537EE5F.xcactivitylog</string>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>E</string>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>ArcDraw project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>ArcDraw</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Build ArcDraw</string>
-			<key>timeStartedRecording</key>
-			<real>715022450.21053195</real>
-			<key>timeStoppedRecording</key>
-			<real>715022451.41315901</real>
-			<key>title</key>
-			<string>Build ArcDraw</string>
-			<key>uniqueIdentifier</key>
-			<string>024A242E-0094-49FF-B904-E7A4F537EE5F</string>
-		</dict>
-		<key>08F93CFD-4EE6-4DB8-A12F-9C23812ACF9B</key>
-		<dict>
-			<key>className</key>
-			<string>IDEActivityLogSection</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
-			<key>fileName</key>
-			<string>08F93CFD-4EE6-4DB8-A12F-9C23812ACF9B.xcactivitylog</string>
+			<string>08B28FF2-863D-4BC2-94BB-38F5FC57FADB.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
@@ -66,15 +32,15 @@
 			<key>signature</key>
 			<string>Build ArcDraw</string>
 			<key>timeStartedRecording</key>
-			<real>715020299.64374399</real>
+			<real>715459736.54191697</real>
 			<key>timeStoppedRecording</key>
-			<real>715020301.65728295</real>
+			<real>715459736.64954805</real>
 			<key>title</key>
 			<string>Build ArcDraw</string>
 			<key>uniqueIdentifier</key>
-			<string>08F93CFD-4EE6-4DB8-A12F-9C23812ACF9B</string>
+			<string>08B28FF2-863D-4BC2-94BB-38F5FC57FADB</string>
 		</dict>
-		<key>0BC1D8FB-9079-4A2C-B1DE-0DE2B4FF4B7A</key>
+		<key>0B6F595E-68DC-459F-848C-5CC75627F9BC</key>
 		<dict>
 			<key>className</key>
 			<string>IDEActivityLogSection</string>
@@ -83,41 +49,7 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
 			<key>fileName</key>
-			<string>0BC1D8FB-9079-4A2C-B1DE-0DE2B4FF4B7A.xcactivitylog</string>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>E</string>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>ArcDraw project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>ArcDraw</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Build ArcDraw</string>
-			<key>timeStartedRecording</key>
-			<real>715036610.52689195</real>
-			<key>timeStoppedRecording</key>
-			<real>715036611.36347401</real>
-			<key>title</key>
-			<string>Build ArcDraw</string>
-			<key>uniqueIdentifier</key>
-			<string>0BC1D8FB-9079-4A2C-B1DE-0DE2B4FF4B7A</string>
-		</dict>
-		<key>1084221C-0A88-4680-A7DB-344723DE598C</key>
-		<dict>
-			<key>className</key>
-			<string>IDEActivityLogSection</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
-			<key>fileName</key>
-			<string>1084221C-0A88-4680-A7DB-344723DE598C.xcactivitylog</string>
+			<string>0B6F595E-68DC-459F-848C-5CC75627F9BC.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
@@ -134,15 +66,15 @@
 			<key>signature</key>
 			<string>Build ArcDraw</string>
 			<key>timeStartedRecording</key>
-			<real>715031977.20344198</real>
+			<real>715459387.27270401</real>
 			<key>timeStoppedRecording</key>
-			<real>715031978.63249099</real>
+			<real>715459388.69302905</real>
 			<key>title</key>
 			<string>Build ArcDraw</string>
 			<key>uniqueIdentifier</key>
-			<string>1084221C-0A88-4680-A7DB-344723DE598C</string>
+			<string>0B6F595E-68DC-459F-848C-5CC75627F9BC</string>
 		</dict>
-		<key>10F2A558-3288-4CD8-9581-A9FBFDAC8321</key>
+		<key>0C0FF03E-1979-4835-8333-85753495D100</key>
 		<dict>
 			<key>className</key>
 			<string>IDEActivityLogSection</string>
@@ -151,7 +83,7 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
 			<key>fileName</key>
-			<string>10F2A558-3288-4CD8-9581-A9FBFDAC8321.xcactivitylog</string>
+			<string>0C0FF03E-1979-4835-8333-85753495D100.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
@@ -168,15 +100,15 @@
 			<key>signature</key>
 			<string>Build ArcDraw</string>
 			<key>timeStartedRecording</key>
-			<real>715040155.15443504</real>
+			<real>715455079.92551601</real>
 			<key>timeStoppedRecording</key>
-			<real>715040157.13989198</real>
+			<real>715455082.02650106</real>
 			<key>title</key>
 			<string>Build ArcDraw</string>
 			<key>uniqueIdentifier</key>
-			<string>10F2A558-3288-4CD8-9581-A9FBFDAC8321</string>
+			<string>0C0FF03E-1979-4835-8333-85753495D100</string>
 		</dict>
-		<key>179E7340-32AB-47DE-912A-6DD2EC1B2367</key>
+		<key>0CC0CB93-A3B6-4A1E-9929-24727B69D695</key>
 		<dict>
 			<key>className</key>
 			<string>IDEActivityLogSection</string>
@@ -185,7 +117,7 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
 			<key>fileName</key>
-			<string>179E7340-32AB-47DE-912A-6DD2EC1B2367.xcactivitylog</string>
+			<string>0CC0CB93-A3B6-4A1E-9929-24727B69D695.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
@@ -202,15 +134,15 @@
 			<key>signature</key>
 			<string>Build ArcDraw</string>
 			<key>timeStartedRecording</key>
-			<real>715020179.35738802</real>
+			<real>715458972.82625997</real>
 			<key>timeStoppedRecording</key>
-			<real>715020180.75677598</real>
+			<real>715458974.52488101</real>
 			<key>title</key>
 			<string>Build ArcDraw</string>
 			<key>uniqueIdentifier</key>
-			<string>179E7340-32AB-47DE-912A-6DD2EC1B2367</string>
+			<string>0CC0CB93-A3B6-4A1E-9929-24727B69D695</string>
 		</dict>
-		<key>1A4D5620-A832-4A4D-8EAC-5F31220DE4FD</key>
+		<key>0DB3C724-3482-4781-9D8C-DA4F88B40636</key>
 		<dict>
 			<key>className</key>
 			<string>IDEActivityLogSection</string>
@@ -219,7 +151,7 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
 			<key>fileName</key>
-			<string>1A4D5620-A832-4A4D-8EAC-5F31220DE4FD.xcactivitylog</string>
+			<string>0DB3C724-3482-4781-9D8C-DA4F88B40636.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
@@ -236,15 +168,15 @@
 			<key>signature</key>
 			<string>Build ArcDraw</string>
 			<key>timeStartedRecording</key>
-			<real>715020080.17291105</real>
+			<real>715454935.03005004</real>
 			<key>timeStoppedRecording</key>
-			<real>715020081.04824603</real>
+			<real>715454935.64041805</real>
 			<key>title</key>
 			<string>Build ArcDraw</string>
 			<key>uniqueIdentifier</key>
-			<string>1A4D5620-A832-4A4D-8EAC-5F31220DE4FD</string>
+			<string>0DB3C724-3482-4781-9D8C-DA4F88B40636</string>
 		</dict>
-		<key>1AB9818A-31A9-49F6-84AB-410127F2412B</key>
+		<key>0E5C558F-9B46-4388-9305-B021926DD329</key>
 		<dict>
 			<key>className</key>
 			<string>IDEActivityLogSection</string>
@@ -253,75 +185,7 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
 			<key>fileName</key>
-			<string>1AB9818A-31A9-49F6-84AB-410127F2412B.xcactivitylog</string>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>E</string>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>ArcDraw project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>ArcDraw</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Build ArcDraw</string>
-			<key>timeStartedRecording</key>
-			<real>715023143.57862794</real>
-			<key>timeStoppedRecording</key>
-			<real>715023144.21808803</real>
-			<key>title</key>
-			<string>Build ArcDraw</string>
-			<key>uniqueIdentifier</key>
-			<string>1AB9818A-31A9-49F6-84AB-410127F2412B</string>
-		</dict>
-		<key>2052D3C8-A98F-4FB9-8ACB-7B783961F955</key>
-		<dict>
-			<key>className</key>
-			<string>IDEActivityLogSection</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
-			<key>fileName</key>
-			<string>2052D3C8-A98F-4FB9-8ACB-7B783961F955.xcactivitylog</string>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>S</string>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>ArcDraw project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>ArcDraw</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Clean ArcDraw</string>
-			<key>timeStartedRecording</key>
-			<real>715020295.73284996</real>
-			<key>timeStoppedRecording</key>
-			<real>715020295.84138095</real>
-			<key>title</key>
-			<string>Clean ArcDraw</string>
-			<key>uniqueIdentifier</key>
-			<string>2052D3C8-A98F-4FB9-8ACB-7B783961F955</string>
-		</dict>
-		<key>27210626-939A-4889-9A7B-7F7A8CD4650C</key>
-		<dict>
-			<key>className</key>
-			<string>IDEActivityLogSection</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
-			<key>fileName</key>
-			<string>27210626-939A-4889-9A7B-7F7A8CD4650C.xcactivitylog</string>
+			<string>0E5C558F-9B46-4388-9305-B021926DD329.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
@@ -338,15 +202,15 @@
 			<key>signature</key>
 			<string>Build ArcDraw</string>
 			<key>timeStartedRecording</key>
-			<real>715033758.54550302</real>
+			<real>715456565.14763796</real>
 			<key>timeStoppedRecording</key>
-			<real>715033760.53522003</real>
+			<real>715456565.35842502</real>
 			<key>title</key>
 			<string>Build ArcDraw</string>
 			<key>uniqueIdentifier</key>
-			<string>27210626-939A-4889-9A7B-7F7A8CD4650C</string>
+			<string>0E5C558F-9B46-4388-9305-B021926DD329</string>
 		</dict>
-		<key>277D3488-44B3-4E92-B4D5-4BE9DBB7E34B</key>
+		<key>0E8DD76B-594F-42B2-BB2F-1276A3CFDEC8</key>
 		<dict>
 			<key>className</key>
 			<string>IDEActivityLogSection</string>
@@ -355,75 +219,7 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
 			<key>fileName</key>
-			<string>277D3488-44B3-4E92-B4D5-4BE9DBB7E34B.xcactivitylog</string>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>E</string>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>ArcDraw project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>ArcDraw</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Build ArcDraw</string>
-			<key>timeStartedRecording</key>
-			<real>715022912.76292098</real>
-			<key>timeStoppedRecording</key>
-			<real>715022913.82399905</real>
-			<key>title</key>
-			<string>Build ArcDraw</string>
-			<key>uniqueIdentifier</key>
-			<string>277D3488-44B3-4E92-B4D5-4BE9DBB7E34B</string>
-		</dict>
-		<key>298EB45F-6D09-458A-AFDC-133AC8A0BAB7</key>
-		<dict>
-			<key>className</key>
-			<string>IDEActivityLogSection</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
-			<key>fileName</key>
-			<string>298EB45F-6D09-458A-AFDC-133AC8A0BAB7.xcactivitylog</string>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>E</string>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>ArcDraw project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>ArcDraw</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Build ArcDraw</string>
-			<key>timeStartedRecording</key>
-			<real>715039012.04732203</real>
-			<key>timeStoppedRecording</key>
-			<real>715039013.51684701</real>
-			<key>title</key>
-			<string>Build ArcDraw</string>
-			<key>uniqueIdentifier</key>
-			<string>298EB45F-6D09-458A-AFDC-133AC8A0BAB7</string>
-		</dict>
-		<key>2E012020-34B0-4A72-B6B1-C0BBC45D2707</key>
-		<dict>
-			<key>className</key>
-			<string>IDEActivityLogSection</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
-			<key>fileName</key>
-			<string>2E012020-34B0-4A72-B6B1-C0BBC45D2707.xcactivitylog</string>
+			<string>0E8DD76B-594F-42B2-BB2F-1276A3CFDEC8.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
@@ -440,15 +236,15 @@
 			<key>signature</key>
 			<string>Build ArcDraw</string>
 			<key>timeStartedRecording</key>
-			<real>715034898.05672097</real>
+			<real>715453872.10481095</real>
 			<key>timeStoppedRecording</key>
-			<real>715034898.16271996</real>
+			<real>715453872.294608</real>
 			<key>title</key>
 			<string>Build ArcDraw</string>
 			<key>uniqueIdentifier</key>
-			<string>2E012020-34B0-4A72-B6B1-C0BBC45D2707</string>
+			<string>0E8DD76B-594F-42B2-BB2F-1276A3CFDEC8</string>
 		</dict>
-		<key>2F4DAC71-8173-462E-9DE0-6DD2A90EB026</key>
+		<key>1176C104-18D3-4691-ACFD-99E80F819E64</key>
 		<dict>
 			<key>className</key>
 			<string>IDEActivityLogSection</string>
@@ -457,7 +253,7 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
 			<key>fileName</key>
-			<string>2F4DAC71-8173-462E-9DE0-6DD2A90EB026.xcactivitylog</string>
+			<string>1176C104-18D3-4691-ACFD-99E80F819E64.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
@@ -474,15 +270,15 @@
 			<key>signature</key>
 			<string>Build ArcDraw</string>
 			<key>timeStartedRecording</key>
-			<real>715034884.41839898</real>
+			<real>715458051.15176797</real>
 			<key>timeStoppedRecording</key>
-			<real>715034886.39364505</real>
+			<real>715458051.364712</real>
 			<key>title</key>
 			<string>Build ArcDraw</string>
 			<key>uniqueIdentifier</key>
-			<string>2F4DAC71-8173-462E-9DE0-6DD2A90EB026</string>
+			<string>1176C104-18D3-4691-ACFD-99E80F819E64</string>
 		</dict>
-		<key>30B1FD40-5F54-4339-9A98-E0A219736E12</key>
+		<key>1434832B-ED82-4C14-A0C4-A89F0E85E63C</key>
 		<dict>
 			<key>className</key>
 			<string>IDEActivityLogSection</string>
@@ -491,7 +287,7 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
 			<key>fileName</key>
-			<string>30B1FD40-5F54-4339-9A98-E0A219736E12.xcactivitylog</string>
+			<string>1434832B-ED82-4C14-A0C4-A89F0E85E63C.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
@@ -508,15 +304,15 @@
 			<key>signature</key>
 			<string>Build ArcDraw</string>
 			<key>timeStartedRecording</key>
-			<real>715040328.38299501</real>
+			<real>715455285.051862</real>
 			<key>timeStoppedRecording</key>
-			<real>715040330.23389602</real>
+			<real>715455286.59369302</real>
 			<key>title</key>
 			<string>Build ArcDraw</string>
 			<key>uniqueIdentifier</key>
-			<string>30B1FD40-5F54-4339-9A98-E0A219736E12</string>
+			<string>1434832B-ED82-4C14-A0C4-A89F0E85E63C</string>
 		</dict>
-		<key>30FBFB1A-A659-4625-9C36-F49E3C7298F3</key>
+		<key>1E9CD7B4-0EA7-4F52-8872-0EE2B8CC149D</key>
 		<dict>
 			<key>className</key>
 			<string>IDEActivityLogSection</string>
@@ -525,75 +321,7 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
 			<key>fileName</key>
-			<string>30FBFB1A-A659-4625-9C36-F49E3C7298F3.xcactivitylog</string>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>E</string>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>ArcDraw project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>ArcDraw</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Build ArcDraw</string>
-			<key>timeStartedRecording</key>
-			<real>715022419.73615396</real>
-			<key>timeStoppedRecording</key>
-			<real>715022420.45285594</real>
-			<key>title</key>
-			<string>Build ArcDraw</string>
-			<key>uniqueIdentifier</key>
-			<string>30FBFB1A-A659-4625-9C36-F49E3C7298F3</string>
-		</dict>
-		<key>3678E2CF-7B6A-45E1-9917-9E8CBF87848C</key>
-		<dict>
-			<key>className</key>
-			<string>IDEActivityLogSection</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
-			<key>fileName</key>
-			<string>3678E2CF-7B6A-45E1-9917-9E8CBF87848C.xcactivitylog</string>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>E</string>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>ArcDraw project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>ArcDraw</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Build ArcDraw</string>
-			<key>timeStartedRecording</key>
-			<real>715034501.712816</real>
-			<key>timeStoppedRecording</key>
-			<real>715034502.41131401</real>
-			<key>title</key>
-			<string>Build ArcDraw</string>
-			<key>uniqueIdentifier</key>
-			<string>3678E2CF-7B6A-45E1-9917-9E8CBF87848C</string>
-		</dict>
-		<key>3A960EAD-80A5-4FE5-BE0B-5AA1AFDC9A01</key>
-		<dict>
-			<key>className</key>
-			<string>IDEActivityLogSection</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
-			<key>fileName</key>
-			<string>3A960EAD-80A5-4FE5-BE0B-5AA1AFDC9A01.xcactivitylog</string>
+			<string>1E9CD7B4-0EA7-4F52-8872-0EE2B8CC149D.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
@@ -610,15 +338,15 @@
 			<key>signature</key>
 			<string>Build ArcDraw</string>
 			<key>timeStartedRecording</key>
-			<real>715023480.53155506</real>
+			<real>715457371.55031002</real>
 			<key>timeStoppedRecording</key>
-			<real>715023480.82210803</real>
+			<real>715457373.41356897</real>
 			<key>title</key>
 			<string>Build ArcDraw</string>
 			<key>uniqueIdentifier</key>
-			<string>3A960EAD-80A5-4FE5-BE0B-5AA1AFDC9A01</string>
+			<string>1E9CD7B4-0EA7-4F52-8872-0EE2B8CC149D</string>
 		</dict>
-		<key>42B6B7D6-C9E2-457E-B4FB-DC3503654509</key>
+		<key>2CA84CA9-7C08-4991-A2AC-9105C14BF194</key>
 		<dict>
 			<key>className</key>
 			<string>IDEActivityLogSection</string>
@@ -627,313 +355,7 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
 			<key>fileName</key>
-			<string>42B6B7D6-C9E2-457E-B4FB-DC3503654509.xcactivitylog</string>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>E</string>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>ArcDraw project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>ArcDraw</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Build ArcDraw</string>
-			<key>timeStartedRecording</key>
-			<real>715038953.93982196</real>
-			<key>timeStoppedRecording</key>
-			<real>715038955.51690698</real>
-			<key>title</key>
-			<string>Build ArcDraw</string>
-			<key>uniqueIdentifier</key>
-			<string>42B6B7D6-C9E2-457E-B4FB-DC3503654509</string>
-		</dict>
-		<key>45713DA8-0C34-4861-8204-27036330BE88</key>
-		<dict>
-			<key>className</key>
-			<string>IDEActivityLogSection</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
-			<key>fileName</key>
-			<string>45713DA8-0C34-4861-8204-27036330BE88.xcactivitylog</string>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>E</string>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>ArcDraw project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>ArcDraw</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Build ArcDraw</string>
-			<key>timeStartedRecording</key>
-			<real>715038930.95077002</real>
-			<key>timeStoppedRecording</key>
-			<real>715038932.33630598</real>
-			<key>title</key>
-			<string>Build ArcDraw</string>
-			<key>uniqueIdentifier</key>
-			<string>45713DA8-0C34-4861-8204-27036330BE88</string>
-		</dict>
-		<key>49C9B587-39C0-4F04-A119-ECF9E094F5BA</key>
-		<dict>
-			<key>className</key>
-			<string>IDEActivityLogSection</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
-			<key>fileName</key>
-			<string>49C9B587-39C0-4F04-A119-ECF9E094F5BA.xcactivitylog</string>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>E</string>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>ArcDraw project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>ArcDraw</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Build ArcDraw</string>
-			<key>timeStartedRecording</key>
-			<real>715026549.32344699</real>
-			<key>timeStoppedRecording</key>
-			<real>715026549.93941903</real>
-			<key>title</key>
-			<string>Build ArcDraw</string>
-			<key>uniqueIdentifier</key>
-			<string>49C9B587-39C0-4F04-A119-ECF9E094F5BA</string>
-		</dict>
-		<key>4B852CDD-E58F-4009-A9B3-A8E184235A0E</key>
-		<dict>
-			<key>className</key>
-			<string>IDEActivityLogSection</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
-			<key>fileName</key>
-			<string>4B852CDD-E58F-4009-A9B3-A8E184235A0E.xcactivitylog</string>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>E</string>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>ArcDraw project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>ArcDraw</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Build ArcDraw</string>
-			<key>timeStartedRecording</key>
-			<real>715024705.88083506</real>
-			<key>timeStoppedRecording</key>
-			<real>715024706.55129302</real>
-			<key>title</key>
-			<string>Build ArcDraw</string>
-			<key>uniqueIdentifier</key>
-			<string>4B852CDD-E58F-4009-A9B3-A8E184235A0E</string>
-		</dict>
-		<key>4E0957AA-FE97-49EF-BB95-74925BEE4B5E</key>
-		<dict>
-			<key>className</key>
-			<string>IDEActivityLogSection</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
-			<key>fileName</key>
-			<string>4E0957AA-FE97-49EF-BB95-74925BEE4B5E.xcactivitylog</string>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>E</string>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>ArcDraw project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>ArcDraw</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Build ArcDraw</string>
-			<key>timeStartedRecording</key>
-			<real>715039077.80364299</real>
-			<key>timeStoppedRecording</key>
-			<real>715039079.06008303</real>
-			<key>title</key>
-			<string>Build ArcDraw</string>
-			<key>uniqueIdentifier</key>
-			<string>4E0957AA-FE97-49EF-BB95-74925BEE4B5E</string>
-		</dict>
-		<key>4F48FA90-2801-4578-9D17-3B6A27BDC882</key>
-		<dict>
-			<key>className</key>
-			<string>IDEActivityLogSection</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
-			<key>fileName</key>
-			<string>4F48FA90-2801-4578-9D17-3B6A27BDC882.xcactivitylog</string>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>E</string>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>ArcDraw project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>ArcDraw</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Build ArcDraw</string>
-			<key>timeStartedRecording</key>
-			<real>715034664.657197</real>
-			<key>timeStoppedRecording</key>
-			<real>715034665.49647701</real>
-			<key>title</key>
-			<string>Build ArcDraw</string>
-			<key>uniqueIdentifier</key>
-			<string>4F48FA90-2801-4578-9D17-3B6A27BDC882</string>
-		</dict>
-		<key>52286017-70BF-4620-9D39-1AF6B8AB3234</key>
-		<dict>
-			<key>className</key>
-			<string>IDEActivityLogSection</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
-			<key>fileName</key>
-			<string>52286017-70BF-4620-9D39-1AF6B8AB3234.xcactivitylog</string>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>E</string>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>ArcDraw project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>ArcDraw</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Build ArcDraw</string>
-			<key>timeStartedRecording</key>
-			<real>715023114.09833598</real>
-			<key>timeStoppedRecording</key>
-			<real>715023114.75762105</real>
-			<key>title</key>
-			<string>Build ArcDraw</string>
-			<key>uniqueIdentifier</key>
-			<string>52286017-70BF-4620-9D39-1AF6B8AB3234</string>
-		</dict>
-		<key>5784A9C4-3116-4FEE-A97E-6D896C1B38EA</key>
-		<dict>
-			<key>className</key>
-			<string>IDEActivityLogSection</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
-			<key>fileName</key>
-			<string>5784A9C4-3116-4FEE-A97E-6D896C1B38EA.xcactivitylog</string>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>E</string>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>ArcDraw project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>ArcDraw</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Build ArcDraw</string>
-			<key>timeStartedRecording</key>
-			<real>715023186.25922596</real>
-			<key>timeStoppedRecording</key>
-			<real>715023187.04828596</real>
-			<key>title</key>
-			<string>Build ArcDraw</string>
-			<key>uniqueIdentifier</key>
-			<string>5784A9C4-3116-4FEE-A97E-6D896C1B38EA</string>
-		</dict>
-		<key>59C4D1FA-3E6E-4B04-A9E6-A3C11E4FEBC2</key>
-		<dict>
-			<key>className</key>
-			<string>IDEActivityLogSection</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
-			<key>fileName</key>
-			<string>59C4D1FA-3E6E-4B04-A9E6-A3C11E4FEBC2.xcactivitylog</string>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>E</string>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>ArcDraw project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>ArcDraw</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Build ArcDraw</string>
-			<key>timeStartedRecording</key>
-			<real>715039884.28910506</real>
-			<key>timeStoppedRecording</key>
-			<real>715039885.57871199</real>
-			<key>title</key>
-			<string>Build ArcDraw</string>
-			<key>uniqueIdentifier</key>
-			<string>59C4D1FA-3E6E-4B04-A9E6-A3C11E4FEBC2</string>
-		</dict>
-		<key>5A9291AA-0652-4BC6-A94C-253BEF4FA3E7</key>
-		<dict>
-			<key>className</key>
-			<string>IDEActivityLogSection</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
-			<key>fileName</key>
-			<string>5A9291AA-0652-4BC6-A94C-253BEF4FA3E7.xcactivitylog</string>
+			<string>2CA84CA9-7C08-4991-A2AC-9105C14BF194.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
@@ -950,15 +372,15 @@
 			<key>signature</key>
 			<string>Build ArcDraw</string>
 			<key>timeStartedRecording</key>
-			<real>715040022.97798705</real>
+			<real>715458388.90007401</real>
 			<key>timeStoppedRecording</key>
-			<real>715040025.71749997</real>
+			<real>715458390.54095197</real>
 			<key>title</key>
 			<string>Build ArcDraw</string>
 			<key>uniqueIdentifier</key>
-			<string>5A9291AA-0652-4BC6-A94C-253BEF4FA3E7</string>
+			<string>2CA84CA9-7C08-4991-A2AC-9105C14BF194</string>
 		</dict>
-		<key>5FE6E291-A176-48F2-8C89-2541395BB408</key>
+		<key>2E817752-9DF6-4CC1-A03A-D34FD1DA81B3</key>
 		<dict>
 			<key>className</key>
 			<string>IDEActivityLogSection</string>
@@ -967,7 +389,7 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
 			<key>fileName</key>
-			<string>5FE6E291-A176-48F2-8C89-2541395BB408.xcactivitylog</string>
+			<string>2E817752-9DF6-4CC1-A03A-D34FD1DA81B3.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
@@ -984,15 +406,15 @@
 			<key>signature</key>
 			<string>Build ArcDraw</string>
 			<key>timeStartedRecording</key>
-			<real>715034358.31733</real>
+			<real>715454927.07838905</real>
 			<key>timeStoppedRecording</key>
-			<real>715034359.12926102</real>
+			<real>715454927.79571497</real>
 			<key>title</key>
 			<string>Build ArcDraw</string>
 			<key>uniqueIdentifier</key>
-			<string>5FE6E291-A176-48F2-8C89-2541395BB408</string>
+			<string>2E817752-9DF6-4CC1-A03A-D34FD1DA81B3</string>
 		</dict>
-		<key>6121E041-F7D8-4A76-86D3-D97019F64F27</key>
+		<key>32F5F8FF-E6F8-4361-A70C-6138D943FC3E</key>
 		<dict>
 			<key>className</key>
 			<string>IDEActivityLogSection</string>
@@ -1001,75 +423,7 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
 			<key>fileName</key>
-			<string>6121E041-F7D8-4A76-86D3-D97019F64F27.xcactivitylog</string>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>E</string>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>ArcDraw project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>ArcDraw</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Build ArcDraw</string>
-			<key>timeStartedRecording</key>
-			<real>715026319.98381901</real>
-			<key>timeStoppedRecording</key>
-			<real>715026320.77212</real>
-			<key>title</key>
-			<string>Build ArcDraw</string>
-			<key>uniqueIdentifier</key>
-			<string>6121E041-F7D8-4A76-86D3-D97019F64F27</string>
-		</dict>
-		<key>62882C6F-FCC8-4355-8647-AEE95EBBB481</key>
-		<dict>
-			<key>className</key>
-			<string>IDEActivityLogSection</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
-			<key>fileName</key>
-			<string>62882C6F-FCC8-4355-8647-AEE95EBBB481.xcactivitylog</string>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>E</string>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>ArcDraw project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>ArcDraw</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Build ArcDraw</string>
-			<key>timeStartedRecording</key>
-			<real>715026157.05188501</real>
-			<key>timeStoppedRecording</key>
-			<real>715026157.42664194</real>
-			<key>title</key>
-			<string>Build ArcDraw</string>
-			<key>uniqueIdentifier</key>
-			<string>62882C6F-FCC8-4355-8647-AEE95EBBB481</string>
-		</dict>
-		<key>62C5C60E-6E1B-4338-8456-5A8062D57A0D</key>
-		<dict>
-			<key>className</key>
-			<string>IDEActivityLogSection</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
-			<key>fileName</key>
-			<string>62C5C60E-6E1B-4338-8456-5A8062D57A0D.xcactivitylog</string>
+			<string>32F5F8FF-E6F8-4361-A70C-6138D943FC3E.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
@@ -1086,15 +440,15 @@
 			<key>signature</key>
 			<string>Build ArcDraw</string>
 			<key>timeStartedRecording</key>
-			<real>715034063.28900003</real>
+			<real>715456681.35552001</real>
 			<key>timeStoppedRecording</key>
-			<real>715034065.24708498</real>
+			<real>715456681.56394899</real>
 			<key>title</key>
 			<string>Build ArcDraw</string>
 			<key>uniqueIdentifier</key>
-			<string>62C5C60E-6E1B-4338-8456-5A8062D57A0D</string>
+			<string>32F5F8FF-E6F8-4361-A70C-6138D943FC3E</string>
 		</dict>
-		<key>687FA65A-F7A9-4EA1-9B39-28631AA11485</key>
+		<key>33E0C608-8135-42CB-904C-8D39306FFD94</key>
 		<dict>
 			<key>className</key>
 			<string>IDEActivityLogSection</string>
@@ -1103,41 +457,7 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
 			<key>fileName</key>
-			<string>687FA65A-F7A9-4EA1-9B39-28631AA11485.xcactivitylog</string>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>W</string>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>ArcDraw project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>ArcDraw</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Build ArcDraw</string>
-			<key>timeStartedRecording</key>
-			<real>715040265.189399</real>
-			<key>timeStoppedRecording</key>
-			<real>715040267.15188301</real>
-			<key>title</key>
-			<string>Build ArcDraw</string>
-			<key>uniqueIdentifier</key>
-			<string>687FA65A-F7A9-4EA1-9B39-28631AA11485</string>
-		</dict>
-		<key>6B136744-5E05-4A27-8111-AD7AA64C617A</key>
-		<dict>
-			<key>className</key>
-			<string>IDEActivityLogSection</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
-			<key>fileName</key>
-			<string>6B136744-5E05-4A27-8111-AD7AA64C617A.xcactivitylog</string>
+			<string>33E0C608-8135-42CB-904C-8D39306FFD94.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
@@ -1154,15 +474,15 @@
 			<key>signature</key>
 			<string>Build ArcDraw</string>
 			<key>timeStartedRecording</key>
-			<real>715039490.17067897</real>
+			<real>715454685.74794805</real>
 			<key>timeStoppedRecording</key>
-			<real>715039491.70461798</real>
+			<real>715454686.79421496</real>
 			<key>title</key>
 			<string>Build ArcDraw</string>
 			<key>uniqueIdentifier</key>
-			<string>6B136744-5E05-4A27-8111-AD7AA64C617A</string>
+			<string>33E0C608-8135-42CB-904C-8D39306FFD94</string>
 		</dict>
-		<key>6E4B97DD-6B41-4C35-A050-B3A099485C70</key>
+		<key>362E002F-A896-4955-8439-FCBA7568ECF1</key>
 		<dict>
 			<key>className</key>
 			<string>IDEActivityLogSection</string>
@@ -1171,41 +491,7 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
 			<key>fileName</key>
-			<string>6E4B97DD-6B41-4C35-A050-B3A099485C70.xcactivitylog</string>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>E</string>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>ArcDraw project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>ArcDraw</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Build ArcDraw</string>
-			<key>timeStartedRecording</key>
-			<real>714975040.46831298</real>
-			<key>timeStoppedRecording</key>
-			<real>714975041.21780097</real>
-			<key>title</key>
-			<string>Build ArcDraw</string>
-			<key>uniqueIdentifier</key>
-			<string>6E4B97DD-6B41-4C35-A050-B3A099485C70</string>
-		</dict>
-		<key>736A4EC6-4BBF-4C45-A1AB-4C53D7841C16</key>
-		<dict>
-			<key>className</key>
-			<string>IDEActivityLogSection</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
-			<key>fileName</key>
-			<string>736A4EC6-4BBF-4C45-A1AB-4C53D7841C16.xcactivitylog</string>
+			<string>362E002F-A896-4955-8439-FCBA7568ECF1.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
@@ -1222,15 +508,15 @@
 			<key>signature</key>
 			<string>Build ArcDraw</string>
 			<key>timeStartedRecording</key>
-			<real>715023649.10404503</real>
+			<real>715458586.789294</real>
 			<key>timeStoppedRecording</key>
-			<real>715023650.96219206</real>
+			<real>715458588.73861694</real>
 			<key>title</key>
 			<string>Build ArcDraw</string>
 			<key>uniqueIdentifier</key>
-			<string>736A4EC6-4BBF-4C45-A1AB-4C53D7841C16</string>
+			<string>362E002F-A896-4955-8439-FCBA7568ECF1</string>
 		</dict>
-		<key>7732E4AD-9B7E-4192-A3CF-4A05E9D028DA</key>
+		<key>37896EE6-3854-4BEF-ADFE-03487F22C5C6</key>
 		<dict>
 			<key>className</key>
 			<string>IDEActivityLogSection</string>
@@ -1239,75 +525,7 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
 			<key>fileName</key>
-			<string>7732E4AD-9B7E-4192-A3CF-4A05E9D028DA.xcactivitylog</string>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>E</string>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>ArcDraw project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>ArcDraw</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Build ArcDraw</string>
-			<key>timeStartedRecording</key>
-			<real>715020119.30742502</real>
-			<key>timeStoppedRecording</key>
-			<real>715020119.91732705</real>
-			<key>title</key>
-			<string>Build ArcDraw</string>
-			<key>uniqueIdentifier</key>
-			<string>7732E4AD-9B7E-4192-A3CF-4A05E9D028DA</string>
-		</dict>
-		<key>7D7B1B2A-2C26-4592-90D7-9427E85AFDEA</key>
-		<dict>
-			<key>className</key>
-			<string>IDEActivityLogSection</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
-			<key>fileName</key>
-			<string>7D7B1B2A-2C26-4592-90D7-9427E85AFDEA.xcactivitylog</string>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>E</string>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>ArcDraw project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>ArcDraw</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Build ArcDraw</string>
-			<key>timeStartedRecording</key>
-			<real>715039876.66534805</real>
-			<key>timeStoppedRecording</key>
-			<real>715039878.09791195</real>
-			<key>title</key>
-			<string>Build ArcDraw</string>
-			<key>uniqueIdentifier</key>
-			<string>7D7B1B2A-2C26-4592-90D7-9427E85AFDEA</string>
-		</dict>
-		<key>8361399B-3A09-40BA-8996-963D73F68E3E</key>
-		<dict>
-			<key>className</key>
-			<string>IDEActivityLogSection</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
-			<key>fileName</key>
-			<string>8361399B-3A09-40BA-8996-963D73F68E3E.xcactivitylog</string>
+			<string>37896EE6-3854-4BEF-ADFE-03487F22C5C6.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
@@ -1324,15 +542,15 @@
 			<key>signature</key>
 			<string>Build ArcDraw</string>
 			<key>timeStartedRecording</key>
-			<real>715023899.166875</real>
+			<real>715458536.251436</real>
 			<key>timeStoppedRecording</key>
-			<real>715023900.65548599</real>
+			<real>715458538.19292605</real>
 			<key>title</key>
 			<string>Build ArcDraw</string>
 			<key>uniqueIdentifier</key>
-			<string>8361399B-3A09-40BA-8996-963D73F68E3E</string>
+			<string>37896EE6-3854-4BEF-ADFE-03487F22C5C6</string>
 		</dict>
-		<key>85AA0445-F0D8-406A-89E3-F7AD301D2C3B</key>
+		<key>4059C9B1-B39D-4EC0-B992-CEE42007D8AA</key>
 		<dict>
 			<key>className</key>
 			<string>IDEActivityLogSection</string>
@@ -1341,7 +559,7 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
 			<key>fileName</key>
-			<string>85AA0445-F0D8-406A-89E3-F7AD301D2C3B.xcactivitylog</string>
+			<string>4059C9B1-B39D-4EC0-B992-CEE42007D8AA.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
@@ -1358,15 +576,15 @@
 			<key>signature</key>
 			<string>Build ArcDraw</string>
 			<key>timeStartedRecording</key>
-			<real>715033511.06897402</real>
+			<real>715460319.09239697</real>
 			<key>timeStoppedRecording</key>
-			<real>715033513.13154995</real>
+			<real>715460320.78085196</real>
 			<key>title</key>
 			<string>Build ArcDraw</string>
 			<key>uniqueIdentifier</key>
-			<string>85AA0445-F0D8-406A-89E3-F7AD301D2C3B</string>
+			<string>4059C9B1-B39D-4EC0-B992-CEE42007D8AA</string>
 		</dict>
-		<key>86B8948E-B5D7-411D-AF4E-8917992F966C</key>
+		<key>414D7727-769A-4583-9B86-1727E0E286B5</key>
 		<dict>
 			<key>className</key>
 			<string>IDEActivityLogSection</string>
@@ -1375,75 +593,7 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
 			<key>fileName</key>
-			<string>86B8948E-B5D7-411D-AF4E-8917992F966C.xcactivitylog</string>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>W</string>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>ArcDraw project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>ArcDraw</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Build ArcDraw</string>
-			<key>timeStartedRecording</key>
-			<real>715026381.80738497</real>
-			<key>timeStoppedRecording</key>
-			<real>715026383.34208202</real>
-			<key>title</key>
-			<string>Build ArcDraw</string>
-			<key>uniqueIdentifier</key>
-			<string>86B8948E-B5D7-411D-AF4E-8917992F966C</string>
-		</dict>
-		<key>8B4597A0-F8C0-49E8-96E4-CFB087C13DE4</key>
-		<dict>
-			<key>className</key>
-			<string>IDEActivityLogSection</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
-			<key>fileName</key>
-			<string>8B4597A0-F8C0-49E8-96E4-CFB087C13DE4.xcactivitylog</string>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>W</string>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>ArcDraw project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>ArcDraw</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Build ArcDraw</string>
-			<key>timeStartedRecording</key>
-			<real>715037789.66027796</real>
-			<key>timeStoppedRecording</key>
-			<real>715037792.31824803</real>
-			<key>title</key>
-			<string>Build ArcDraw</string>
-			<key>uniqueIdentifier</key>
-			<string>8B4597A0-F8C0-49E8-96E4-CFB087C13DE4</string>
-		</dict>
-		<key>8C235A3C-1185-4021-B51C-DE25E4549978</key>
-		<dict>
-			<key>className</key>
-			<string>IDEActivityLogSection</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
-			<key>fileName</key>
-			<string>8C235A3C-1185-4021-B51C-DE25E4549978.xcactivitylog</string>
+			<string>414D7727-769A-4583-9B86-1727E0E286B5.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
@@ -1460,15 +610,15 @@
 			<key>signature</key>
 			<string>Build ArcDraw</string>
 			<key>timeStartedRecording</key>
-			<real>715019806.79995596</real>
+			<real>715454560.35542297</real>
 			<key>timeStoppedRecording</key>
-			<real>715019807.49042702</real>
+			<real>715454561.49682498</real>
 			<key>title</key>
 			<string>Build ArcDraw</string>
 			<key>uniqueIdentifier</key>
-			<string>8C235A3C-1185-4021-B51C-DE25E4549978</string>
+			<string>414D7727-769A-4583-9B86-1727E0E286B5</string>
 		</dict>
-		<key>90CFF584-0114-4850-A2BE-581D9ED44F63</key>
+		<key>424A9943-0254-4A5F-AA4D-C788D8E270C6</key>
 		<dict>
 			<key>className</key>
 			<string>IDEActivityLogSection</string>
@@ -1477,7 +627,7 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
 			<key>fileName</key>
-			<string>90CFF584-0114-4850-A2BE-581D9ED44F63.xcactivitylog</string>
+			<string>424A9943-0254-4A5F-AA4D-C788D8E270C6.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
@@ -1494,15 +644,15 @@
 			<key>signature</key>
 			<string>Build ArcDraw</string>
 			<key>timeStartedRecording</key>
-			<real>715040583.86554503</real>
+			<real>715455641.80922902</real>
 			<key>timeStoppedRecording</key>
-			<real>715040585.56883705</real>
+			<real>715455642.01115704</real>
 			<key>title</key>
 			<string>Build ArcDraw</string>
 			<key>uniqueIdentifier</key>
-			<string>90CFF584-0114-4850-A2BE-581D9ED44F63</string>
+			<string>424A9943-0254-4A5F-AA4D-C788D8E270C6</string>
 		</dict>
-		<key>92C5BFD3-E5DF-4A26-A16D-F3D109616C83</key>
+		<key>44308CE5-E9EA-4A4D-A3A0-89DACC7C0C7F</key>
 		<dict>
 			<key>className</key>
 			<string>IDEActivityLogSection</string>
@@ -1511,41 +661,7 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
 			<key>fileName</key>
-			<string>92C5BFD3-E5DF-4A26-A16D-F3D109616C83.xcactivitylog</string>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>E</string>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>ArcDraw project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>ArcDraw</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Build ArcDraw</string>
-			<key>timeStartedRecording</key>
-			<real>715038422.06999099</real>
-			<key>timeStoppedRecording</key>
-			<real>715038423.70824301</real>
-			<key>title</key>
-			<string>Build ArcDraw</string>
-			<key>uniqueIdentifier</key>
-			<string>92C5BFD3-E5DF-4A26-A16D-F3D109616C83</string>
-		</dict>
-		<key>931855A7-FEC7-4994-9FFB-04FE25163FD3</key>
-		<dict>
-			<key>className</key>
-			<string>IDEActivityLogSection</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
-			<key>fileName</key>
-			<string>931855A7-FEC7-4994-9FFB-04FE25163FD3.xcactivitylog</string>
+			<string>44308CE5-E9EA-4A4D-A3A0-89DACC7C0C7F.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
@@ -1562,15 +678,15 @@
 			<key>signature</key>
 			<string>Build ArcDraw</string>
 			<key>timeStartedRecording</key>
-			<real>715037545.51340795</real>
+			<real>715457034.09873104</real>
 			<key>timeStoppedRecording</key>
-			<real>715037547.48852503</real>
+			<real>715457034.32446098</real>
 			<key>title</key>
 			<string>Build ArcDraw</string>
 			<key>uniqueIdentifier</key>
-			<string>931855A7-FEC7-4994-9FFB-04FE25163FD3</string>
+			<string>44308CE5-E9EA-4A4D-A3A0-89DACC7C0C7F</string>
 		</dict>
-		<key>9862012E-2DFC-4FD2-B038-5173B12D3180</key>
+		<key>48C35AA8-4476-40A8-9042-C53307F896A1</key>
 		<dict>
 			<key>className</key>
 			<string>IDEActivityLogSection</string>
@@ -1579,41 +695,7 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
 			<key>fileName</key>
-			<string>9862012E-2DFC-4FD2-B038-5173B12D3180.xcactivitylog</string>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>E</string>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>ArcDraw project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>ArcDraw</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Build ArcDraw</string>
-			<key>timeStartedRecording</key>
-			<real>715021597.03290296</real>
-			<key>timeStoppedRecording</key>
-			<real>715021597.87845194</real>
-			<key>title</key>
-			<string>Build ArcDraw</string>
-			<key>uniqueIdentifier</key>
-			<string>9862012E-2DFC-4FD2-B038-5173B12D3180</string>
-		</dict>
-		<key>9D8BA15B-C232-4D58-8209-F0223B965597</key>
-		<dict>
-			<key>className</key>
-			<string>IDEActivityLogSection</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
-			<key>fileName</key>
-			<string>9D8BA15B-C232-4D58-8209-F0223B965597.xcactivitylog</string>
+			<string>48C35AA8-4476-40A8-9042-C53307F896A1.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
@@ -1630,15 +712,15 @@
 			<key>signature</key>
 			<string>Build ArcDraw</string>
 			<key>timeStartedRecording</key>
-			<real>715020510.285079</real>
+			<real>715459750.37524295</real>
 			<key>timeStoppedRecording</key>
-			<real>715020510.45116305</real>
+			<real>715459751.82278502</real>
 			<key>title</key>
 			<string>Build ArcDraw</string>
 			<key>uniqueIdentifier</key>
-			<string>9D8BA15B-C232-4D58-8209-F0223B965597</string>
+			<string>48C35AA8-4476-40A8-9042-C53307F896A1</string>
 		</dict>
-		<key>9F7F8529-D239-49F5-A548-803EC9168866</key>
+		<key>48EDF115-F9CA-48AA-9B7A-DB3FFAE6F41F</key>
 		<dict>
 			<key>className</key>
 			<string>IDEActivityLogSection</string>
@@ -1647,7 +729,7 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
 			<key>fileName</key>
-			<string>9F7F8529-D239-49F5-A548-803EC9168866.xcactivitylog</string>
+			<string>48EDF115-F9CA-48AA-9B7A-DB3FFAE6F41F.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
@@ -1664,15 +746,15 @@
 			<key>signature</key>
 			<string>Build ArcDraw</string>
 			<key>timeStartedRecording</key>
-			<real>715022024.20356905</real>
+			<real>715458870.66678202</real>
 			<key>timeStoppedRecording</key>
-			<real>715022025.80919194</real>
+			<real>715458872.17824805</real>
 			<key>title</key>
 			<string>Build ArcDraw</string>
 			<key>uniqueIdentifier</key>
-			<string>9F7F8529-D239-49F5-A548-803EC9168866</string>
+			<string>48EDF115-F9CA-48AA-9B7A-DB3FFAE6F41F</string>
 		</dict>
-		<key>A19F59ED-C1E4-456C-A1AA-3CCD179D8F55</key>
+		<key>4978CBAD-62ED-4AE0-8F79-FBC5D87709C9</key>
 		<dict>
 			<key>className</key>
 			<string>IDEActivityLogSection</string>
@@ -1681,7 +763,7 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
 			<key>fileName</key>
-			<string>A19F59ED-C1E4-456C-A1AA-3CCD179D8F55.xcactivitylog</string>
+			<string>4978CBAD-62ED-4AE0-8F79-FBC5D87709C9.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
@@ -1698,15 +780,15 @@
 			<key>signature</key>
 			<string>Build ArcDraw</string>
 			<key>timeStartedRecording</key>
-			<real>715026560.70544398</real>
+			<real>715454288.99979401</real>
 			<key>timeStoppedRecording</key>
-			<real>715026561.95622206</real>
+			<real>715454290.905527</real>
 			<key>title</key>
 			<string>Build ArcDraw</string>
 			<key>uniqueIdentifier</key>
-			<string>A19F59ED-C1E4-456C-A1AA-3CCD179D8F55</string>
+			<string>4978CBAD-62ED-4AE0-8F79-FBC5D87709C9</string>
 		</dict>
-		<key>A74A233B-8C54-4AF4-83B7-EDE693774B30</key>
+		<key>4A794398-E42A-49BE-9235-BF6ADD140033</key>
 		<dict>
 			<key>className</key>
 			<string>IDEActivityLogSection</string>
@@ -1715,143 +797,7 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
 			<key>fileName</key>
-			<string>A74A233B-8C54-4AF4-83B7-EDE693774B30.xcactivitylog</string>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>E</string>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>ArcDraw project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>ArcDraw</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Build ArcDraw</string>
-			<key>timeStartedRecording</key>
-			<real>715023045.81183195</real>
-			<key>timeStoppedRecording</key>
-			<real>715023046.95422804</real>
-			<key>title</key>
-			<string>Build ArcDraw</string>
-			<key>uniqueIdentifier</key>
-			<string>A74A233B-8C54-4AF4-83B7-EDE693774B30</string>
-		</dict>
-		<key>A81EF57C-AFC9-4788-A211-066ED8B8505E</key>
-		<dict>
-			<key>className</key>
-			<string>IDEActivityLogSection</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
-			<key>fileName</key>
-			<string>A81EF57C-AFC9-4788-A211-066ED8B8505E.xcactivitylog</string>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>E</string>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>ArcDraw project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>ArcDraw</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Build ArcDraw</string>
-			<key>timeStartedRecording</key>
-			<real>715023007.22777998</real>
-			<key>timeStoppedRecording</key>
-			<real>715023007.67653596</real>
-			<key>title</key>
-			<string>Build ArcDraw</string>
-			<key>uniqueIdentifier</key>
-			<string>A81EF57C-AFC9-4788-A211-066ED8B8505E</string>
-		</dict>
-		<key>A8285B26-93C3-4AD0-97D0-9550D8DDE210</key>
-		<dict>
-			<key>className</key>
-			<string>IDEActivityLogSection</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
-			<key>fileName</key>
-			<string>A8285B26-93C3-4AD0-97D0-9550D8DDE210.xcactivitylog</string>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>E</string>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>ArcDraw project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>ArcDraw</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Build ArcDraw</string>
-			<key>timeStartedRecording</key>
-			<real>715026147.56447196</real>
-			<key>timeStoppedRecording</key>
-			<real>715026148.33632302</real>
-			<key>title</key>
-			<string>Build ArcDraw</string>
-			<key>uniqueIdentifier</key>
-			<string>A8285B26-93C3-4AD0-97D0-9550D8DDE210</string>
-		</dict>
-		<key>A9A7B605-85C0-4A72-BFC6-CBEB06B57D2A</key>
-		<dict>
-			<key>className</key>
-			<string>IDEActivityLogSection</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
-			<key>fileName</key>
-			<string>A9A7B605-85C0-4A72-BFC6-CBEB06B57D2A.xcactivitylog</string>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>E</string>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>ArcDraw project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>ArcDraw</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Build ArcDraw</string>
-			<key>timeStartedRecording</key>
-			<real>715039957.12153304</real>
-			<key>timeStoppedRecording</key>
-			<real>715039958.58433402</real>
-			<key>title</key>
-			<string>Build ArcDraw</string>
-			<key>uniqueIdentifier</key>
-			<string>A9A7B605-85C0-4A72-BFC6-CBEB06B57D2A</string>
-		</dict>
-		<key>ABBE98F8-8343-4366-AC6E-1BD6F24B49DD</key>
-		<dict>
-			<key>className</key>
-			<string>IDEActivityLogSection</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
-			<key>fileName</key>
-			<string>ABBE98F8-8343-4366-AC6E-1BD6F24B49DD.xcactivitylog</string>
+			<string>4A794398-E42A-49BE-9235-BF6ADD140033.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
@@ -1868,15 +814,15 @@
 			<key>signature</key>
 			<string>Build ArcDraw</string>
 			<key>timeStartedRecording</key>
-			<real>715032160.60834098</real>
+			<real>715457270.74719095</real>
 			<key>timeStoppedRecording</key>
-			<real>715032161.77533495</real>
+			<real>715457270.84630096</real>
 			<key>title</key>
 			<string>Build ArcDraw</string>
 			<key>uniqueIdentifier</key>
-			<string>ABBE98F8-8343-4366-AC6E-1BD6F24B49DD</string>
+			<string>4A794398-E42A-49BE-9235-BF6ADD140033</string>
 		</dict>
-		<key>AFA6187A-D0C6-4346-8683-F8E97E8382D0</key>
+		<key>504EBC2B-3C04-4610-B0A4-F10B228936E1</key>
 		<dict>
 			<key>className</key>
 			<string>IDEActivityLogSection</string>
@@ -1885,41 +831,7 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
 			<key>fileName</key>
-			<string>AFA6187A-D0C6-4346-8683-F8E97E8382D0.xcactivitylog</string>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>E</string>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>ArcDraw project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>ArcDraw</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Build ArcDraw</string>
-			<key>timeStartedRecording</key>
-			<real>715022478.36014497</real>
-			<key>timeStoppedRecording</key>
-			<real>715022479.52941298</real>
-			<key>title</key>
-			<string>Build ArcDraw</string>
-			<key>uniqueIdentifier</key>
-			<string>AFA6187A-D0C6-4346-8683-F8E97E8382D0</string>
-		</dict>
-		<key>B123062C-EC34-458B-BEB8-90535EF80620</key>
-		<dict>
-			<key>className</key>
-			<string>IDEActivityLogSection</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
-			<key>fileName</key>
-			<string>B123062C-EC34-458B-BEB8-90535EF80620.xcactivitylog</string>
+			<string>504EBC2B-3C04-4610-B0A4-F10B228936E1.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
@@ -1936,15 +848,15 @@
 			<key>signature</key>
 			<string>Build ArcDraw</string>
 			<key>timeStartedRecording</key>
-			<real>715032116.40636301</real>
+			<real>715457215.32777405</real>
 			<key>timeStoppedRecording</key>
-			<real>715032117.59879398</real>
+			<real>715457217.14769006</real>
 			<key>title</key>
 			<string>Build ArcDraw</string>
 			<key>uniqueIdentifier</key>
-			<string>B123062C-EC34-458B-BEB8-90535EF80620</string>
+			<string>504EBC2B-3C04-4610-B0A4-F10B228936E1</string>
 		</dict>
-		<key>B5F16E62-39B8-4B32-A278-260A76928501</key>
+		<key>50654273-D406-440D-9FE2-22ABBE5CA73B</key>
 		<dict>
 			<key>className</key>
 			<string>IDEActivityLogSection</string>
@@ -1953,41 +865,7 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
 			<key>fileName</key>
-			<string>B5F16E62-39B8-4B32-A278-260A76928501.xcactivitylog</string>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>E</string>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>ArcDraw project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>ArcDraw</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Build ArcDraw</string>
-			<key>timeStartedRecording</key>
-			<real>715022402.92812395</real>
-			<key>timeStoppedRecording</key>
-			<real>715022403.39672995</real>
-			<key>title</key>
-			<string>Build ArcDraw</string>
-			<key>uniqueIdentifier</key>
-			<string>B5F16E62-39B8-4B32-A278-260A76928501</string>
-		</dict>
-		<key>B7411A09-9C42-417B-B31B-B12CB527AF1D</key>
-		<dict>
-			<key>className</key>
-			<string>IDEActivityLogSection</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
-			<key>fileName</key>
-			<string>B7411A09-9C42-417B-B31B-B12CB527AF1D.xcactivitylog</string>
+			<string>50654273-D406-440D-9FE2-22ABBE5CA73B.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
@@ -2004,15 +882,15 @@
 			<key>signature</key>
 			<string>Build ArcDraw</string>
 			<key>timeStartedRecording</key>
-			<real>715024107.98071802</real>
+			<real>715454188.63163304</real>
 			<key>timeStoppedRecording</key>
-			<real>715024111.47792494</real>
+			<real>715454191.11712503</real>
 			<key>title</key>
 			<string>Build ArcDraw</string>
 			<key>uniqueIdentifier</key>
-			<string>B7411A09-9C42-417B-B31B-B12CB527AF1D</string>
+			<string>50654273-D406-440D-9FE2-22ABBE5CA73B</string>
 		</dict>
-		<key>B9B4CD43-5794-4409-A13A-84ACBB8E2E9E</key>
+		<key>55ACFA2C-818D-48C4-BB42-A2E2E0742A5F</key>
 		<dict>
 			<key>className</key>
 			<string>IDEActivityLogSection</string>
@@ -2021,41 +899,7 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
 			<key>fileName</key>
-			<string>B9B4CD43-5794-4409-A13A-84ACBB8E2E9E.xcactivitylog</string>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>E</string>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>ArcDraw project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>ArcDraw</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Build ArcDraw</string>
-			<key>timeStartedRecording</key>
-			<real>715022963.82649696</real>
-			<key>timeStoppedRecording</key>
-			<real>715022964.27815998</real>
-			<key>title</key>
-			<string>Build ArcDraw</string>
-			<key>uniqueIdentifier</key>
-			<string>B9B4CD43-5794-4409-A13A-84ACBB8E2E9E</string>
-		</dict>
-		<key>BC41BA97-045B-42F2-8346-58DA343CEE52</key>
-		<dict>
-			<key>className</key>
-			<string>IDEActivityLogSection</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
-			<key>fileName</key>
-			<string>BC41BA97-045B-42F2-8346-58DA343CEE52.xcactivitylog</string>
+			<string>55ACFA2C-818D-48C4-BB42-A2E2E0742A5F.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
@@ -2072,15 +916,15 @@
 			<key>signature</key>
 			<string>Build ArcDraw</string>
 			<key>timeStartedRecording</key>
-			<real>715035799.22639</real>
+			<real>715459003.74765205</real>
 			<key>timeStoppedRecording</key>
-			<real>715035801.97237694</real>
+			<real>715459005.18873501</real>
 			<key>title</key>
 			<string>Build ArcDraw</string>
 			<key>uniqueIdentifier</key>
-			<string>BC41BA97-045B-42F2-8346-58DA343CEE52</string>
+			<string>55ACFA2C-818D-48C4-BB42-A2E2E0742A5F</string>
 		</dict>
-		<key>BE7A5C6F-4DF3-4FE0-9AD1-C0E34728FDCD</key>
+		<key>57E64992-BE55-4636-B7A2-007BF569A670</key>
 		<dict>
 			<key>className</key>
 			<string>IDEActivityLogSection</string>
@@ -2089,41 +933,7 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
 			<key>fileName</key>
-			<string>BE7A5C6F-4DF3-4FE0-9AD1-C0E34728FDCD.xcactivitylog</string>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>E</string>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>ArcDraw project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>ArcDraw</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Build ArcDraw</string>
-			<key>timeStartedRecording</key>
-			<real>715019739.22494805</real>
-			<key>timeStoppedRecording</key>
-			<real>715019739.71757305</real>
-			<key>title</key>
-			<string>Build ArcDraw</string>
-			<key>uniqueIdentifier</key>
-			<string>BE7A5C6F-4DF3-4FE0-9AD1-C0E34728FDCD</string>
-		</dict>
-		<key>BF05934A-3F67-49C7-9462-5A3728B68CE2</key>
-		<dict>
-			<key>className</key>
-			<string>IDEActivityLogSection</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
-			<key>fileName</key>
-			<string>BF05934A-3F67-49C7-9462-5A3728B68CE2.xcactivitylog</string>
+			<string>57E64992-BE55-4636-B7A2-007BF569A670.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
@@ -2140,15 +950,15 @@
 			<key>signature</key>
 			<string>Build ArcDraw</string>
 			<key>timeStartedRecording</key>
-			<real>715020727.74290204</real>
+			<real>715458272.33907497</real>
 			<key>timeStoppedRecording</key>
-			<real>715020728.19130003</real>
+			<real>715458275.10194099</real>
 			<key>title</key>
 			<string>Build ArcDraw</string>
 			<key>uniqueIdentifier</key>
-			<string>BF05934A-3F67-49C7-9462-5A3728B68CE2</string>
+			<string>57E64992-BE55-4636-B7A2-007BF569A670</string>
 		</dict>
-		<key>C299D363-8889-4926-8674-BEF07DD9CAF0</key>
+		<key>595D9718-5896-4E7C-AFF1-576DD9A01CBB</key>
 		<dict>
 			<key>className</key>
 			<string>IDEActivityLogSection</string>
@@ -2157,41 +967,7 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
 			<key>fileName</key>
-			<string>C299D363-8889-4926-8674-BEF07DD9CAF0.xcactivitylog</string>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>E</string>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>ArcDraw project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>ArcDraw</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Build ArcDraw</string>
-			<key>timeStartedRecording</key>
-			<real>715019999.31045902</real>
-			<key>timeStoppedRecording</key>
-			<real>715019999.98661494</real>
-			<key>title</key>
-			<string>Build ArcDraw</string>
-			<key>uniqueIdentifier</key>
-			<string>C299D363-8889-4926-8674-BEF07DD9CAF0</string>
-		</dict>
-		<key>C3D172CC-9453-4D63-8897-32F4CB46C1DA</key>
-		<dict>
-			<key>className</key>
-			<string>IDEActivityLogSection</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
-			<key>fileName</key>
-			<string>C3D172CC-9453-4D63-8897-32F4CB46C1DA.xcactivitylog</string>
+			<string>595D9718-5896-4E7C-AFF1-576DD9A01CBB.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
@@ -2208,15 +984,15 @@
 			<key>signature</key>
 			<string>Build ArcDraw</string>
 			<key>timeStartedRecording</key>
-			<real>715024556.00541306</real>
+			<real>715262133.15075099</real>
 			<key>timeStoppedRecording</key>
-			<real>715024556.17173302</real>
+			<real>715262133.39604402</real>
 			<key>title</key>
 			<string>Build ArcDraw</string>
 			<key>uniqueIdentifier</key>
-			<string>C3D172CC-9453-4D63-8897-32F4CB46C1DA</string>
+			<string>595D9718-5896-4E7C-AFF1-576DD9A01CBB</string>
 		</dict>
-		<key>C53467D5-8901-409D-8FEA-31867FC7F64E</key>
+		<key>59F422C0-EFEF-4277-888A-5DA846D18C79</key>
 		<dict>
 			<key>className</key>
 			<string>IDEActivityLogSection</string>
@@ -2225,75 +1001,7 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
 			<key>fileName</key>
-			<string>C53467D5-8901-409D-8FEA-31867FC7F64E.xcactivitylog</string>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>E</string>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>ArcDraw project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>ArcDraw</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Build ArcDraw</string>
-			<key>timeStartedRecording</key>
-			<real>715024766.65166605</real>
-			<key>timeStoppedRecording</key>
-			<real>715024767.12006998</real>
-			<key>title</key>
-			<string>Build ArcDraw</string>
-			<key>uniqueIdentifier</key>
-			<string>C53467D5-8901-409D-8FEA-31867FC7F64E</string>
-		</dict>
-		<key>C5D5A3BA-0829-4347-8B6C-265DE8586000</key>
-		<dict>
-			<key>className</key>
-			<string>IDEActivityLogSection</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
-			<key>fileName</key>
-			<string>C5D5A3BA-0829-4347-8B6C-265DE8586000.xcactivitylog</string>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>E</string>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>ArcDraw project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>ArcDraw</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Build ArcDraw</string>
-			<key>timeStartedRecording</key>
-			<real>715036566.73488295</real>
-			<key>timeStoppedRecording</key>
-			<real>715036567.581002</real>
-			<key>title</key>
-			<string>Build ArcDraw</string>
-			<key>uniqueIdentifier</key>
-			<string>C5D5A3BA-0829-4347-8B6C-265DE8586000</string>
-		</dict>
-		<key>C61969AE-D8B6-40A5-BFE3-C378AB47C032</key>
-		<dict>
-			<key>className</key>
-			<string>IDEActivityLogSection</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
-			<key>fileName</key>
-			<string>C61969AE-D8B6-40A5-BFE3-C378AB47C032.xcactivitylog</string>
+			<string>59F422C0-EFEF-4277-888A-5DA846D18C79.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
@@ -2310,15 +1018,15 @@
 			<key>signature</key>
 			<string>Build ArcDraw</string>
 			<key>timeStartedRecording</key>
-			<real>715020810.10479999</real>
+			<real>715453723.15162802</real>
 			<key>timeStoppedRecording</key>
-			<real>715020811.71353304</real>
+			<real>715453723.51363206</real>
 			<key>title</key>
 			<string>Build ArcDraw</string>
 			<key>uniqueIdentifier</key>
-			<string>C61969AE-D8B6-40A5-BFE3-C378AB47C032</string>
+			<string>59F422C0-EFEF-4277-888A-5DA846D18C79</string>
 		</dict>
-		<key>C62B2D0F-2E95-4D85-A210-57C89848272F</key>
+		<key>669D2F1D-74DD-4099-96A8-0C647D0706D3</key>
 		<dict>
 			<key>className</key>
 			<string>IDEActivityLogSection</string>
@@ -2327,7 +1035,7 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
 			<key>fileName</key>
-			<string>C62B2D0F-2E95-4D85-A210-57C89848272F.xcactivitylog</string>
+			<string>669D2F1D-74DD-4099-96A8-0C647D0706D3.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
@@ -2344,15 +1052,15 @@
 			<key>signature</key>
 			<string>Build ArcDraw</string>
 			<key>timeStartedRecording</key>
-			<real>715023769.703982</real>
+			<real>715459824.54746604</real>
 			<key>timeStoppedRecording</key>
-			<real>715023771.22861695</real>
+			<real>715459825.71876001</real>
 			<key>title</key>
 			<string>Build ArcDraw</string>
 			<key>uniqueIdentifier</key>
-			<string>C62B2D0F-2E95-4D85-A210-57C89848272F</string>
+			<string>669D2F1D-74DD-4099-96A8-0C647D0706D3</string>
 		</dict>
-		<key>C6AF1A63-2AC4-4B02-B57C-24460A2D716F</key>
+		<key>75336190-381F-4DD5-880C-5879B01A481B</key>
 		<dict>
 			<key>className</key>
 			<string>IDEActivityLogSection</string>
@@ -2361,7 +1069,41 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
 			<key>fileName</key>
-			<string>C6AF1A63-2AC4-4B02-B57C-24460A2D716F.xcactivitylog</string>
+			<string>75336190-381F-4DD5-880C-5879B01A481B.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>E</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>ArcDraw project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>ArcDraw</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build ArcDraw</string>
+			<key>timeStartedRecording</key>
+			<real>715457574.90048397</real>
+			<key>timeStoppedRecording</key>
+			<real>715457575.35630298</real>
+			<key>title</key>
+			<string>Build ArcDraw</string>
+			<key>uniqueIdentifier</key>
+			<string>75336190-381F-4DD5-880C-5879B01A481B</string>
+		</dict>
+		<key>761C6572-431B-4AD4-B134-C5C936E9C704</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>761C6572-431B-4AD4-B134-C5C936E9C704.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
@@ -2378,15 +1120,15 @@
 			<key>signature</key>
 			<string>Build ArcDraw</string>
 			<key>timeStartedRecording</key>
-			<real>715040862.81591201</real>
+			<real>715459694.14076996</real>
 			<key>timeStoppedRecording</key>
-			<real>715040865.95402896</real>
+			<real>715459695.59074795</real>
 			<key>title</key>
 			<string>Build ArcDraw</string>
 			<key>uniqueIdentifier</key>
-			<string>C6AF1A63-2AC4-4B02-B57C-24460A2D716F</string>
+			<string>761C6572-431B-4AD4-B134-C5C936E9C704</string>
 		</dict>
-		<key>CB628BAC-BB4E-47EC-8862-FF1CB0146BF4</key>
+		<key>77F05A1D-D3D3-47C6-B369-0D2DF9AE2477</key>
 		<dict>
 			<key>className</key>
 			<string>IDEActivityLogSection</string>
@@ -2395,41 +1137,7 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
 			<key>fileName</key>
-			<string>CB628BAC-BB4E-47EC-8862-FF1CB0146BF4.xcactivitylog</string>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>E</string>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>ArcDraw project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>ArcDraw</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Build ArcDraw</string>
-			<key>timeStartedRecording</key>
-			<real>715034184.82327199</real>
-			<key>timeStoppedRecording</key>
-			<real>715034185.69368601</real>
-			<key>title</key>
-			<string>Build ArcDraw</string>
-			<key>uniqueIdentifier</key>
-			<string>CB628BAC-BB4E-47EC-8862-FF1CB0146BF4</string>
-		</dict>
-		<key>CD4C4C1B-3D5F-4A07-BA7E-3033AA101AA7</key>
-		<dict>
-			<key>className</key>
-			<string>IDEActivityLogSection</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
-			<key>fileName</key>
-			<string>CD4C4C1B-3D5F-4A07-BA7E-3033AA101AA7.xcactivitylog</string>
+			<string>77F05A1D-D3D3-47C6-B369-0D2DF9AE2477.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
@@ -2446,15 +1154,15 @@
 			<key>signature</key>
 			<string>Build ArcDraw</string>
 			<key>timeStartedRecording</key>
-			<real>715040174.56116998</real>
+			<real>715453617.85188901</real>
 			<key>timeStoppedRecording</key>
-			<real>715040176.57930899</real>
+			<real>715453618.01244795</real>
 			<key>title</key>
 			<string>Build ArcDraw</string>
 			<key>uniqueIdentifier</key>
-			<string>CD4C4C1B-3D5F-4A07-BA7E-3033AA101AA7</string>
+			<string>77F05A1D-D3D3-47C6-B369-0D2DF9AE2477</string>
 		</dict>
-		<key>D2B96F54-F266-44F1-85AF-1DE3630B6C6C</key>
+		<key>794BB713-22A3-4152-B90E-EDE049A32FAF</key>
 		<dict>
 			<key>className</key>
 			<string>IDEActivityLogSection</string>
@@ -2463,41 +1171,7 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
 			<key>fileName</key>
-			<string>D2B96F54-F266-44F1-85AF-1DE3630B6C6C.xcactivitylog</string>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>E</string>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>ArcDraw project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>ArcDraw</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Build ArcDraw</string>
-			<key>timeStartedRecording</key>
-			<real>715023025.72690499</real>
-			<key>timeStoppedRecording</key>
-			<real>715023026.15397096</real>
-			<key>title</key>
-			<string>Build ArcDraw</string>
-			<key>uniqueIdentifier</key>
-			<string>D2B96F54-F266-44F1-85AF-1DE3630B6C6C</string>
-		</dict>
-		<key>D3611C84-011D-4E01-972E-968C893D1008</key>
-		<dict>
-			<key>className</key>
-			<string>IDEActivityLogSection</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
-			<key>fileName</key>
-			<string>D3611C84-011D-4E01-972E-968C893D1008.xcactivitylog</string>
+			<string>794BB713-22A3-4152-B90E-EDE049A32FAF.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
@@ -2514,15 +1188,15 @@
 			<key>signature</key>
 			<string>Build ArcDraw</string>
 			<key>timeStartedRecording</key>
-			<real>715020405.73783302</real>
+			<real>715457127.421157</real>
 			<key>timeStoppedRecording</key>
-			<real>715020405.97403502</real>
+			<real>715457127.74537802</real>
 			<key>title</key>
 			<string>Build ArcDraw</string>
 			<key>uniqueIdentifier</key>
-			<string>D3611C84-011D-4E01-972E-968C893D1008</string>
+			<string>794BB713-22A3-4152-B90E-EDE049A32FAF</string>
 		</dict>
-		<key>D7583D88-1C0B-4CD8-BD52-7BF192C97EE1</key>
+		<key>7E11B045-558E-4864-A178-E8321C5C165F</key>
 		<dict>
 			<key>className</key>
 			<string>IDEActivityLogSection</string>
@@ -2531,7 +1205,7 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
 			<key>fileName</key>
-			<string>D7583D88-1C0B-4CD8-BD52-7BF192C97EE1.xcactivitylog</string>
+			<string>7E11B045-558E-4864-A178-E8321C5C165F.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
@@ -2548,15 +1222,15 @@
 			<key>signature</key>
 			<string>Build ArcDraw</string>
 			<key>timeStartedRecording</key>
-			<real>715040191.50892997</real>
+			<real>715459799.15912104</real>
 			<key>timeStoppedRecording</key>
-			<real>715040192.96227896</real>
+			<real>715459800.82008898</real>
 			<key>title</key>
 			<string>Build ArcDraw</string>
 			<key>uniqueIdentifier</key>
-			<string>D7583D88-1C0B-4CD8-BD52-7BF192C97EE1</string>
+			<string>7E11B045-558E-4864-A178-E8321C5C165F</string>
 		</dict>
-		<key>DBB61307-DECE-49FF-9583-C616728FAAEE</key>
+		<key>835F8ADB-3039-4D7B-A7CB-473712720E0D</key>
 		<dict>
 			<key>className</key>
 			<string>IDEActivityLogSection</string>
@@ -2565,7 +1239,7 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
 			<key>fileName</key>
-			<string>DBB61307-DECE-49FF-9583-C616728FAAEE.xcactivitylog</string>
+			<string>835F8ADB-3039-4D7B-A7CB-473712720E0D.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
@@ -2582,15 +1256,15 @@
 			<key>signature</key>
 			<string>Build ArcDraw</string>
 			<key>timeStartedRecording</key>
-			<real>715021649.55072498</real>
+			<real>715454649.30410194</real>
 			<key>timeStoppedRecording</key>
-			<real>715021650.22748196</real>
+			<real>715454650.42021203</real>
 			<key>title</key>
 			<string>Build ArcDraw</string>
 			<key>uniqueIdentifier</key>
-			<string>DBB61307-DECE-49FF-9583-C616728FAAEE</string>
+			<string>835F8ADB-3039-4D7B-A7CB-473712720E0D</string>
 		</dict>
-		<key>DE14D689-F079-459C-A371-D28DE151ABB6</key>
+		<key>869E28B7-35E1-4DE8-AC99-9C440B0E6DE6</key>
 		<dict>
 			<key>className</key>
 			<string>IDEActivityLogSection</string>
@@ -2599,7 +1273,7 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
 			<key>fileName</key>
-			<string>DE14D689-F079-459C-A371-D28DE151ABB6.xcactivitylog</string>
+			<string>869E28B7-35E1-4DE8-AC99-9C440B0E6DE6.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
@@ -2616,15 +1290,15 @@
 			<key>signature</key>
 			<string>Build ArcDraw</string>
 			<key>timeStartedRecording</key>
-			<real>715020322.16523004</real>
+			<real>715458720.54690599</real>
 			<key>timeStoppedRecording</key>
-			<real>715020322.315014</real>
+			<real>715458722.184605</real>
 			<key>title</key>
 			<string>Build ArcDraw</string>
 			<key>uniqueIdentifier</key>
-			<string>DE14D689-F079-459C-A371-D28DE151ABB6</string>
+			<string>869E28B7-35E1-4DE8-AC99-9C440B0E6DE6</string>
 		</dict>
-		<key>DF85895E-2C6C-4BE6-B532-16D48ADD7BF6</key>
+		<key>8AA6529B-9B0F-49DB-AC49-585C6FA1545B</key>
 		<dict>
 			<key>className</key>
 			<string>IDEActivityLogSection</string>
@@ -2633,75 +1307,7 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
 			<key>fileName</key>
-			<string>DF85895E-2C6C-4BE6-B532-16D48ADD7BF6.xcactivitylog</string>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>E</string>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>ArcDraw project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>ArcDraw</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Build ArcDraw</string>
-			<key>timeStartedRecording</key>
-			<real>715039742.87856901</real>
-			<key>timeStoppedRecording</key>
-			<real>715039744.01037204</real>
-			<key>title</key>
-			<string>Build ArcDraw</string>
-			<key>uniqueIdentifier</key>
-			<string>DF85895E-2C6C-4BE6-B532-16D48ADD7BF6</string>
-		</dict>
-		<key>E0EB8AD2-A58C-4FA4-B6F8-914C910968F4</key>
-		<dict>
-			<key>className</key>
-			<string>IDEActivityLogSection</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
-			<key>fileName</key>
-			<string>E0EB8AD2-A58C-4FA4-B6F8-914C910968F4.xcactivitylog</string>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>E</string>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>ArcDraw project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>ArcDraw</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Build ArcDraw</string>
-			<key>timeStartedRecording</key>
-			<real>715039896.288059</real>
-			<key>timeStoppedRecording</key>
-			<real>715039897.53481197</real>
-			<key>title</key>
-			<string>Build ArcDraw</string>
-			<key>uniqueIdentifier</key>
-			<string>E0EB8AD2-A58C-4FA4-B6F8-914C910968F4</string>
-		</dict>
-		<key>E2AB2E78-8FA5-4E53-BFCB-FDBAF3B287C0</key>
-		<dict>
-			<key>className</key>
-			<string>IDEActivityLogSection</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
-			<key>fileName</key>
-			<string>E2AB2E78-8FA5-4E53-BFCB-FDBAF3B287C0.xcactivitylog</string>
+			<string>8AA6529B-9B0F-49DB-AC49-585C6FA1545B.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
@@ -2718,15 +1324,15 @@
 			<key>signature</key>
 			<string>Build ArcDraw</string>
 			<key>timeStartedRecording</key>
-			<real>715031903.54653096</real>
+			<real>715454365.813326</real>
 			<key>timeStoppedRecording</key>
-			<real>715031903.675632</real>
+			<real>715454367.44526005</real>
 			<key>title</key>
 			<string>Build ArcDraw</string>
 			<key>uniqueIdentifier</key>
-			<string>E2AB2E78-8FA5-4E53-BFCB-FDBAF3B287C0</string>
+			<string>8AA6529B-9B0F-49DB-AC49-585C6FA1545B</string>
 		</dict>
-		<key>E70ED544-6CCD-49C2-83E9-EA7E3DBC03CA</key>
+		<key>9186908A-4E96-4C20-9B14-091FBEACCA88</key>
 		<dict>
 			<key>className</key>
 			<string>IDEActivityLogSection</string>
@@ -2735,7 +1341,7 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
 			<key>fileName</key>
-			<string>E70ED544-6CCD-49C2-83E9-EA7E3DBC03CA.xcactivitylog</string>
+			<string>9186908A-4E96-4C20-9B14-091FBEACCA88.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
@@ -2752,15 +1358,15 @@
 			<key>signature</key>
 			<string>Build ArcDraw</string>
 			<key>timeStartedRecording</key>
-			<real>715037031.87469602</real>
+			<real>715459430.36744106</real>
 			<key>timeStoppedRecording</key>
-			<real>715037034.54518604</real>
+			<real>715459431.99096894</real>
 			<key>title</key>
 			<string>Build ArcDraw</string>
 			<key>uniqueIdentifier</key>
-			<string>E70ED544-6CCD-49C2-83E9-EA7E3DBC03CA</string>
+			<string>9186908A-4E96-4C20-9B14-091FBEACCA88</string>
 		</dict>
-		<key>E7AA6B4A-BCD6-4AD3-A415-81BE5F6E390E</key>
+		<key>954F8E1F-1A89-4745-9596-443B8D3E796E</key>
 		<dict>
 			<key>className</key>
 			<string>IDEActivityLogSection</string>
@@ -2769,7 +1375,41 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
 			<key>fileName</key>
-			<string>E7AA6B4A-BCD6-4AD3-A415-81BE5F6E390E.xcactivitylog</string>
+			<string>954F8E1F-1A89-4745-9596-443B8D3E796E.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>E</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>ArcDraw project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>ArcDraw</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build ArcDraw</string>
+			<key>timeStartedRecording</key>
+			<real>715457562.49696398</real>
+			<key>timeStoppedRecording</key>
+			<real>715457563.42603004</real>
+			<key>title</key>
+			<string>Build ArcDraw</string>
+			<key>uniqueIdentifier</key>
+			<string>954F8E1F-1A89-4745-9596-443B8D3E796E</string>
+		</dict>
+		<key>9BA1ED90-08FC-43BF-B3C2-B42C3F7A76A6</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>9BA1ED90-08FC-43BF-B3C2-B42C3F7A76A6.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
@@ -2786,15 +1426,15 @@
 			<key>signature</key>
 			<string>Build ArcDraw</string>
 			<key>timeStartedRecording</key>
-			<real>715037276.80274701</real>
+			<real>715458127.13222206</real>
 			<key>timeStoppedRecording</key>
-			<real>715037279.06823301</real>
+			<real>715458127.233778</real>
 			<key>title</key>
 			<string>Build ArcDraw</string>
 			<key>uniqueIdentifier</key>
-			<string>E7AA6B4A-BCD6-4AD3-A415-81BE5F6E390E</string>
+			<string>9BA1ED90-08FC-43BF-B3C2-B42C3F7A76A6</string>
 		</dict>
-		<key>E90AA5C9-B8D1-4B66-9CD3-0D9042E18BA9</key>
+		<key>A1BB2B7D-6756-42B1-A08C-D29785193A87</key>
 		<dict>
 			<key>className</key>
 			<string>IDEActivityLogSection</string>
@@ -2803,7 +1443,7 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
 			<key>fileName</key>
-			<string>E90AA5C9-B8D1-4B66-9CD3-0D9042E18BA9.xcactivitylog</string>
+			<string>A1BB2B7D-6756-42B1-A08C-D29785193A87.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
@@ -2820,15 +1460,15 @@
 			<key>signature</key>
 			<string>Build ArcDraw</string>
 			<key>timeStartedRecording</key>
-			<real>715021761.18773997</real>
+			<real>715456780.06080699</real>
 			<key>timeStoppedRecording</key>
-			<real>715021762.63270497</real>
+			<real>715456780.26015198</real>
 			<key>title</key>
 			<string>Build ArcDraw</string>
 			<key>uniqueIdentifier</key>
-			<string>E90AA5C9-B8D1-4B66-9CD3-0D9042E18BA9</string>
+			<string>A1BB2B7D-6756-42B1-A08C-D29785193A87</string>
 		</dict>
-		<key>ED7E1F8B-F68A-44DE-876A-BAA8F4AF2DBA</key>
+		<key>A9A4E730-F0C1-4D9B-9C3A-BAC1439E538E</key>
 		<dict>
 			<key>className</key>
 			<string>IDEActivityLogSection</string>
@@ -2837,177 +1477,7 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
 			<key>fileName</key>
-			<string>ED7E1F8B-F68A-44DE-876A-BAA8F4AF2DBA.xcactivitylog</string>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>E</string>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>ArcDraw project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>ArcDraw</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Build ArcDraw</string>
-			<key>timeStartedRecording</key>
-			<real>715039679.64281094</real>
-			<key>timeStoppedRecording</key>
-			<real>715039681.02921796</real>
-			<key>title</key>
-			<string>Build ArcDraw</string>
-			<key>uniqueIdentifier</key>
-			<string>ED7E1F8B-F68A-44DE-876A-BAA8F4AF2DBA</string>
-		</dict>
-		<key>EE0B0D67-26AB-474B-AF1B-5B2F1C52525B</key>
-		<dict>
-			<key>className</key>
-			<string>IDEActivityLogSection</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
-			<key>fileName</key>
-			<string>EE0B0D67-26AB-474B-AF1B-5B2F1C52525B.xcactivitylog</string>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>E</string>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>ArcDraw project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>ArcDraw</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Build ArcDraw</string>
-			<key>timeStartedRecording</key>
-			<real>715039934.28781605</real>
-			<key>timeStoppedRecording</key>
-			<real>715039936.13627505</real>
-			<key>title</key>
-			<string>Build ArcDraw</string>
-			<key>uniqueIdentifier</key>
-			<string>EE0B0D67-26AB-474B-AF1B-5B2F1C52525B</string>
-		</dict>
-		<key>F2E672F4-9A7B-4BE3-BCAF-07F3B4B33D19</key>
-		<dict>
-			<key>className</key>
-			<string>IDEActivityLogSection</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
-			<key>fileName</key>
-			<string>F2E672F4-9A7B-4BE3-BCAF-07F3B4B33D19.xcactivitylog</string>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>E</string>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>ArcDraw project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>ArcDraw</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Build ArcDraw</string>
-			<key>timeStartedRecording</key>
-			<real>715021022.79235899</real>
-			<key>timeStoppedRecording</key>
-			<real>715021024.07949805</real>
-			<key>title</key>
-			<string>Build ArcDraw</string>
-			<key>uniqueIdentifier</key>
-			<string>F2E672F4-9A7B-4BE3-BCAF-07F3B4B33D19</string>
-		</dict>
-		<key>F329A540-F61C-40BD-87FC-02ABD9826E6D</key>
-		<dict>
-			<key>className</key>
-			<string>IDEActivityLogSection</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
-			<key>fileName</key>
-			<string>F329A540-F61C-40BD-87FC-02ABD9826E6D.xcactivitylog</string>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>E</string>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>ArcDraw project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>ArcDraw</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Build ArcDraw</string>
-			<key>timeStartedRecording</key>
-			<real>715020153.14014602</real>
-			<key>timeStoppedRecording</key>
-			<real>715020153.63533497</real>
-			<key>title</key>
-			<string>Build ArcDraw</string>
-			<key>uniqueIdentifier</key>
-			<string>F329A540-F61C-40BD-87FC-02ABD9826E6D</string>
-		</dict>
-		<key>F4509BEB-069E-4BC8-AC64-0564EBBC5128</key>
-		<dict>
-			<key>className</key>
-			<string>IDEActivityLogSection</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
-			<key>fileName</key>
-			<string>F4509BEB-069E-4BC8-AC64-0564EBBC5128.xcactivitylog</string>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>E</string>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>ArcDraw project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>ArcDraw</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Build ArcDraw</string>
-			<key>timeStartedRecording</key>
-			<real>715035750.47125101</real>
-			<key>timeStoppedRecording</key>
-			<real>715035751.36837494</real>
-			<key>title</key>
-			<string>Build ArcDraw</string>
-			<key>uniqueIdentifier</key>
-			<string>F4509BEB-069E-4BC8-AC64-0564EBBC5128</string>
-		</dict>
-		<key>F5369909-B2B5-438C-981A-D178A9C5D558</key>
-		<dict>
-			<key>className</key>
-			<string>IDEActivityLogSection</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
-			<key>fileName</key>
-			<string>F5369909-B2B5-438C-981A-D178A9C5D558.xcactivitylog</string>
+			<string>A9A4E730-F0C1-4D9B-9C3A-BAC1439E538E.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
@@ -3024,15 +1494,15 @@
 			<key>signature</key>
 			<string>Build ArcDraw</string>
 			<key>timeStartedRecording</key>
-			<real>715020666.71419597</real>
+			<real>715456711.05332601</real>
 			<key>timeStoppedRecording</key>
-			<real>715020668.12989795</real>
+			<real>715456711.229761</real>
 			<key>title</key>
 			<string>Build ArcDraw</string>
 			<key>uniqueIdentifier</key>
-			<string>F5369909-B2B5-438C-981A-D178A9C5D558</string>
+			<string>A9A4E730-F0C1-4D9B-9C3A-BAC1439E538E</string>
 		</dict>
-		<key>F7390F83-10A6-415A-8200-838311D1BE3C</key>
+		<key>AC06E6D7-A491-474F-9F52-CDC99CFA4C04</key>
 		<dict>
 			<key>className</key>
 			<string>IDEActivityLogSection</string>
@@ -3041,41 +1511,7 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
 			<key>fileName</key>
-			<string>F7390F83-10A6-415A-8200-838311D1BE3C.xcactivitylog</string>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>E</string>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>ArcDraw project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>ArcDraw</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Build ArcDraw</string>
-			<key>timeStartedRecording</key>
-			<real>715022392.58952999</real>
-			<key>timeStoppedRecording</key>
-			<real>715022393.32604003</real>
-			<key>title</key>
-			<string>Build ArcDraw</string>
-			<key>uniqueIdentifier</key>
-			<string>F7390F83-10A6-415A-8200-838311D1BE3C</string>
-		</dict>
-		<key>F81B7B29-0C56-464A-86DA-010E0A75A302</key>
-		<dict>
-			<key>className</key>
-			<string>IDEActivityLogSection</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
-			<key>fileName</key>
-			<string>F81B7B29-0C56-464A-86DA-010E0A75A302.xcactivitylog</string>
+			<string>AC06E6D7-A491-474F-9F52-CDC99CFA4C04.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
@@ -3092,15 +1528,15 @@
 			<key>signature</key>
 			<string>Build ArcDraw</string>
 			<key>timeStartedRecording</key>
-			<real>715021087.24328995</real>
+			<real>715459172.20504904</real>
 			<key>timeStoppedRecording</key>
-			<real>715021088.97864902</real>
+			<real>715459173.87337601</real>
 			<key>title</key>
 			<string>Build ArcDraw</string>
 			<key>uniqueIdentifier</key>
-			<string>F81B7B29-0C56-464A-86DA-010E0A75A302</string>
+			<string>AC06E6D7-A491-474F-9F52-CDC99CFA4C04</string>
 		</dict>
-		<key>F8F8DDC5-7240-47FC-92D0-A8275724DE16</key>
+		<key>AD39396F-FE6B-4EB2-81B8-26C9D69B985E</key>
 		<dict>
 			<key>className</key>
 			<string>IDEActivityLogSection</string>
@@ -3109,109 +1545,7 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
 			<key>fileName</key>
-			<string>F8F8DDC5-7240-47FC-92D0-A8275724DE16.xcactivitylog</string>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>E</string>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>ArcDraw project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>ArcDraw</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Build ArcDraw</string>
-			<key>timeStartedRecording</key>
-			<real>715021696.62918496</real>
-			<key>timeStoppedRecording</key>
-			<real>715021697.31301796</real>
-			<key>title</key>
-			<string>Build ArcDraw</string>
-			<key>uniqueIdentifier</key>
-			<string>F8F8DDC5-7240-47FC-92D0-A8275724DE16</string>
-		</dict>
-		<key>FA7E0EC6-EDF3-4DB2-A7D2-9699089440EC</key>
-		<dict>
-			<key>className</key>
-			<string>IDEActivityLogSection</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
-			<key>fileName</key>
-			<string>FA7E0EC6-EDF3-4DB2-A7D2-9699089440EC.xcactivitylog</string>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>E</string>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>ArcDraw project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>ArcDraw</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Build ArcDraw</string>
-			<key>timeStartedRecording</key>
-			<real>715022945.48117304</real>
-			<key>timeStoppedRecording</key>
-			<real>715022946.23604798</real>
-			<key>title</key>
-			<string>Build ArcDraw</string>
-			<key>uniqueIdentifier</key>
-			<string>FA7E0EC6-EDF3-4DB2-A7D2-9699089440EC</string>
-		</dict>
-		<key>FE5AE73C-E7D1-40C9-9021-91C29634556D</key>
-		<dict>
-			<key>className</key>
-			<string>IDEActivityLogSection</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
-			<key>fileName</key>
-			<string>FE5AE73C-E7D1-40C9-9021-91C29634556D.xcactivitylog</string>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>E</string>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>ArcDraw project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>ArcDraw</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Build ArcDraw</string>
-			<key>timeStartedRecording</key>
-			<real>715039948.35978496</real>
-			<key>timeStoppedRecording</key>
-			<real>715039949.67974806</real>
-			<key>title</key>
-			<string>Build ArcDraw</string>
-			<key>uniqueIdentifier</key>
-			<string>FE5AE73C-E7D1-40C9-9021-91C29634556D</string>
-		</dict>
-		<key>FEDFD055-E5D3-4BEB-A3B6-996CEE1FEFEB</key>
-		<dict>
-			<key>className</key>
-			<string>IDEActivityLogSection</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
-			<key>fileName</key>
-			<string>FEDFD055-E5D3-4BEB-A3B6-996CEE1FEFEB.xcactivitylog</string>
+			<string>AD39396F-FE6B-4EB2-81B8-26C9D69B985E.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
@@ -3228,15 +1562,15 @@
 			<key>signature</key>
 			<string>Build ArcDraw</string>
 			<key>timeStartedRecording</key>
-			<real>715023257.64767504</real>
+			<real>715456151.20530999</real>
 			<key>timeStoppedRecording</key>
-			<real>715023259.50234997</real>
+			<real>715456151.42475998</real>
 			<key>title</key>
 			<string>Build ArcDraw</string>
 			<key>uniqueIdentifier</key>
-			<string>FEDFD055-E5D3-4BEB-A3B6-996CEE1FEFEB</string>
+			<string>AD39396F-FE6B-4EB2-81B8-26C9D69B985E</string>
 		</dict>
-		<key>FF4EC668-3363-4BC2-8091-4FE28112E60E</key>
+		<key>AF211ECA-D977-4837-82C3-8A10752FF32E</key>
 		<dict>
 			<key>className</key>
 			<string>IDEActivityLogSection</string>
@@ -3245,7 +1579,7 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
 			<key>fileName</key>
-			<string>FF4EC668-3363-4BC2-8091-4FE28112E60E.xcactivitylog</string>
+			<string>AF211ECA-D977-4837-82C3-8A10752FF32E.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
@@ -3262,13 +1596,693 @@
 			<key>signature</key>
 			<string>Build ArcDraw</string>
 			<key>timeStartedRecording</key>
-			<real>715035027.68531597</real>
+			<real>715454144.49206698</real>
 			<key>timeStoppedRecording</key>
-			<real>715035029.65938103</real>
+			<real>715454147.69593</real>
 			<key>title</key>
 			<string>Build ArcDraw</string>
 			<key>uniqueIdentifier</key>
-			<string>FF4EC668-3363-4BC2-8091-4FE28112E60E</string>
+			<string>AF211ECA-D977-4837-82C3-8A10752FF32E</string>
+		</dict>
+		<key>AFC6543A-DC40-4C28-98E7-6FBE054ED96A</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>AFC6543A-DC40-4C28-98E7-6FBE054ED96A.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>ArcDraw project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>ArcDraw</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build ArcDraw</string>
+			<key>timeStartedRecording</key>
+			<real>715459060.60249698</real>
+			<key>timeStoppedRecording</key>
+			<real>715459062.27081203</real>
+			<key>title</key>
+			<string>Build ArcDraw</string>
+			<key>uniqueIdentifier</key>
+			<string>AFC6543A-DC40-4C28-98E7-6FBE054ED96A</string>
+		</dict>
+		<key>C1F1A256-5C80-4044-8103-B98857D4A47D</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>C1F1A256-5C80-4044-8103-B98857D4A47D.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>ArcDraw project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>ArcDraw</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build ArcDraw</string>
+			<key>timeStartedRecording</key>
+			<real>715455141.30469406</real>
+			<key>timeStoppedRecording</key>
+			<real>715455142.82726097</real>
+			<key>title</key>
+			<string>Build ArcDraw</string>
+			<key>uniqueIdentifier</key>
+			<string>C1F1A256-5C80-4044-8103-B98857D4A47D</string>
+		</dict>
+		<key>C24E246E-B54E-4CE1-AE88-E5AA2FE7E9AD</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>C24E246E-B54E-4CE1-AE88-E5AA2FE7E9AD.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>ArcDraw project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>ArcDraw</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build ArcDraw</string>
+			<key>timeStartedRecording</key>
+			<real>715458791.13254499</real>
+			<key>timeStoppedRecording</key>
+			<real>715458793.02991903</real>
+			<key>title</key>
+			<string>Build ArcDraw</string>
+			<key>uniqueIdentifier</key>
+			<string>C24E246E-B54E-4CE1-AE88-E5AA2FE7E9AD</string>
+		</dict>
+		<key>C2E83499-CB69-457C-A05C-20E31CDF24CA</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>C2E83499-CB69-457C-A05C-20E31CDF24CA.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>E</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>ArcDraw project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>ArcDraw</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build ArcDraw</string>
+			<key>timeStartedRecording</key>
+			<real>715454880.17377102</real>
+			<key>timeStoppedRecording</key>
+			<real>715454880.90714395</real>
+			<key>title</key>
+			<string>Build ArcDraw</string>
+			<key>uniqueIdentifier</key>
+			<string>C2E83499-CB69-457C-A05C-20E31CDF24CA</string>
+		</dict>
+		<key>C35D3B7D-CC33-4BFD-AB22-0597E6A55818</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>C35D3B7D-CC33-4BFD-AB22-0597E6A55818.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>ArcDraw project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>ArcDraw</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build ArcDraw</string>
+			<key>timeStartedRecording</key>
+			<real>715459275.69743204</real>
+			<key>timeStoppedRecording</key>
+			<real>715459275.80029595</real>
+			<key>title</key>
+			<string>Build ArcDraw</string>
+			<key>uniqueIdentifier</key>
+			<string>C35D3B7D-CC33-4BFD-AB22-0597E6A55818</string>
+		</dict>
+		<key>C4331D61-AFF9-4B07-A7C8-C06A96AA0CB8</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>C4331D61-AFF9-4B07-A7C8-C06A96AA0CB8.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>ArcDraw project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>ArcDraw</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build ArcDraw</string>
+			<key>timeStartedRecording</key>
+			<real>715456656.19201505</real>
+			<key>timeStoppedRecording</key>
+			<real>715456656.53827405</real>
+			<key>title</key>
+			<string>Build ArcDraw</string>
+			<key>uniqueIdentifier</key>
+			<string>C4331D61-AFF9-4B07-A7C8-C06A96AA0CB8</string>
+		</dict>
+		<key>C87EC7BF-CF22-4D8B-8A0B-C725FD6DE8A1</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>C87EC7BF-CF22-4D8B-8A0B-C725FD6DE8A1.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>ArcDraw project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>ArcDraw</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build ArcDraw</string>
+			<key>timeStartedRecording</key>
+			<real>715455247.31831205</real>
+			<key>timeStoppedRecording</key>
+			<real>715455248.50721395</real>
+			<key>title</key>
+			<string>Build ArcDraw</string>
+			<key>uniqueIdentifier</key>
+			<string>C87EC7BF-CF22-4D8B-8A0B-C725FD6DE8A1</string>
+		</dict>
+		<key>D2544C99-A5EC-441F-B52B-D9F9E0E31E59</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>D2544C99-A5EC-441F-B52B-D9F9E0E31E59.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>ArcDraw project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>ArcDraw</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build ArcDraw</string>
+			<key>timeStartedRecording</key>
+			<real>715459848.15244901</real>
+			<key>timeStoppedRecording</key>
+			<real>715459849.65340495</real>
+			<key>title</key>
+			<string>Build ArcDraw</string>
+			<key>uniqueIdentifier</key>
+			<string>D2544C99-A5EC-441F-B52B-D9F9E0E31E59</string>
+		</dict>
+		<key>D7E38C62-19AA-4C5B-85C5-AC54164A4A00</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>D7E38C62-19AA-4C5B-85C5-AC54164A4A00.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>ArcDraw project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>ArcDraw</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build ArcDraw</string>
+			<key>timeStartedRecording</key>
+			<real>715459215.36751199</real>
+			<key>timeStoppedRecording</key>
+			<real>715459216.96111095</real>
+			<key>title</key>
+			<string>Build ArcDraw</string>
+			<key>uniqueIdentifier</key>
+			<string>D7E38C62-19AA-4C5B-85C5-AC54164A4A00</string>
+		</dict>
+		<key>DCBE2C09-2B80-4145-8661-07725F460B96</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>DCBE2C09-2B80-4145-8661-07725F460B96.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>ArcDraw project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>ArcDraw</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build ArcDraw</string>
+			<key>timeStartedRecording</key>
+			<real>715455115.25211298</real>
+			<key>timeStoppedRecording</key>
+			<real>715455116.91064799</real>
+			<key>title</key>
+			<string>Build ArcDraw</string>
+			<key>uniqueIdentifier</key>
+			<string>DCBE2C09-2B80-4145-8661-07725F460B96</string>
+		</dict>
+		<key>DD2EBED6-A38F-4CC6-A91E-5B1364234561</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>DD2EBED6-A38F-4CC6-A91E-5B1364234561.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>ArcDraw project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>ArcDraw</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build ArcDraw</string>
+			<key>timeStartedRecording</key>
+			<real>715453843.39453697</real>
+			<key>timeStoppedRecording</key>
+			<real>715453843.59411895</real>
+			<key>title</key>
+			<string>Build ArcDraw</string>
+			<key>uniqueIdentifier</key>
+			<string>DD2EBED6-A38F-4CC6-A91E-5B1364234561</string>
+		</dict>
+		<key>DF28DA48-31B4-4639-8BD5-8462538025C4</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>DF28DA48-31B4-4639-8BD5-8462538025C4.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>ArcDraw project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>ArcDraw</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build ArcDraw</string>
+			<key>timeStartedRecording</key>
+			<real>715457598.16716003</real>
+			<key>timeStoppedRecording</key>
+			<real>715457599.89757705</real>
+			<key>title</key>
+			<string>Build ArcDraw</string>
+			<key>uniqueIdentifier</key>
+			<string>DF28DA48-31B4-4639-8BD5-8462538025C4</string>
+		</dict>
+		<key>E0151A0B-17AF-4ECE-A624-629DC2CBCA04</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>E0151A0B-17AF-4ECE-A624-629DC2CBCA04.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>ArcDraw project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>ArcDraw</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build ArcDraw</string>
+			<key>timeStartedRecording</key>
+			<real>715453930.82900202</real>
+			<key>timeStoppedRecording</key>
+			<real>715453931.02785397</real>
+			<key>title</key>
+			<string>Build ArcDraw</string>
+			<key>uniqueIdentifier</key>
+			<string>E0151A0B-17AF-4ECE-A624-629DC2CBCA04</string>
+		</dict>
+		<key>E214823A-E183-4C8F-8AAC-544CB50364BD</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>E214823A-E183-4C8F-8AAC-544CB50364BD.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>ArcDraw project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>ArcDraw</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build ArcDraw</string>
+			<key>timeStartedRecording</key>
+			<real>715455028.64161098</real>
+			<key>timeStoppedRecording</key>
+			<real>715455030.65563297</real>
+			<key>title</key>
+			<string>Build ArcDraw</string>
+			<key>uniqueIdentifier</key>
+			<string>E214823A-E183-4C8F-8AAC-544CB50364BD</string>
+		</dict>
+		<key>E3E66726-B13A-4884-BF78-765E580ECB8A</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>E3E66726-B13A-4884-BF78-765E580ECB8A.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>ArcDraw project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>ArcDraw</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build ArcDraw</string>
+			<key>timeStartedRecording</key>
+			<real>715458833.90033603</real>
+			<key>timeStoppedRecording</key>
+			<real>715458835.54416895</real>
+			<key>title</key>
+			<string>Build ArcDraw</string>
+			<key>uniqueIdentifier</key>
+			<string>E3E66726-B13A-4884-BF78-765E580ECB8A</string>
+		</dict>
+		<key>E8E2D399-BBBA-4A55-A6CC-D68DB3CB8858</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>E8E2D399-BBBA-4A55-A6CC-D68DB3CB8858.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>E</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>ArcDraw project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>ArcDraw</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build ArcDraw</string>
+			<key>timeStartedRecording</key>
+			<real>715454912.30070806</real>
+			<key>timeStoppedRecording</key>
+			<real>715454912.98191202</real>
+			<key>title</key>
+			<string>Build ArcDraw</string>
+			<key>uniqueIdentifier</key>
+			<string>E8E2D399-BBBA-4A55-A6CC-D68DB3CB8858</string>
+		</dict>
+		<key>F0360057-5C32-4D6B-914B-B39A84F1F05D</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>F0360057-5C32-4D6B-914B-B39A84F1F05D.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>ArcDraw project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>ArcDraw</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build ArcDraw</string>
+			<key>timeStartedRecording</key>
+			<real>715455226.23717105</real>
+			<key>timeStoppedRecording</key>
+			<real>715455227.43891394</real>
+			<key>title</key>
+			<string>Build ArcDraw</string>
+			<key>uniqueIdentifier</key>
+			<string>F0360057-5C32-4D6B-914B-B39A84F1F05D</string>
+		</dict>
+		<key>F30CAA2E-0082-4D00-A091-7A228C43683D</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>F30CAA2E-0082-4D00-A091-7A228C43683D.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>ArcDraw project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>ArcDraw</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build ArcDraw</string>
+			<key>timeStartedRecording</key>
+			<real>715457692.51936901</real>
+			<key>timeStoppedRecording</key>
+			<real>715457695.92281604</real>
+			<key>title</key>
+			<string>Build ArcDraw</string>
+			<key>uniqueIdentifier</key>
+			<string>F30CAA2E-0082-4D00-A091-7A228C43683D</string>
+		</dict>
+		<key>F83E6676-8194-4608-89FF-C4959D8C608F</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>F83E6676-8194-4608-89FF-C4959D8C608F.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>ArcDraw project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>ArcDraw</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build ArcDraw</string>
+			<key>timeStartedRecording</key>
+			<real>715455412.333848</real>
+			<key>timeStoppedRecording</key>
+			<real>715455412.44483697</real>
+			<key>title</key>
+			<string>Build ArcDraw</string>
+			<key>uniqueIdentifier</key>
+			<string>F83E6676-8194-4608-89FF-C4959D8C608F</string>
+		</dict>
+		<key>FE030F7E-A527-4935-8CB8-84DF3AF41B1A</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>FE030F7E-A527-4935-8CB8-84DF3AF41B1A.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>ArcDraw project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>ArcDraw</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build ArcDraw</string>
+			<key>timeStartedRecording</key>
+			<real>715455211.65292895</real>
+			<key>timeStoppedRecording</key>
+			<real>715455213.46301699</real>
+			<key>title</key>
+			<string>Build ArcDraw</string>
+			<key>uniqueIdentifier</key>
+			<string>FE030F7E-A527-4935-8CB8-84DF3AF41B1A</string>
 		</dict>
 	</dict>
 </dict>

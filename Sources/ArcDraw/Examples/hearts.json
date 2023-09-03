@@ -8,12 +8,12 @@
   "curves": [
     {
       "num": 1,
-      "name": "Heart 1",
+      "name": "Heart Curve 1",
       "description": "A heart shape with 3 dots",
-      "dotLocations": [
-        {"x": 90+83, "y": 80},
-        {"x": 155+83, "y": 101},
-        {"x": 90+83, "y": 194}
+      "dots": [
+        {"num": 1, "x": "90+83", "y": "80"},
+        {"num": 2, "x": "155+83", "y": "101"},
+        {"num": 3, "x": "90+83", "y": "194"}
       ],
       "startAngle": 0,
       "endAngle": 0,
@@ -21,12 +21,12 @@
     },
     {
       "num": 2,
-      "name": "Heart 2",
+      "name": "Heart Curve 2",
       "description": "Another heart shape with 3 dots",
-      "dotLocations": [
-        {"x": 90+83, "y": 80},
-        {"x": 25+83, "y": 101},
-        {"x": 90+83, "y": 194}
+      "dots": [
+        {"num": 1, "x": "90+83", "y": "80"},
+        {"num": 2, "x": "25+83", "y": "101"},
+        {"num": 3, "x": "90+83", "y": "194"}
       ],
       "startAngle": 0,
       "endAngle": 0,
@@ -34,12 +34,12 @@
     },
     {
       "num": 3,
-      "name": "Heart 3",
+      "name": "Heart Curve 3",
       "description": "A heart shape with 3 dots",
-      "dotLocations": [
-        {"x": 270+83, "y": 80},
-        {"x": 320+83, "y": 132},
-        {"x": 270+83, "y": 194}
+      "dots": [
+        {"num": 1, "x": "270+83", "y": "80"},
+        {"num": 2, "x": "320+83", "y": "132"},
+        {"num": 3, "x": "270+83", "y": "194"}
       ],
       "startAngle": 0,
       "endAngle": 0,
@@ -47,12 +47,12 @@
     },
     {
       "num": 4,
-      "name": "Heart 4",
+      "name": "Heart Curve 4",
       "description": "Another heart shape with 3 dots",
-      "dotLocations": [
-        {"x": 270+83, "y": 80},
-        {"x": 220+83, "y": 132},
-        {"x": 270+83, "y": 194}
+      "dots": [
+        {"num": 1, "x": "270+83", "y": "80"},
+        {"num": 2, "x": "220+83", "y": "132"},
+        {"num": 3, "x": "270+83", "y": "194"}
       ],
       "startAngle": 0,
       "endAngle": 0,
@@ -60,13 +60,13 @@
     },
     {
       "num": 5,
-      "name": "Heart 5",
+      "name": "Heart Curve 5",
       "description": "A heart shape with 4 dots",
-      "dotLocations": [
-        {"x": 90+83, "y": 332},
-        {"x": 162+83, "y": 332},
-        {"x": 133+83, "y": 415},
-        {"x": 90+83, "y": 446}
+      "dots": [
+        {"num": 1, "x": "90+83", "y": "332"},
+        {"num": 2, "x": "162+83", "y": "332"},
+        {"num": 3, "x": "133+83", "y": "415"},
+        {"num": 4, "x": "90+83", "y": "446"}
       ],
       "startAngle": 0,
       "endAngle": 0,
@@ -74,13 +74,13 @@
     },
     {
       "num": 6,
-      "name": "Heart 6",
+      "name": "Heart Curve 6",
       "description": "Another heart shape with 4 dots",
-      "dotLocations": [
-        {"x": 90+83, "y": 332},
-        {"x": 18+83, "y": 332},
-        {"x": 47+83, "y": 415},
-        {"x": 90+83, "y": 446}
+      "dots": [
+        {"num": 1, "x": "90+83", "y": "332"},
+        {"num": 2, "x": "18+83", "y": "332"},
+        {"num": 3, "x": "47+83", "y": "415"},
+        {"num": 4, "x": "90+83", "y": "446"}
       ],
       "startAngle": 0,
       "endAngle": 0,
@@ -88,13 +88,13 @@
     },
     {
       "num": 7,
-      "name": "Heart 7",
+      "name": "Heart Curve 7",
       "description": "A heart shape with 4 dots",
-      "dotLocations": [
-        {"x": 270+83, "y": 332},
-        {"x": 336+83, "y": 325},
-        {"x": 316+83, "y": 397},
-        {"x": 291+83, "y": 446}
+      "dots": [
+        {"num": 1, "x": "270+83", "y": "332"},
+        {"num": 2, "x": "336+83", "y": "325"},
+        {"num": 3, "x": "316+83", "y": "397"},
+        {"num": 4, "x": "291+83", "y": "446"}
       ],
       "startAngle": 0,
       "endAngle": 0,
@@ -102,13 +102,13 @@
     },
     {
       "num": 8,
-      "name": "Heart 8",
+      "name": "Heart Curve 8",
       "description": "Another heart shape with 4 dots",
-      "dotLocations": [
-        {"x": 270+83, "y": 332},
-        {"x": 207+83, "y": 353},
-        {"x": 230+83, "y": 405},
-        {"x": 291+83, "y": 446}
+      "dots": [
+        {"num": 1, "x": "270+83", "y": "332"},
+        {"num": 2, "x": "207+83", "y": "353"},
+        {"num": 3, "x": "230+83", "y": "405"},
+        {"num": 4, "x": "291+83", "y": "446"}
       ],
       "startAngle": 0,
       "endAngle": 0,

@@ -1,16 +1,23 @@
 import SwiftUI
 import UniformTypeIdentifiers
 
-struct TabArcs: View {
+struct TabCurves: View {
   @ObservedObject var doc: ArcDrawDocument
+  @State private var selectedExample: String = "Shapes"
+
+  let exampleOptions = ["Cursive", "Hearts", "Moons", "Petals", "Shapes", "Spirals", "YinYang"]
 
   init(doc: ArcDrawDocument) {
     self.doc = doc
   }
 
   var body: some View {
-    ScrollView {
-      VStack(alignment: .leading) {
+   // ScrollView {
+      VStack {
+        if doc.picdef.pictureName != "Name" && !doc.picdef.pictureName.isEmpty {
+          Text("\(doc.picdef.pictureName)")
+        }
+        Divider()
 
         Section(header:
                   Text("Drawing Curves (Arcs)")
@@ -20,10 +27,10 @@ struct TabArcs: View {
 
         ) {
 
-          HStack {
+            Text("Click and drag the curve number to reorder.")
+            Text("Click on the curve to modify.")
 
             Button("Add New Curve") {
-              // doc.addArcDefinition()
               print("Clicked New Curve")
               print("Selected curve index: \(doc.selectedCurveIndex)")
               if let selectedArcIndex = doc.selectedCurveIndex {
@@ -31,38 +38,19 @@ struct TabArcs: View {
               } else {
               doc.addArcDefinition()
               }
-
             }
               .help("Add a new arc definition.")
               .padding([.bottom], 2)
-          }
 
-          ArcListView(doc: doc)
-           // .background(Color.red.opacity(0.5))
-            .frame(height: 500)
+          Divider()
+
+          CurveListView(doc: doc)
 
         }// end section
 
-        Divider()
-
-        Section(header:
-                  Text("")
-          .font(.headline)
-          .fontWeight(.medium)
-          .frame(maxWidth: .infinity)
-        ) {
-
-          VStack(alignment: .leading) {
-            Text("Click and drag the arc number to reorder.")
-            Text("Click on the arc to modify.")
-          }
-        } // end section
-
-        Spacer() // Pushes everything above it to take as little space as possible
-
-      } // end vstack
-
-    } // end scrollview
-  } // end body
+        Spacer()
+      } //  vstack
+   // } //  scrollview
+  } //  body
 
 }

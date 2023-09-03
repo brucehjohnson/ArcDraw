@@ -14,14 +14,14 @@ struct TabbedView: View {
 
     TabView(selection: $selectedTab) {
 
-      TabBasics(doc: doc)
+      TabCurves(doc: doc)
         .tabItem {
-          Label("1.Basics", systemImage: "aspectratio")
+          Label("1.Curves", systemImage: "paintbrush")
         }.tag(0)
 
-      TabArcs(doc: doc)
+      TabMore(doc: doc)
         .tabItem {
-          Label("2.Arcs", systemImage: "paintbrush")
+          Label("2.More", systemImage: "aspectratio")
         }.tag(1)
 
       TabSave(doc: doc)
