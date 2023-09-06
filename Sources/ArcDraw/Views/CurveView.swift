@@ -5,8 +5,6 @@ struct CurveView: View {
 
   @ObservedObject var doc: ArcDrawDocument
   @Binding var selectedExample: String
-  @StateObject private var controller: DrawingController
-
   @Binding var curve: CurveDefinition
 
   let cardBackground = Color.white
@@ -16,9 +14,7 @@ struct CurveView: View {
   init(doc: ArcDrawDocument, selectedExample: Binding<String>, curve: Binding<CurveDefinition>) {
     self.doc = doc
     self._selectedExample = selectedExample
-
     self._curve = curve
-    self._controller = StateObject(wrappedValue: DrawingController(doc: doc, selectedExample: selectedExample))
   }
 
   var body: some View {
@@ -76,7 +72,7 @@ struct CurveView: View {
       } // hstack row 3
       .padding(1)
 
-      DotListView(doc: doc, dots: $curve.dots)
+      DotListView(doc: doc, selectedExample: $selectedExample, dots: $curve.dots)
 
     } // vstack (card)
     .padding()  // Don't touch rectangle

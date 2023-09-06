@@ -8,7 +8,6 @@ var contextImageGlobal: CGImage?
 
 @available(macOS 12.0, *)
 final class ArcDrawDocument: ReferenceFileDocument, ObservableObject {
-
   @Published var picdef: PictureDefinition
   @Published var selectedCurveIndex: Int?
   @Published var selectedDotIndex: Int?
@@ -18,6 +17,7 @@ final class ArcDrawDocument: ReferenceFileDocument, ObservableObject {
       loadExampleJSONAndUpdate(selectedExample)
     }
   }
+
   var docName: String = "unknown"
   static var readableContentTypes: [UTType] { [.arcdrawDocType] }
 
@@ -25,29 +25,42 @@ final class ArcDrawDocument: ReferenceFileDocument, ObservableObject {
   // while active self remains editable by the user
   typealias Snapshot = PictureDefinition
 
-  init() {
-    self.picdef = PictureDefinition(curves: [CurveDefinition()])
-    self.selectedExample = "Shapes"
+  lazy var drawingController: DrawingController = {
+    let selectedExampleBinding = Binding(
+      get: { self.selectedExample },
+      set: { self.selectedExample = $0 }
+    )
+    return DrawingController(doc: self, selectedExample: selectedExampleBinding)
+  }()
+
+  // Designated initializer
+  init(picdef: PictureDefinition = PictureDefinition(curves: [CurveDefinition()]), selectedExample: String = "Shapes", docName: String = "unknown") {
+    self.picdef = picdef
+    self.selectedExample = selectedExample
+    self.docName = docName
+
+    let selectedExampleBinding = Binding(
+      get: { self.selectedExample },
+      set: { self.selectedExample = $0 }
+    )
+
+    self.drawingController = DrawingController(doc: self, selectedExample: selectedExampleBinding)
     loadExampleJSONAndUpdate(selectedExample)
   }
 
-  init(example: PictureDefinition) {
-    self.picdef = example
-    self.selectedExample = "Shapes"
+  // Convenience init with example
+  convenience init(example: PictureDefinition) {
+    self.init(picdef: example)
   }
 
-  /**
-   Initialize a document with our picdef property
-   - Parameter configuration: config
-   */
-  init(configuration: ReadConfiguration) throws {
+  // Convenience init with configuration
+  convenience init(configuration: ReadConfiguration) throws {
     guard let data = configuration.file.regularFileContents else {
       throw CocoaError(.fileReadCorruptFile)
     }
-    self.picdef = try JSONDecoder().decode(PictureDefinition.self, from: data)
-    self.docName = configuration.file.filename!
-    self.selectedExample = "Shapes"
-    loadExampleJSONAndUpdate(selectedExample)
+    let picdef = try JSONDecoder().decode(PictureDefinition.self, from: data)
+    let docName = configuration.file.filename!
+    self.init(picdef: picdef, docName: docName)
   }
 
   func loadExampleJSONAndUpdate(_ exampleName: String) {

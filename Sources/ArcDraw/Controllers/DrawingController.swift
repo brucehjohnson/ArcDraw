@@ -11,6 +11,7 @@ class DrawingController: ObservableObject {
   }
 
   func updateDrawing(for example: String) {
+    print("Updating drawing for \(example)")
     populateDotsFromPicdef(picdef: doc.picdef)
     self.objectWillChange.send() // Force the update announcement
   }
@@ -31,6 +32,7 @@ class DrawingController: ObservableObject {
   }
 
   func populateDotsFromPicdef(picdef: PictureDefinition) {
+    print("populating dots from picdef \(picdef.curves.count) curves")
     // Clear existing lines
     lines.removeAll()
 
@@ -40,9 +42,7 @@ class DrawingController: ObservableObject {
             points.append(point)
         }
       lines.append(Line(points: points))
-
       }
-
     }
 
   func populateLinesFromPicdef(picdef: PictureDefinition) {

@@ -63,5 +63,6 @@ extension ArcDrawDocument {
     func updateCurves(_ newCurves: [CurveDefinition]) {
       print("Updating All Curves")
       self.picdef.curves = newCurves
+      self.drawingController.updateDrawing(for: selectedExample)
     }
   }

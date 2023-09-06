@@ -1,7 +1,8 @@
 import SwiftUI
 
 struct DotListView: View {
-  @ObservedObject var doc: ArcDrawDocument // Add this line
+  @ObservedObject var doc: ArcDrawDocument
+  @Binding var selectedExample: String
   @Binding var dots: [DotDefinition]
 
   var body: some View {
