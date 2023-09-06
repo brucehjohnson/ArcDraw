@@ -16,7 +16,7 @@ struct DotListView: View {
       Button("Add New Dot") {
         if let selectedCurveIndex = doc.selectedCurveIndex,
            let selectedDotIndex = doc.selectedDotIndex {
-          doc.addDotAfter(atCurveIndex: selectedCurveIndex, dotIndex: selectedDotIndex)
+          doc.picdef.curves[selectedCurveIndex].addDotAfter(selectedDotIndex: selectedDotIndex)
         }
       }
       Spacer()

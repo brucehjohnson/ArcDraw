@@ -21,11 +21,11 @@ struct CurveDefinition: Codable, Equatable {
     self.isClockwise = true
   }
 
-  init(num: Int = 1, name: String = "Name", description: String = "Description", dotLocations: [DotDefinition] = [], startAngle: Double = 0.0, endAngle: Double = 0.0, isClockwise: Bool = true) {
+  init(num: Int = 1, name: String = "Name", description: String = "Description", dots: [DotDefinition] = [], startAngle: Double = 0.0, endAngle: Double = 0.0, isClockwise: Bool = true) {
     self.num = num
     self.name = name
     self.description = description
-    self.dots = dotLocations
+    self.dots = dots
     self.startAngle = startAngle
     self.endAngle = endAngle
     self.isClockwise = isClockwise
@@ -40,4 +40,69 @@ struct CurveDefinition: Codable, Equatable {
     lhs.isClockwise == rhs.isClockwise &&
     lhs.num == rhs.num
   }
+
+  // Function to add a new dot before the selected dot
+  mutating func addDotBefore(selectedDotIndex: Int?) {
+    guard let index = selectedDotIndex else {
+      print("Dot index is nil.")
+      return
+    }
+    guard index >= 0 && index <= dots.count else {
+      print("Invalid dot index: \(index)")
+      return
+    }
+    let newDot = DotDefinition(num: dots.count + 1, x: "newX", y: "newY")
+    dots.insert(newDot, at: index)
+    renumberDots()
+  }
+
+  // Function to add a new dot after the selected dot
+  mutating func addDotAfter(selectedDotIndex: Int?) {
+    guard let index = selectedDotIndex else {
+      print("Dot index is nil.")
+      return
+    }
+    guard index >= 0 && index < dots.count else {
+      print("Invalid dot index: \(index)")
+      return
+    }
+    let newDot = DotDefinition(num: dots.count + 1, x: "newX", y: "newY")
+    dots.insert(newDot, at: index + 1)
+    renumberDots()
+  }
+
+  // Function to delete the selected dot
+  mutating func deleteSelectedDot(selectedDotIndex: Int?) {
+    guard let index = selectedDotIndex else {
+      print("Dot index is nil.")
+      return
+    }
+    guard index >= 0 && index < dots.count else {
+      print("Invalid dot index: \(index)")
+      return
+    }
+    dots.remove(at: index)
+    renumberDots()
+  }
+
+  // Function to move a dot within the list
+  mutating func moveDot(from sourceIndex: Int, to destinationIndex: Int) {
+    guard sourceIndex >= 0, sourceIndex < dots.count,
+          destinationIndex >= 0, destinationIndex < dots.count else {
+      print("Invalid source or destination index.")
+      return
+    }
+
+    let movedDot = dots.remove(at: sourceIndex)
+    dots.insert(movedDot, at: destinationIndex)
+  }
+
+  // Helper function to renumber the dot num values
+  mutating func renumberDots() {
+    for (index, var dot) in dots.enumerated() {
+      dot.num = index + 1
+      dots[index] = dot
+    }
+  }
+
 }

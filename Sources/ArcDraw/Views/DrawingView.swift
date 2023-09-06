@@ -1,7 +1,16 @@
 import SwiftUI
 
 struct DrawingView: View {
-  @ObservedObject var controller: DrawingController
+
+  @ObservedObject var doc: ArcDrawDocument
+  @Binding var selectedExample: String
+  @StateObject private var controller: DrawingController
+
+  init(doc: ArcDrawDocument, selectedExample: Binding<String>) {
+    self.doc = doc
+    self._selectedExample = selectedExample
+    self._controller = StateObject(wrappedValue: DrawingController(doc: doc, selectedExample: selectedExample))
+  }
 
   var body: some View {
     GeometryReader { _ in
@@ -25,6 +34,9 @@ struct DrawingView: View {
             controller.startNewLine()
           })
       )
+    }
+    .onAppear {
+      controller.updateDrawing(for: selectedExample)
     }
   }
 }

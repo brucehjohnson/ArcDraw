@@ -4,9 +4,11 @@ import UniformTypeIdentifiers
 struct PanelUI: View {
 
   @ObservedObject var doc: ArcDrawDocument
+  @Binding var selectedExample: String
 
-  init(doc: ArcDrawDocument) {
+  init(doc: ArcDrawDocument, selectedExample: Binding<String>) {
     self.doc = doc
+    self._selectedExample = selectedExample
   }
 
   func aspectRatio() -> Double {
@@ -21,7 +23,7 @@ struct PanelUI: View {
         .font(.title)
         .padding(.top)
 
-      TabbedView(doc: doc)
+      TabbedView(doc: doc, selectedExample: $selectedExample)
       Spacer()
     }
 

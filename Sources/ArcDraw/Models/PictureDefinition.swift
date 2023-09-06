@@ -28,6 +28,25 @@ struct PictureDefinition: Codable, Identifiable, Equatable {
     self.curves = curves
   }
 
+  // move a curve within the list of curves
+  mutating func moveCurve(from sourceIndex: Int, to destinationIndex: Int) {
+    guard sourceIndex >= 0, sourceIndex < curves.count,
+          destinationIndex >= 0, destinationIndex < curves.count else {
+      print("Invalid source or destination index.")
+      return
+    }
+    let movedCurve = curves.remove(at: sourceIndex)
+    curves.insert(movedCurve, at: destinationIndex)
+  }
+
+  // Helper function to re-number the curve num values
+  mutating func renumberCurves() {
+    for (index, var curve) in curves.enumerated() {
+      curve.num = index + 1
+      curves[index] = curve
+    }
+  }
+
   static func ==(lhs: PictureDefinition, rhs: PictureDefinition) -> Bool {
     return lhs.imageWidth == rhs.imageWidth &&
     lhs.imageHeight == rhs.imageHeight &&

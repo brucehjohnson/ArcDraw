@@ -22,16 +22,19 @@ struct WindowAccessor: NSViewRepresentable {
 struct ArcDrawApp: App {
 
   @ObservedObject var doc: ArcDrawDocument = ArcDrawDocument()
-  @State private var selectedExample: String = "Shapes"
-
   @StateObject var appState = AppState()
   @State private var shouldShowWelcomeWhenStartingUp: Bool
+  @State var selectedExample: String = "Shapes"
+
+  var exampleOptions = ["Cursive", "Hearts", "Moons", "Petals", "Shapes", "Spirals", "YinYang"]
 
   init() {
 
     let initialState = UserDefaults.standard.object(forKey: "shouldShowWelcomeWhenStartingUp") as? Bool ?? true
     _appState = StateObject(wrappedValue: AppState())
     _shouldShowWelcomeWhenStartingUp = State(initialValue: initialState)
+    doc.selectedExample = "Shapes"
+
   }
 
   internal struct AppConstants {
@@ -99,7 +102,7 @@ struct ArcDrawApp: App {
             NSWindow.allowsAutomaticWindowTabbing = false
           }
       } else {
-        ContentView(doc: doc)
+        ContentView(doc: doc, selectedExample: $selectedExample)
           .background(WindowAccessor { window in
             if let window = window {
               let uniqueIdentifier = doc.picdef.id
@@ -114,7 +117,7 @@ struct ArcDrawApp: App {
 
     DocumentGroup(newDocument: { ArcDrawDocument() }) { file in
       let doc = file.document
-      ContentView(doc: doc)
+      ContentView(doc: doc, selectedExample: $selectedExample)
         .background(WindowAccessor { window in
           if let window = window {
             let uniqueIdentifier = doc.picdef.id

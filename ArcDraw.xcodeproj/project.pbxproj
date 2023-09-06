@@ -7,12 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		880250C22A9B9D630076E001 /* hearts.json in Resources */ = {isa = PBXBuildFile; fileRef = 885A8AD42A9B74590028E8BF /* hearts.json */; };
-		880250C32A9B9D630076E001 /* moons.json in Resources */ = {isa = PBXBuildFile; fileRef = 885A8AD62A9B74640028E8BF /* moons.json */; };
-		880250C42A9B9D630076E001 /* petals.json in Resources */ = {isa = PBXBuildFile; fileRef = 885A8AD82A9B74730028E8BF /* petals.json */; };
-		880250C52A9B9D630076E001 /* shapes.json in Resources */ = {isa = PBXBuildFile; fileRef = 885A8ADA2A9B747E0028E8BF /* shapes.json */; };
-		880250C62A9B9D630076E001 /* spirals.json in Resources */ = {isa = PBXBuildFile; fileRef = 885A8ADC2A9B74910028E8BF /* spirals.json */; };
-		880250C72A9B9D630076E001 /* yinyang.json in Resources */ = {isa = PBXBuildFile; fileRef = 885A8ADE2A9B74AC0028E8BF /* yinyang.json */; };
+		880250C22A9B9D630076E001 /* Hearts.arcdraw in Resources */ = {isa = PBXBuildFile; fileRef = 885A8AD42A9B74590028E8BF /* Hearts.arcdraw */; };
+		880250C32A9B9D630076E001 /* Moons.arcdraw in Resources */ = {isa = PBXBuildFile; fileRef = 885A8AD62A9B74640028E8BF /* Moons.arcdraw */; };
+		880250C42A9B9D630076E001 /* Petals.arcdraw in Resources */ = {isa = PBXBuildFile; fileRef = 885A8AD82A9B74730028E8BF /* Petals.arcdraw */; };
+		880250C52A9B9D630076E001 /* Shapes.arcdraw in Resources */ = {isa = PBXBuildFile; fileRef = 885A8ADA2A9B747E0028E8BF /* Shapes.arcdraw */; };
+		880250C62A9B9D630076E001 /* Spirals.arcdraw in Resources */ = {isa = PBXBuildFile; fileRef = 885A8ADC2A9B74910028E8BF /* Spirals.arcdraw */; };
+		880250C72A9B9D630076E001 /* YinYang.arcdraw in Resources */ = {isa = PBXBuildFile; fileRef = 885A8ADE2A9B74AC0028E8BF /* YinYang.arcdraw */; };
 		880250C92A9BB2120076E001 /* CurveDefinition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 880250C82A9BB2120076E001 /* CurveDefinition.swift */; };
 		880250CB2A9BC5AC0076E001 /* ADFormatters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 880250CA2A9BC5AC0076E001 /* ADFormatters.swift */; };
 		880250CD2A9BC62F0076E001 /* CommaNumberFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 880250CC2A9BC62F0076E001 /* CommaNumberFormatter.swift */; };
@@ -27,6 +27,12 @@
 		880250E52A9E617A0076E001 /* DotDefinition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 880250E42A9E617A0076E001 /* DotDefinition.swift */; };
 		880250E72A9E69380076E001 /* DotListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 880250E62A9E69380076E001 /* DotListView.swift */; };
 		880250E92A9E8ED10076E001 /* KeyboardUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 880250E82A9E8ED10076E001 /* KeyboardUtilities.swift */; };
+		880250F12AA8F4D60076E001 /* ArcDrawDocument+Curve.swift in Sources */ = {isa = PBXBuildFile; fileRef = 880250F02AA8F4D60076E001 /* ArcDrawDocument+Curve.swift */; };
+		880250F32AA8F5050076E001 /* ArcDrawDocument+File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 880250F22AA8F5050076E001 /* ArcDrawDocument+File.swift */; };
+		880250F52AA8F8B00076E001 /* ArcDrawDocument+CurveUndo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 880250F42AA8F8B00076E001 /* ArcDrawDocument+CurveUndo.swift */; };
+		880250F72AA8FEF20076E001 /* CGImage+PNGdata.swift in Sources */ = {isa = PBXBuildFile; fileRef = 880250F62AA8FEF20076E001 /* CGImage+PNGdata.swift */; };
+		880250F92AA8FFBC0076E001 /* String+Index.swift in Sources */ = {isa = PBXBuildFile; fileRef = 880250F82AA8FFBC0076E001 /* String+Index.swift */; };
+		880250FB2AA900300076E001 /* UTType+arcdraw.swift in Sources */ = {isa = PBXBuildFile; fileRef = 880250FA2AA900300076E001 /* UTType+arcdraw.swift */; };
 		885A8A4B2A9A8D790028E8BF /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 885A8A452A9A8D790028E8BF /* README.md */; };
 		885A8A4C2A9A8D790028E8BF /* DEV_NOTES.md in Resources */ = {isa = PBXBuildFile; fileRef = 885A8A462A9A8D790028E8BF /* DEV_NOTES.md */; };
 		885A8A4D2A9A8D790028E8BF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 885A8A472A9A8D790028E8BF /* Assets.xcassets */; };
@@ -87,13 +93,7 @@
 		885A8AC32A9B5DE70028E8BF /* InitApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 885A8AC22A9B5DE70028E8BF /* InitApplication.swift */; };
 		885A8AC52A9B5E0C0028E8BF /* WinMain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 885A8AC42A9B5E0C0028E8BF /* WinMain.swift */; };
 		885A8ACE2A9B67430028E8BF /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 885A8ACD2A9B67430028E8BF /* AppState.swift */; };
-		885A8AD52A9B74590028E8BF /* hearts.json in Sources */ = {isa = PBXBuildFile; fileRef = 885A8AD42A9B74590028E8BF /* hearts.json */; };
-		885A8AD72A9B74640028E8BF /* moons.json in Sources */ = {isa = PBXBuildFile; fileRef = 885A8AD62A9B74640028E8BF /* moons.json */; };
-		885A8AD92A9B74730028E8BF /* petals.json in Sources */ = {isa = PBXBuildFile; fileRef = 885A8AD82A9B74730028E8BF /* petals.json */; };
-		885A8ADB2A9B747E0028E8BF /* shapes.json in Sources */ = {isa = PBXBuildFile; fileRef = 885A8ADA2A9B747E0028E8BF /* shapes.json */; };
-		885A8ADD2A9B74910028E8BF /* spirals.json in Sources */ = {isa = PBXBuildFile; fileRef = 885A8ADC2A9B74910028E8BF /* spirals.json */; };
-		885A8ADF2A9B74AC0028E8BF /* yinyang.json in Sources */ = {isa = PBXBuildFile; fileRef = 885A8ADE2A9B74AC0028E8BF /* yinyang.json */; };
-		885A8AE12A9B76DA0028E8BF /* cursive.json in Resources */ = {isa = PBXBuildFile; fileRef = 885A8AE02A9B76DA0028E8BF /* cursive.json */; };
+		885A8AE12A9B76DA0028E8BF /* Cursive.arcdraw in Resources */ = {isa = PBXBuildFile; fileRef = 885A8AE02A9B76DA0028E8BF /* Cursive.arcdraw */; };
 		885A8AE32A9B86B60028E8BF /* GetLastErrorBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 885A8AE22A9B86B60028E8BF /* GetLastErrorBox.swift */; };
 /* End PBXBuildFile section */
 
@@ -112,6 +112,13 @@
 		880250E42A9E617A0076E001 /* DotDefinition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DotDefinition.swift; sourceTree = "<group>"; };
 		880250E62A9E69380076E001 /* DotListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DotListView.swift; sourceTree = "<group>"; };
 		880250E82A9E8ED10076E001 /* KeyboardUtilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardUtilities.swift; sourceTree = "<group>"; };
+		880250EE2AA8E6370076E001 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; name = Info.plist; path = ArcDraw/Info.plist; sourceTree = "<group>"; };
+		880250F02AA8F4D60076E001 /* ArcDrawDocument+Curve.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ArcDrawDocument+Curve.swift"; sourceTree = "<group>"; };
+		880250F22AA8F5050076E001 /* ArcDrawDocument+File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ArcDrawDocument+File.swift"; sourceTree = "<group>"; };
+		880250F42AA8F8B00076E001 /* ArcDrawDocument+CurveUndo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ArcDrawDocument+CurveUndo.swift"; sourceTree = "<group>"; };
+		880250F62AA8FEF20076E001 /* CGImage+PNGdata.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGImage+PNGdata.swift"; sourceTree = "<group>"; };
+		880250F82AA8FFBC0076E001 /* String+Index.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Index.swift"; sourceTree = "<group>"; };
+		880250FA2AA900300076E001 /* UTType+arcdraw.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UTType+arcdraw.swift"; sourceTree = "<group>"; };
 		885A8A452A9A8D790028E8BF /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		885A8A462A9A8D790028E8BF /* DEV_NOTES.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = DEV_NOTES.md; sourceTree = "<group>"; };
 		885A8A472A9A8D790028E8BF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -172,13 +179,13 @@
 		885A8AC22A9B5DE70028E8BF /* InitApplication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitApplication.swift; sourceTree = "<group>"; };
 		885A8AC42A9B5E0C0028E8BF /* WinMain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WinMain.swift; sourceTree = "<group>"; };
 		885A8ACD2A9B67430028E8BF /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
-		885A8AD42A9B74590028E8BF /* hearts.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = hearts.json; sourceTree = "<group>"; };
-		885A8AD62A9B74640028E8BF /* moons.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = moons.json; sourceTree = "<group>"; };
-		885A8AD82A9B74730028E8BF /* petals.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = petals.json; sourceTree = "<group>"; };
-		885A8ADA2A9B747E0028E8BF /* shapes.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = shapes.json; sourceTree = "<group>"; };
-		885A8ADC2A9B74910028E8BF /* spirals.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = spirals.json; sourceTree = "<group>"; };
-		885A8ADE2A9B74AC0028E8BF /* yinyang.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = yinyang.json; sourceTree = "<group>"; };
-		885A8AE02A9B76DA0028E8BF /* cursive.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = cursive.json; sourceTree = "<group>"; };
+		885A8AD42A9B74590028E8BF /* Hearts.arcdraw */ = {isa = PBXFileReference; lastKnownFileType = text; path = Hearts.arcdraw; sourceTree = "<group>"; };
+		885A8AD62A9B74640028E8BF /* Moons.arcdraw */ = {isa = PBXFileReference; lastKnownFileType = text; path = Moons.arcdraw; sourceTree = "<group>"; };
+		885A8AD82A9B74730028E8BF /* Petals.arcdraw */ = {isa = PBXFileReference; lastKnownFileType = text; path = Petals.arcdraw; sourceTree = "<group>"; };
+		885A8ADA2A9B747E0028E8BF /* Shapes.arcdraw */ = {isa = PBXFileReference; lastKnownFileType = text; path = Shapes.arcdraw; sourceTree = "<group>"; };
+		885A8ADC2A9B74910028E8BF /* Spirals.arcdraw */ = {isa = PBXFileReference; lastKnownFileType = text; path = Spirals.arcdraw; sourceTree = "<group>"; };
+		885A8ADE2A9B74AC0028E8BF /* YinYang.arcdraw */ = {isa = PBXFileReference; lastKnownFileType = text; path = YinYang.arcdraw; sourceTree = "<group>"; };
+		885A8AE02A9B76DA0028E8BF /* Cursive.arcdraw */ = {isa = PBXFileReference; lastKnownFileType = text; path = Cursive.arcdraw; sourceTree = "<group>"; };
 		885A8AE22A9B86B60028E8BF /* GetLastErrorBox.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetLastErrorBox.swift; sourceTree = "<group>"; };
 		C568E3E02A68755C00B63F6F /* ArcDraw.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ArcDraw.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C568E3E92A68755C00B63F6F /* ArcDraw.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ArcDraw.entitlements; sourceTree = SOURCE_ROOT; };
@@ -195,6 +202,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		880250EF2AA8E9120076E001 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				885A8AE02A9B76DA0028E8BF /* Cursive.arcdraw */,
+				885A8AD42A9B74590028E8BF /* Hearts.arcdraw */,
+				885A8AD62A9B74640028E8BF /* Moons.arcdraw */,
+				885A8AD82A9B74730028E8BF /* Petals.arcdraw */,
+				885A8ADA2A9B747E0028E8BF /* Shapes.arcdraw */,
+				885A8ADC2A9B74910028E8BF /* Spirals.arcdraw */,
+				885A8ADE2A9B74AC0028E8BF /* YinYang.arcdraw */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		885A8A482A9A8D790028E8BF /* Sources */ = {
 			isa = PBXGroup;
 			children = (
@@ -216,6 +237,9 @@
 			isa = PBXGroup;
 			children = (
 				885A8A642A9A927C0028E8BF /* ArcDrawDocument.swift */,
+				880250F02AA8F4D60076E001 /* ArcDrawDocument+Curve.swift */,
+				880250F42AA8F8B00076E001 /* ArcDrawDocument+CurveUndo.swift */,
+				880250F22AA8F5050076E001 /* ArcDrawDocument+File.swift */,
 				885A8A632A9A927C0028E8BF /* PictureDefinition.swift */,
 				880250C82A9BB2120076E001 /* CurveDefinition.swift */,
 				885A8A792A9AB7FD0028E8BF /* Line.swift */,
@@ -300,6 +324,9 @@
 				885A8AB82A9B5CD70028E8BF /* DotAsRegion.swift */,
 				880250CA2A9BC5AC0076E001 /* ADFormatters.swift */,
 				880250E82A9E8ED10076E001 /* KeyboardUtilities.swift */,
+				880250F62AA8FEF20076E001 /* CGImage+PNGdata.swift */,
+				880250F82AA8FFBC0076E001 /* String+Index.swift */,
+				880250FA2AA900300076E001 /* UTType+arcdraw.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -307,13 +334,6 @@
 		885A8A7B2A9B56AB0028E8BF /* Examples */ = {
 			isa = PBXGroup;
 			children = (
-				885A8AE02A9B76DA0028E8BF /* cursive.json */,
-				885A8AD42A9B74590028E8BF /* hearts.json */,
-				885A8AD62A9B74640028E8BF /* moons.json */,
-				885A8AD82A9B74730028E8BF /* petals.json */,
-				885A8ADA2A9B747E0028E8BF /* shapes.json */,
-				885A8ADC2A9B74910028E8BF /* spirals.json */,
-				885A8ADE2A9B74AC0028E8BF /* yinyang.json */,
 				885A8AAC2A9B5BDC0028E8BF /* Cursive.swift */,
 				885A8A922A9B5A000028E8BF /* Hearts.swift */,
 				885A8A902A9B59DE0028E8BF /* Moons.swift */,
@@ -364,6 +384,8 @@
 		C568E3D72A68755C00B63F6F = {
 			isa = PBXGroup;
 			children = (
+				880250EF2AA8E9120076E001 /* Resources */,
+				880250EE2AA8E6370076E001 /* Info.plist */,
 				885A8A472A9A8D790028E8BF /* Assets.xcassets */,
 				C568E3E92A68755C00B63F6F /* ArcDraw.entitlements */,
 				885A8A462A9A8D790028E8BF /* DEV_NOTES.md */,
@@ -439,14 +461,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				880250C22A9B9D630076E001 /* hearts.json in Resources */,
-				880250C32A9B9D630076E001 /* moons.json in Resources */,
-				880250C42A9B9D630076E001 /* petals.json in Resources */,
-				880250C52A9B9D630076E001 /* shapes.json in Resources */,
-				880250C62A9B9D630076E001 /* spirals.json in Resources */,
-				880250C72A9B9D630076E001 /* yinyang.json in Resources */,
+				880250C22A9B9D630076E001 /* Hearts.arcdraw in Resources */,
+				880250C32A9B9D630076E001 /* Moons.arcdraw in Resources */,
+				880250C42A9B9D630076E001 /* Petals.arcdraw in Resources */,
+				880250C52A9B9D630076E001 /* Shapes.arcdraw in Resources */,
+				880250C62A9B9D630076E001 /* Spirals.arcdraw in Resources */,
+				880250C72A9B9D630076E001 /* YinYang.arcdraw in Resources */,
 				885A8A4C2A9A8D790028E8BF /* DEV_NOTES.md in Resources */,
-				885A8AE12A9B76DA0028E8BF /* cursive.json in Resources */,
+				885A8AE12A9B76DA0028E8BF /* Cursive.arcdraw in Resources */,
 				885A8A4B2A9A8D790028E8BF /* README.md in Resources */,
 				885A8A4D2A9A8D790028E8BF /* Assets.xcassets in Resources */,
 			);
@@ -463,10 +485,10 @@
 				885A8A732A9AB2C70028E8BF /* BitmapGrid.swift in Sources */,
 				885A8A6F2A9AB1950028E8BF /* ImageViewModel.swift in Sources */,
 				885A8A6C2A9AAFE60028E8BF /* PanelUI.swift in Sources */,
-				885A8AD72A9B74640028E8BF /* moons.json in Sources */,
 				885A8A9F2A9B5AFA0028E8BF /* DrawCurve.swift in Sources */,
 				885A8A5C2A9A8F9C0028E8BF /* WelcomeMainImageView.swift in Sources */,
 				885A8A662A9A927C0028E8BF /* ArcDrawDocument.swift in Sources */,
+				880250F32AA8F5050076E001 /* ArcDrawDocument+File.swift in Sources */,
 				885A8A9D2A9B5AD80028E8BF /* DrawLargeDot.swift in Sources */,
 				885A8AB92A9B5CD70028E8BF /* DotAsRegion.swift in Sources */,
 				885A8A5E2A9A8F9C0028E8BF /* WelcomeMainInformationView.swift in Sources */,
@@ -476,8 +498,8 @@
 				885A8AB12A9B5C480028E8BF /* CalcArcs.swift in Sources */,
 				885A8AAB2A9B5BBD0028E8BF /* DecodeIndex.swift in Sources */,
 				880250E72A9E69380076E001 /* DotListView.swift in Sources */,
+				880250F72AA8FEF20076E001 /* CGImage+PNGdata.swift in Sources */,
 				885A8A5B2A9A8F9C0028E8BF /* WelcomeView.swift in Sources */,
-				885A8AD92A9B74730028E8BF /* petals.json in Sources */,
 				885A8AB52A9B5C940028E8BF /* AddDotAfter.swift in Sources */,
 				885A8AA92A9B5BA10028E8BF /* DefineDirection.swift in Sources */,
 				885A8ABD2A9B5D350028E8BF /* About.swift in Sources */,
@@ -486,7 +508,6 @@
 				880250D92A9BD0BE0076E001 /* TabCurves.swift in Sources */,
 				880250D72A9BD0B40076E001 /* TabMore.swift in Sources */,
 				885A8AC32A9B5DE70028E8BF /* InitApplication.swift in Sources */,
-				885A8ADD2A9B74910028E8BF /* spirals.json in Sources */,
 				885A8AA52A9B5B510028E8BF /* DefineSketchDot.swift in Sources */,
 				885A8AAF2A9B5C040028E8BF /* ClearCurve.swift in Sources */,
 				880250CB2A9BC5AC0076E001 /* ADFormatters.swift in Sources */,
@@ -494,7 +515,6 @@
 				885A8A5A2A9A8F9C0028E8BF /* WelcomeMainView.swift in Sources */,
 				885A8A9B2A9B5AB80028E8BF /* DrawSketchDot.swift in Sources */,
 				885A8A762A9AB66C0028E8BF /* DrawingController.swift in Sources */,
-				885A8ADF2A9B74AC0028E8BF /* yinyang.json in Sources */,
 				885A8ACE2A9B67430028E8BF /* AppState.swift in Sources */,
 				885A8AE32A9B86B60028E8BF /* GetLastErrorBox.swift in Sources */,
 				880250E32A9E5BC80076E001 /* CurveView.swift in Sources */,
@@ -511,10 +531,10 @@
 				885A8AC52A9B5E0C0028E8BF /* WinMain.swift in Sources */,
 				885A8A4F2A9A8D790028E8BF /* ContentView.swift in Sources */,
 				885A8A8B2A9B59790028E8BF /* Petals.swift in Sources */,
-				885A8AD52A9B74590028E8BF /* hearts.json in Sources */,
 				885A8A872A9B59270028E8BF /* Shapes.swift in Sources */,
 				885A8AA12A9B5B160028E8BF /* DragDot.swift in Sources */,
 				885A8A4E2A9A8D790028E8BF /* ArcDrawApp.swift in Sources */,
+				880250FB2AA900300076E001 /* UTType+arcdraw.swift in Sources */,
 				885A8A952A9B5A210028E8BF /* EraseLines.swift in Sources */,
 				885A8AAD2A9B5BDC0028E8BF /* Cursive.swift in Sources */,
 				885A8A7D2A9B56EB0028E8BF /* YinYang.swift in Sources */,
@@ -524,18 +544,20 @@
 				885A8AC12A9B5DC20028E8BF /* InitInstance.swift in Sources */,
 				885A8A832A9B58BA0028E8BF /* UndoLast.swift in Sources */,
 				885A8A7A2A9AB7FD0028E8BF /* Line.swift in Sources */,
+				880250F92AA8FFBC0076E001 /* String+Index.swift in Sources */,
 				880250D02A9BC6D10076E001 /* DelayedTextFieldInt.swift in Sources */,
 				885A8A8D2A9B599D0028E8BF /* NewSketchCurve.swift in Sources */,
 				885A8AB32A9B5C6E0028E8BF /* AddDotBefore.swift in Sources */,
 				885A8A992A9B5A680028E8BF /* EraseCurve.swift in Sources */,
 				885A8A782A9AB6940028E8BF /* DrawingView.swift in Sources */,
+				880250F52AA8F8B00076E001 /* ArcDrawDocument+CurveUndo.swift in Sources */,
 				885A8A912A9B59DE0028E8BF /* Moons.swift in Sources */,
 				885A8A592A9A8F9C0028E8BF /* WelcomeHeaderView.swift in Sources */,
 				880250C92A9BB2120076E001 /* CurveDefinition.swift in Sources */,
-				885A8ADB2A9B747E0028E8BF /* shapes.json in Sources */,
 				885A8A742A9AB2C70028E8BF /* BitmapImage.swift in Sources */,
 				880250E92A9E8ED10076E001 /* KeyboardUtilities.swift in Sources */,
 				885A8ABF2A9B5D8C0028E8BF /* WndProc.swift in Sources */,
+				880250F12AA8F4D60076E001 /* ArcDrawDocument+Curve.swift in Sources */,
 				885A8A8F2A9B59BA0028E8BF /* NewCurve.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -665,6 +687,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ArcDraw/Info.plist;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -703,6 +726,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ArcDraw/Info.plist;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;

@@ -1,23 +1,31 @@
 import SwiftUI
 
 class DrawingController: ObservableObject {
+  @ObservedObject var doc: ArcDrawDocument
+  @Binding var selectedExample: String
   @Published var lines: [Line] = []
 
-  init(picdef: PictureDefinition) {
-    populateDotsFromPicdef(picdef: picdef)
+  init(doc: ArcDrawDocument, selectedExample: Binding<String>) {
+    self.doc = doc
+    self._selectedExample = selectedExample
+  }
+
+  func updateDrawing(for example: String) {
+    populateDotsFromPicdef(picdef: doc.picdef)
+    self.objectWillChange.send() // Force the update announcement
   }
 
   func getCGPointsForCurve(curves: CurveDefinition) -> [CGPoint] {
     var points: [CGPoint] = []
 
     for dot in curves.dots {
-         let xString = dot.x
-         let yString = dot.y
-         let xInteger = getIntFromPossibleSumString(dataString: xString)
-         let yInteger = getIntFromPossibleSumString(dataString: yString)
-        let point = CGPoint(x: xInteger!, y: yInteger!)
-        points.append(point)
-      }
+      let xString = dot.x
+      let yString = dot.y
+      let xInteger = getIntFromPossibleSumString(dataString: xString)
+      let yInteger = getIntFromPossibleSumString(dataString: yString)
+      let point = CGPoint(x: xInteger!, y: yInteger!)
+      points.append(point)
+    }
 
     return points
   }
@@ -84,7 +92,7 @@ class DrawingController: ObservableObject {
 
   func generateDummyPointsForArc(_ curve: CurveDefinition) -> [CGPoint] {
     print("Calculating dummy points for curve data \(curve).")
-    var points: [CGPoint] = []
+    let points: [CGPoint] = []
 
     return points
   }

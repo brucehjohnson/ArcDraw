@@ -3,18 +3,20 @@ import UniformTypeIdentifiers
 
 struct TabbedView: View {
   @ObservedObject var doc: ArcDrawDocument
+  @Binding var selectedExample: String
 
   @State private var selectedTab = 0
 
-  init(doc: ArcDrawDocument) {
+  init(doc: ArcDrawDocument, selectedExample: Binding<String>) {
     self.doc = doc
-    }
+    self._selectedExample = selectedExample
+  }
 
   var body: some View {
 
     TabView(selection: $selectedTab) {
 
-      TabCurves(doc: doc)
+      TabCurves(doc: doc, selectedExample: $selectedExample)
         .tabItem {
           Label("1.Curves", systemImage: "paintbrush")
         }.tag(0)

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>CFBundleIdentifier</key>
+    <string></string>
+    
+    <!-- Your App's Document Type Definition -->
+    <key>CFBundleDocumentTypes</key>
+    <array>
+        <dict>
+            <key>CFBundleTypeName</key>
+            <string>ArcDraw</string>
+            <key>CFBundleTypeRole</key>
+            <string>Editor</string>
+            <key>LSHandlerRank</key>
+            <string>Default</string>
+            <key>LSItemContentTypes</key>
+            <array>
+                <string>org.bhj.arcdraw</string>
+            </array>
+            <key>NSDocumentClass</key>
+            <string>ReferenceFileDocument</string>
+        </dict>
+    </array>
+    
+    <!-- Exported Type Declaration for org.bhj.arcdraw -->
+    <key>UTExportedTypeDeclarations</key>
+    <array>
+        <dict>
+            <key>UTTypeIdentifier</key>
+            <string>org.bhj.arcdraw</string>
+            <key>UTTypeConformsTo</key>
+            <array>
+                <string>public.text</string> 
+            </array>
+            <key>UTTypeDescription</key>
+            <string>ArcDraw Document</string>
+            <key>UTTypeTagSpecification</key>
+            <dict>
+                <key>public.filename-extension</key>
+                <string>arcdraw</string>
+            </dict>
+        </dict>
+    </array>
+</dict>
+</plist>

@@ -3,42 +3,32 @@ import UniformTypeIdentifiers
 
 struct CurveListView: View {
   @ObservedObject var doc: ArcDrawDocument
+  @Binding var selectedExample: String
 
-  // Update nums after moving or deleting
-  internal func updateArcDefinitionNums() {
-    for (index, _) in self.$doc.picdef.curves.enumerated() {
-      self.doc.picdef.curves[index].num = index + 1
-    }
+  init(doc: ArcDrawDocument, selectedExample: Binding<String>) {
+    self.doc = doc
+    self._selectedExample = selectedExample
   }
 
     var body: some View {
 
         VStack {
 
-          // Add a button to delete the selected curve
-          Button("Delete Selected Curve") {
-            if let selectedArcIndex = doc.selectedCurveIndex {
-              doc.deleteArcDefinition(index: selectedArcIndex)
-              updateArcDefinitionNums()
-            }
-          }
-          .disabled(doc.selectedCurveIndex == nil) // Disable the button when no curve is selected
-
-          // Wrap the list in a geometry reader so it will
-          // shrink when items are deleted
+          // Wrap list in geometry reader to shrink as items delete
           GeometryReader { geometry in
+
             List {
 
-              ForEach($doc.picdef.curves, id: \.num) { $arcDefinition in
+              ForEach($doc.picdef.curves, id: \.num) { $curve in
 
-                let i = arcDefinition.num - 1
+                let i = curve.num - 1
 
                 Rectangle()
-                  .frame(height: 400)  // Adjust this height to your liking.
-                  .foregroundColor(Color.secondary.opacity(0.2))
+                  .frame(height: 400)
+                  .foregroundColor(i == doc.selectedCurveIndex ? Color.primary.opacity(0.2) : Color.secondary.opacity(0.2))
                   .cornerRadius(10)
                   .overlay(
-                    CurveView(doc: doc, curve: arcDefinition)
+                    CurveView(doc: doc, selectedExample: $selectedExample, curve: $curve)
                   ) // overlay
                   .padding(EdgeInsets(top: 2, leading: 2, bottom: 2, trailing: 2))
                   .onTapGesture {
@@ -47,27 +37,29 @@ struct CurveListView: View {
                   }
                   .contextMenu {
                     Button(role: .destructive) {
-                      doc.deleteArcDefinition(index: i)
-                      updateArcDefinitionNums()
+                      doc.selectedCurveIndex = i
+                      doc.deleteCurve()
+                      doc.picdef.renumberCurves()
                     } label: {
                       Label("Delete", systemImage: "trash")
                     }
                   }
               }
-              .onMove { indices, arcDefinition in
+              .onMove { indices, curve in
                 doc.picdef.curves.move(
                   fromOffsets: indices,
-                  toOffset: arcDefinition
+                  toOffset: curve
                 )
-                updateArcDefinitionNums()
+                doc.picdef.renumberCurves()
               }
 
             } // list
             .frame(height: geometry.size.height)
+
           }  // geo
           .frame(maxHeight: .infinity)
         }
-        .border(Color.black)
+       // .border(Color.black)
 
         Spacer()
 

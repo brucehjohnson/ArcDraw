@@ -3,12 +3,13 @@ import UniformTypeIdentifiers
 
 struct TabCurves: View {
   @ObservedObject var doc: ArcDrawDocument
-  @State private var selectedExample: String = "Shapes"
+  @Binding var selectedExample: String
 
   let exampleOptions = ["Cursive", "Hearts", "Moons", "Petals", "Shapes", "Spirals", "YinYang"]
 
-  init(doc: ArcDrawDocument) {
+  init(doc: ArcDrawDocument, selectedExample: Binding<String>) {
     self.doc = doc
+    self._selectedExample = selectedExample
   }
 
   var body: some View {
@@ -25,22 +26,23 @@ struct TabCurves: View {
           .frame(maxWidth: .infinity, alignment: .center)
 
         ) {
-            Text("Click and drag the curve number to reorder.")
-            Text("Click on the curve to modify.")
+          Text("Click in the curve to modify.")
+          Text("Double-click the curve for delete option.")
+          Text("Click and drag the curve number to reorder.")
             Button("Add New Curve") {
               print("Clicked New Curve")
               print("Selected curve index: \(doc.selectedCurveIndex)")
-              if let selectedArcIndex = doc.selectedCurveIndex {
-                doc.addCurveAfter(atArcIndex: selectedArcIndex)
+              if let iSelected = doc.selectedCurveIndex {
+                doc.insertCurve(afterIndex: iSelected)
               } else {
-              doc.addArcDefinition()
+              doc.addNewCurve()
               }
             }
               .help("Add a new arc definition.")
               .padding([.bottom], 2)
 
           Divider()
-          CurveListView(doc: doc)
+          CurveListView(doc: doc, selectedExample: $selectedExample)
 
         }//  section
         Spacer()

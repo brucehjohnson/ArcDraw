@@ -1,10 +1,3 @@
-//
-//  ContentView.swift
-//  ArcDraw
-//
-//  Created by Bruce Johnson on 7/19/23.
-//
-
 import SwiftUI
 import AppKit
 import Foundation
@@ -16,17 +9,20 @@ struct ContentView: View {
 
   @EnvironmentObject var appState: AppState
   @ObservedObject var doc: ArcDrawDocument
+  @Binding var selectedExample: String
 
   let widthOfInputPanel: Double = 400
 
       var body: some View {
           GeometryReader { _ in
             HStack(alignment: .top, spacing: 0) {
-              PanelUI(doc: doc)
+
+              PanelUI(doc: doc, selectedExample: $selectedExample)
                 .frame(width: widthOfInputPanel > 0 ? widthOfInputPanel : 400)
 
-              PanelDisplay(doc: doc)
+              PanelDisplay(doc: doc, selectedExample: $selectedExample)
                 .frame(maxWidth: .infinity, maxHeight: .infinity)
+
             } // hstack
             .frame(maxWidth: .infinity, maxHeight: .infinity)
             .padding(.leading, 0)

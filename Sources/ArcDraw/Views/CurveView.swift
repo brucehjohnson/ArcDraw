@@ -4,19 +4,21 @@ import UniformTypeIdentifiers
 struct CurveView: View {
 
   @ObservedObject var doc: ArcDrawDocument
-  @StateObject private var drawingController: DrawingController
-  @State var curve: CurveDefinition
-  @State var dots: [DotDefinition]
+  @Binding var selectedExample: String
+  @StateObject private var controller: DrawingController
+
+  @Binding var curve: CurveDefinition
 
   let cardBackground = Color.white
   let cardCornerRadius: CGFloat = 10.0
   let cardElevation: CGFloat = 5.0
 
-  init(doc: ArcDrawDocument, curve: CurveDefinition) {
+  init(doc: ArcDrawDocument, selectedExample: Binding<String>, curve: Binding<CurveDefinition>) {
     self.doc = doc
-    self.curve = curve
-    self._drawingController = StateObject(wrappedValue: DrawingController(picdef: doc.picdef))
-    self._dots = State(initialValue: curve.dots)
+    self._selectedExample = selectedExample
+
+    self._curve = curve
+    self._controller = StateObject(wrappedValue: DrawingController(doc: doc, selectedExample: selectedExample))
   }
 
   var body: some View {
