@@ -150,4 +150,22 @@ extension ArcDrawDocument {
     }
   }
 
+  func saveDocumentAsNew() {
+    let savePanel = NSSavePanel()
+    savePanel.allowedFileTypes = [UTType.arcdrawDocType.identifier]
+    savePanel.begin { (result) in
+      if result == .OK, let url = savePanel.url {
+        do {
+          let data = try JSONEncoder().encode(self.picdef)
+          try data.write(to: url)
+          self.isReadOnly = false
+          self.showReadOnlyAlert = false
+        } catch {
+          print("Error saving document: \(error)")
+          //  TODO: show an alert to the user
+        }
+      }
+    }
+  }
+
 }

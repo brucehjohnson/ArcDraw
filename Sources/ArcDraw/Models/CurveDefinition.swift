@@ -2,19 +2,19 @@ import Foundation
 
 @available(macOS 12.0, *)
 struct CurveDefinition: Codable, Equatable {
-  var num: Int = 1
-  var name: String = "Name"
-  var description: String = "Description"
+  var num: Int
+  var name: String
+  var description: String
   var dots: [DotDefinition]
-  var startAngle: Double = 0.0
-  var endAngle: Double = 0.0
-  var isClockwise: Bool = true
+  var startAngle: Double
+  var endAngle: Double
+  var isClockwise: Bool
 
-  // Empty initializer
-  init() {
-    self.num = 1
-    self.name = "Curve 1"
-    self.description = "Curve 1"
+  init(number: Int? = nil) {
+    let curveNumber = number ?? 1
+    self.num = curveNumber
+    self.name = "Curve \(curveNumber)"
+    self.description = "Curve \(curveNumber)"
     self.dots = []
     self.startAngle = 0.0
     self.endAngle = 0.0

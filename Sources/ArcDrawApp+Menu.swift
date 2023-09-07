@@ -11,14 +11,23 @@ extension ArcDrawApp {
       CommandMenu("Draw") {
 
         Button("New Curve") {
-          doc.addNewCurve()
-        }
+          print("Clicked Add New Curve MENU Button")
+          doc.handleAddNewCurveRequest()
+         }
+        .disabled(doc.isReadOnly)
+
 
         Button("Clear Curve") {
+          print("Clicked Clear Curve MENU Button")
+
           doc.deleteCurve()
         }
+        .disabled(doc.isReadOnly)
+
 
         Button("Add Dot Before") {
+          print("Clicked Add Dot Before MENU Button")
+
           if let selectedCurveIndex = doc.selectedCurveIndex {
             doc.picdef.curves[selectedCurveIndex].addDotBefore(selectedDotIndex: doc.selectedDotIndex)
           }
@@ -26,6 +35,8 @@ extension ArcDrawApp {
         .disabled(doc.selectedCurveIndex == nil)
 
         Button("Add Dot After") {
+          print("Clicked Add Dot After MENU Button")
+
           if let selectedCurveIndex = doc.selectedCurveIndex {
             doc.picdef.curves[selectedCurveIndex].addDotAfter(selectedDotIndex: doc.selectedDotIndex)
           }
@@ -33,6 +44,8 @@ extension ArcDrawApp {
         .disabled(doc.selectedCurveIndex == nil)
 
         Button("Delete Dot") {
+          print("Clicked Delete Dot MENU Button")
+
           if let selectedCurveIndex = doc.selectedCurveIndex {
             doc.picdef.curves[selectedCurveIndex].deleteSelectedDot(selectedDotIndex: doc.selectedDotIndex)
           }
@@ -40,6 +53,8 @@ extension ArcDrawApp {
         .disabled(doc.selectedCurveIndex == nil)
 
         Button("Drag Dot") {
+          print("Clicked Drag Dot MENU Button")
+
           if let selectedCurveIndex = doc.selectedCurveIndex,
              let selectedDotIndex = doc.selectedDotIndex {
             doc.picdef.curves[selectedCurveIndex].moveDot(from: selectedDotIndex, to: 0) // You can change the destinationIndex as needed
@@ -73,6 +88,7 @@ extension ArcDrawApp {
       }
 
       CommandMenu("Examples") {
+        let exampleOptions = ["Cursive", "Hearts", "Moons", "Petals", "Shapes", "Spirals", "YinYang"]
         ForEach(exampleOptions, id: \.self) { example in
           Button(example) {
             selectedExample = example

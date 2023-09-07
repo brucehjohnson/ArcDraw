@@ -4,38 +4,46 @@ import SwiftUI
 @available(macOS 12.0, *)
 extension ArcDrawDocument {
 
-    // Function to add a new curve
-    func addNewCurve() {
-      print("Called Add New Curve")
-      guard let iSelected = selectedCurveIndex else {
-        let lastCurveIndex = picdef.curves.count - 1
-        if lastCurveIndex >= 0 {
-          print("No curve selected. Adding a new curve after the last one.")
-          insertCurve(afterIndex: lastCurveIndex)
-        } else {
-          print("No curves available. Adding a new curve at the beginning.")
-          picdef.curves.insert(CurveDefinition(), at: 0)
-          selectedCurveIndex = 0
-        }
-        return
+    func handleAddNewCurveRequest() {
+      print("Handle Add New Curve Request")
+      print("  Selected curve index: \(selectedCurveIndex)")
+      print("  Count of existing curves: \(picdef.curves.count)")
+
+      // If no curves exist, simply add one.
+      if picdef.curves.isEmpty {
+        addNewCurve()
       }
-      print("Selected curve index: \(iSelected)")
-      insertCurve(afterIndex: iSelected)
+      // If a curve is selected, add a new curve after the selected index.
+      else if let iSelected = selectedCurveIndex {
+        insertCurve(afterIndex: iSelected)
+      }
+      // If curves exist but none are selected, add a new curve at the end.
+      else {
+        addNewCurve()
+      }
     }
 
-    // Generalized function to insert a curve after a specific index
-    func insertCurve(afterIndex index: Int) {
-      print("Called Add Curve After")
-      let newCurve = CurveDefinition()
-      let insertionIndex = index + 1
-      if picdef.curves.indices.contains(insertionIndex) {
-        picdef.curves.insert(newCurve, at: insertionIndex)
-        selectedCurveIndex = insertionIndex
-        selectedDotIndex = nil // Reset selectedDotIndex
-      } else {
-        print("Error: Invalid index \(insertionIndex). Curve not added.")
-      }
+    // Function to add a new curve
+  func addNewCurve() {
+    print("Called Add New Curve")
+    let newCurveNumber = picdef.curves.count + 1
+    print("  new curve number is \(newCurveNumber)")
+    let newCurve = CurveDefinition(number: newCurveNumber)
+    picdef.curves.append(newCurve)
+    selectedCurveIndex = picdef.curves.count - 1
+  }
+
+  func insertCurve(afterIndex index: Int) {
+    print("Called Add Curve After index \(index)")
+    if index < 0 || index > picdef.curves.count {
+      print("Error: Invalid index \(index). Curve not added.")
+      return
     }
+    let newCurveNumber = index + 2  // +1 for next index, +1 again for next number
+    let newCurve = CurveDefinition(number: newCurveNumber)
+    picdef.curves.insert(newCurve, at: index + 1)
+    selectedCurveIndex = index + 1
+  }
 
     // Function to delete a curve
     func deleteCurve() {

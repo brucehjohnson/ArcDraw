@@ -10,6 +10,9 @@ struct ContentView: View {
   @EnvironmentObject var appState: AppState
   @ObservedObject var doc: ArcDrawDocument
   @Binding var selectedExample: String
+  @Binding var showAlert: Bool
+  @Binding var alertMessage: String
+  @Binding var showReadOnlyAlert: Bool
 
   let widthOfInputPanel: Double = 400
 
@@ -29,8 +32,26 @@ struct ContentView: View {
 
           } // geo
           .frame(maxWidth: .infinity, maxHeight: .infinity)
+          .onAppear {
+            print("Document accessed from ContentView: \(Unmanaged.passUnretained(doc).toOpaque())")
+
+          }
+          .alert(isPresented: $showAlert) {
+            Alert(title: Text("Error"),
+                  message: Text(alertMessage),
+                  dismissButton: .default(Text("OK")))
+          }
+          .alert(isPresented: $doc.showReadOnlyAlert) {
+            Alert(title: Text("Read-Only Document"),
+                  message: Text("This is a read-only example. Would you like to save your edits as a new document?"),
+                  primaryButton: .default(Text("Save As New"), action: {
+              doc.saveDocumentAsNew()
+            }),
+                  secondaryButton: .cancel())
+          }
 
         } // body
+
    }
 
 /* DMC

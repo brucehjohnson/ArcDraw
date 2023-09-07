@@ -5,7 +5,7 @@ import SwiftUI
 extension ArcDrawDocument {
 
   func addNewCurve(undoManager: UndoManager? = nil) {
-    print("Called Add New Curve")
+    print("Called Add New Curve with Undo")
     guard let selectedArcIndex = selectedCurveIndex else {
       let lastCurveIndex = picdef.curves.count - 1
       if lastCurveIndex >= 0 {
