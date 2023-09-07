@@ -41,6 +41,12 @@ struct CurveDefinition: Codable, Equatable {
     lhs.num == rhs.num
   }
 
+  // add dot at the end
+  mutating func addDot() {
+    let newDot = DotDefinition(num: dots.count + 1, x: "newX", y: "newY")
+    dots.append(newDot)
+  }
+
   // Function to add a new dot before the selected dot
   mutating func addDotBefore(selectedDotIndex: Int?) {
     guard let index = selectedDotIndex else {

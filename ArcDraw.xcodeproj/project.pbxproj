@@ -33,6 +33,7 @@
 		880250F72AA8FEF20076E001 /* CGImage+PNGdata.swift in Sources */ = {isa = PBXBuildFile; fileRef = 880250F62AA8FEF20076E001 /* CGImage+PNGdata.swift */; };
 		880250F92AA8FFBC0076E001 /* String+Index.swift in Sources */ = {isa = PBXBuildFile; fileRef = 880250F82AA8FFBC0076E001 /* String+Index.swift */; };
 		880250FB2AA900300076E001 /* UTType+arcdraw.swift in Sources */ = {isa = PBXBuildFile; fileRef = 880250FA2AA900300076E001 /* UTType+arcdraw.swift */; };
+		880250FD2AA985090076E001 /* ArcViewDocument+Dot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 880250FC2AA985090076E001 /* ArcViewDocument+Dot.swift */; };
 		885A8A4B2A9A8D790028E8BF /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 885A8A452A9A8D790028E8BF /* README.md */; };
 		885A8A4C2A9A8D790028E8BF /* DEV_NOTES.md in Resources */ = {isa = PBXBuildFile; fileRef = 885A8A462A9A8D790028E8BF /* DEV_NOTES.md */; };
 		885A8A4D2A9A8D790028E8BF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 885A8A472A9A8D790028E8BF /* Assets.xcassets */; };
@@ -119,6 +120,7 @@
 		880250F62AA8FEF20076E001 /* CGImage+PNGdata.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGImage+PNGdata.swift"; sourceTree = "<group>"; };
 		880250F82AA8FFBC0076E001 /* String+Index.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Index.swift"; sourceTree = "<group>"; };
 		880250FA2AA900300076E001 /* UTType+arcdraw.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UTType+arcdraw.swift"; sourceTree = "<group>"; };
+		880250FC2AA985090076E001 /* ArcViewDocument+Dot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ArcViewDocument+Dot.swift"; sourceTree = "<group>"; };
 		885A8A452A9A8D790028E8BF /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		885A8A462A9A8D790028E8BF /* DEV_NOTES.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = DEV_NOTES.md; sourceTree = "<group>"; };
 		885A8A472A9A8D790028E8BF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -238,6 +240,7 @@
 			children = (
 				885A8A642A9A927C0028E8BF /* ArcDrawDocument.swift */,
 				880250F02AA8F4D60076E001 /* ArcDrawDocument+Curve.swift */,
+				880250FC2AA985090076E001 /* ArcViewDocument+Dot.swift */,
 				880250F42AA8F8B00076E001 /* ArcDrawDocument+CurveUndo.swift */,
 				880250F22AA8F5050076E001 /* ArcDrawDocument+File.swift */,
 				885A8A632A9A927C0028E8BF /* PictureDefinition.swift */,
@@ -546,6 +549,7 @@
 				885A8A7A2A9AB7FD0028E8BF /* Line.swift in Sources */,
 				880250F92AA8FFBC0076E001 /* String+Index.swift in Sources */,
 				880250D02A9BC6D10076E001 /* DelayedTextFieldInt.swift in Sources */,
+				880250FD2AA985090076E001 /* ArcViewDocument+Dot.swift in Sources */,
 				885A8A8D2A9B599D0028E8BF /* NewSketchCurve.swift in Sources */,
 				885A8AB32A9B5C6E0028E8BF /* AddDotBefore.swift in Sources */,
 				885A8A992A9B5A680028E8BF /* EraseCurve.swift in Sources */,

@@ -29,8 +29,20 @@ struct ArcDrawApp: App {
              print("Showing Welcome Screen on Startup")
              NSWindow.allowsAutomaticWindowTabbing = false
            }
+       } else {
+         ContentView(doc: doc, selectedExample: $selectedExample, showAlert: $showAlert, alertMessage: $alertMessage, showReadOnlyAlert: $showReadOnlyAlert)
+           .background(WindowAccessor { window in
+             if let window = window {
+               let uniqueIdentifier = doc.picdef.id
+               window.setFrameAutosaveName("Document Window \(uniqueIdentifier.uuidString)")
+             }
+           })
+           .onAppear {
+             NSWindow.allowsAutomaticWindowTabbing = false
+           }
        }
      }
+
      DocumentGroup(newDocument: { ArcDrawDocument() }) { file in
        let doc = file.document
        ContentView(doc: file.document, selectedExample: $selectedExample, showAlert: $showAlert, alertMessage: $alertMessage, showReadOnlyAlert: $showReadOnlyAlert)         .background(WindowAccessor { window in

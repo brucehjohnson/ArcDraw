@@ -19,20 +19,19 @@ struct CurveListView: View {
 
             List {
 
-              ForEach($doc.picdef.curves, id: \.num) { $curve in
-
-                let i = curve.num - 1
+              ForEach(Array($doc.picdef.curves.indices), id: \.self) { i in
+                let curveBinding = $doc.picdef.curves[i]
 
                 Rectangle()
                   .frame(height: 400)
                   .foregroundColor(i == doc.selectedCurveIndex ? Color.primary.opacity(0.2) : Color.secondary.opacity(0.2))
                   .cornerRadius(10)
                   .overlay(
-                    CurveView(doc: doc, selectedExample: $selectedExample, curve: $curve)
-                  ) // overlay
+                    CurveView(doc: doc, selectedExample: $selectedExample, curve: curveBinding, curveIndex: .constant(i))
+
+                  )
                   .padding(EdgeInsets(top: 2, leading: 2, bottom: 2, trailing: 2))
                   .onTapGesture {
-                    // Set the selected curve index when tapped
                     doc.selectedCurveIndex = i
                   }
                   .contextMenu {
