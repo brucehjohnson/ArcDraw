@@ -34,6 +34,18 @@ struct CurveView: View {
         TextField("name", text: $curve.name)
           .textFieldStyle(RoundedBorderTextFieldStyle())
           .frame(maxWidth: 200)
+
+        Button(action: {
+          doc.selectedCurveIndex = curveIndex
+          print("Clicked delete curve")
+          print("  doc name is \(doc.docName)")
+          print("  curve num is \(curve.num)")
+          print("  selected curve Index is \(doc.selectedCurveIndex)")
+          doc.deleteCurve()
+        }) {
+          Image(systemName: "trash")
+            .foregroundColor(.red)
+        }
       }
 
       // second row description of this curve
@@ -85,6 +97,9 @@ struct CurveView: View {
     .background(cardBackground)  // Card-like background
     .cornerRadius(cardCornerRadius)  // Rounded corners for the card
     .shadow(radius: cardElevation)  // Elevation shadow for the card
+    .onTapGesture {
+      doc.selectedCurveIndex = curveIndex
+    }
 
   } // body
 

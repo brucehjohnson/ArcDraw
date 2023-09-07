@@ -17,6 +17,12 @@ struct WelcomeMainInformationView: View {
       Text("This program allows you to create black and white drawings for printing and coloring.")
         .foregroundColor(.secondary)
 
+      Text("Click Examples / Shapes to see an example.")
+        .foregroundColor(.secondary)
+
+      Text("Click File / New Document to start a new drawing.")
+        .foregroundColor(.secondary)
+
       Button(action: {
         NSApp.sendAction(#selector(NSWindow.performClose(_:)), to: nil, from: nil)
         NSDocumentController.shared.newDocument("new.arcdraw")

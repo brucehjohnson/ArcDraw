@@ -14,7 +14,7 @@ struct WelcomeMainView: View {
 
       VStack(spacing: 0) {
         WelcomeMainImageView()
-          .frame(height: imageHeight)
+          .frame(height: imageHeight / 1.5)
         WelcomeMainInformationView(showWelcomeScreen: appState.shouldShowWelcomeWhenStartingUp)
           .frame(height: descriptionHeight)
           .padding()

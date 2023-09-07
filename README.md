@@ -23,14 +23,3 @@ SwiftUI macOS app to create custom art using the Mandelbrot set.
 
 - [ArcDraw-Examples](https://github.com/denisecase/ArcDraw-Examples)
 
-## ArcDraw Timeline
-
-TODO: BHJ
-
-- 1985-08-30. Idea started with [1985 Scientific American article on the Mandlebrot set](https://www.scientificamerican.com/article/mandelbrot-set/). 
-- 2019-06-03. SwiftUI released.
-- 2020-06-24. "Learn SwiftUI" added to list.
-- 2020-06-29. Started Mand3 using Swift UI.
-- 2020-07-15. Started Mand4 using Storyboard. 
-- 2020-08-14. Started Mand5 using SwiftUI.
-- 2023-03-04. MandArt beta release.
