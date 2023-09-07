@@ -38,15 +38,6 @@ extension ArcDrawDocument {
     return imageFileName
   }
 
-  // Save the data to a file.
-  func saveArcDrawDataFile() {
-    // first, save the data file and wait for it to complete
-    DispatchQueue.main.async {
-      // Trigger a "File > Save" menu event to update the app's UI.
-      NSApp.sendAction(#selector(NSDocument.save(_:)), to: nil, from: self)
-    }
-  }
-
   func getImageComment() -> String {
 
     let b = String(picdef.imageHeight)

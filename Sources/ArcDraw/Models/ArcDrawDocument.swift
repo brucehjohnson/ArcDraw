@@ -83,7 +83,49 @@ final class ArcDrawDocument: ReferenceFileDocument, ObservableObject {
     print("Document initialized (CONFIG): \(Unmanaged.passUnretained(self).toOpaque())")
   }
 
+  // resetter
+  func resetDocumentState() {
+    print("Resetting selected example and everything")
+    print("Document being reset: \(Unmanaged.passUnretained(self).toOpaque())")
+    self.selectedExample = ""
+    self.selectedCurveIndex = nil
+    self.selectedDotIndex = nil
+    self.shouldUnfocus = false
+    self.isReadOnly = false
+    self.showReadOnlyAlert = false
+  }
+
   // ================ FUNCTIONS =========================
+
+  func hasUnsavedChanges() -> Bool {
+    if docName == "unknown" {
+      print("Changes have not been saved to a document file.")
+      return true
+    }
+
+    // TODO: compare current picdef with picdef loaded from file
+    // if different, return true
+
+    else {
+      print("No changes to document \(docName) detected.")
+      return false
+    }
+
+  }
+
+  func saveChanges() {
+    print("Saving changes")
+    saveArcDrawDataFile()
+  }
+
+  // Save the data to a file.
+  func saveArcDrawDataFile() {
+    // first, save the data file and wait for it to complete
+    DispatchQueue.main.async {
+      // Trigger a "File > Save" menu event to update the app's UI.
+      NSApp.sendAction(#selector(NSDocument.save(_:)), to: nil, from: self)
+    }
+  }
 
   func userDidEditDocument() {
     if isReadOnly {
@@ -137,6 +179,42 @@ final class ArcDrawDocument: ReferenceFileDocument, ObservableObject {
       self.objectWillChange.send()
     } catch {
       let msg = "Error occurred while trying to load \(exampleName).arcdraw: \(error)"
+      print(msg)
+      handleLoadingError(with: msg)
+    }
+  }
+
+  // Load and decode JSON representation of a document.
+  func loadJSONAndUpdate(_ fileName: String) {
+    if fileName.isEmpty {
+      loadDefaultDocument()
+      return
+    }
+    selectedDotIndex = nil
+    selectedCurveIndex = nil
+    guard let url = Bundle.main.url(forResource: fileName, withExtension: "arcdraw") else {
+      print("Failed to find JSON file named \(fileName).")
+      handleLoadingError(with: "The requested file is not available.")
+      return
+    }
+
+    do {
+      let data = try Data(contentsOf: url)
+      if let jsonString = String(data: data, encoding: .utf8) {
+        print("\(fileName) JSON from URL: \(jsonString)")
+      } else {
+        print("\(fileName) Failed to convert JSON data to string.")
+      }
+
+      let decoder = JSONDecoder()
+      decoder.keyDecodingStrategy = .convertFromSnakeCase
+      let pictureDefinition = try decoder.decode(PictureDefinition.self, from: data)
+
+      self.picdef = pictureDefinition
+      updateCurves(self.picdef.curves)
+      self.objectWillChange.send()
+    } catch {
+      let msg = "Error occurred while trying to load \(fileName).arcdraw: \(error)"
       print(msg)
       handleLoadingError(with: msg)
     }

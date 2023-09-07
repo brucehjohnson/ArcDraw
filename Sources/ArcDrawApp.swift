@@ -39,6 +39,14 @@ struct ArcDrawApp: App {
            })
            .onAppear {
              NSWindow.allowsAutomaticWindowTabbing = false
+             selectedExample = ""
+             doc.resetDocumentState()
+
+           }
+           .onDisappear {
+             print("Window closing - calling reset")
+             selectedExample = ""
+             doc.resetDocumentState()
            }
        }
      }
@@ -53,6 +61,14 @@ struct ArcDrawApp: App {
          })
          .onAppear {
            NSWindow.allowsAutomaticWindowTabbing = false
+           selectedExample = ""
+           doc.resetDocumentState()
+
+         }
+         .onDisappear {
+           print("Window closing - calling reset")
+           selectedExample = ""
+           doc.resetDocumentState()
          }
      } // Document group
      

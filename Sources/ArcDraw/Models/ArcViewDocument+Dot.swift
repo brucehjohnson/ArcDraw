@@ -4,9 +4,9 @@ import SwiftUI
 @available(macOS 12.0, *)
 extension ArcDrawDocument {
 
-  func handleAddNewDotRequest(for curveIndex: Int) {
+  func handleAddNewDotRequest(for curveIndex: Int, xString: String = "", yString: String = "") {
     print("Attempting to add dot to curve at index: \(curveIndex)")
-    self.picdef.curves[curveIndex].addDot()
+    self.picdef.curves[curveIndex].addDot(xString: xString, yString: yString)
     print("Dot added successfully to curve at index: \(curveIndex)")
   }
 

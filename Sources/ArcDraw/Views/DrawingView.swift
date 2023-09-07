@@ -1,19 +1,16 @@
 import SwiftUI
 
 struct DrawingView: View {
-
   @ObservedObject var doc: ArcDrawDocument
   @Binding var selectedExample: String
   @State  var showCurveSelectionAlert: Bool = false
-  @State private var dragStartTime: Date?
 
-  init(doc: ArcDrawDocument, selectedExample: Binding<String>) {
-    self.doc = doc
-    self._selectedExample = selectedExample
-  }
+  @State var dragStartTime: Date?
+  @State var lastLocation: CGPoint = .zero
+  @State private var rightMouseDownLocation: CGPoint = .zero
 
   var body: some View {
-    GeometryReader { _ in
+    GeometryReader { geometry in
       Path { path in
         for line in doc.drawingController.lines {
           guard let startPoint = line.points.first else { continue }
@@ -25,49 +22,56 @@ struct DrawingView: View {
       }
       .stroke(Color.black, lineWidth: 2)
       .background(Color.white)
+      .contextMenu {
+        Button("Add Dot") {
+          print("Add Dot at: \(rightMouseDownLocation.x), \(rightMouseDownLocation.y)")
+          handleRightClick(at: rightMouseDownLocation, geometry: geometry)
+        }
+      }
       .gesture(
         DragGesture(minimumDistance: 0.1)
           .onChanged({ (value) in
-            if dragStartTime == nil {
-              dragStartTime = Date()
-              print("Started dragging at \(dragStartTime!)")
-
-            }
             doc.drawingController.addPoint(value.location)
+            lastLocation = value.location
           })
-          .onEnded({ (value) in
-            let dragDuration = Date().timeIntervalSince(dragStartTime!)
-
-            print("Drag ended. Duration was \(dragDuration) seconds.")
-
-            dragStartTime = nil // Reset the start time
-
-            if dragDuration < 0.2 {
-              let location = value.location
-              print("Determined as a tap at x= \(location.x) and y= \(location.y)")
-
-              if doc.picdef.curves.count > 1 && doc.selectedCurveIndex == nil {
-                showCurveSelectionAlert = true
-              } else {
-                let thisIndex = doc.selectedCurveIndex ?? 0
-                print("adding dot, selected curve index is \(thisIndex)")
-                var selectedCurve = doc.picdef.curves[thisIndex]
-                let newDot = DotDefinition(num: selectedCurve.dots.count + 1, x: "\(location.x)", y: "\(location.y)")
-                selectedCurve.dots.append(newDot)
-              }
-            } else {
-              doc.drawingController.startNewLine()
-            }
+          .onEnded({ (_) in
+            doc.drawingController.startNewLine()
           })
       )
       .alert(isPresented: $showCurveSelectionAlert) {
-        print("Must select which curve you're modifying")
-        return Alert(title: Text("Select a Curve"), message: Text("Please select a curve to work on."), dismissButton: .default(Text("Okay")))
+        Alert(title: Text("Select a Curve"), message: Text("Please select a curve to work on."), dismissButton: .default(Text("Okay")))
       }
+    } // geo reader
+    .onAppear(perform: {
+      NSEvent.addLocalMonitorForEvents(matching: [.rightMouseDown]) {
+        self.rightMouseDownLocation = $0.locationInWindow
+        return $0
+      }
+    })
+  }
 
-    }
-    .onAppear {
-      doc.drawingController.updateDrawing(for: selectedExample)
-    }
+  func handleRightClick(at location: CGPoint, geometry: GeometryProxy) {
+
+    print("Clicked Drawing to Add New Dot Button for document at \(doc)")
+    print("Add to curve num \(doc.selectedCurveIndex! + 1)")
+
+    print("location x, y: \(location.x), \(location.y)")
+
+    let frame = geometry.frame(in: .local)
+    let localX = lastLocation.x - frame.minX
+    let localY = lastLocation.y - frame.minY
+
+    print("local x, y: \(localX), \(localY)")
+
+    let xString = String(describing: Double(localX))
+    let yString = String(describing: Double(localY))
+
+    print("double clicked to add dot at \(xString), \(yString)")
+
+    print("Clicked Drawing to Add New Dot Button for document at \(doc)")
+    print("Add to curve num \(doc.selectedCurveIndex! + 1)")
+    doc.handleAddNewDotRequest(for: doc.selectedCurveIndex!,
+                               xString: xString, yString: yString)
+
   }
 }

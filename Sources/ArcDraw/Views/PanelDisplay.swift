@@ -7,7 +7,19 @@ struct PanelDisplay: View {
 
   var body: some View {
     VStack {
-      Text("Drawing")
+      HStack {
+        Text("Drawing")
+
+        if selectedExample == "" {
+
+          Text(doc.selectedCurveIndex == nil ? "Please select curve first" : "Curve \(doc.selectedCurveIndex! + 1)")
+        } else {
+
+      Text("- Example \(selectedExample)")
+
+        }
+      }
+
       DrawingView(doc: doc, selectedExample: $selectedExample)
       Spacer()
     }

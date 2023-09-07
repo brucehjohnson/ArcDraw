@@ -42,8 +42,8 @@ struct CurveDefinition: Codable, Equatable {
   }
 
   // add dot at the end
-  mutating func addDot() {
-    let newDot = DotDefinition(num: dots.count + 1, x: "newX", y: "newY")
+  mutating func addDot(xString: String, yString: String) {
+    let newDot = DotDefinition(num: dots.count + 1, x: xString, y: yString)
     dots.append(newDot)
   }
 

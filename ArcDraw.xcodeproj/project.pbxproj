@@ -279,8 +279,8 @@
 		885A8A522A9A8E9B0028E8BF /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				885A8A612A9A91CB0028E8BF /* WelcomeWindowController.swift */,
 				885A8A752A9AB66C0028E8BF /* DrawingController.swift */,
+				885A8A612A9A91CB0028E8BF /* WelcomeWindowController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
