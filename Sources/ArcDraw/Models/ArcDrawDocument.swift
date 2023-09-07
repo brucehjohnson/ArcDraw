@@ -36,8 +36,6 @@ final class ArcDrawDocument: ReferenceFileDocument, ObservableObject {
   // Define a type for snapshot serialization.
   typealias Snapshot = PictureDefinition
 
-  // ================ INITIALIZERS =========================
-
   // Controller responsible for drawing functionality.
   lazy var drawingController: DrawingController = {
     let selectedExampleBinding = Binding(
@@ -46,6 +44,8 @@ final class ArcDrawDocument: ReferenceFileDocument, ObservableObject {
     )
     return DrawingController(doc: self, selectedExample: selectedExampleBinding)
   }()
+
+  // ================ INITIALIZERS =========================
 
   // Designated initializer
   init(picdef: PictureDefinition = PictureDefinition(curves: [CurveDefinition()]), selectedExample: String = "", docName: String = "unknown") {

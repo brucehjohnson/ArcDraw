@@ -98,6 +98,18 @@ class DrawingController: ObservableObject {
   }
 
   func addPoint(_ point: CGPoint) {
+    print("adding point at \(point.x), \(point.y)")
+
+    // Check if there's a selected curve
+    if let selectedCurveIndex = doc.selectedCurveIndex {
+      // Add the point to that curve
+      let dot = DotDefinition(num: doc.picdef.curves[selectedCurveIndex].dots.count + 1, x: "\(point.x)", y: "\(point.y)")
+      doc.picdef.curves[selectedCurveIndex].dots.append(dot)
+    } else {
+      // Maybe start a new curve or handle differently
+      print("No selected curve. Not adding point.")
+    }
+
     if var lastLine = lines.popLast() {
       lastLine.points.append(point)
       lines.append(lastLine)
