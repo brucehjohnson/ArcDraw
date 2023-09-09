@@ -113,7 +113,7 @@
 		880250E42A9E617A0076E001 /* DotDefinition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DotDefinition.swift; sourceTree = "<group>"; };
 		880250E62A9E69380076E001 /* DotListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DotListView.swift; sourceTree = "<group>"; };
 		880250E82A9E8ED10076E001 /* KeyboardUtilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardUtilities.swift; sourceTree = "<group>"; };
-		880250EE2AA8E6370076E001 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; name = Info.plist; path = ArcDraw/Info.plist; sourceTree = "<group>"; };
+		880250EE2AA8E6370076E001 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = ArcDraw/Info.plist; sourceTree = SOURCE_ROOT; };
 		880250F02AA8F4D60076E001 /* ArcDrawDocument+Curve.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ArcDrawDocument+Curve.swift"; sourceTree = "<group>"; };
 		880250F22AA8F5050076E001 /* ArcDrawDocument+File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ArcDrawDocument+File.swift"; sourceTree = "<group>"; };
 		880250F42AA8F8B00076E001 /* ArcDrawDocument+CurveUndo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ArcDrawDocument+CurveUndo.swift"; sourceTree = "<group>"; };
