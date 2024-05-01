@@ -2,13 +2,16 @@ import SwiftUI
 import UniformTypeIdentifiers
 
 struct TabbedView: View {
-  @ObservedObject var doc: ArcDrawDocument
   @Binding var selectedExample: String
 
   @State private var selectedTab = 0
 
-  init(doc: ArcDrawDocument, selectedExample: Binding<String>) {
-    self.doc = doc
+  // Access the shared document instance
+  var doc: ArcDrawDocument {
+    OneDocManager.shared.document
+  }
+
+  init( selectedExample: Binding<String>) {
     self._selectedExample = selectedExample
   }
 
@@ -16,24 +19,19 @@ struct TabbedView: View {
 
     TabView(selection: $selectedTab) {
 
-      TabCurves(doc: doc, selectedExample: $selectedExample)
+      TabCurves( selectedExample: $selectedExample)
         .tabItem {
           Label("1.Curves", systemImage: "paintbrush")
         }.tag(0)
 
-      TabMore(doc: doc)
+      TabSave()
         .tabItem {
-          Label("2.More", systemImage: "aspectratio")
+          Label("2.Save", systemImage: "aspectratio")
         }.tag(1)
 
-      TabSave(doc: doc)
-        .tabItem {
-          Label("3.Save", systemImage: "paintpalette")
-        }.tag(2)
-
-    } // end tabview
+    }
 
     .padding(2)
-  } // end body
+  }
 
 }

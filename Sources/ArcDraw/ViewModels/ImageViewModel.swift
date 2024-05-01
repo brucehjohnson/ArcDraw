@@ -1,11 +1,12 @@
 import SwiftUI
 
 class ImageViewModel: ObservableObject {
-  @Published var doc: ArcDrawDocument
 
-  init(doc: ArcDrawDocument) {
-    self.doc = doc
+  // Access the shared document instance
+  var doc: ArcDrawDocument {
+    OneDocManager.shared.document
   }
+  
 
   /**
    Gets an image to display on the right side of the app

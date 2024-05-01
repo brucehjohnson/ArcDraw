@@ -11,7 +11,11 @@ var contextImageGlobal: CGImage?
 final class ArcDrawDocument: ReferenceFileDocument, ObservableObject {
 
   // Observable properties that will cause UI updates when modified.
-  @Published var picdef: PictureDefinition
+  @Published var picdef: PictureDefinition = PictureDefinition(){
+    didSet {
+      objectWillChange.send()
+    }
+  }
   @Published var selectedCurveIndex: Int?
   @Published var selectedDotIndex: Int?
   @Published var shouldUnfocus: Bool = false
@@ -42,13 +46,14 @@ final class ArcDrawDocument: ReferenceFileDocument, ObservableObject {
       get: { self.selectedExample },
       set: { self.selectedExample = $0 }
     )
-    return DrawingController(doc: self, selectedExample: selectedExampleBinding)
+    return DrawingController(selectedExample: selectedExampleBinding)
   }()
 
   // ================ INITIALIZERS =========================
 
   // Designated initializer
   init(picdef: PictureDefinition = PictureDefinition(curves: [CurveDefinition()]), selectedExample: String = "", docName: String = "unknown") {
+    
     self.picdef = picdef
     self.selectedExample = selectedExample
     self.docName = docName
@@ -58,18 +63,18 @@ final class ArcDrawDocument: ReferenceFileDocument, ObservableObject {
       set: { self.selectedExample = $0 }
     )
 
-    self.drawingController = DrawingController(doc: self, selectedExample: selectedExampleBinding)
+    self.drawingController = DrawingController( selectedExample: selectedExampleBinding)
 
     // Load the example based on the selected example.
     loadExampleJSONAndUpdate(selectedExample)
-    print("Document initialized: \(Unmanaged.passUnretained(self).toOpaque())")
+    print("ArcDrawDocument initialized: \(Unmanaged.passUnretained(self).toOpaque())")
   }
 
   // Initialize with a provided example.
   convenience init(example: PictureDefinition) {
     self.init(picdef: example)
     self.isReadOnly = true
-    print("Document initialized (EXAMPLE): \(Unmanaged.passUnretained(self).toOpaque())")
+    print("ArcDrawDocument initialized (EXAMPLE): \(Unmanaged.passUnretained(self).toOpaque())")
   }
 
   // Initialize with a configuration.
@@ -80,7 +85,7 @@ final class ArcDrawDocument: ReferenceFileDocument, ObservableObject {
     let picdef = try JSONDecoder().decode(PictureDefinition.self, from: data)
     let docName = configuration.file.filename!
     self.init(picdef: picdef, docName: docName)
-    print("Document initialized (CONFIG): \(Unmanaged.passUnretained(self).toOpaque())")
+    print("ArcDrawDocument initialized (CONFIG): \(Unmanaged.passUnretained(self).toOpaque())")
   }
 
   // resetter
@@ -165,7 +170,8 @@ final class ArcDrawDocument: ReferenceFileDocument, ObservableObject {
     do {
       let exampleJSONData = try Data(contentsOf: url)
       if let jsonString = String(data: exampleJSONData, encoding: .utf8) {
-        print("\(exampleName) Example JSON from URL: \(jsonString)")
+        //print("\(exampleName) Example JSON from URL: \(jsonString)")
+        print("\(exampleName) Example JSON from URL")
       } else {
         print("\(exampleName) Failed to convert JSON data to string.")
       }

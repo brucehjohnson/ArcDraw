@@ -1,13 +1,17 @@
 import SwiftUI
 
 struct DrawingView: View {
-  @ObservedObject var doc: ArcDrawDocument
   @Binding var selectedExample: String
   @State  var showCurveSelectionAlert: Bool = false
 
   @State var dragStartTime: Date?
   @State var lastLocation: CGPoint = .zero
   @State private var rightMouseDownLocation: CGPoint = .zero
+
+  // Access the shared document instance
+  var doc: ArcDrawDocument {
+    OneDocManager.shared.document
+  }
 
   var body: some View {
     GeometryReader { geometry in

@@ -4,6 +4,19 @@ import SwiftUI
 @available(macOS 12.0, *)
 extension ArcDrawDocument {
 
+  // Gets a binding for the name of a curve at a specific index
+  func bindingForCurveName(at index: Int) -> Binding<String> {
+    return Binding<String>(
+      get: {
+        self.picdef.curves[index].name
+      },
+      set: {
+        self.picdef.curves[index].name = $0
+      }
+    )
+  }
+
+
     func handleAddNewCurveRequest() {
       print("Handle Add New Curve Request")
       print("  Selected curve index: \(selectedCurveIndex)")

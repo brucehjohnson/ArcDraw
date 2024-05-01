@@ -20,7 +20,6 @@
 		880250D12A9BC6D10076E001 /* DelayedTextFieldDouble.swift in Sources */ = {isa = PBXBuildFile; fileRef = 880250CF2A9BC6D10076E001 /* DelayedTextFieldDouble.swift */; };
 		880250D32A9BC7B20076E001 /* CurveListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 880250D22A9BC7B20076E001 /* CurveListView.swift */; };
 		880250D52A9BCFEA0076E001 /* TabbedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 880250D42A9BCFEA0076E001 /* TabbedView.swift */; };
-		880250D72A9BD0B40076E001 /* TabMore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 880250D62A9BD0B40076E001 /* TabMore.swift */; };
 		880250D92A9BD0BE0076E001 /* TabCurves.swift in Sources */ = {isa = PBXBuildFile; fileRef = 880250D82A9BD0BE0076E001 /* TabCurves.swift */; };
 		880250DB2A9BD0CB0076E001 /* TabSave.swift in Sources */ = {isa = PBXBuildFile; fileRef = 880250DA2A9BD0CB0076E001 /* TabSave.swift */; };
 		880250E32A9E5BC80076E001 /* CurveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 880250E22A9E5BC80076E001 /* CurveView.swift */; };
@@ -34,6 +33,9 @@
 		880250F92AA8FFBC0076E001 /* String+Index.swift in Sources */ = {isa = PBXBuildFile; fileRef = 880250F82AA8FFBC0076E001 /* String+Index.swift */; };
 		880250FB2AA900300076E001 /* UTType+arcdraw.swift in Sources */ = {isa = PBXBuildFile; fileRef = 880250FA2AA900300076E001 /* UTType+arcdraw.swift */; };
 		880250FD2AA985090076E001 /* ArcViewDocument+Dot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 880250FC2AA985090076E001 /* ArcViewDocument+Dot.swift */; };
+		880251042AAC134A0076E001 /* ConfiguredContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 880251032AAC134A0076E001 /* ConfiguredContentView.swift */; };
+		880251062AAC18EB0076E001 /* AppConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 880251052AAC18EB0076E001 /* AppConstants.swift */; };
+		880251092AAC2DEE0076E001 /* OneDocManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 880251082AAC2DEE0076E001 /* OneDocManager.swift */; };
 		885A8A4B2A9A8D790028E8BF /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 885A8A452A9A8D790028E8BF /* README.md */; };
 		885A8A4C2A9A8D790028E8BF /* DEV_NOTES.md in Resources */ = {isa = PBXBuildFile; fileRef = 885A8A462A9A8D790028E8BF /* DEV_NOTES.md */; };
 		885A8A4D2A9A8D790028E8BF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 885A8A472A9A8D790028E8BF /* Assets.xcassets */; };
@@ -106,14 +108,12 @@
 		880250CF2A9BC6D10076E001 /* DelayedTextFieldDouble.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DelayedTextFieldDouble.swift; sourceTree = "<group>"; };
 		880250D22A9BC7B20076E001 /* CurveListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurveListView.swift; sourceTree = "<group>"; };
 		880250D42A9BCFEA0076E001 /* TabbedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbedView.swift; sourceTree = "<group>"; };
-		880250D62A9BD0B40076E001 /* TabMore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabMore.swift; sourceTree = "<group>"; };
 		880250D82A9BD0BE0076E001 /* TabCurves.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabCurves.swift; sourceTree = "<group>"; };
 		880250DA2A9BD0CB0076E001 /* TabSave.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabSave.swift; sourceTree = "<group>"; };
 		880250E22A9E5BC80076E001 /* CurveView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurveView.swift; sourceTree = "<group>"; };
 		880250E42A9E617A0076E001 /* DotDefinition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DotDefinition.swift; sourceTree = "<group>"; };
 		880250E62A9E69380076E001 /* DotListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DotListView.swift; sourceTree = "<group>"; };
 		880250E82A9E8ED10076E001 /* KeyboardUtilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardUtilities.swift; sourceTree = "<group>"; };
-		880250EE2AA8E6370076E001 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = ArcDraw/Info.plist; sourceTree = SOURCE_ROOT; };
 		880250F02AA8F4D60076E001 /* ArcDrawDocument+Curve.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ArcDrawDocument+Curve.swift"; sourceTree = "<group>"; };
 		880250F22AA8F5050076E001 /* ArcDrawDocument+File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ArcDrawDocument+File.swift"; sourceTree = "<group>"; };
 		880250F42AA8F8B00076E001 /* ArcDrawDocument+CurveUndo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ArcDrawDocument+CurveUndo.swift"; sourceTree = "<group>"; };
@@ -121,6 +121,10 @@
 		880250F82AA8FFBC0076E001 /* String+Index.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Index.swift"; sourceTree = "<group>"; };
 		880250FA2AA900300076E001 /* UTType+arcdraw.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UTType+arcdraw.swift"; sourceTree = "<group>"; };
 		880250FC2AA985090076E001 /* ArcViewDocument+Dot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ArcViewDocument+Dot.swift"; sourceTree = "<group>"; };
+		880251002AAC0E210076E001 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		880251032AAC134A0076E001 /* ConfiguredContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfiguredContentView.swift; sourceTree = "<group>"; };
+		880251052AAC18EB0076E001 /* AppConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConstants.swift; sourceTree = "<group>"; };
+		880251082AAC2DEE0076E001 /* OneDocManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = OneDocManager.swift; path = Sources/OneDocManager.swift; sourceTree = SOURCE_ROOT; };
 		885A8A452A9A8D790028E8BF /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		885A8A462A9A8D790028E8BF /* DEV_NOTES.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = DEV_NOTES.md; sourceTree = "<group>"; };
 		885A8A472A9A8D790028E8BF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -218,15 +222,24 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
+		880251072AAC2D4A0076E001 /* Observables */ = {
+			isa = PBXGroup;
+			children = (
+				880251082AAC2DEE0076E001 /* OneDocManager.swift */,
+			);
+			path = Observables;
+			sourceTree = "<group>";
+		};
 		885A8A482A9A8D790028E8BF /* Sources */ = {
 			isa = PBXGroup;
 			children = (
 				885A8A682A9A9A450028E8BF /* ArcDraw */,
 				885A8A492A9A8D790028E8BF /* ArcDrawApp.swift */,
 				885A8A5F2A9A8FE80028E8BF /* ArcDrawApp+Menu.swift */,
-				885A8AE22A9B86B60028E8BF /* GetLastErrorBox.swift */,
+				880251052AAC18EB0076E001 /* AppConstants.swift */,
 				885A8ACD2A9B67430028E8BF /* AppState.swift */,
 				885A8ABC2A9B5D350028E8BF /* About.swift */,
+				885A8AE22A9B86B60028E8BF /* GetLastErrorBox.swift */,
 				885A8AC02A9B5DC20028E8BF /* InitInstance.swift */,
 				885A8AC22A9B5DE70028E8BF /* InitApplication.swift */,
 				885A8AC42A9B5E0C0028E8BF /* WinMain.swift */,
@@ -254,6 +267,7 @@
 		885A8A512A9A8E950028E8BF /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				880251032AAC134A0076E001 /* ConfiguredContentView.swift */,
 				885A8A4A2A9A8D790028E8BF /* ContentView.swift */,
 				880250D22A9BC7B20076E001 /* CurveListView.swift */,
 				880250E22A9E5BC80076E001 /* CurveView.swift */,
@@ -265,7 +279,6 @@
 				885A8A6B2A9AAFE60028E8BF /* PanelUI.swift */,
 				880250D42A9BCFEA0076E001 /* TabbedView.swift */,
 				880250D82A9BD0BE0076E001 /* TabCurves.swift */,
-				880250D62A9BD0B40076E001 /* TabMore.swift */,
 				880250DA2A9BD0CB0076E001 /* TabSave.swift */,
 				885A8A532A9A8F9B0028E8BF /* WelcomeHeaderView.swift */,
 				885A8A562A9A8F9B0028E8BF /* WelcomeMainImageView.swift */,
@@ -288,6 +301,7 @@
 		885A8A682A9A9A450028E8BF /* ArcDraw */ = {
 			isa = PBXGroup;
 			children = (
+				880251072AAC2D4A0076E001 /* Observables */,
 				885A8A7B2A9B56AB0028E8BF /* Examples */,
 				885A8A702A9AB2A40028E8BF /* Utilities */,
 				885A8A6D2A9AB1800028E8BF /* ViewModels */,
@@ -387,8 +401,8 @@
 		C568E3D72A68755C00B63F6F = {
 			isa = PBXGroup;
 			children = (
+				880251002AAC0E210076E001 /* Info.plist */,
 				880250EF2AA8E9120076E001 /* Resources */,
-				880250EE2AA8E6370076E001 /* Info.plist */,
 				885A8A472A9A8D790028E8BF /* Assets.xcassets */,
 				C568E3E92A68755C00B63F6F /* ArcDraw.entitlements */,
 				885A8A462A9A8D790028E8BF /* DEV_NOTES.md */,
@@ -434,7 +448,8 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1430;
-				LastUpgradeCheck = 1430;
+				LastUpgradeCheck = 1530;
+				ORGANIZATIONNAME = "";
 				TargetAttributes = {
 					C568E3DF2A68755C00B63F6F = {
 						CreatedOnToolsVersion = 14.3.1;
@@ -464,6 +479,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				885A8AE12A9B76DA0028E8BF /* Cursive.arcdraw in Resources */,
 				880250C22A9B9D630076E001 /* Hearts.arcdraw in Resources */,
 				880250C32A9B9D630076E001 /* Moons.arcdraw in Resources */,
 				880250C42A9B9D630076E001 /* Petals.arcdraw in Resources */,
@@ -471,7 +487,6 @@
 				880250C62A9B9D630076E001 /* Spirals.arcdraw in Resources */,
 				880250C72A9B9D630076E001 /* YinYang.arcdraw in Resources */,
 				885A8A4C2A9A8D790028E8BF /* DEV_NOTES.md in Resources */,
-				885A8AE12A9B76DA0028E8BF /* Cursive.arcdraw in Resources */,
 				885A8A4B2A9A8D790028E8BF /* README.md in Resources */,
 				885A8A4D2A9A8D790028E8BF /* Assets.xcassets in Resources */,
 			);
@@ -503,13 +518,13 @@
 				880250E72A9E69380076E001 /* DotListView.swift in Sources */,
 				880250F72AA8FEF20076E001 /* CGImage+PNGdata.swift in Sources */,
 				885A8A5B2A9A8F9C0028E8BF /* WelcomeView.swift in Sources */,
+				880251062AAC18EB0076E001 /* AppConstants.swift in Sources */,
 				885A8AB52A9B5C940028E8BF /* AddDotAfter.swift in Sources */,
 				885A8AA92A9B5BA10028E8BF /* DefineDirection.swift in Sources */,
 				885A8ABD2A9B5D350028E8BF /* About.swift in Sources */,
 				885A8A602A9A8FE80028E8BF /* ArcDrawApp+Menu.swift in Sources */,
 				880250D52A9BCFEA0076E001 /* TabbedView.swift in Sources */,
 				880250D92A9BD0BE0076E001 /* TabCurves.swift in Sources */,
-				880250D72A9BD0B40076E001 /* TabMore.swift in Sources */,
 				885A8AC32A9B5DE70028E8BF /* InitApplication.swift in Sources */,
 				885A8AA52A9B5B510028E8BF /* DefineSketchDot.swift in Sources */,
 				885A8AAF2A9B5C040028E8BF /* ClearCurve.swift in Sources */,
@@ -518,6 +533,7 @@
 				885A8A5A2A9A8F9C0028E8BF /* WelcomeMainView.swift in Sources */,
 				885A8A9B2A9B5AB80028E8BF /* DrawSketchDot.swift in Sources */,
 				885A8A762A9AB66C0028E8BF /* DrawingController.swift in Sources */,
+				880251042AAC134A0076E001 /* ConfiguredContentView.swift in Sources */,
 				885A8ACE2A9B67430028E8BF /* AppState.swift in Sources */,
 				885A8AE32A9B86B60028E8BF /* GetLastErrorBox.swift in Sources */,
 				880250E32A9E5BC80076E001 /* CurveView.swift in Sources */,
@@ -541,6 +557,7 @@
 				885A8A952A9B5A210028E8BF /* EraseLines.swift in Sources */,
 				885A8AAD2A9B5BDC0028E8BF /* Cursive.swift in Sources */,
 				885A8A7D2A9B56EB0028E8BF /* YinYang.swift in Sources */,
+				880251092AAC2DEE0076E001 /* OneDocManager.swift in Sources */,
 				880250DB2A9BD0CB0076E001 /* TabSave.swift in Sources */,
 				880250D32A9BC7B20076E001 /* CurveListView.swift in Sources */,
 				880250CD2A9BC62F0076E001 /* CommaNumberFormatter.swift in Sources */,
@@ -602,9 +619,11 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -619,6 +638,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -660,9 +680,11 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -671,6 +693,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SWIFT_COMPILATION_MODE = wholemodule;
@@ -684,14 +707,15 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = ArcDraw.entitlements;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_ASSET_PATHS = "";
-				DEVELOPMENT_TEAM = L3C8KXQ7DP;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = ArcDraw/Info.plist;
+				INFOPLIST_FILE = Info.plist;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -709,6 +733,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "Bruce-Johnson.ArcDraw";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = auto;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -723,14 +748,15 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = ArcDraw.entitlements;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_ASSET_PATHS = "";
-				DEVELOPMENT_TEAM = L3C8KXQ7DP;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = ArcDraw/Info.plist;
+				INFOPLIST_FILE = Info.plist;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -748,6 +774,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "Bruce-Johnson.ArcDraw";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = auto;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
 				SWIFT_EMIT_LOC_STRINGS = YES;

@@ -4,7 +4,11 @@ import SwiftUI
 extension ArcDrawApp {
 
   func appMenuCommands() -> some Commands {
-    Group {
+
+    let doc = OneDocManager.shared.document
+    print("menu doc accessed")
+
+    return Group {
       // Disable "New Window" option
       // CommandGroup(replacing: .newItem) {}
 

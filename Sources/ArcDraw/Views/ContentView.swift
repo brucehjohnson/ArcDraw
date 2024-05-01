@@ -8,11 +8,16 @@ import CoreGraphics
 struct ContentView: View {
 
   @EnvironmentObject var appState: AppState
-  @ObservedObject var doc: ArcDrawDocument
   @Binding var selectedExample: String
   @Binding var showAlert: Bool
   @Binding var alertMessage: String
   @Binding var showReadOnlyAlert: Bool
+
+  // Access the shared document instance
+  var doc: ArcDrawDocument {
+    OneDocManager.shared.document
+  }
+
 
   let widthOfInputPanel: Double = 400
 
@@ -20,10 +25,10 @@ struct ContentView: View {
           GeometryReader { _ in
             HStack(alignment: .top, spacing: 0) {
 
-              PanelUI(doc: doc, selectedExample: $selectedExample)
+              PanelUI(selectedExample: $selectedExample)
                 .frame(width: widthOfInputPanel > 0 ? widthOfInputPanel : 400)
 
-              PanelDisplay(doc: doc, selectedExample: $selectedExample)
+              PanelDisplay(selectedExample: $selectedExample)
                 .frame(maxWidth: .infinity, maxHeight: .infinity)
 
             } // hstack
@@ -41,7 +46,7 @@ struct ContentView: View {
                   message: Text(alertMessage),
                   dismissButton: .default(Text("OK")))
           }
-          .alert(isPresented: $doc.showReadOnlyAlert) {
+          .alert(isPresented: $showReadOnlyAlert) {
             Alert(title: Text("Read-Only Document"),
                   message: Text("This is a read-only example. Would you like to save your edits as a new document?"),
                   primaryButton: .default(Text("Save As New"), action: {

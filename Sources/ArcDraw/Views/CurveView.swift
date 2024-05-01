@@ -3,21 +3,24 @@ import UniformTypeIdentifiers
 
 struct CurveView: View {
 
-  @ObservedObject var doc: ArcDrawDocument
   @Binding var selectedExample: String
   @Binding var curve: CurveDefinition
   @Binding var curveIndex: Int
+
+  // Access the shared document instance
+  var doc: ArcDrawDocument {
+    OneDocManager.shared.document
+  }
 
   let cardBackground = Color.white
   let cardCornerRadius: CGFloat = 10.0
   let cardElevation: CGFloat = 5.0
 
-  init(doc: ArcDrawDocument,
+  init(
        selectedExample: Binding<String>,
        curve: Binding<CurveDefinition>,
        curveIndex: Binding<Int>
   ) {
-    self.doc = doc
     self._selectedExample = selectedExample
     self._curve = curve
     self._curveIndex = curveIndex
@@ -90,7 +93,7 @@ struct CurveView: View {
       } // hstack row 3
       .padding(1)
 
-      DotListView(doc: doc, selectedExample: $selectedExample, dots: $curve.dots, curveIndex: $curveIndex)
+      DotListView(selectedExample: $selectedExample, dots: $curve.dots, curveIndex: $curveIndex)
 
     } // vstack (card)
     .padding()  // Don't touch rectangle

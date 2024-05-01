@@ -7,12 +7,12 @@ class WelcomeWindowController: NSWindowController {
 
   init(appState: AppState) {
     self.appState = appState
-    let width = ArcDrawApp.AppConstants.defaultWidth()
-    let height = ArcDrawApp.AppConstants.defaultHeight()
-    let minW = ArcDrawApp.AppConstants.minWelcomeWidth
-    let minH = ArcDrawApp.AppConstants.minWelcomeHeight
-    let maxW = ArcDrawApp.AppConstants.maxWelcomeWidth()
-    let maxH = ArcDrawApp.AppConstants.maxWelcomeHeight()
+    let width = AppConstants.defaultWidth()
+    let height = AppConstants.defaultHeight()
+    let minW = AppConstants.minWelcomeWidth
+    let minH = AppConstants.minWelcomeHeight
+    let maxW = AppConstants.maxWelcomeWidth()
+    let maxH = AppConstants.maxWelcomeHeight()
 
     let window = NSWindow(
       contentRect: NSRect(

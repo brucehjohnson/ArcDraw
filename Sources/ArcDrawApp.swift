@@ -4,7 +4,6 @@ import AppKit
 @available(macOS 12.0, *)
 @main
 struct ArcDrawApp: App {
-  @ObservedObject var doc: ArcDrawDocument = ArcDrawDocument()
   @StateObject var appState = AppState()
   @State private var shouldShowWelcomeWhenStartingUp: Bool
   @State var selectedExample: String = ""
@@ -19,133 +18,58 @@ struct ArcDrawApp: App {
     _shouldShowWelcomeWhenStartingUp = State(initialValue: initialState)
   }
 
-   var body: some Scene {
 
-     WindowGroup {
-       if shouldShowWelcomeWhenStartingUp {
-         WelcomeView()
-           .environmentObject(appState)
-           .onAppear {
-             print("Showing Welcome Screen on Startup")
-             NSWindow.allowsAutomaticWindowTabbing = false
-           }
-       } else {
-         ContentView(doc: doc, selectedExample: $selectedExample, showAlert: $showAlert, alertMessage: $alertMessage, showReadOnlyAlert: $showReadOnlyAlert)
-           .background(WindowAccessor { window in
-             if let window = window {
-               let uniqueIdentifier = doc.picdef.id
-               window.setFrameAutosaveName("Document Window \(uniqueIdentifier.uuidString)")
-             }
-           })
-           .onAppear {
-             NSWindow.allowsAutomaticWindowTabbing = false
-             selectedExample = ""
-             doc.resetDocumentState()
+  var body: some Scene {
 
-           }
-           .onDisappear {
-             print("Window closing - calling reset")
-             selectedExample = ""
-             doc.resetDocumentState()
-           }
-       }
-     }
+    // Access the shared document instance
+    var doc: ArcDrawDocument {
+      OneDocManager.shared.document
+    }
 
-     DocumentGroup(newDocument: { ArcDrawDocument() }) { file in
-       let doc = file.document
-       ContentView(doc: file.document, selectedExample: $selectedExample, showAlert: $showAlert, alertMessage: $alertMessage, showReadOnlyAlert: $showReadOnlyAlert)         .background(WindowAccessor { window in
-           if let window = window {
-             let uniqueIdentifier = doc.picdef.id
-             window.setFrameAutosaveName("Document Window \(uniqueIdentifier.uuidString)")
-           }
-         })
-         .onAppear {
-           NSWindow.allowsAutomaticWindowTabbing = false
-           selectedExample = ""
-           doc.resetDocumentState()
+    WindowGroup {
+      if shouldShowWelcomeWhenStartingUp {
+        WelcomeView()
+          .environmentObject(appState)
+          .onAppear {
+            print("Showing Welcome Screen on Startup")
+            NSWindow.allowsAutomaticWindowTabbing = false
+          }
+      } else {
+        ContentView(selectedExample: $selectedExample, showAlert: $showAlert, alertMessage: $alertMessage, showReadOnlyAlert: $showReadOnlyAlert)
+          .background(WindowAccessor { window in
+            if let window = window {
+              let uniqueIdentifier = doc.picdef.id
+              window.setFrameAutosaveName("Document Window \(uniqueIdentifier.uuidString)")
+            }
+          })
+          .onAppear {
+            NSWindow.allowsAutomaticWindowTabbing = false
+            selectedExample = ""
+            doc.resetDocumentState()
 
-         }
-         .onDisappear {
-           print("Window closing - calling reset")
-           selectedExample = ""
-           doc.resetDocumentState()
-         }
-     } // Document group
-     
+          }
+          .onDisappear {
+            print("Window closing - calling reset")
+            selectedExample = ""
+            doc.resetDocumentState()
+          }
+      }
+    }
 
-    .commands {
-      appMenuCommands()
+    DocumentGroup(newDocument: { () -> ArcDrawDocument in
+      print("Creating new document")
+      return OneDocManager.shared.document
+    }) { file  in
+       ConfiguredContentView(selectedExample: $selectedExample, showAlert: $showAlert, alertMessage: $alertMessage, showReadOnlyAlert: $showReadOnlyAlert)
+    }
+
+
+
+      .commands {
+        appMenuCommands()
+      }
+
     }
   }
 
-  internal struct AppConstants {
-    static let defaultOpeningWidth: CGFloat = 800.0
-    static let defaultOpeningHeight: CGFloat = 600.0
-    static let defaultPercentWidth: CGFloat = 0.8
-    static let defaultPercentHeight: CGFloat = 0.8
-    static let dockAndPreviewsWidth: CGFloat = 200.0
-    static let minWelcomeWidth: CGFloat = 500.0
-    static let minWelcomeHeight: CGFloat = 500.0
-    static let heightMargin: CGFloat = 50.0
-
-    internal static func defaultWidth() -> CGFloat {
-      if let screenWidth = NSScreen.main?.visibleFrame.width {
-        return min(screenWidth * defaultPercentWidth, screenWidth - dockAndPreviewsWidth)
-      }
-      return defaultOpeningWidth
-    }
-
-    internal static func defaultHeight() -> CGFloat {
-      if let screenHeight = NSScreen.main?.visibleFrame.height {
-        return screenHeight * defaultPercentHeight
-      }
-      return defaultOpeningHeight
-    }
-
-    internal static func maxWelcomeWidth() -> CGFloat {
-      if let screenWidth = NSScreen.main?.visibleFrame.width {
-        return screenWidth * 0.66
-      }
-      return minWelcomeWidth
-    }
-
-    internal static func maxWelcomeHeight() -> CGFloat {
-      if let screenHeight = NSScreen.main?.visibleFrame.height {
-        return screenHeight * 0.8
-      }
-      return minWelcomeHeight
-    }
-
-    internal static func maxDocumentWidth() -> CGFloat {
-      if let screenWidth = NSScreen.main?.visibleFrame.width {
-        return screenWidth - dockAndPreviewsWidth
-      }
-      return defaultOpeningWidth
-    }
-
-    internal static func maxDocumentHeight() -> CGFloat {
-      if let screenHeight = NSScreen.main?.visibleFrame.height {
-        return screenHeight - heightMargin
-      }
-      return defaultOpeningHeight
-    }
-
-  }
-
-  // Access user dimensions
-  struct WindowAccessor: NSViewRepresentable {
-    var callback: (NSWindow?) -> Void
-
-    func makeNSView(context: Context) -> NSView {
-      let view = NSView()
-      DispatchQueue.main.async {
-        self.callback(view.window)
-      }
-      return view
-    }
-
-    func updateNSView(_ nsView: NSView, context: Context) {}
-  }
-
-}
 

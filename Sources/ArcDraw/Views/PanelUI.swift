@@ -3,11 +3,14 @@ import UniformTypeIdentifiers
 
 struct PanelUI: View {
 
-  @ObservedObject var doc: ArcDrawDocument
   @Binding var selectedExample: String
 
-  init(doc: ArcDrawDocument, selectedExample: Binding<String>) {
-    self.doc = doc
+  // Access the shared document instance
+  var doc: ArcDrawDocument {
+    OneDocManager.shared.document
+  }
+
+  init( selectedExample: Binding<String>) {
     self._selectedExample = selectedExample
   }
 
@@ -23,7 +26,7 @@ struct PanelUI: View {
         .font(.title)
         .padding(.top)
 
-      TabbedView(doc: doc, selectedExample: $selectedExample)
+      TabbedView(selectedExample: $selectedExample)
       Spacer()
     }
 

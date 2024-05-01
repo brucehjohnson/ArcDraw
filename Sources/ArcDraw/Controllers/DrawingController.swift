@@ -1,12 +1,15 @@
 import SwiftUI
 
 class DrawingController: ObservableObject {
-  @ObservedObject var doc: ArcDrawDocument
   @Binding var selectedExample: String
   @Published var lines: [Line] = []
 
-  init(doc: ArcDrawDocument, selectedExample: Binding<String>) {
-    self.doc = doc
+  // Access the shared document instance
+  var doc: ArcDrawDocument {
+    OneDocManager.shared.document
+  }
+
+  init(selectedExample: Binding<String>) {
     self._selectedExample = selectedExample
   }
 

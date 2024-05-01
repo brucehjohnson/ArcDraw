@@ -24,8 +24,9 @@ struct WelcomeMainInformationView: View {
         .foregroundColor(.secondary)
 
       Button(action: {
-        NSApp.sendAction(#selector(NSWindow.performClose(_:)), to: nil, from: nil)
-        NSDocumentController.shared.newDocument("new.arcdraw")
+        withAnimation {
+          appState.showingWelcome = false
+        }
       }) {
         Text("Click here to open default ArcDraw document and get started")
           .fontWeight(.semibold)

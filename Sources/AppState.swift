@@ -1,8 +1,9 @@
 import SwiftUI
 
 class AppState: ObservableObject {
-
   @Published var shouldShowWelcomeWhenStartingUp: Bool = UserDefaults.standard.object(forKey: "shouldShowWelcomeWhenStartingUp") as? Bool ?? true
+
+  @Published var showingWelcome: Bool = UserDefaults.standard.object(forKey: "shouldShowWelcomeWhenStartingUp") as? Bool ?? true
 
   @Published var gMenuItem: Int = 0
   @Published var gLastMenuItem: Int = 0
@@ -44,4 +45,7 @@ class AppState: ObservableObject {
   @Published var gR: [Double] = [Double](repeating: 0.0, count: 301)
   @Published var gDotLoc: [CGPoint] = [CGPoint](repeating: CGPoint.zero, count: 301)
   @Published var gDotRegion: [CGMutablePath] = [CGMutablePath](repeating: CGMutablePath(), count: 301)
+
+
+
 }

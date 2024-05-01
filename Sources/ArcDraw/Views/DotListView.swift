@@ -1,10 +1,14 @@
 import SwiftUI
 
 struct DotListView: View {
-  @ObservedObject var doc: ArcDrawDocument
   @Binding var selectedExample: String
   @Binding var dots: [DotDefinition]
   @Binding var curveIndex: Int
+
+  // Access the shared document instance
+  var doc: ArcDrawDocument {
+    OneDocManager.shared.document
+  }
 
   var body: some View {
 

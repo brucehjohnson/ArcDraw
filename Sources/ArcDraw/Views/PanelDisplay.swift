@@ -2,8 +2,12 @@ import SwiftUI
 import UniformTypeIdentifiers
 
 struct PanelDisplay: View {
-  @ObservedObject var doc: ArcDrawDocument
   @Binding var selectedExample: String
+
+  // Access the shared document instance
+  var doc: ArcDrawDocument {
+    OneDocManager.shared.document
+  }
 
   var body: some View {
     VStack {
@@ -20,7 +24,7 @@ struct PanelDisplay: View {
         }
       }
 
-      DrawingView(doc: doc, selectedExample: $selectedExample)
+      DrawingView(selectedExample: $selectedExample)
       Spacer()
     }
   }

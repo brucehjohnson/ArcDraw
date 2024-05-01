@@ -2,12 +2,15 @@ import SwiftUI
 import UniformTypeIdentifiers
 
 struct TabCurves: View {
-  @ObservedObject var doc: ArcDrawDocument
   @Binding var selectedExample: String
   @State var needsRefresh: Bool = false
 
-  init(doc: ArcDrawDocument, selectedExample: Binding<String>) {
-    self.doc = doc
+  // Access the shared document instance
+  var doc: ArcDrawDocument {
+    OneDocManager.shared.document
+  }
+
+  init(selectedExample: Binding<String>) {
     self._selectedExample = selectedExample
   }
 
@@ -40,7 +43,7 @@ struct TabCurves: View {
           .padding([.bottom], 2)
 
           Divider()
-          CurveListView(doc: doc, selectedExample: $selectedExample)
+         // CurveListView(selectedExample: $selectedExample)
 
         }//  section
 
